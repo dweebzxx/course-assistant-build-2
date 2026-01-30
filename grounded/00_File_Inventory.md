@@ -118,20 +118,21 @@ These materials demonstrate structure patterns and inform template design but ar
 - Student context in student_profile (preferences, progress, constraints)
 
 **4. Ambiguous Authority**:
-- No explicit source-of-truth hierarchy
-- No conflict resolution rules when course_knowledge and module content disagree
-- No protocol for updating information when syllabus changes
+- 6-tier authority hierarchy now defined (Tiers 1-3: course_schedule, course_core, student_profile)
+- Conflict resolution rules established
+- Clear protocol for updating information when syllabus changes
 
 **5. Missing Indexing**:
-- No INDEX/manifest file
-- No section anchors for retrieval
-- No way to verify completeness of extracted information
-- No referential integrity checks
+- INDEX/manifest file system now implemented
+- Section anchors added for retrieval targeting
+- Completeness verification enabled through INDEX
+- Referential integrity checks built in
 
 **6. Personal Information Exposure**:
-- MGMT-8001 student_knowledge contains full names of 4 group members
-- IDSC-4444 student_knowledge contains full names of 2 group members
-- No anonymization or redaction policy
+- MGMT-8001 student_profile contains full names of 4 group members
+- IDSC-4444 student_profile contains full names of 2 group members
+- Anonymization policy now established (Member 01, Member 02, etc.)
+- Redaction procedures documented
 
 **7. Incomplete Module Integration**:
 - Tree structure shows extensive module content for Carlson-School-2025-FA

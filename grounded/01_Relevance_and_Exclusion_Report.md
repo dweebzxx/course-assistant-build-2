@@ -155,7 +155,7 @@
 
 **RULE 4: Boilerplate Reduction**
 - Extract only course-specific procedures from standard policies
-- Replace generic accommodation language with: "See course_knowledge.policies.accommodations for specific procedures"
+- Replace generic accommodation language with: "See course_core.md#accommodations for specific procedures"
 - Remove repeated honor code text; keep only course-specific academic integrity expectations
 
 **RULE 5: Duplicate Elimination**

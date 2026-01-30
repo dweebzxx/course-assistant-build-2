@@ -62,7 +62,7 @@ Do NOT list the section contents, just confirm you can see the structure.
 
 **Pass Criteria:**
 - ✅ Agent identifies all 3 files by exact filename
-- ✅ Agent states doc_type correctly for each
+- ✅ Agent states doc_type correctly for each (course_core, course_schedule, student_profile)
 - ✅ Agent states last_updated date for each
 - ✅ Agent provides section count for each file
 
