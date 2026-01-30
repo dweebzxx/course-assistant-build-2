@@ -106,56 +106,22 @@ Use exactly the section headers and anchor IDs shown below to ensure INDEX compa
 ## Assignment Calendar
 <!-- anchor: #assignment-calendar -->
 
-| Assignment ID | Title | Type | Module ID | Due Date (Display) | Due Date (ISO) | Due Time | Weight | Notes |
-|---------------|-------|------|-----------|-------------------|----------------|----------|--------|-------|
-| A01 | {Assignment title} | {Individual/Quiz/etc.} | M01 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X%} | {Notes} |
-| A02 | {Assignment title} | {Type} | M02 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X%} | {Notes} |
-| A03 | {Assignment title} | {Type} | M03 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X%} | {Notes} |
-| QUIZ-01 | {Quiz title} | Quiz | M02 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X%} | {Notes} |
-| QUIZ-02 | {Quiz title} | Quiz | M04 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X%} | {Notes} |
+This section consolidates ALL assignment types including individual assignments, quizzes, discussions, exams, group projects, and readings. The `Type` field distinguishes different assignment categories.
 
-{Add rows for all assignments. For TBD dates, use "TBD" for display and leave ISO date as null.}
+| Assignment ID | Title | Type | Due Date (Display) | Due Date (ISO) | Due Time | Points | Module ID |
+|---------------|-------|------|-------------------|----------------|----------|--------|-----------|
+| A01 | {Assignment title} | Individual | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {100} | M01 |
+| QUIZ-01 | {Quiz title} | Quiz | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {50} | M02 |
+| D01 | {Discussion topic} | Discussion | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {25} | M02 |
+| MIDTERM | Midterm Exam | Exam | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {200} | M05 |
+| GROUP-01 | {Group project title} | Group | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {150} | M07 |
+| M03-R01 | {Reading citation} | Reading | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {0} | M03 |
+| FINAL | Final Exam | Exam | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {250} | M10 |
+
+{Add rows for all assignments of any type. For TBD dates, use "TBD" for display and leave ISO date as null.}
 
 **TBD Example Row:**
-| A07 | {Assignment title} | {Type} | M07 | TBD | null | null | {X%} | Due date not yet announced |
-
----
-
-## Exam Schedule
-<!-- anchor: #exam-schedule -->
-
-| Exam ID | Title | Date (Display) | Date (ISO) | Time | Duration | Location | Format | Materials Allowed |
-|---------|-------|----------------|------------|------|----------|----------|--------|-------------------|
-| MIDTERM | Midterm Exam | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X hours} | {Location} | {In-class/Online} | {List or "None"} |
-| FINAL | Final Exam | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {X hours} | {Location} | {Format} | {List or "None"} |
-
-{Add rows for any additional exams. Use EXAM-01, EXAM-02 for numbered exams.}
-
----
-
-## Reading Schedule
-<!-- anchor: #reading-schedule -->
-
-| Reading ID | Title/Citation | Module ID | Due Date (Display) | Due Date (ISO) | Notes |
-|------------|----------------|-----------|-------------------|----------------|-------|
-| M01-R01 | {Reading title or citation} | M01 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {e.g., "Read before class"} |
-| M01-R02 | {Reading title or citation} | M01 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Notes} |
-| M02-R01 | {Reading title or citation} | M02 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Notes} |
-| M03-R01 | {Reading title or citation} | M03 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Notes} |
-
-{Add rows for all required readings. Use module-scoped IDs (M{NN}-R{NN}) when readings are organized by module.}
-
----
-
-## Discussion Schedule
-<!-- anchor: #discussion-schedule -->
-
-| Discussion ID | Title/Topic | Module ID | Open Date (Display) | Open Date (ISO) | Open Time | Close Date (Display) | Close Date (ISO) | Close Time | Requirements |
-|---------------|-------------|-----------|---------------------|-----------------|-----------|---------------------|------------------|------------|--------------|
-| D01 | {Discussion topic} | M01 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {e.g., "Initial post + 2 replies"} |
-| D02 | {Discussion topic} | M02 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {Requirements} |
-
-{Add rows for all discussion assignments. Include both open and close dates/times.}
+| A07 | {Assignment title} | Individual | TBD | null | null | {100} | M07 |
 
 ---
 
@@ -233,10 +199,7 @@ This file contains the following sections indexed for retrieval:
 | #term-dates | Term Dates | — |
 | #class-meeting-schedule | Class Meeting Schedule | — |
 | #module-sequence | Module Sequence | modules |
-| #assignment-calendar | Assignment Calendar | assignments |
-| #exam-schedule | Exam Schedule | exams |
-| #reading-schedule | Reading Schedule | readings |
-| #discussion-schedule | Discussion Schedule | discussions |
+| #assignment-calendar | Assignment Calendar | assignments, quizzes, discussions, exams, group projects, readings |
 | #milestone-timeline | Milestone Timeline | milestones |
 | #weekly-overview | Weekly Overview | — |
 | #special-events | Special Events | — |
