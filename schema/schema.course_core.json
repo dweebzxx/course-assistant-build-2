@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://course-assistant.schema/course_knowledge.json",
-  "title": "Course Knowledge File Schema",
-  "description": "Schema for course_core.md Grounded Knowledge File",
+  "$id": "https://course-assistant.schema/course_core.json",
+  "title": "Course Core File Schema",
+  "description": "Schema for course_core.md Grounded Knowledge File - Tier 2 authority for policies, grading, structure, and group project definition",
   "type": "object",
   "required": ["metadata", "course_identification", "grading_policy", "course_policies"],
   "properties": {

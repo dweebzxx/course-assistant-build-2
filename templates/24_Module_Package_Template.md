@@ -53,9 +53,8 @@ By the end of this module, you should be able to:
 
 | File Path | Type | Description | Required |
 |-----------|------|-------------|----------|
-| {module_id}.module_manifest.md | manifest | This manifest file | Yes |
-| {filename.pptx} | .pptx | {Brief description, e.g., "Lecture slides (45 slides)"} | Yes |
-| {filename.pdf} | .pdf | {Brief description} | Yes |
+| {module_id}.module_manifest.md | .md | This manifest file | Yes |
+| {filename.pdf} | .pdf | {Brief description, e.g., "Lecture notes"} | Yes |
 | {filename.md} | .md | {Brief description} | No |
 | {filename.txt} | .txt | {Brief description} | No |
 | {filename.csv} | .csv | {Brief description} | No |
