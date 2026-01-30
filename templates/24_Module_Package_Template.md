@@ -1,5 +1,11 @@
 # Module Package Template
 
+**Template Number:** 24  
+**Document Type:** Working Memory File Template  
+**Phase:** 4  
+**Date:** 2026-01-25  
+**Status:** Definitive template for module_manifest.md
+
 ---
 
 ## Metadata

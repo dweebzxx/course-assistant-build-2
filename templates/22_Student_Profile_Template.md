@@ -1,4 +1,10 @@
-# Student Knowledge Template
+# Student Profile Template
+
+**Template Number:** 22  
+**Document Type:** Grounded Knowledge File Template  
+**Phase:** 4  
+**Date:** 2026-01-25  
+**Status:** Definitive template for student_profile.md
 
 **Filename Pattern:** `{course_id}.student_profile.md`  
 **Regex:** `^[A-Z0-9\-]+\.student_profile\.md$`  

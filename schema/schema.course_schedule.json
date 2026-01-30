@@ -1,0 +1,301 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/course_schedule.json",
+  "title": "Course Schedule Schema",
+  "description": "Schema for course_schedule.md Grounded Knowledge File - authoritative source for all dates, deadlines, and temporal information",
+  "type": "object",
+  "required": ["metadata", "term_calendar", "module_sequence", "assignment_calendar"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "doc_type", "last_updated", "timezone"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$",
+          "description": "Unique course identifier"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$",
+          "description": "Academic term identifier"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["course_schedule"],
+          "description": "Document type identifier"
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+          "description": "ISO date of last update (YYYY-MM-DD)"
+        },
+        "timezone": {
+          "type": "string",
+          "description": "IANA timezone name or abbreviation",
+          "examples": ["America/Chicago", "CT"]
+        },
+        "source_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Original source filenames"
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "term_calendar": {
+      "type": "object",
+      "description": "Key term dates and academic calendar events",
+      "required": ["term_start", "term_end"],
+      "properties": {
+        "term_start": {
+          "type": "object",
+          "required": ["display_date", "iso_date"],
+          "properties": {
+            "display_date": {
+              "type": "string"
+            },
+            "iso_date": {
+              "type": "string",
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            }
+          }
+        },
+        "term_end": {
+          "type": "object",
+          "required": ["display_date", "iso_date"],
+          "properties": {
+            "display_date": {
+              "type": "string"
+            },
+            "iso_date": {
+              "type": "string",
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            }
+          }
+        },
+        "key_deadlines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["event", "date"],
+            "properties": {
+              "event": {
+                "type": "string"
+              },
+              "date": {
+                "type": "object",
+                "required": ["display_date", "iso_date"],
+                "properties": {
+                  "display_date": {
+                    "type": "string"
+                  },
+                  "iso_date": {
+                    "type": "string",
+                    "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "holidays": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "date"],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "date": {
+                "type": "object",
+                "required": ["display_date", "iso_date"],
+                "properties": {
+                  "display_date": {
+                    "type": "string"
+                  },
+                  "iso_date": {
+                    "type": "string",
+                    "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "module_sequence": {
+      "type": "array",
+      "description": "Ordered list of course modules with date ranges",
+      "items": {
+        "type": "object",
+        "required": ["module_id", "title", "start_date", "end_date"],
+        "properties": {
+          "module_id": {
+            "type": "string",
+            "pattern": "^M\\d{2}$",
+            "description": "Module identifier (e.g., M01, M02)"
+          },
+          "title": {
+            "type": "string",
+            "description": "Module title"
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Topics covered in module"
+          },
+          "start_date": {
+            "type": "object",
+            "required": ["display_date", "iso_date"],
+            "properties": {
+              "display_date": {
+                "type": "string"
+              },
+              "iso_date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              }
+            }
+          },
+          "end_date": {
+            "type": "object",
+            "required": ["display_date", "iso_date"],
+            "properties": {
+              "display_date": {
+                "type": "string"
+              },
+              "iso_date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              }
+            }
+          },
+          "learning_objectives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Module-level learning objectives"
+          }
+        }
+      }
+    },
+    "assignment_calendar": {
+      "type": "array",
+      "description": "Consolidated calendar of all assignments with dates",
+      "items": {
+        "type": "object",
+        "required": ["assignment_id", "title", "type", "due_date", "points"],
+        "properties": {
+          "assignment_id": {
+            "type": "string",
+            "description": "Assignment identifier"
+          },
+          "title": {
+            "type": "string",
+            "description": "Assignment title"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["individual", "quiz", "discussion", "exam", "group", "reading"],
+            "description": "Assignment type"
+          },
+          "module_id": {
+            "type": "string",
+            "pattern": "^M\\d{2}$",
+            "description": "Associated module identifier"
+          },
+          "due_date": {
+            "type": "object",
+            "required": ["display_date", "iso_date"],
+            "properties": {
+              "display_date": {
+                "type": "string"
+              },
+              "iso_date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              }
+            }
+          },
+          "due_time": {
+            "type": "string",
+            "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$",
+            "description": "Due time in 12-hour format"
+          },
+          "points": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Points possible for assignment"
+          }
+        }
+      }
+    },
+    "milestone_timeline": {
+      "type": "array",
+      "description": "Milestones for group projects or multi-phase assignments",
+      "items": {
+        "type": "object",
+        "required": ["milestone_id", "deliverable", "due_date"],
+        "properties": {
+          "milestone_id": {
+            "type": "string",
+            "pattern": "^MS\\d{2}$",
+            "description": "Milestone identifier"
+          },
+          "deliverable": {
+            "type": "string",
+            "description": "Deliverable description"
+          },
+          "project_id": {
+            "type": "string",
+            "description": "Associated project identifier"
+          },
+          "due_date": {
+            "type": "object",
+            "required": ["display_date", "iso_date"],
+            "properties": {
+              "display_date": {
+                "type": "string"
+              },
+              "iso_date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              }
+            }
+          },
+          "due_time": {
+            "type": "string",
+            "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$"
+          },
+          "owner": {
+            "type": "string",
+            "description": "Responsible party (e.g., 'Josh', 'Member 01', 'Team')"
+          }
+        }
+      }
+    }
+  }
+}

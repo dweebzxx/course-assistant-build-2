@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://course-assistant.schema/student_knowledge.json",
-  "title": "Student Knowledge File Schema",
+  "$id": "https://course-assistant.schema/student_profile.json",
+  "title": "Student Profile File Schema",
   "description": "Schema for student_profile.md Grounded Knowledge File",
   "type": "object",
   "required": ["metadata", "student_context"],
