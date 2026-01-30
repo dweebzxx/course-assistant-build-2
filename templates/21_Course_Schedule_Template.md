@@ -1,9 +1,9 @@
 # Course Schedule Template
 
-**Filename Pattern:** `{course_id}.course_schedule.md`  
-**Regex:** `^[A-Z0-9\-]+\.course_schedule\.md$`  
+**Filename Pattern:** `{course_run_id}.course_schedule.md`  
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_schedule\.md$`  
 **Authority Tier:** 1 (Authoritative for ALL dates, times, and deadlines)  
-**Example Filename:** `MGMT-5001-SEC01-2026-SP.course_schedule.md`
+**Example Filename:** `MGMT6022-2026-SP.course_schedule.md`
 
 ---
 
@@ -14,6 +14,7 @@
 |-------|-------|
 | **course_id** | `{COURSE_ID}` |
 | **term_id** | `{YYYY}-{TT}` |
+| **course_run_id** | `{COURSE_ID}-{YYYY}-{TT}` |
 | **doc_type** | `course_schedule` |
 | **last_updated** | `{YYYY-MM-DD}` |
 | **timezone** | `America/Chicago` |
@@ -41,10 +42,12 @@
 ## Class Meeting Schedule
 <!-- anchor: #class-meeting-schedule -->
 
-| Day | Time | Location | Notes |
-|-----|------|----------|-------|
-| {Monday} | {h:mm AM} - {h:mm PM} | {Building Room} | {Regular class} |
-| {Wednesday} | {h:mm AM} - {h:mm PM} | {Building Room} | {Regular class} |
+| Day | Time | Format |
+|-----|------|--------|
+| {Monday} | {h:mm AM} - {h:mm PM} | {In-person / Online} |
+| {Wednesday} | {h:mm AM} - {h:mm PM} | {In-person / Online} |
+
+**Format Options:** `In-person`, `Online`, `Hybrid`
 
 ---
 
@@ -92,22 +95,6 @@
 
 ---
 
-## Milestone Timeline
-<!-- anchor: #milestone-timeline -->
-
-{For group projects or multi-phase assignments with tracked milestones.}
-
-| Milestone ID | Title | Project ID | Due Date (Display) | Due Date (ISO) | Due Time | Deliverable |
-|--------------|-------|------------|-------------------|----------------|----------|-------------|
-| MS01 | {Milestone 1 title} | PROJ-FINAL | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {e.g., "Team formation + topic proposal"} |
-| MS02 | {Milestone 2 title} | PROJ-FINAL | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {Deliverable description} |
-| MS03 | {Milestone 3 title} | PROJ-FINAL | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {Deliverable description} |
-| MS04 | {Milestone 4 - Final} | PROJ-FINAL | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} | {e.g., "Final presentation + report"} |
-
-{Use PROJ-FINAL-MS01 format if multiple projects exist. For single project, MS01 format is sufficient.}
-
----
-
 ## Weekly Overview
 <!-- anchor: #weekly-overview -->
 
@@ -132,12 +119,14 @@
 ## Office Hours Schedule
 <!-- anchor: #office-hours-schedule -->
 
-| Day | Time | Location | Format | Notes |
-|-----|------|----------|--------|-------|
-| {Tuesday} | {h:mm AM/PM} - {h:mm AM/PM} | {Office/Zoom} | {In-person/Virtual/Hybrid} | {e.g., "No appointment needed"} |
-| {Thursday} | {h:mm AM/PM} - {h:mm AM/PM} | {Office/Zoom} | {Format} | {Notes} |
+| Day | Time | Format |
+|-----|------|--------|
+| {Tuesday} | {h:mm AM/PM} - {h:mm AM/PM} | {In-person / Online} |
+| {Thursday} | {h:mm AM/PM} - {h:mm AM/PM} | {In-person / Online} |
 
 **By Appointment:** {Yes/No - include scheduling instructions if yes}
+
+**Format Options:** `In-person`, `Online`, `Hybrid`
 
 ---
 
@@ -153,7 +142,6 @@ This file contains the following sections indexed for retrieval:
 | #class-meeting-schedule | Class Meeting Schedule | — |
 | #module-sequence | Module Sequence | modules |
 | #assignment-calendar | Assignment Calendar | assignments, exams, discussions, quizzes |
-| #milestone-timeline | Milestone Timeline | milestones |
 | #weekly-overview | Weekly Overview | — |
 | #office-hours-schedule | Office Hours Schedule | — |
 | #index-references | Index References | — |
@@ -164,6 +152,9 @@ This file contains the following sections indexed for retrieval:
 
 Before finalizing course_schedule.md, verify:
 
+- [ ] course_id matches naming convention (e.g., MGMT6022)
+- [ ] term_id follows YYYY-TT format (e.g., 2026-SP)
+- [ ] course_run_id follows pattern: {course_id}-{term_id}
 - [ ] All dates have BOTH display_date AND iso_date fields
 - [ ] display_date format: DayOfWeek, Mon DD, YYYY
 - [ ] iso_date format: YYYY-MM-DD
@@ -173,7 +164,6 @@ Before finalizing course_schedule.md, verify:
 - [ ] Module IDs follow M{NN} pattern (zero-padded)
 - [ ] Assignment IDs follow standard patterns (A{NN}, QUIZ-{NN}, D{NN}, MIDTERM, FINAL, etc.)
 - [ ] Assignment types are one of: individual, quiz, discussion, exam, group, presentation
-- [ ] Milestone IDs follow MS{NN} or {PROJECT_ID}-MS{NN} pattern
 - [ ] All entity IDs are unique within their type
 
 ---

@@ -1,9 +1,9 @@
 # Course Core Template
 
-**Filename Pattern:** `{course_id}.course_core.md`  
-**Regex:** `^[A-Z0-9\-]+\.course_core\.md$`  
+**Filename Pattern:** `{course_run_id}.course_core.md`  
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_core\.md$`  
 **Authority Tier:** 2 (Authoritative for policies, grading, structure, group project definition)  
-**Example Filename:** `MGMT-5001-SEC01-2026-SP.course_core.md`
+**Example Filename:** `MGMT6022-2026-SP.course_core.md`
 
 **Purpose:** Contains course policies, grading structure, instructor information, and group project definition. Does NOT contain temporal information (dates, deadlines) - see course_schedule.md for all dates.
 
@@ -16,6 +16,7 @@
 |-------|-------|
 | **course_id** | `{COURSE_ID}` |
 | **term_id** | `{YYYY}-{TT}` |
+| **course_run_id** | `{COURSE_ID}-{YYYY}-{TT}` |
 | **doc_type** | `course_core` |
 | **last_updated** | `{YYYY-MM-DD}` |
 | **timezone** | `America/Chicago` |
@@ -295,15 +296,26 @@ Upon successful completion of this course, students will be able to:
 ## Group Project Context
 <!-- anchor: #group-project-context -->
 
-{This section defines whether a group project is required for the course and its basic identification.}
+{This section defines whether a group project is required for the course and its basic identification, plus the student's assignment details.}
+
+### Course-Level Project Definition
 
 | Field | Value |
 |-------|-------|
 | **Group Project Required** | Yes / No |
-| **Team Name** | {Team name if yes, or N/A} |
 | **Project ID** | {Assignment name/ID if yes, e.g., PROJ-FINAL or GP01, or N/A} |
+| **Project Scope** | {Brief description of the project} |
+| **Team Size** | {e.g., "4-5 students"} |
 
-{Note: Detailed team structure, member roles, and milestone ownership belong in student_profile.md. Milestone dates and deadlines are in course_schedule.md.}
+### Student Assignment (Josh)
+
+| Field | Value |
+|-------|-------|
+| **Assigned to Group Project** | Yes / No |
+| **Team Name** | {Team name if assigned, or N/A} |
+| **Josh's Role** | {e.g., Data Analysis Lead, or N/A} |
+
+{Note: Milestone dates and deadlines are in course_schedule.md.}
 
 ---
 
@@ -339,8 +351,9 @@ This file contains the following sections indexed for retrieval:
 
 Before finalizing course_core.md, verify:
 
-- [ ] course_id matches naming convention (uppercase, alphanumeric, hyphens)
-- [ ] term_id follows YYYY-TT format
+- [ ] course_id matches naming convention (e.g., MGMT6022)
+- [ ] term_id follows YYYY-TT format (e.g., 2026-SP)
+- [ ] course_run_id follows pattern: {course_id}-{term_id}
 - [ ] All section headers have corresponding HTML comment anchors
 - [ ] Grading components sum to 100%
 - [ ] All policy sections are populated (or marked "Not specified in syllabus")

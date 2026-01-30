@@ -138,13 +138,13 @@ class SystemValidator:
         'time_12h': r'^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$'
     }
     
-    # File naming patterns
+    # File naming patterns (updated to use course_run_id format)
     FILE_NAMING_PATTERNS = {
-        'course_core': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_course_core\.md$',
-        'course_schedule': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_course_schedule\.md$',
-        'student_profile': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_student_profile\.md$',
-        'index_manifest': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_INDEX\.json$',
-        'module_manifest': r'^M\d{2}_module_manifest\.md$'
+        'course_core': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_core\.md$',
+        'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_schedule\.md$',
+        'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.student_profile\.md$',
+        'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.index\.json$',
+        'module_manifest': r'^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.module_manifest\.md$'
     }
     
     def __init__(self, base_path: str = "."):

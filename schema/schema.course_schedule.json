@@ -8,17 +8,22 @@
   "properties": {
     "metadata": {
       "type": "object",
-      "required": ["course_id", "term_id", "doc_type", "last_updated", "timezone"],
+      "required": ["course_id", "term_id", "course_run_id", "doc_type", "last_updated", "timezone"],
       "properties": {
         "course_id": {
           "type": "string",
-          "pattern": "^[A-Z0-9\\-]+$",
-          "description": "Unique course identifier"
+          "pattern": "^[A-Z]{2,10}[0-9]{3,5}$",
+          "description": "Course code only, e.g., MGMT6022"
         },
         "term_id": {
           "type": "string",
           "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$",
           "description": "Academic term identifier"
+        },
+        "course_run_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$",
+          "description": "Course instance identifier: {course_id}-{term_id}"
         },
         "doc_type": {
           "type": "string",
@@ -86,24 +91,26 @@
     },
     "class_meeting_schedule": {
       "type": "object",
+      "description": "Simplified class meeting schedule with day, time, and format",
       "properties": {
         "regular_meetings": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["day", "time", "location"],
+            "required": ["day", "time", "format"],
             "properties": {
               "day": {
-                "type": "string"
+                "type": "string",
+                "description": "Day of the week"
               },
               "time": {
-                "type": "string"
+                "type": "string",
+                "description": "Time range, e.g., '2:00 PM - 3:30 PM'"
               },
-              "location": {
-                "type": "string"
-              },
-              "notes": {
-                "type": "string"
+              "format": {
+                "type": "string",
+                "enum": ["In-person", "Online", "Hybrid"],
+                "description": "Meeting format"
               }
             }
           }
@@ -186,41 +193,6 @@
         }
       }
     },
-    "milestone_timeline": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["milestone_id", "title", "project_id", "due_date_display", "due_date_iso"],
-        "properties": {
-          "milestone_id": {
-            "type": "string",
-            "pattern": "^([A-Z0-9\\-]+-)?MS\\d{2}$"
-          },
-          "title": {
-            "type": "string"
-          },
-          "project_id": {
-            "type": "string",
-            "pattern": "^(GP\\d{2}|PROJ-[A-Z0-9\\-]+)$"
-          },
-          "due_date_display": {
-            "type": "string",
-            "pattern": "^((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})|TBD)$"
-          },
-          "due_date_iso": {
-            "type": ["string", "null"],
-            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
-          },
-          "due_time": {
-            "type": ["string", "null"],
-            "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$"
-          },
-          "deliverable": {
-            "type": "string"
-          }
-        }
-      }
-    },
     "office_hours_schedule": {
       "type": "array",
       "items": {
@@ -232,14 +204,9 @@
           "time": {
             "type": "string"
           },
-          "location": {
-            "type": "string"
-          },
           "format": {
-            "type": "string"
-          },
-          "notes": {
-            "type": "string"
+            "type": "string",
+            "enum": ["In-person", "Online", "Hybrid"]
           }
         }
       }

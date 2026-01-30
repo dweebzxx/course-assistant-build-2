@@ -1,9 +1,9 @@
 # Module Package Template
 
-**Filename Pattern:** `{module_id}.module_manifest.md`  
-**Regex:** `^M\d{2}\.module_manifest\.md$`  
+**Filename Pattern:** `{course_id}.module_{module_id}.module_manifest.md`  
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.module_manifest\.md$`  
 **Authority Tier:** 5 (Module content inventory)  
-**Example Filename:** `M03.module_manifest.md`
+**Example Filename:** `MGMT6022.module_M03.module_manifest.md`
 
 **Purpose:** Inventories all files in a module package and provides module overview information. This is a Working Memory File that supports assignment execution.
 
@@ -14,10 +14,11 @@
 
 | Field | Value |
 |-------|-------|
+| **course_id** | `{COURSE_ID}` |
+| **term_id** | `{YYYY}-{TT}` |
+| **course_run_id** | `{COURSE_ID}-{YYYY}-{TT}` |
 | **module_id** | {MODULE_ID} |
 | **module_title** | {Module N: Topic Title} |
-| **course_id** | {COURSE_ID} |
-| **term_id** | {TERM_ID} |
 | **doc_type** | module_manifest |
 | **last_updated** | {YYYY-MM-DD} |
 
@@ -104,8 +105,11 @@ This file contains the following sections indexed for retrieval:
 
 Before finalizing module manifest, verify:
 
+- [ ] course_id matches naming convention (e.g., MGMT6022)
+- [ ] term_id follows YYYY-TT format (e.g., 2026-SP)
+- [ ] course_run_id follows pattern: {course_id}-{term_id}
 - [ ] module_id matches regex: ^M\d{2}$
-- [ ] module_id matches folder name exactly
+- [ ] Filename follows pattern: {course_id}.module_{module_id}.module_manifest.md
 - [ ] All files in module package are listed in File Inventory
 - [ ] All file types are allowed: .md, .txt, .csv, .xlsx, .pdf
 - [ ] Assignment IDs match entries in course_schedule.md
@@ -117,9 +121,9 @@ Before finalizing module manifest, verify:
 MODULE PACKAGE TEMPLATE INSTRUCTIONS
 
 FILE NAMING:
-- Manifest file: {module_id}.module_manifest.md (e.g., M03.module_manifest.md)
-- Folder name: {module_id}/ (e.g., M03/)
-- ZIP name (if zipped): {module_id}.zip (e.g., M03.zip)
+- Manifest file: {course_id}.module_{module_id}.module_manifest.md (e.g., MGMT6022.module_M03.module_manifest.md)
+- Folder name: {course_id}.module_{module_id}/ (e.g., MGMT6022.module_M03/)
+- ZIP name (if zipped): {course_id}.module_{module_id}.zip (e.g., MGMT6022.module_M03.zip)
 
 ALLOWED FILE TYPES:
 - .md (Markdown documentation)
@@ -134,7 +138,7 @@ AUTHORITY LEVEL:
 - Dates in course_schedule.md take precedence
 
 REQUIRED CONTENTS:
-- This manifest file ({module_id}.module_manifest.md)
+- This manifest file ({course_id}.module_{module_id}.module_manifest.md)
 
 AFTER UPLOADING:
 1. Prompt agent to scan and verify module contents
