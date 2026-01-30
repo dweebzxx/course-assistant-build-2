@@ -1,0 +1,162 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/student_profile.json",
+  "title": "Student Profile File Schema",
+  "description": "Schema for student_profile.md Grounded Knowledge File - Simplified minimal structure",
+  "type": "object",
+  "required": ["metadata", "student_identification"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "doc_type", "last_updated", "timezone"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["student_profile"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "student_name": {
+          "type": "string",
+          "pattern": "^Josh$",
+          "description": "Student first name (Josh)"
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "student_identification": {
+      "type": "object",
+      "required": ["first_name"],
+      "properties": {
+        "first_name": {
+          "type": "string",
+          "pattern": "^Josh$",
+          "description": "Student first name (Josh)"
+        },
+        "preferred_name": {
+          "type": "string"
+        },
+        "program": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        }
+      }
+    },
+    "writing_style_profile": {
+      "type": "object",
+      "properties": {
+        "voice": {
+          "type": "string"
+        },
+        "structure": {
+          "type": "string"
+        },
+        "strengths": {
+          "type": "string"
+        },
+        "development_areas": {
+          "type": "string"
+        },
+        "citation_style": {
+          "type": "string"
+        }
+      }
+    },
+    "group_project_assignment": {
+      "type": "object",
+      "description": "Josh's group project assignment (if applicable)",
+      "properties": {
+        "assigned_to_group_project": {
+          "type": "boolean"
+        },
+        "project_id": {
+          "type": ["string", "null"],
+          "pattern": "^(GP\\d{2}|PROJ-[A-Z0-9\\-]+)$"
+        },
+        "team_name": {
+          "type": ["string", "null"]
+        },
+        "role": {
+          "type": ["string", "null"]
+        },
+        "team_structure": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["member_id", "role"],
+            "properties": {
+              "member_id": {
+                "type": "string",
+                "pattern": "^(Member \\d{2}|Josh)$",
+                "description": "Anonymized member ID or Josh"
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "milestone_ownership": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "milestone_id": {
+                "type": "string",
+                "pattern": "^([A-Z0-9\\-]+-)?MS\\d{2}$"
+              },
+              "deliverables": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": ["not_started", "in_progress", "complete"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "known_challenges": {
+      "type": "array",
+      "description": "Areas where Josh anticipates needing additional support (3-5 items)",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5
+    }
+  }
+}

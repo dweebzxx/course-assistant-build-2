@@ -141,11 +141,10 @@ class SystemValidator:
     # File naming patterns
     FILE_NAMING_PATTERNS = {
         'course_core': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_course_core\.md$',
+        'course_schedule': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_course_schedule\.md$',
         'student_profile': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_student_profile\.md$',
         'index_manifest': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_INDEX\.json$',
-        'module_manifest': r'^M\d{2}_module_manifest\.md$',
-        'assignment_record': r'^[A-Z]+-?\d{2}(-[A-Z0-9]+)?_assignment\.md$',
-        'group_project': r'^(GP\d{2}|PROJ-[A-Z0-9\-]+)_project\.md$'
+        'module_manifest': r'^M\d{2}_module_manifest\.md$'
     }
     
     def __init__(self, base_path: str = "."):
@@ -296,11 +295,10 @@ class SystemValidator:
         # Map doc_type to expected pattern
         pattern_map = {
             'course_core': 'course_core',
+            'course_schedule': 'course_schedule',
             'student_profile': 'student_profile',
             'index': 'index_manifest',
-            'module_manifest': 'module_manifest',
-            'assignment_record': 'assignment_record',
-            'group_project': 'group_project'
+            'module_manifest': 'module_manifest'
         }
         
         if doc_type not in pattern_map:
@@ -488,16 +486,14 @@ class SystemValidator:
         # Try to infer from filename
         if 'course_core' in filename:
             return 'course_core'
+        elif 'course_schedule' in filename:
+            return 'course_schedule'
         elif 'student_profile' in filename:
             return 'student_profile'
         elif 'INDEX' in filename:
             return 'index'
         elif 'module_manifest' in filename:
             return 'module_manifest'
-        elif '_assignment' in filename:
-            return 'assignment_record'
-        elif '_project' in filename:
-            return 'group_project'
         
         return None
     
@@ -529,12 +525,11 @@ class SystemValidator:
             
             # Map doc_type to schema
             schema_map = {
-                'course_core': 'schema.course_knowledge',
-                'student_profile': 'schema.student_knowledge',
+                'course_core': 'schema.course_core',
+                'course_schedule': 'schema.course_schedule',
+                'student_profile': 'schema.student_profile',
                 'index': 'schema.index_manifest',
-                'module_manifest': 'schema.module_package',
-                'assignment_record': 'schema.assignment_record',
-                'group_project': 'schema.group_project'
+                'module_manifest': 'schema.module_package'
             }
             
             schema_name = schema_map.get(doc_type)

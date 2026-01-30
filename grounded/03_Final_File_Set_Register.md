@@ -1,23 +1,24 @@
 # Final File Set Register
 **Agent Build Scope**: Single course, single term, single student (Josh)  
 **Register Date**: 2026-01-25  
-**Architecture**: 3-File Grounded Knowledge + INDEX + Working Memory Files  
+**Architecture**: 4-File Grounded Knowledge + INDEX + Working Memory Files  
 **Status**: Definitive specification for Phases 3-8
 
 ---
 
 ## Register Summary
 
-**Total Initial Setup Files**: 4 files  
-**Grounded Knowledge Files**: 3 files  
+**Total Initial Setup Files**: 5 files  
+**Grounded Knowledge Files**: 4 files  
 **Required Index/Manifest Files**: 1 file  
-**Working Memory File Types**: 2 primary types (modules, ad-hoc)
+**Working Memory File Types**: 1 primary type (module packages)
 
-**Final Grounded Knowledge Files Count (N)**: **3**
+**Final Grounded Knowledge Files Count (N)**: **4**
 
-1. `{course_id}.course_core.md` - Course policies, grading, structure, instructor
-2. `{course_id}.course_schedule.md` - Timeline, due dates, assignments, modules
-3. `{course_id}.student_profile.md` - Student context, preferences, group project
+1. `{course_id}.course_core.md` - Course policies, grading, structure, instructor, group project definition (Tier 2)
+2. `{course_id}.course_schedule.md` - Timeline, due dates, assignments, modules (Tier 1 - highest authority for dates)
+3. `{course_id}.student_profile.md` - Minimal student context: identification, writing style, group project assignment, known challenges (Tier 3)
+4. `{course_id}.index.json` - System index for retrieval (Tier 4)
 
 ---
 
@@ -25,7 +26,7 @@
 
 ### File Type 1: Course Core
 
-**Purpose**: Authoritative source for course policies, grading system, structure, and instructor information. Rarely updated after term start.
+**Purpose**: Authoritative source for course policies, grading system, structure, instructor information, and group project definition. Rarely updated after term start.
 
 **File Type**: Markdown (.md)
 
@@ -43,7 +44,8 @@ Example: `CARLSON-SCHOOL-2025-FA.course_core.md`
 6. Course Policies (attendance, participation, late work, academic integrity, accommodations)
 7. Required Resources (textbooks, software, technology requirements)
 8. Learning Objectives (course-level goals)
-9. Index References (section linking to INDEX entries)
+9. Group Project Context (yes/no, team name, project ID if applicable)
+10. Index References (section linking to INDEX entries)
 
 **Template Filename**: `20_Course_Core_Template.md` (Phase 4 deliverable)
 
@@ -52,11 +54,15 @@ Example: `CARLSON-SCHOOL-2025-FA.course_core.md`
 **Validation Checks**:
 - Required metadata fields present (course_id, term_id, doc_type, last_updated, timezone)
 - All section headers match template hierarchy
-- All dates use display_date + iso_date pairs
-- All times use h:mm AM/PM format
 - Grading component weights sum to 100%
 - No personal identifying information (except instructor)
 - All section anchors are unique and follow pattern: `{#section-name}`
+- Group project context is defined (yes/no selection)
+
+**Does NOT contain**:
+- Dates and deadlines (→ course_schedule.md is Tier 1 for all dates)
+- Student-specific context (→ student_profile.md)
+- Module content (→ Working Memory Files)
 
 ---
 
@@ -101,7 +107,7 @@ Example: `CARLSON-SCHOOL-2025-FA.course_schedule.md`
 
 ### File Type 3: Student Profile
 
-**Purpose**: Authoritative source for student context, preferences, constraints, and group project information. Updated as student discovers preferences.
+**Purpose**: Minimal authoritative source for student context. Portable across courses with minimal editing. Contains only: student identification, writing style, group project assignment (if applicable), and known challenges.
 
 **File Type**: Markdown (.md)
 
@@ -111,17 +117,12 @@ Regex: `^[A-Z0-9\-]+\.student_profile\.md$`
 Example: `CARLSON-SCHOOL-2025-FA.student_profile.md`
 
 **Content Outline**:
-1. Metadata block (course_id, term_id, doc_type, last_updated, timezone)
-2. Student Core (name: Josh, timezone: America/Chicago)
-3. Learning Preferences (communication style, study approach, note-taking, planning)
-4. Time Constraints (work schedule, other commitments, availability windows)
-5. Technology Profile (access, tools, comfort level)
-6. Writing Style Profile (reference to Writing_Style_Profile_Josh.md or inline summary)
-7. Course Goals (student-specific objectives)
-8. Group Project Context (project_id, role, responsibilities, team structure as Member 01-XX, communication norms, milestone ownership)
-9. Known Challenges (subject areas needing support)
-10. Progress Tracking (optional: completed modules, current focus)
-11. Index References (section linking to INDEX entries)
+1. Metadata block (course_id, term_id, doc_type, last_updated, timezone, student_name)
+2. Student Identification (name: Josh, preferred name, program, year, timezone)
+3. Writing Style Profile (inline summary: voice, structure, strengths, development areas, citation style)
+4. Group Project Assignment (if applicable: project_id, team name, Josh's role, team structure as Member 01-XX, milestone ownership)
+5. Known Challenges (3-5 items: areas needing additional support)
+6. Index References (section linking to INDEX entries)
 
 **Template Filename**: `22_Student_Profile_Template.md` (Phase 4 deliverable)
 
@@ -134,8 +135,16 @@ Example: `CARLSON-SCHOOL-2025-FA.student_profile.md`
 - Timezone is "America/Chicago" or "CT"
 - Group project section uses Member 01, Member 02, etc. (no personal names)
 - No email addresses, phone numbers, or personal identifiers for group members
-- All dates use display_date + iso_date pairs where applicable
 - All section anchors unique
+
+**Removed Sections** (moved or deprecated):
+- Course Goals (deprecated - too course-specific)
+- Learning Preferences (deprecated - too variable)
+- Schedule and Constraints (deprecated - too variable)
+- Technology Profile (deprecated - too variable)
+- Progress Tracking (deprecated - too maintenance-heavy)
+- Agent Interaction History (deprecated - not needed)
+- Communication Preferences (deprecated - use writing style instead)
 
 ---
 
@@ -379,34 +388,31 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 
 | # | File Type | Purpose | File Format | Authority Tier | Initial Setup | Schema Validated |
 |---|-----------|---------|-------------|----------------|---------------|------------------|
-| 1 | Course Core | Policies, grading, structure | MD | Tier 2 | Yes | Yes |
-| 2 | Course Schedule | Dates, deadlines, timeline | MD | Tier 1 | Yes | Yes |
-| 3 | Student Profile | Student context, preferences | MD | Tier 3 | Yes | Yes |
+| 1 | Course Core | Policies, grading, structure, group project definition | MD | Tier 2 | Yes | Yes |
+| 2 | Course Schedule | Dates, deadlines, timeline (highest authority for dates) | MD | Tier 1 | Yes | Yes |
+| 3 | Student Profile | Minimal student context, writing style, known challenges | MD | Tier 3 | Yes | Yes |
 | 4 | Index | Retrieval targeting, integrity | JSON | Tier 4 | Yes (generated) | Yes |
-| 5 | Module Package | Module materials container | Folder/ZIP | Tier 6 | No (as needed) | Manifest only |
-| 6 | Ad-Hoc Files | Supplementary materials | Any | Tier 6 | No (as needed) | No |
-| 7 | Curated Module | Promoted module content | MD | Tier 2 | No (optional) | Yes |
-| 8 | Agent Instructions | Agent behavior rules | MD | N/A (system) | Yes (not uploaded) | No |
-| 9 | Writing Style | Student writing profile | MD | N/A (reference) | Optional | No |
+| 5 | Module Package | Module materials container | Folder/ZIP | Tier 5 | No (as needed) | Manifest only |
+
+**Note**: Assignment Record and Group Project templates have been consolidated. Assignment details are in course_schedule.md Assignment Calendar. Group project definition is in course_core.md. Student-specific group project assignment is in student_profile.md.
 
 ---
 
 ## GROUNDED KNOWLEDGE FILES: FINAL COUNT AND CONTENTS
 
-**Final Grounded Knowledge Files Count (N)**: **3** (initial setup)
-
-**Optional additions**: Curated Module files (0 to N, based on user requests)
+**Final Grounded Knowledge Files Count (N)**: **4** (initial setup: course_core, course_schedule, student_profile, index)
 
 ### File 1: {course_id}.course_core.md
 
 **Contains**:
-- Course identification (title, number, credits, section, term dates)
+- Course identification (title, number, credits, section)
 - Instructor information (name, title, contact, office hours)
 - Course structure (delivery mode, tools, prerequisites)
 - Grading policy (components, weights, scale, calculation)
 - Course policies (attendance, late work, academic integrity, accommodations)
 - Required resources (textbooks, software, technology)
 - Learning objectives (course-level goals)
+- Group project context (yes/no, team name, project ID)
 
 **Does NOT contain**:
 - Dates and deadlines (→ course_schedule.md)
@@ -435,22 +441,22 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 
 ### File 3: {course_id}.student_profile.md
 
-**Contains**:
-- Student core (name: Josh, timezone)
-- Learning preferences (communication, study, note-taking, planning)
-- Time constraints (work schedule, commitments, availability)
-- Technology profile (access, tools, comfort)
-- Writing style profile (inline or reference)
-- Course goals (student-specific objectives)
-- Group project context (anonymized team structure, roles, norms, milestones)
-- Known challenges (subject areas needing support)
-- Progress tracking (optional)
+**Contains** (simplified minimal structure):
+- Student identification (name: Josh, preferred name, program, year, timezone)
+- Writing style profile (inline summary)
+- Group project assignment (if applicable: project ID, team name, Josh's role, team structure, milestone ownership)
+- Known challenges (3-5 areas needing support)
 
 **Does NOT contain**:
 - Course policies (→ course_core.md)
 - Due dates (→ course_schedule.md)
 - Personal names of group members (anonymized as Member 01-XX)
 - Module content (→ Working Memory Files)
+- Learning preferences (deprecated - removed for portability)
+- Schedule and constraints (deprecated - removed for portability)
+- Technology profile (deprecated - removed for portability)
+- Progress tracking (deprecated - removed for maintainability)
+- Agent interaction history (deprecated - not needed)
 
 ---
 
@@ -469,17 +475,20 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 ## COMPLETION CHECKLIST (For Phase 4-8)
 
 **Phase 4 (Templates)**:
-- [ ] 20_Course_Core_Template.md
-- [ ] 21_Course_Schedule_Template.md
-- [ ] 22_Student_Profile_Template.md
-- [ ] 23_Index_Template.json
-- [ ] 24_Module_Package_Template.md (module_manifest.md template)
-- [ ] 25_Curated_Module_Template.md (optional pathway)
+- [x] 20_Course_Core_Template.md
+- [x] 21_Course_Schedule_Template.md
+- [x] 22_Student_Profile_Template.md
+- [x] 23_Index_Manifest_Template.yaml
+- [x] 24_Module_Package_Template.md (module_manifest.md template)
+
+**Removed Templates** (consolidated into other files):
+- ~~24_Assignment_Record_Template.md~~ (consolidated into course_schedule.md Assignment Calendar)
+- ~~25_Group_Project_Template.md~~ (consolidated into course_core.md Group Project Context)
 
 **Phase 5 (Module Protocol)**:
 - [ ] Module upload workflow documented
 - [ ] Module indexing protocol documented
-- [ ] Module manifest requirements documented
+- [x] Module manifest requirements documented (file type restrictions: .md, .txt, .csv, .xlsx, .pdf)
 
 **Phase 6 (Retrieval Protocol)**:
 - [ ] Section-level retrieval rules
@@ -488,13 +497,16 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 - [ ] Conflict detection and resolution
 
 **Phase 7 (Schemas)**:
-- [ ] schema/schema.course_core.json
-- [ ] schema/schema.course_schedule.json
-- [ ] schema/schema.student_profile.json
-- [ ] schema/schema.index.json
-- [ ] schema/schema.module_package.json
-- [ ] schema/schema.curated_module.json
-- [ ] validate_system.py
+- [x] schema/schema.course_core.json (includes group_project_context)
+- [x] schema/schema.course_schedule.json (NEW - Tier 1 authority for dates)
+- [x] schema/schema.student_profile.json (simplified minimal structure)
+- [x] schema/schema.index_manifest.json
+- [x] schema/schema.module_package.json (includes file type enum restriction)
+- [x] schema/schema.group_project.json (simplified to minimal fields)
+- [x] validate_system.py (updated for new file structure)
+
+**Removed Schemas**:
+- ~~schema/schema.assignment_record.json~~ (consolidated into course_schedule)
 
 **Phase 8 (Setup and Testing)**:
 - [ ] Setup prompt sequence
@@ -508,6 +520,7 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 **Status**: Definitive specification  
 **Approved by**: Systems Architecture (Phase 2)  
 **Date**: 2026-01-25  
+**Updated**: 2026-01-30 (Architecture simplification)
 **Next Phase**: Phase 3 (Naming and ID Standard)
 
 ---

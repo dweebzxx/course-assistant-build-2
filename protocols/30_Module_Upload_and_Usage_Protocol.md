@@ -126,6 +126,22 @@ Based on analysis of the reference module file tree, the standard module package
 
 **Flexibility:** While these patterns are recommended, instructors may use any filenames. The module manifest must accurately inventory all files regardless of naming.
 
+### Allowed File Types
+
+**REQUIRED:** All files in module packages must be one of the following types:
+
+| Extension | Type | Description |
+|-----------|------|-------------|
+| `.md` | Markdown | Documentation, prompts, notes |
+| `.txt` | Plain text | Notes, code snippets, data |
+| `.csv` | CSV | Spreadsheet data, tables |
+| `.xlsx` | Excel | Spreadsheet data, templates |
+| `.pdf` | PDF | Documents, readings, instructions |
+
+**NOT ALLOWED:** Video files (`.mp4`), audio files (`.mp3`), images (`.png`, `.jpg`), PowerPoint (`.pptx`), Word (`.docx`), and other media formats are not supported for module packages.
+
+**Rationale:** Restricting upload scope to text/data formats prevents media bloat, simplifies parsing, and ensures compatibility across all agent contexts.
+
 ---
 
 ## MODULE MANIFEST SPECIFICATION
