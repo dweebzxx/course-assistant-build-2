@@ -170,10 +170,10 @@ These materials demonstrate structure patterns and inform template design but ar
 6. No conflict resolution rules
 
 **Operational Gaps**:
-1. No module upload protocol
-2. No module manifest system
-3. No post-upload verification process
-4. No update workflow for course_knowledge when syllabus changes
+1. Module upload protocol now defined (Phase 5)
+2. Module manifest system now implemented
+3. Post-upload verification process now documented
+4. Update workflow for Grounded Knowledge Files when syllabus changes now defined
 
 **Quality Gaps**:
 1. No acceptance test suite
