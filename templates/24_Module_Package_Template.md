@@ -61,27 +61,6 @@ By the end of this module, you should be able to:
 
 ---
 
-## Dependencies
-<!-- anchor: #dependencies -->
-
-### Prerequisite Modules
-<!-- anchor: #prerequisite-modules -->
-
-| Module ID | Module Title | Required/Recommended |
-|-----------|--------------|----------------------|
-| {M##} | {Module Title} | Required |
-| {M##} | {Module Title} | Recommended |
-| None | N/A | N/A |
-
-### Required Prior Knowledge
-<!-- anchor: #required-prior-knowledge -->
-
-- {Concept or skill required before starting this module}
-- {Another prerequisite concept}
-- None specified
-
----
-
 ## File Inventory
 <!-- anchor: #file-inventory -->
 
@@ -132,95 +111,6 @@ By the end of this module, you should be able to:
 
 ---
 
-## Topics Covered
-<!-- anchor: #topics-covered -->
-
-### Primary Topics
-<!-- anchor: #primary-topics -->
-
-1. **{Topic 1 Title}**
-   - {Subtopic 1a}
-   - {Subtopic 1b}
-   - {Subtopic 1c}
-
-2. **{Topic 2 Title}**
-   - {Subtopic 2a}
-   - {Subtopic 2b}
-
-3. **{Topic 3 Title}**
-   - {Subtopic 3a}
-   - {Subtopic 3b}
-
-### Key Concepts
-<!-- anchor: #key-concepts -->
-
-- **{Concept 1}**: {Brief definition or explanation}
-- **{Concept 2}**: {Brief definition or explanation}
-- **{Concept 3}**: {Brief definition or explanation}
-
-### Key Frameworks/Models
-<!-- anchor: #key-frameworks -->
-
-- **{Framework 1 Name}**: {Brief description of framework and its use}
-- **{Framework 2 Name}**: {Brief description of framework and its use}
-
----
-
-## Schedule Integration
-<!-- anchor: #schedule-integration -->
-
-### Module Timeline
-<!-- anchor: #module-timeline -->
-
-| Day | Date (display) | Date (ISO) | Activities |
-|-----|----------------|------------|------------|
-| Day 1 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Lecture 1, Reading R01} |
-| Day 2 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Reading R02, Discussion opens} |
-| Day 3 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Lecture 2} |
-| Day 4 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Assignment work time} |
-| Day 5 | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {Discussion closes, Assignment due} |
-
-### Associated Deadlines
-<!-- anchor: #associated-deadlines -->
-
-| Entity ID | Entity Type | Title | Due Date (display) | Due Date (ISO) | Due Time |
-|-----------|-------------|-------|-------------------|----------------|----------|
-| {A##} | Assignment | {Title} | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} |
-| {D##} | Discussion | {Title} | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | {h:mm AM/PM} |
-| {M##-R01} | Reading | {Title} | {DayOfWeek, Mon DD, YYYY} | {YYYY-MM-DD} | Before class |
-
----
-
-## Connections to Course
-<!-- anchor: #connections-to-course -->
-
-### Related Course Objectives
-<!-- anchor: #related-course-objectives -->
-
-This module supports the following course-level learning objectives:
-
-- {Course objective 1 from course_core.md}
-- {Course objective 2 from course_core.md}
-
-### Connection to Other Modules
-<!-- anchor: #connection-to-other-modules -->
-
-| Relationship | Module ID | Module Title | Description |
-|--------------|-----------|--------------|-------------|
-| Builds on | {M##} | {Title} | {How this module builds on prior content} |
-| Prepares for | {M##} | {Title} | {How this module prepares for future content} |
-| Related to | {M##} | {Title} | {Thematic or conceptual connection} |
-
-### Connection to Assignments
-<!-- anchor: #connection-to-assignments -->
-
-| Assignment ID | Assignment Title | Relationship |
-|---------------|------------------|--------------|
-| {A##} | {Title} | Primary (directly assessed) |
-| {PROJ-##} | {Title} | Contributing (supports project work) |
-
----
-
 ## Index References
 <!-- anchor: #index-references -->
 
@@ -232,26 +122,17 @@ This module supports the following course-level learning objectives:
 | Basic Information | #basic-information |
 | Module Description | #module-description |
 | Learning Objectives | #learning-objectives |
-| Dependencies | #dependencies |
-| Prerequisite Modules | #prerequisite-modules |
-| Required Prior Knowledge | #required-prior-knowledge |
 | File Inventory | #file-inventory |
 | Inventory Summary | #inventory-summary |
 | Lecture Materials | #lecture-materials |
 | Readings | #readings |
 | Assignment Documents | #assignment-documents |
 | Supplementary Resources | #supplementary-resources |
-| Topics Covered | #topics-covered |
-| Primary Topics | #primary-topics |
-| Key Concepts | #key-concepts |
-| Key Frameworks | #key-frameworks |
-| Schedule Integration | #schedule-integration |
-| Module Timeline | #module-timeline |
-| Associated Deadlines | #associated-deadlines |
-| Connections to Course | #connections-to-course |
-| Related Course Objectives | #related-course-objectives |
-| Connection to Other Modules | #connection-to-other-modules |
-| Connection to Assignments | #connection-to-assignments |
+| Index References | #index-references |
+| Notes | #notes |
+| Instructor Notes | #instructor-notes |
+| Student Notes | #student-notes |
+| Change Log | #change-log |
 
 ### Entity IDs Defined in This File
 
