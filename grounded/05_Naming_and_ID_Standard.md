@@ -135,7 +135,7 @@ Every file created/managed by this system MUST start with `{course_id}`.
 
 **Regex:** `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}/$`
 
-**Examples:を見る**
+**Examples:**
 - `MGMT6022.module_M01/`
 - `MGMT6022.module_M10/`
 

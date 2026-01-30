@@ -115,10 +115,11 @@ class ValidationReport:
 class SystemValidator:
     """Main validator for Course Assistant system files."""
     
-    # Naming convention regex patterns
+    # Naming convention regex patterns (updated per new naming standard)
     NAMING_PATTERNS = {
-        'course_id': r'^[A-Z0-9\-]+$',
+        'course_id': r'^[A-Z]{2,10}[0-9]{3,5}$',
         'term_id': r'^(20\d{2})-(FA|SP|SU|WI)$',
+        'course_run_id': r'^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$',
         'module_id': r'^M\d{2}$',
         'assignment_id': r'^[A-Z]+-?\d{2}(-[A-Z0-9]+)?$',
         'deliverable_id': r'^[A-Z0-9\-]+-DEL\d{2}$',

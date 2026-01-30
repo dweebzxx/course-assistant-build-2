@@ -132,7 +132,7 @@ Example: `MGMT6022-2026-SP.course_schedule.md`
 
 ### File Type 3: Student Profile
 
-**Purpose**: Minimal authoritative source for student context. Portable across courses with minimal editing. Contains only: student identification, writing style, group project assignment (if applicable), and known challenges.
+**Purpose**: Minimal authoritative source for student context. Portable across courses with minimal editing. Contains only: student identification and comprehensive writing style profile.
 
 **File Type**: Markdown (.md)
 
@@ -144,22 +144,18 @@ Example: `MGMT6022-2026-SP.student_profile.md`
 **Content Outline**:
 1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, student_name)
 2. Student Identification (name: Josh, preferred name, program, year label if desired, timezone)
-3. Writing Style Profile (inline summary: voice, structure, strengths, development areas, citation style)
-4. Group Project Assignment (if applicable: project_id, team name, Josh's role, team structure as Member 01-XX, milestone ownership)
-5. Known Challenges (3-5 items: areas needing additional support)
-6. Index References (section linking to INDEX entries)
+3. Writing Style Profile (comprehensive profile including: Quick Reference Card, Voice & Personality, Sentence Structure Rules, Punctuation Rules, Vocabulary & Word Choice, Tone & Confidence, Opening & Closing Patterns, Transitions & Flow, Formatting Preferences, Context-Based Register Variations, Writing Samples, Common Mistakes to Avoid, Implementation Checklist)
+4. Index References (section linking to INDEX entries)
 
 **Template Filename**: `22_Student_Profile_Template.md` (Phase 4 deliverable)
 
 **Schema Filename**: `schema/schema.student_profile.json` (Phase 7 deliverable)
 
 **Validation Checks**:
-- Required metadata fields present
+- Required metadata fields present (course_id, term_id, course_run_id, doc_type, last_updated, timezone, student_name)
 - All section headers match template hierarchy
 - Student name is "Josh" only (first name, no last name)
 - Timezone is "America/Chicago" or "CT"
-- Group project section uses Member 01, Member 02, etc. (no personal names)
-- No email addresses, phone numbers, or personal identifiers for group members
 - All section anchors unique
 
 **Removed Sections** (moved or deprecated):
@@ -170,6 +166,10 @@ Example: `MGMT6022-2026-SP.student_profile.md`
 - Progress Tracking (deprecated - too maintenance-heavy)
 - Agent Interaction History (deprecated - not needed)
 - Communication Preferences (deprecated - use writing style instead)
+- Group Project Assignment (moved to course_core.md)
+- Team Structure (removed - simplified group project model)
+- Milestone Ownership (removed - simplified group project model)
+- Known Challenges (removed - not needed)
 
 ---
 
@@ -389,13 +389,13 @@ Example: `MGMT6022-2026-SP.module_M03_curated.md`
 
 | # | File Type       | Purpose                                                  | File Format | Authority Tier | Initial Setup   | Schema Validated |
 | - | --------------- | -------------------------------------------------------- | ----------- | -------------- | --------------- | ---------------- |
-| 1 | Course Core     | Policies, grading, structure, group project definition   | MD          | Tier 2         | Yes             | Yes              |
+| 1 | Course Core     | Policies, grading, structure, group project definition and assignment   | MD          | Tier 2         | Yes             | Yes              |
 | 2 | Course Schedule | Dates, deadlines, timeline (highest authority for dates) | MD          | Tier 1         | Yes             | Yes              |
-| 3 | Student Profile | Minimal student context, writing style, known challenges | MD          | Tier 3         | Yes             | Yes              |
+| 3 | Student Profile | Student identification and comprehensive writing style profile | MD          | Tier 3         | Yes             | Yes              |
 | 4 | Index           | Retrieval targeting, integrity                           | JSON        | Tier 4         | Yes (generated) | Yes              |
 | 5 | Module Package  | Module materials container                               | Folder/ZIP  | Tier 5         | No (as needed)  | Manifest only    |
 
-**Note**: Assignment details live in course_schedule.md Assignment Calendar. Group project definition is in course_core.md. Student-specific group project assignment is in student_profile.md.
+**Note**: Assignment details live in course_schedule.md Assignment Calendar. Group project definition and student-specific assignment are both in course_core.md Group Project Context section.
 
 ---
 
@@ -404,7 +404,7 @@ Example: `MGMT6022-2026-SP.module_M03_curated.md`
 **Status**: Definitive specification
 **Approved by**: Systems Architecture (Phase 2)
 **Date**: 2026-01-25
-**Updated**: 2026-01-30 (Naming standard alignment)
+**Updated**: 2026-01-30 (Architecture updates: naming standard alignment, writing profile integration, group project consolidation)
 **Next Phase**: Phase 3 (Naming and ID Standard)
 
 ---
