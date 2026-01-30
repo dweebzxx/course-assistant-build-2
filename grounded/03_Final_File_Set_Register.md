@@ -75,12 +75,9 @@ Example: `CARLSON-SCHOOL-2025-FA.course_schedule.md`
 1. Metadata block (course_id, term_id, doc_type, last_updated, timezone, source_files)
 2. Term Calendar (start_date, end_date, key deadlines, holidays, exam periods)
 3. Module Sequence (module_id, title, topics, start_date, end_date, learning_objectives)
-4. Assignment Calendar (assignment_id, title, type, due_date, due_time, points, module_id)
-5. Exam Schedule (exam_id, type, date, time, coverage, location)
-6. Reading Schedule (reading_id, module_id, source, pages/chapters, due_date)
-7. Discussion Schedule (discussion_id, module_id, topic, open_date, close_date)
-8. Milestone Timeline (milestone_id, deliverable, due_date, owner)
-9. Index References (section linking to INDEX entries)
+4. Assignment Calendar (assignment_id, title, type, due_date, due_time, points, module_id) - Consolidated calendar for ALL assignment types including individual, quiz, discussion, exam, group, and reading
+5. Milestone Timeline (milestone_id, deliverable, due_date, owner)
+6. Index References (section linking to INDEX entries)
 
 **Template Filename**: `21_Course_Schedule_Template.md` (Phase 4 deliverable)
 

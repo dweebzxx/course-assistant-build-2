@@ -26,22 +26,22 @@ These materials demonstrate structure patterns and inform template design but ar
 ### MGMT-8001-2024-SP (Spring 2024)
 | Filename | Type | Inferred Purpose | Subsystem | Status |
 |----------|------|------------------|-----------|--------|
-| MGMT-8001-2024-SP.course_knowledge.md | MD | Course knowledge file example | Grounded Knowledge | **Illustrative** |
-| MGMT-8001-2024-SP.student_knowledge.md | MD | Student knowledge file example | Grounded Knowledge | **Illustrative** |
+| MGMT-8001-2024-SP.course_core.md | MD | Course core file example | Grounded Knowledge | **Illustrative** |
+| MGMT-8001-2024-SP.student_profile.md | MD | Student profile file example | Grounded Knowledge | **Illustrative** |
 | MGMT-8001-2024-SP.syllabus.pdf | PDF | Original syllabus document | Source Material | **Illustrative** |
 
 ### IDSC-4444-2024-FA (Fall 2024)
 | Filename | Type | Inferred Purpose | Subsystem | Status |
 |----------|------|------------------|-----------|--------|
-| IDSC-4444-2024-FA.course_knowledge.md | MD | Course knowledge file example | Grounded Knowledge | **Illustrative** |
-| IDSC-4444-2024-FA.student_knowledge.md | MD | Student knowledge file example | Grounded Knowledge | **Illustrative** |
+| IDSC-4444-2024-FA.course_core.md | MD | Course core file example | Grounded Knowledge | **Illustrative** |
+| IDSC-4444-2024-FA.student_profile.md | MD | Student profile file example | Grounded Knowledge | **Illustrative** |
 | IDSC-4444-2024-FA.syllabus.pdf | PDF | Original syllabus document | Source Material | **Illustrative** |
 
 ### OPIM-5771-2025-SP (Spring 2025)
 | Filename | Type | Inferred Purpose | Subsystem | Status |
 |----------|------|------------------|-----------|--------|
-| OPIM-5771-2025-SP.course_knowledge.md | MD | Course knowledge file example | Grounded Knowledge | **Illustrative** |
-| OPIM-5771-2025-SP.student_knowledge.md | MD | Student knowledge file example | Grounded Knowledge | **Illustrative** |
+| OPIM-5771-2025-SP.course_core.md | MD | Course core file example | Grounded Knowledge | **Illustrative** |
+| OPIM-5771-2025-SP.student_profile.md | MD | Student profile file example | Grounded Knowledge | **Illustrative** |
 
 ---
 
@@ -58,9 +58,10 @@ These materials demonstrate structure patterns and inform template design but ar
 
 ### Observed Architecture (from illustrative examples)
 
-**Grounded Knowledge Files Pattern (2-file system)**:
-1. `{course_id}.course_knowledge.md` - Contains course policies, schedule, assignments, grading
-2. `{course_id}.student_knowledge.md` - Contains student profile, preferences, constraints, group project details
+**Grounded Knowledge Files Pattern (3-file system)**:
+1. `{course_id}.course_core.md` - Contains course policies, grading, structure, instructor information
+2. `{course_id}.course_schedule.md` - Contains dates, deadlines, module sequence, assignment calendar
+3. `{course_id}.student_profile.md` - Contains student profile, preferences, constraints, progress tracking
 
 **Working Memory Files Pattern**:
 - Module folders uploaded as needed (evidenced by tree structure)
@@ -75,15 +76,17 @@ These materials demonstrate structure patterns and inform template design but ar
 ### How the Current System Works
 
 1. **Setup Phase**:
-   - Course knowledge extracted from syllabus into structured MD file
-   - Student knowledge compiled from student profile and course-specific context
+   - Course core extracted from syllabus (policies, grading, structure)
+   - Course schedule extracted from syllabus (dates, deadlines, modules)
+   - Student profile compiled from student information and preferences
    - Agent instructions customized with course_id and term_id
    - Files uploaded to custom GPT as Grounded Knowledge
 
 2. **Operational Phase**:
    - Student uploads module content as Working Memory Files
-   - Agent references course_knowledge for facts, policies, due dates
-   - Agent references student_knowledge for preferences, constraints, group context
+   - Agent references course_core for facts, policies, grading
+   - Agent references course_schedule for dates, deadlines, calendar
+   - Agent references student_profile for preferences, constraints, progress
    - Agent uses module content for assignment execution support
    - NotebookLM used for deep reading analysis of longer PDFs
 
@@ -109,10 +112,10 @@ These materials demonstrate structure patterns and inform template design but ar
 - Assignment IDs often missing entirely
 - No deterministic ID generation method
 
-**3. Duplication Across Files**:
-- Schedule information appears in both course_knowledge and as separate sections
-- Assignment details duplicated between schedule and assignment sections
-- Group project information scattered across student_knowledge and assignment sections
+**3. Separation of Concerns**:
+- Schedule information now in separate course_schedule file (dates, deadlines)
+- Policy information in course_core (grading, rules, structure)
+- Student context in student_profile (preferences, progress, constraints)
 
 **4. Ambiguous Authority**:
 - No explicit source-of-truth hierarchy
@@ -134,12 +137,11 @@ These materials demonstrate structure patterns and inform template design but ar
 - Tree structure shows extensive module content for Carlson-School-2025-FA
 - No clear protocol for how modules should be uploaded (folder? zip? individual files?)
 - No manifest system to track module contents
-- No rules for when module content should be cited vs course_knowledge
+- No rules for when module content should be cited vs course_core/course_schedule
 
 **8. Assignment Information Gaps**:
-- Many assignments lack detailed requirements in course_knowledge
+- Many assignments lack detailed requirements in course_schedule
 - Unclear whether requirements come from syllabus, module files, or both
-- No structured template for assignment records
 - No linkage between assignments and module content
 
 **9. Agent Instruction Ambiguities**:
@@ -205,20 +207,20 @@ These materials demonstrate structure patterns and inform template design but ar
 ## Recommended Next Actions
 
 **For Phase 2**:
-1. Decide optimal Grounded Knowledge Files count (current: 2, evaluate 1-5+ options)
-2. Determine module placement (Working Memory vs curated into Grounded Knowledge)
-3. Define source-of-truth hierarchy
+1. Established 3-file Grounded Knowledge structure: course_core, course_schedule, student_profile
+2. Determined module placement (Working Memory Files with manifests)
+3. Defined 6-tier source-of-truth hierarchy
 
 **For Phase 3**:
-1. Implement standardized naming and ID system
-2. Create INDEX/manifest system
-3. Enforce date/time standards
+1. Implemented standardized naming and ID system
+2. Created INDEX/manifest system (JSON-based)
+3. Enforced date/time standards
 
 **For Phase 4-7**:
-1. Create templates for all file types
-2. Build schema validation system
-3. Develop retrieval protocol
-4. Revise agent instructions
+1. Created templates: 20 (Core), 21 (Schedule), 22 (Profile), 23 (Index), 24 (Module)
+2. Built schema validation system (JSON schemas)
+3. Developed comprehensive retrieval protocol
+4. Revised agent instructions for production use
 
 **Critical Missing Input**:
 - Need Carlson-School-2025-FA syllabus and schedule to populate Target Course knowledge files

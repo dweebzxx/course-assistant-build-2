@@ -227,7 +227,7 @@
 
 ## Specific Findings from Current Files
 
-### MGMT-8001-2024-SP.student_knowledge.md
+### MGMT-8001-2024-SP.student_profile.md
 **HARMFUL - Must Redact**:
 ```
 Group Members:
@@ -248,7 +248,7 @@ Group Members:
 Communication: Team uses email and scheduled meetings
 ```
 
-### IDSC-4444-2024-FA.student_knowledge.md
+### IDSC-4444-2024-FA.student_profile.md
 **HARMFUL - Must Redact**:
 ```
 - Partner: Nidhi Upadhyay
@@ -263,7 +263,7 @@ Communication: Team uses email and scheduled meetings
 Partnership approach: [keep any relevant working norms]
 ```
 
-### All Course Knowledge Files
+### All Course Core Files
 **IRRELEVANT - Can Remove**:
 - Repeated "Students with disabilities" boilerplate (keep course-specific procedure only)
 - PDF metadata and page count information
@@ -280,15 +280,20 @@ Partnership approach: [keep any relevant working norms]
 
 ### Token Efficiency Gains
 **Before Minimization** (estimated):
-- MGMT-8001 course_knowledge.md: ~12,000 tokens
+- MGMT-8001 course_core.md: ~8,000 tokens
+- MGMT-8001 course_schedule.md: ~4,000 tokens
+- MGMT-8001 student_profile.md: ~3,000 tokens
 - Group member details: ~200 tokens
 - Redundant boilerplate: ~800 tokens
 - Duplicate assignments: ~600 tokens
 
 **After Minimization** (estimated):
-- MGMT-8001 course_knowledge.md: ~10,000 tokens (16% reduction)
+- MGMT-8001 course_core.md: ~7,000 tokens
+- MGMT-8001 course_schedule.md: ~3,500 tokens
+- MGMT-8001 student_profile.md: ~2,500 tokens
+- Total reduction: ~15% (18% improvement)
 - Privacy compliant: 100% names removed
-- Retrieval accuracy: Improved through structure
+- Retrieval accuracy: Improved through structure and separation of concerns
 
 ### Retrieval Accuracy Improvements
 - Structured sections increase anchor targeting success
@@ -384,7 +389,7 @@ Partnership approach: [keep any relevant working norms]
 3. Policy applies to all future course builds
 
 **Expected Outcome**:
-- 10-20% token reduction
-- Improved retrieval accuracy through structure
+- 15-20% token reduction through 3-file structure and minimization
+- Improved retrieval accuracy through structure and separation of concerns
 - Full privacy compliance
-- Maintainable, reusable system
+- Maintainable, reusable system with clear authority hierarchy

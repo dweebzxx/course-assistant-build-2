@@ -566,6 +566,8 @@ assignment_id = f"{type_code}-{seq_num:02d}-{hash_suffix}"
 **Format:** One of: `course_core`, `course_schedule`, `student_profile`, `index`, `module_manifest`, `curated_module`  
 **Example:** `course_schedule`
 
+**Note:** The 3-file model uses: `course_core` (policies, grading), `course_schedule` (dates, deadlines), `student_profile` (student context, preferences).
+
 **Field:** `last_updated`  
 **Format:** `YYYY-MM-DD` (ISO 8601 date only, no time)  
 **Example:** `2026-01-25`
