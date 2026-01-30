@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/course_knowledge.json",
+  "title": "Course Knowledge File Schema",
+  "description": "Schema for course_core.md Grounded Knowledge File",
+  "type": "object",
+  "required": ["metadata", "course_identification", "grading_policy", "course_policies"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "doc_type", "last_updated", "timezone"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$",
+          "description": "Unique course identifier"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$",
+          "description": "Academic term identifier"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["course_core"],
+          "description": "Document type identifier"
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+          "description": "ISO date of last update (YYYY-MM-DD)"
+        },
+        "timezone": {
+          "type": "string",
+          "description": "IANA timezone name or abbreviation",
+          "examples": ["America/Chicago", "CT"]
+        },
+        "source_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Original source filenames"
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "course_identification": {
+      "type": "object",
+      "required": ["course_title", "course_code", "term", "instructor"],
+      "properties": {
+        "course_title": {
+          "type": "string"
+        },
+        "course_code": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "term": {
+          "type": "string"
+        },
+        "instructor": {
+          "type": "object",
+          "required": ["name"],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "office_hours": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "grading_policy": {
+      "type": "object",
+      "required": ["components"],
+      "properties": {
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["component", "weight"],
+            "properties": {
+              "component": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "grading_scale": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["grade", "min_percentage"],
+            "properties": {
+              "grade": {
+                "type": "string"
+              },
+              "min_percentage": {
+                "type": "number"
+              },
+              "max_percentage": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "course_policies": {
+      "type": "object",
+      "properties": {
+        "attendance": {
+          "type": "string"
+        },
+        "late_work": {
+          "type": "string"
+        },
+        "academic_integrity": {
+          "type": "string"
+        },
+        "participation": {
+          "type": "string"
+        },
+        "technology": {
+          "type": "string"
+        },
+        "accommodations": {
+          "type": "string"
+        }
+      }
+    },
+    "course_structure": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string"
+        },
+        "module_count": {
+          "type": "integer"
+        },
+        "duration_weeks": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

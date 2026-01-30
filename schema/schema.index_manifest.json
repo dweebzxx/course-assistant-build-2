@@ -1,0 +1,401 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/index_manifest.json",
+  "title": "INDEX Manifest Schema",
+  "description": "Schema for course INDEX.json file",
+  "type": "object",
+  "required": ["metadata", "files", "entities", "sections"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "course_id",
+        "term_id",
+        "doc_type",
+        "last_updated",
+        "timezone",
+        "index_scope",
+        "total_files_indexed",
+        "total_sections_indexed",
+        "total_entities_indexed"
+      ],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["index"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "index_scope": {
+          "type": "string",
+          "enum": ["all_grounded_and_working_files"]
+        },
+        "total_files_indexed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_sections_indexed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_entities_indexed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              },
+              "files_affected": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "index_generation_date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "index_generator": {
+          "type": "string",
+          "enum": ["manual", "script", "agent"]
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "file_id",
+          "filename",
+          "file_type",
+          "doc_type",
+          "path",
+          "last_updated"
+        ],
+        "properties": {
+          "file_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "filename": {
+            "type": "string",
+            "minLength": 1
+          },
+          "file_type": {
+            "type": "string",
+            "enum": ["grounded_knowledge", "module_manifest", "working_memory"]
+          },
+          "doc_type": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string",
+            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "module_id": {
+            "type": "string",
+            "pattern": "^M\\d{2}$"
+          },
+          "section_count": {
+            "type": ["integer", "null"],
+            "minimum": 0
+          },
+          "entity_count": {
+            "type": ["integer", "null"],
+            "minimum": 0
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "section_id",
+          "file_id",
+          "filename",
+          "anchor",
+          "section_title",
+          "section_type"
+        ],
+        "properties": {
+          "section_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+#[a-z0-9\\-]+$"
+          },
+          "file_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "anchor": {
+            "type": "string",
+            "pattern": "^#[a-z0-9\\-]+$"
+          },
+          "section_title": {
+            "type": "string"
+          },
+          "section_type": {
+            "type": "string"
+          },
+          "parent_section": {
+            "type": ["string", "null"],
+            "pattern": "^[a-z0-9_]+#[a-z0-9\\-]+$"
+          },
+          "entity_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "char_start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "char_end": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "entities": {
+      "type": "object",
+      "properties": {
+        "assignments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/timebound_entity"
+          }
+        },
+        "exams": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/timebound_entity"
+          }
+        },
+        "modules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/module_entity"
+          }
+        },
+        "readings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/timebound_entity"
+          }
+        },
+        "discussions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/timebound_entity"
+          }
+        },
+        "milestones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/milestone_entity"
+          }
+        },
+        "lectures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/basic_entity"
+          }
+        }
+      }
+    },
+    "cross_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["relationship"],
+        "properties": {
+          "from_entity": {
+            "type": "string"
+          },
+          "from_section": {
+            "type": "string"
+          },
+          "to_entity": {
+            "type": "string"
+          },
+          "to_section": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": ["from_entity"]
+          },
+          {
+            "required": ["from_section"]
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "basic_entity": {
+      "type": "object",
+      "required": [
+        "entity_id",
+        "entity_type",
+        "title",
+        "authoritative_file",
+        "authoritative_section"
+      ],
+      "properties": {
+        "entity_id": {
+          "type": "string"
+        },
+        "entity_type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "authoritative_file": {
+          "type": "string"
+        },
+        "authoritative_section": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+#[a-z0-9\\-]+$"
+        },
+        "related_sections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "timebound_entity": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/basic_entity"
+        },
+        {
+          "type": "object",
+          "required": ["due_date_display", "due_date_iso"],
+          "properties": {
+            "due_date_display": {
+              "type": "string",
+              "pattern": "^((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})|TBD)$"
+            },
+            "due_date_iso": {
+              "type": ["string", "null"],
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            },
+            "due_time": {
+              "type": ["string", "null"],
+              "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$"
+            },
+            "module_id": {
+              "type": ["string", "null"],
+              "pattern": "^M\\d{2}$"
+            }
+          }
+        }
+      ]
+    },
+    "module_entity": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/basic_entity"
+        },
+        {
+          "type": "object",
+          "required": [
+            "start_date_display",
+            "start_date_iso",
+            "end_date_display",
+            "end_date_iso"
+          ],
+          "properties": {
+            "start_date_display": {
+              "type": "string",
+              "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+            },
+            "start_date_iso": {
+              "type": "string",
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            },
+            "end_date_display": {
+              "type": "string",
+              "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+            },
+            "end_date_iso": {
+              "type": "string",
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            },
+            "module_folder": {
+              "type": "string"
+            },
+            "manifest_file": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "milestone_entity": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/timebound_entity"
+        },
+        {
+          "type": "object",
+          "required": ["project_id"],
+          "properties": {
+            "project_id": {
+              "type": "string",
+              "pattern": "^(GP\\d{2}|PROJ-[A-Z0-9\\-]+)$"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

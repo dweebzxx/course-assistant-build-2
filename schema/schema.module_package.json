@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/module_package.json",
+  "title": "Module Package Schema",
+  "description": "Schema for module_manifest.md files within module packages",
+  "type": "object",
+  "required": ["metadata", "overview", "file_inventory"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "module_id", "doc_type", "last_updated"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$"
+        },
+        "module_id": {
+          "type": "string",
+          "pattern": "^M\\d{2}$"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["module_manifest"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "module_folder": {
+          "type": "string",
+          "pattern": "^M\\d{2}/$"
+        }
+      }
+    },
+    "overview": {
+      "type": "object",
+      "required": ["module_title", "module_dates"],
+      "properties": {
+        "module_title": {
+          "type": "string"
+        },
+        "module_dates": {
+          "type": "object",
+          "required": [
+            "start_date_display",
+            "start_date_iso",
+            "end_date_display",
+            "end_date_iso"
+          ],
+          "properties": {
+            "start_date_display": {
+              "type": "string",
+              "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+            },
+            "start_date_iso": {
+              "type": "string",
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            },
+            "end_date_display": {
+              "type": "string",
+              "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+            },
+            "end_date_iso": {
+              "type": "string",
+              "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+            }
+          }
+        },
+        "learning_objectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "estimated_time_hours": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "file_inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["filename", "file_type", "description"],
+        "properties": {
+          "filename": {
+            "type": "string"
+          },
+          "file_type": {
+            "type": "string",
+            "enum": [
+              "lecture_slides",
+              "lecture_video",
+              "reading",
+              "assignment_instructions",
+              "assignment_rubric",
+              "discussion_prompt",
+              "case_study",
+              "supplemental",
+              "other"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "entity_id": {
+            "type": "string",
+            "description": "Related entity ID if applicable"
+          },
+          "required": {
+            "type": "boolean",
+            "default": true
+          },
+          "pages": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "duration_minutes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "assignments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "title"],
+        "properties": {
+          "entity_id": {
+            "type": "string",
+            "pattern": "^[A-Z]+-?\\d{2}(-[A-Z0-9]+)?$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "due_date_display": {
+            "type": "string"
+          },
+          "due_date_iso": {
+            "type": ["string", "null"],
+            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "instruction_file": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "readings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_id", "title"],
+        "properties": {
+          "entity_id": {
+            "type": "string",
+            "pattern": "^(M\\d{2}-)?R\\d{2}$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "pages": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

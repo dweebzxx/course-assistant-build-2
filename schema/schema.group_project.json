@@ -1,0 +1,246 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/group_project.json",
+  "title": "Group Project Schema",
+  "description": "Schema for group project definition and tracking",
+  "type": "object",
+  "required": [
+    "metadata",
+    "project_identification",
+    "team_structure",
+    "milestones"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "course_id",
+        "term_id",
+        "project_id",
+        "doc_type",
+        "last_updated"
+      ],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$"
+        },
+        "project_id": {
+          "type": "string",
+          "pattern": "^(GP\\d{2}|PROJ-[A-Z0-9\\-]+)$"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["group_project"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        }
+      }
+    },
+    "project_identification": {
+      "type": "object",
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "objectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope": {
+          "type": "string"
+        }
+      }
+    },
+    "team_structure": {
+      "type": "object",
+      "required": ["members"],
+      "properties": {
+        "members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["member_id", "role"],
+            "properties": {
+              "member_id": {
+                "type": "string",
+                "pattern": "^(Member \\d{2}|Josh)$",
+                "description": "Anonymized member ID (Member 01, Member 02, etc.) or Josh"
+              },
+              "role": {
+                "type": "string"
+              },
+              "responsibilities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "milestones_owned": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^([A-Z0-9\\-]+-)?MS\\d{2}$"
+                }
+              }
+            }
+          }
+        },
+        "team_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "communication_norms": {
+          "type": "string"
+        },
+        "meeting_schedule": {
+          "type": "string"
+        }
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "milestone_id",
+          "title",
+          "due_date_display",
+          "due_date_iso"
+        ],
+        "properties": {
+          "milestone_id": {
+            "type": "string",
+            "pattern": "^([A-Z0-9\\-]+-)?MS\\d{2}$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "due_date_display": {
+            "type": "string",
+            "pattern": "^((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})|TBD)$"
+          },
+          "due_date_iso": {
+            "type": ["string", "null"],
+            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "due_time": {
+            "type": ["string", "null"],
+            "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$"
+          },
+          "deliverables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["deliverable_id", "description"],
+              "properties": {
+                "deliverable_id": {
+                  "type": "string",
+                  "pattern": "^[A-Z0-9\\-]+-DEL\\d{2}$"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "responsible_member": {
+                  "type": "string",
+                  "pattern": "^(Member \\d{2}|Josh)$"
+                }
+              }
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": ["not_started", "in_progress", "completed", "overdue"]
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "final_deliverable": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "length": {
+          "type": "string"
+        },
+        "presentation_required": {
+          "type": "boolean"
+        },
+        "presentation_duration": {
+          "type": "string"
+        }
+      }
+    },
+    "grading": {
+      "type": "object",
+      "properties": {
+        "total_points": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight_percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "individual_component": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of grade that is individual"
+        },
+        "group_component": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of grade that is group-based"
+        },
+        "rubric_file": {
+          "type": "string"
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "properties": {
+        "instruction_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "templates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

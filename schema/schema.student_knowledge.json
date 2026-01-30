@@ -1,0 +1,204 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/student_knowledge.json",
+  "title": "Student Knowledge File Schema",
+  "description": "Schema for student_profile.md Grounded Knowledge File",
+  "type": "object",
+  "required": ["metadata", "student_context"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "doc_type", "last_updated", "timezone"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["student_profile"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "student_context": {
+      "type": "object",
+      "required": ["student_name"],
+      "properties": {
+        "student_name": {
+          "type": "string",
+          "pattern": "^Josh$",
+          "description": "Student first name only (Josh)"
+        },
+        "program": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "background": {
+          "type": "string"
+        },
+        "goals": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "time_availability": {
+          "type": "string"
+        },
+        "work_schedule": {
+          "type": "string"
+        },
+        "other_courses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "commitments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "study_approach": {
+      "type": "object",
+      "properties": {
+        "preferences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "challenges": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "progress_tracking": {
+      "type": "object",
+      "properties": {
+        "completed_modules": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^M\\d{2}$"
+          }
+        },
+        "completed_assignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["entity_id", "submission_date"],
+            "properties": {
+              "entity_id": {
+                "type": "string",
+                "pattern": "^[A-Z]+-?\\d{2}(-[A-Z0-9]+)?$"
+              },
+              "submission_date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "grade": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "current_focus": {
+          "type": "string",
+          "pattern": "^M\\d{2}$"
+        }
+      }
+    },
+    "group_project_context": {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "type": "string",
+          "pattern": "^(GP\\d{2}|PROJ-[A-Z0-9\\-]+)$"
+        },
+        "role": {
+          "type": "string"
+        },
+        "responsibilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "team_structure": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["member_id", "role"],
+            "properties": {
+              "member_id": {
+                "type": "string",
+                "pattern": "^(Member \\d{2}|Josh)$",
+                "description": "Anonymized member ID or Josh"
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "communication_norms": {
+          "type": "string"
+        },
+        "milestones_owned": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^([A-Z0-9\\-]+-)?MS\\d{2}$"
+          }
+        }
+      }
+    }
+  }
+}

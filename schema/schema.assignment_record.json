@@ -1,0 +1,213 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/assignment_record.json",
+  "title": "Assignment Record Schema",
+  "description": "Schema for individual assignment detail records",
+  "type": "object",
+  "required": [
+    "metadata",
+    "assignment_identification",
+    "requirements",
+    "submission"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "course_id",
+        "term_id",
+        "assignment_id",
+        "doc_type",
+        "last_updated"
+      ],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z0-9\\-]+$"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$"
+        },
+        "assignment_id": {
+          "type": "string",
+          "pattern": "^[A-Z]+-?\\d{2}(-[A-Z0-9]+)?$"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["assignment_record"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        }
+      }
+    },
+    "assignment_identification": {
+      "type": "object",
+      "required": ["title", "assignment_type"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "assignment_type": {
+          "type": "string",
+          "enum": [
+            "essay",
+            "project",
+            "quiz",
+            "exam",
+            "discussion",
+            "lab",
+            "homework",
+            "presentation",
+            "other"
+          ]
+        },
+        "module_id": {
+          "type": ["string", "null"],
+          "pattern": "^M\\d{2}$"
+        },
+        "due_date_display": {
+          "type": "string",
+          "pattern": "^((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})|TBD)$"
+        },
+        "due_date_iso": {
+          "type": ["string", "null"],
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "due_time": {
+          "type": ["string", "null"],
+          "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$"
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "length": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "citation_style": {
+          "type": "string"
+        },
+        "required_sections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_components": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "deliverables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["deliverable_id", "description"],
+            "properties": {
+              "deliverable_id": {
+                "type": "string",
+                "pattern": "^[A-Z0-9\\-]+-DEL\\d{2}$"
+              },
+              "description": {
+                "type": "string"
+              },
+              "file_format": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "submission": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "file_format": {
+          "type": "string"
+        },
+        "naming_convention": {
+          "type": "string"
+        }
+      }
+    },
+    "grading": {
+      "type": "object",
+      "properties": {
+        "total_points": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight_percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "rubric_file": {
+          "type": "string"
+        },
+        "rubric_criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["criterion", "points"],
+            "properties": {
+              "criterion": {
+                "type": "string"
+              },
+              "points": {
+                "type": "number",
+                "minimum": 0
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "properties": {
+        "instruction_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reference_materials": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

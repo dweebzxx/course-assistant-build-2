@@ -1,0 +1,608 @@
+# ============================================================================
+# INDEX MANIFEST TEMPLATE
+# ============================================================================
+# Filename Pattern: {course_id}.index.yaml
+# Regex: ^[A-Z0-9\-]+\.index\.yaml$
+# Authority Tier: 4 (Authoritative for file/section locations, NOT content)
+# Example Filename: MGMT-5001-SEC01-2026-SP.index.yaml
+#
+# NOTE: Phase 3 selected JSON as the canonical format. This YAML template
+# is provided per user request. YAML is a superset of JSON and can represent
+# identical data structures.
+# ============================================================================
+
+# ============================================================================
+# METADATA BLOCK
+# Required fields with index metadata
+# ============================================================================
+metadata:
+  course_id: "{COURSE_ID}"
+  term_id: "{YYYY}-{TT}"
+  doc_type: "index"
+  last_updated: "{YYYY-MM-DD}"
+  timezone: "America/Chicago"
+  index_scope: "all_grounded_and_working_files"
+  total_files_indexed: {N}
+  total_sections_indexed: {N}
+  total_entities_indexed: {N}
+  change_log:
+    - date: "{YYYY-MM-DD}"
+      change: "{Description of update}"
+      files_affected:
+        - "{filename}"
+    # Add additional changelog entries as needed
+  index_generation_date: "{YYYY-MM-DDTHH:MM:SS-06:00}"
+  index_generator: "manual | script | agent"
+
+# ============================================================================
+# FILES BLOCK
+# Catalog every file in the agent build
+# ============================================================================
+files:
+  # --- Grounded Knowledge Files ---
+  - file_id: "course_core"
+    filename: "{COURSE_ID}.course_core.md"
+    file_type: "grounded_knowledge"
+    doc_type: "course_core"
+    path: "./"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: {N}
+    entity_count: 0
+
+  - file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    file_type: "grounded_knowledge"
+    doc_type: "course_schedule"
+    path: "./"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: {N}
+    entity_count: {N}
+
+  - file_id: "student_profile"
+    filename: "{COURSE_ID}.student_profile.md"
+    file_type: "grounded_knowledge"
+    doc_type: "student_profile"
+    path: "./"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: {N}
+    entity_count: 0
+
+  # --- Module Manifests ---
+  - file_id: "M01_manifest"
+    filename: "M01.module_manifest.md"
+    file_type: "module_manifest"
+    doc_type: "module_manifest"
+    path: "M01/"
+    module_id: "M01"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: {N}
+    entity_count: {N}
+
+  - file_id: "M02_manifest"
+    filename: "M02.module_manifest.md"
+    file_type: "module_manifest"
+    doc_type: "module_manifest"
+    path: "M02/"
+    module_id: "M02"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: {N}
+    entity_count: {N}
+
+  # Add manifests for M03 through M{NN}...
+
+  # --- Working Memory Files (Examples) ---
+  - file_id: "M01_lecture"
+    filename: "Module_01_Lecture.pptx"
+    file_type: "working_memory"
+    doc_type: "lecture_slides"
+    path: "M01/"
+    module_id: "M01"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: null
+    entity_count: null
+    size_bytes: 2048000
+
+  - file_id: "M01_assignment"
+    filename: "Assignment_A01_Instructions.pdf"
+    file_type: "working_memory"
+    doc_type: "assignment_instructions"
+    path: "M01/"
+    module_id: "M01"
+    last_updated: "{YYYY-MM-DD}"
+    section_count: null
+    entity_count: null
+    size_bytes: 512000
+
+# ============================================================================
+# SECTIONS BLOCK
+# Index every retrievable section across all files
+# ============================================================================
+sections:
+  # --- Course Core Sections ---
+  - section_id: "course_core#metadata"
+    file_id: "course_core"
+    filename: "{COURSE_ID}.course_core.md"
+    anchor: "#metadata"
+    section_title: "Metadata"
+    section_type: "metadata_block"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "course_core#course-identification"
+    file_id: "course_core"
+    filename: "{COURSE_ID}.course_core.md"
+    anchor: "#course-identification"
+    section_title: "Course Identification"
+    section_type: "course_info"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "course_core#grading-policy"
+    file_id: "course_core"
+    filename: "{COURSE_ID}.course_core.md"
+    anchor: "#grading-policy"
+    section_title: "Grading Policy"
+    section_type: "policy"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "course_core#course-policies"
+    file_id: "course_core"
+    filename: "{COURSE_ID}.course_core.md"
+    anchor: "#course-policies"
+    section_title: "Course Policies"
+    section_type: "policy"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "course_core#assignment-specifications"
+    file_id: "course_core"
+    filename: "{COURSE_ID}.course_core.md"
+    anchor: "#assignment-specifications"
+    section_title: "Assignment Specifications"
+    section_type: "assignment_detail"
+    parent_section: null
+    entity_ids: []
+
+  # --- Course Schedule Sections ---
+  - section_id: "course_schedule#metadata"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#metadata"
+    section_title: "Metadata"
+    section_type: "metadata_block"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "course_schedule#term-dates"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#term-dates"
+    section_title: "Term Dates"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "course_schedule#module-sequence"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#module-sequence"
+    section_title: "Module Sequence"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids:
+      - "M01"
+      - "M02"
+      - "M03"
+      # Add all module IDs
+
+  - section_id: "course_schedule#assignment-calendar"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#assignment-calendar"
+    section_title: "Assignment Calendar"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids:
+      - "A01"
+      - "A02"
+      - "A03"
+      - "QUIZ-01"
+      # Add all assignment IDs
+
+  - section_id: "course_schedule#exam-schedule"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#exam-schedule"
+    section_title: "Exam Schedule"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids:
+      - "MIDTERM"
+      - "FINAL"
+      # Add all exam IDs
+
+  - section_id: "course_schedule#reading-schedule"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#reading-schedule"
+    section_title: "Reading Schedule"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids:
+      - "M01-R01"
+      - "M01-R02"
+      # Add all reading IDs
+
+  - section_id: "course_schedule#discussion-schedule"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#discussion-schedule"
+    section_title: "Discussion Schedule"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids:
+      - "D01"
+      - "D02"
+      # Add all discussion IDs
+
+  - section_id: "course_schedule#milestone-timeline"
+    file_id: "course_schedule"
+    filename: "{COURSE_ID}.course_schedule.md"
+    anchor: "#milestone-timeline"
+    section_title: "Milestone Timeline"
+    section_type: "schedule"
+    parent_section: null
+    entity_ids:
+      - "MS01"
+      - "MS02"
+      - "MS03"
+      # Add all milestone IDs
+
+  # --- Student Profile Sections ---
+  - section_id: "student_profile#metadata"
+    file_id: "student_profile"
+    filename: "{COURSE_ID}.student_profile.md"
+    anchor: "#metadata"
+    section_title: "Metadata"
+    section_type: "metadata_block"
+    parent_section: null
+    entity_ids: []
+
+  - section_id: "student_profile#group-project-context"
+    file_id: "student_profile"
+    filename: "{COURSE_ID}.student_profile.md"
+    anchor: "#group-project-context"
+    section_title: "Group Project Context"
+    section_type: "student_context"
+    parent_section: null
+    entity_ids:
+      - "PROJ-FINAL"  # or GP01
+
+  - section_id: "student_profile#progress-tracking"
+    file_id: "student_profile"
+    filename: "{COURSE_ID}.student_profile.md"
+    anchor: "#progress-tracking"
+    section_title: "Progress Tracking"
+    section_type: "student_context"
+    parent_section: null
+    entity_ids: []
+
+# ============================================================================
+# ENTITIES BLOCK
+# Index every course entity with authoritative locations
+# ============================================================================
+entities:
+  # --- MODULES ---
+  modules:
+    - entity_id: "M01"
+      entity_type: "module"
+      title: "{Module 1 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#module-sequence"
+      start_date_display: "{DayOfWeek, Mon DD, YYYY}"  # e.g., "Monday, Jan 20, 2026"
+      start_date_iso: "{YYYY-MM-DD}"                   # e.g., "2026-01-20"
+      end_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      end_date_iso: "{YYYY-MM-DD}"
+      module_folder: "M01/"
+      manifest_file: "M01/M01.module_manifest.md"
+      related_sections:
+        - "course_schedule#module-sequence"
+        - "M01/M01.module_manifest.md#overview"
+
+    - entity_id: "M02"
+      entity_type: "module"
+      title: "{Module 2 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#module-sequence"
+      start_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      start_date_iso: "{YYYY-MM-DD}"
+      end_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      end_date_iso: "{YYYY-MM-DD}"
+      module_folder: "M02/"
+      manifest_file: "M02/M02.module_manifest.md"
+      related_sections:
+        - "course_schedule#module-sequence"
+
+    # Add entries for M03 through M{NN}...
+
+  # --- ASSIGNMENTS ---
+  assignments:
+    - entity_id: "A01"
+      entity_type: "assignment"
+      title: "{Assignment 1 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#assignment-calendar"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"  # e.g., "Monday, Jan 27, 2026"
+      due_date_iso: "{YYYY-MM-DD}"                   # e.g., "2026-01-27"
+      due_time: "{h:mm AM/PM}"                       # e.g., "11:59 PM"
+      module_id: "M01"
+      weight: "{X%}"  # Optional: grading weight
+      related_sections:
+        - "course_schedule#assignment-calendar"
+        - "M01/Assignment_A01_Instructions.pdf"  # If module file exists
+
+    - entity_id: "A02"
+      entity_type: "assignment"
+      title: "{Assignment 2 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#assignment-calendar"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"
+      module_id: "M02"
+      related_sections:
+        - "course_schedule#assignment-calendar"
+
+    # Example: TBD due date
+    - entity_id: "A07"
+      entity_type: "assignment"
+      title: "{Assignment 7 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#assignment-calendar"
+      due_date_display: "TBD"
+      due_date_iso: null
+      due_time: null
+      module_id: "M07"
+      related_sections:
+        - "course_schedule#assignment-calendar"
+
+    # --- QUIZZES (assignment subtype) ---
+    - entity_id: "QUIZ-01"
+      entity_type: "assignment"
+      title: "{Quiz 1 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#assignment-calendar"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"
+      module_id: "M02"
+      related_sections:
+        - "course_schedule#assignment-calendar"
+
+  # --- EXAMS ---
+  exams:
+    - entity_id: "MIDTERM"
+      entity_type: "exam"
+      title: "Midterm Exam"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#exam-schedule"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"  # Exam date
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"                       # Exam start time
+      duration: "{X hours}"
+      location: "{Location}"
+      format: "{In-class / Online}"
+      materials_allowed: "{List or 'None'}"
+      module_id: null  # Exams often span multiple modules
+      related_sections:
+        - "course_schedule#exam-schedule"
+        - "course_core#grading-policy"
+
+    - entity_id: "FINAL"
+      entity_type: "exam"
+      title: "Final Exam"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#exam-schedule"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"
+      duration: "{X hours}"
+      location: "{Location}"
+      format: "{Format}"
+      materials_allowed: "{Materials}"
+      module_id: null
+      related_sections:
+        - "course_schedule#exam-schedule"
+        - "course_core#grading-policy"
+
+  # --- READINGS ---
+  readings:
+    - entity_id: "M01-R01"
+      entity_type: "reading"
+      title: "{Reading 1 Title/Citation}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#reading-schedule"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      module_id: "M01"
+      related_sections:
+        - "course_schedule#reading-schedule"
+        - "M01/Reading_Ch1.pdf"  # If file exists in module
+
+    - entity_id: "M01-R02"
+      entity_type: "reading"
+      title: "{Reading 2 Title/Citation}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#reading-schedule"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      module_id: "M01"
+      related_sections:
+        - "course_schedule#reading-schedule"
+
+  # --- DISCUSSIONS ---
+  discussions:
+    - entity_id: "D01"
+      entity_type: "discussion"
+      title: "{Discussion 1 Topic}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#discussion-schedule"
+      open_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      open_date_iso: "{YYYY-MM-DD}"
+      open_time: "{h:mm AM/PM}"
+      close_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      close_date_iso: "{YYYY-MM-DD}"
+      close_time: "{h:mm AM/PM}"
+      module_id: "M01"
+      requirements: "{e.g., 'Initial post + 2 replies'}"
+      related_sections:
+        - "course_schedule#discussion-schedule"
+
+  # --- MILESTONES ---
+  milestones:
+    - entity_id: "MS01"
+      entity_type: "milestone"
+      title: "{Milestone 1 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#milestone-timeline"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"
+      project_id: "PROJ-FINAL"
+      deliverable: "{Description of what is due}"
+      related_sections:
+        - "course_schedule#milestone-timeline"
+        - "student_profile#group-project-context"
+
+    - entity_id: "MS02"
+      entity_type: "milestone"
+      title: "{Milestone 2 Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#milestone-timeline"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"
+      project_id: "PROJ-FINAL"
+      deliverable: "{Description}"
+      related_sections:
+        - "course_schedule#milestone-timeline"
+        - "student_profile#group-project-context"
+
+  # --- GROUP PROJECTS ---
+  projects:
+    - entity_id: "PROJ-FINAL"
+      entity_type: "project"
+      title: "{Final Group Project Title}"
+      authoritative_file: "course_schedule.md"
+      authoritative_section: "course_schedule#milestone-timeline"
+      start_date_display: "{DayOfWeek, Mon DD, YYYY}"  # First milestone date
+      start_date_iso: "{YYYY-MM-DD}"
+      due_date_display: "{DayOfWeek, Mon DD, YYYY}"    # Final submission date
+      due_date_iso: "{YYYY-MM-DD}"
+      due_time: "{h:mm AM/PM}"
+      milestone_count: 4
+      milestone_ids:
+        - "MS01"
+        - "MS02"
+        - "MS03"
+        - "MS04"
+      related_sections:
+        - "course_schedule#milestone-timeline"
+        - "course_core#assignment-specifications"
+        - "student_profile#group-project-context"
+
+# ============================================================================
+# CROSS-REFERENCES BLOCK
+# Explicitly map relationships between entities and sections
+# ============================================================================
+cross_references:
+  # Entity-to-Section relationships (detailed_in)
+  - from_entity: "A01"
+    to_section: "M01/Assignment_A01_Instructions.pdf"
+    relationship: "detailed_in"
+
+  - from_entity: "A02"
+    to_section: "M02/Assignment_A02_Instructions.pdf"
+    relationship: "detailed_in"
+
+  # Entity-to-Entity relationships (contains)
+  - from_entity: "M01"
+    to_entity: "A01"
+    relationship: "contains"
+
+  - from_entity: "M01"
+    to_entity: "M01-R01"
+    relationship: "contains"
+
+  - from_entity: "M01"
+    to_entity: "M01-R02"
+    relationship: "contains"
+
+  - from_entity: "M01"
+    to_entity: "D01"
+    relationship: "contains"
+
+  # Milestone-to-Project relationships
+  - from_entity: "MS01"
+    to_entity: "PROJ-FINAL"
+    relationship: "milestone_of"
+
+  - from_entity: "MS02"
+    to_entity: "PROJ-FINAL"
+    relationship: "milestone_of"
+
+  # Section-to-Entity relationships (defines_weight_for)
+  - from_section: "course_core#grading-policy"
+    to_entity: "MIDTERM"
+    relationship: "defines_weight_for"
+
+  - from_section: "course_core#grading-policy"
+    to_entity: "FINAL"
+    relationship: "defines_weight_for"
+
+  - from_section: "course_core#grading-policy"
+    to_entity: "PROJ-FINAL"
+    relationship: "defines_weight_for"
+
+  # Prerequisite relationships (if applicable)
+  - from_entity: "M01"
+    to_entity: "M02"
+    relationship: "prerequisite_for"
+
+# ============================================================================
+# VALIDATION REQUIREMENTS
+# ============================================================================
+# Before finalizing this INDEX, verify:
+#
+# Referential Integrity:
+# [ ] Every file_id in sections exists in files
+# [ ] Every authoritative_file in entities exists in files
+# [ ] Every authoritative_section in entities exists in sections
+# [ ] Every section_id in cross_references exists in sections
+# [ ] Every entity_id in cross_references exists in entities
+#
+# ID Format Compliance:
+# [ ] All entity_id values match regex patterns from Naming Standard
+# [ ] All anchor values match ^#[a-z0-9\-]+$
+# [ ] All section_id values match ^[a-z0-9_]+#[a-z0-9\-]+$
+#
+# Date Format Compliance:
+# [ ] All due_date_iso, start_date_iso, end_date_iso match YYYY-MM-DD
+# [ ] All due_date_display match "DayOfWeek, Mon DD, YYYY"
+# [ ] All due_time values match "h:mm AM" or "h:mm PM"
+# [ ] TBD dates use "TBD" for display and null for ISO
+# [ ] last_updated fields match YYYY-MM-DD
+#
+# Uniqueness:
+# [ ] All section_id values are unique across entire INDEX
+# [ ] All entity_id values are unique within their entity type
+# [ ] All file_id values are unique
+#
+# Counts:
+# [ ] total_files_indexed matches actual count in files array
+# [ ] total_sections_indexed matches actual count in sections array
+# [ ] total_entities_indexed matches sum of all entity arrays
+# ============================================================================
+
+# END OF INDEX MANIFEST TEMPLATE
