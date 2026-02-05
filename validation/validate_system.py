@@ -120,7 +120,7 @@ class SystemValidator:
         'course_id': r'^[A-Z]{2,10}[0-9]{3,5}$',
         'term_id': r'^(20\d{2})-(FA|SP|SU|WI)$',
         'course_run_id': r'^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$',
-        'module_id': r'^M\d{2}$',
+        'module_id': r'^(M\d{2}|GK)$',  # Updated to include GK for course-level materials
         'assignment_id': r'^[A-Z]+-?\d{2}(-[A-Z0-9]+)?$',
         'deliverable_id': r'^[A-Z0-9\-]+-DEL\d{2}$',
         'reading_id': r'^(M\d{2}-)?R\d{2}$',
@@ -129,7 +129,9 @@ class SystemValidator:
         'member_id': r'^(Member \d{2}|Josh)$',
         'section_id': r'^[a-z0-9_]+#[a-z0-9\-]+$',
         'file_id': r'^[a-z0-9_]+$',
-        'anchor': r'^#[a-z0-9\-]+$'
+        'anchor': r'^#[a-z0-9\-]+$',
+        # Type codes for module content files
+        'type_code': r'^[ALRB]$'  # A=Assignment, L=Lecture, R=Resource, B=Business case
     }
     
     # Date/time patterns
@@ -139,13 +141,18 @@ class SystemValidator:
         'time_12h': r'^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$'
     }
     
-    # File naming patterns (updated to use course_run_id format)
+    # File naming patterns (updated to use new naming convention)
+    # Format: {CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}
     FILE_NAMING_PATTERNS = {
         'course_core': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_core\.md$',
         'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_schedule\.md$',
         'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.student_profile\.md$',
         'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.index\.json$',
-        'module_manifest': r'^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.module_manifest\.md$'
+        'module_manifest': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$',
+        'module_folder': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$',
+        'module_zip': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$',
+        'module_content': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.[ALRB]_[a-z0-9\-]+\.[a-z]+$',
+        'course_level_gk': r'^[A-Z]{2,10}[0-9]{3,5}_GK_[a-z0-9\-]+\.[a-z]+$'
     }
     
     def __init__(self, base_path: str = "."):

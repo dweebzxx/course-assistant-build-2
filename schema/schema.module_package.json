@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://course-assistant.schema/module_package.json",
   "title": "Module Package Schema",
-  "description": "Simplified schema for module_manifest.md files within module packages",
+  "description": "Simplified schema for module manifest files within module packages. Uses new naming convention: {CourseID}_M{NN}.manifest.md",
   "type": "object",
   "required": ["metadata", "overview", "file_inventory"],
   "properties": {
@@ -13,7 +13,7 @@
         "course_id": {
           "type": "string",
           "pattern": "^[A-Z]{2,10}[0-9]{3,5}$",
-          "description": "Course code only, e.g., MGMT6022"
+          "description": "Course code only, e.g., MKTG6051, MGMT6022"
         },
         "term_id": {
           "type": "string",
@@ -26,7 +26,8 @@
         },
         "module_id": {
           "type": "string",
-          "pattern": "^M\\d{2}$"
+          "pattern": "^(M\\d{2}|GK)$",
+          "description": "Module identifier: M01-M99 or GK for course-level materials"
         },
         "module_title": {
           "type": "string"
@@ -63,18 +64,24 @@
     },
     "file_inventory": {
       "type": "array",
+      "description": "List of files using new naming convention: {CourseID}_M{NN}.{TypeCode}_{short-description}.{extension}",
       "items": {
         "type": "object",
         "required": ["file_path", "file_type", "description"],
         "properties": {
           "file_path": {
             "type": "string",
-            "description": "Relative path to file within module folder"
+            "description": "Relative path to file within module folder. Should follow pattern: {CourseID}_M{NN}.{TypeCode}_{short-description}.{extension} where TypeCode is A (Assignment), L (Lecture), R (Resource), or B (Business case)"
           },
           "file_type": {
             "type": "string",
-            "enum": [".md", ".txt", ".csv", ".xlsx", ".pdf"],
-            "description": "Allowed file types only"
+            "enum": [".md", ".txt", ".csv", ".xlsx", ".pdf", ".pptx", ".docx"],
+            "description": "Allowed file types"
+          },
+          "type_code": {
+            "type": "string",
+            "enum": ["A", "L", "R", "B"],
+            "description": "Type code: A=Assignment, L=Lecture, R=Resource, B=Business case"
           },
           "description": {
             "type": "string"

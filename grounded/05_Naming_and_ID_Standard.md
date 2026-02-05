@@ -86,8 +86,40 @@ This document defines the mandatory naming conventions and deterministic ID gene
 Every file created/managed by this system MUST start with `{course_id}`.
 
 **Validation:**
-- ✓ filename begins with `MGMT6022...`
+- ✓ filename begins with `MKTG6051...` or `MGMT6022...`
 - ✗ filename begins with `CARLSON...` or `2026...` or `SPRING...`
+
+---
+
+### Universal File Naming Format (Module Content)
+
+**Format:** `{CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}`
+
+**Components:**
+- **CourseID:** The course identifier, e.g., `MKTG6051`, `MGMT6022`
+- **Module number:** Two digits prefixed by `M` (e.g., `M01`, `M02`, `M10`). Use `GK` for course-level materials (Grounded Knowledge).
+- **Type codes:**
+  - `.A` = Assignment
+  - `.L` = Lecture
+  - `.R` = Resource (article, book, video transcript, etc.)
+  - `.B` = Business case
+- **Short description:** Lowercase, hyphen-separated, no spaces or special characters
+- **Extension:** Standard file extension (`.md`, `.pdf`, `.pptx`, `.docx`, `.xlsx`, `.csv`, `.txt`)
+
+**Regex (module content):**
+`^[A-Z]{2,10}[0-9]{3,5}_(M[0-9]{2}|GK)\.[ALRB]_[a-z0-9\-]+\.[a-z]+$`
+
+**Examples (valid):**
+- `MKTG6051_M01.A_chapter-12-questions.md`
+- `MKTG6051_M02.L_survey-design.pptx`
+- `MKTG6051_M02.R_demand-and-supply.pdf`
+- `MKTG6051_M02.B_airbus-v-boeing.docx`
+- `MKTG6051_GK_syllabus.pdf`
+- `MGMT6022_M03.A_competitive-analysis.md`
+- `MGMT6022_M05.L_corporate-strategy.pptx`
+- `MGMT6022_M05.R_porter-five-forces.pdf`
+
+**Note:** The course ID MUST prefix every file. Files with `GK` (Grounded Knowledge) are course-wide materials like syllabus and schedule that are not module-specific.
 
 ---
 
@@ -107,6 +139,7 @@ Every file created/managed by this system MUST start with `{course_id}`.
 - `MGMT6022-2026-SP.course_core.md`
 - `MGMT6022-2026-SP.course_schedule.md`
 - `MGMT6022-2026-SP.student_profile.md`
+- `MKTG6051-2026-SP.course_core.md`
 
 **Examples (invalid):**
 - `CARLSON-SCHOOL-2026-SP.course_core.md` (not a course id)
@@ -124,6 +157,7 @@ Every file created/managed by this system MUST start with `{course_id}`.
 
 **Example:**
 - `MGMT6022-2026-SP.index.json`
+- `MKTG6051-2026-SP.index.json`
 
 ---
 
@@ -131,73 +165,109 @@ Every file created/managed by this system MUST start with `{course_id}`.
 
 **Module folder MUST start with `{course_id}` and include `{module_id}`.**
 
-**Pattern:** `{course_id}.module_{module_id}/`
+**Pattern:** `{course_id}_M{NN}/`
 
-**Regex:** `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}/$`
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$`
 
 **Examples:**
-- `MGMT6022.module_M01/`
-- `MGMT6022.module_M10/`
+- `MKTG6051_M01/`
+- `MKTG6051_M10/`
+- `MGMT6022_M03/`
 
 ---
 
 ### Module Package (ZIP)
 
-**Pattern:** `{course_id}.module_{module_id}.zip`
+**Pattern:** `{course_id}_M{NN}.zip`
 
-**Regex:** `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.zip$`
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$`
 
 **Examples:**
-- `MGMT6022.module_M01.zip`
-- `MGMT6022.module_M10.zip`
+- `MKTG6051_M01.zip`
+- `MKTG6051_M10.zip`
+- `MGMT6022_M03.zip`
 
 ---
 
 ### Module Manifest (Inside Module Package)
 
-**Pattern:** `{course_id}.module_{module_id}.module_manifest.md`
+**Pattern:** `{course_id}_M{NN}.manifest.md`
 
-**Regex:** `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.module_manifest\.md$`
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$`
 
 **Examples:**
-- `MGMT6022.module_M01.module_manifest.md`
+- `MKTG6051_M01.manifest.md`
+- `MKTG6051_M03.manifest.md`
+- `MGMT6022_M05.manifest.md`
 
 **Validation rules:**
 - ✓ module_id in manifest MUST match the parent module folder/zip module_id
 - ✓ filename MUST start with course_id
 
 ---
+---
 
 ### Curated Module File (Optional)
 
-**Pattern:** `{course_run_id}.module_{module_id}_curated.md`
+**Pattern:** `{course_run_id}_M{NN}_curated.md`
 
 **Regex:**
-`^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.module_M[0-9]{2}_curated\.md$`
+`^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)_M[0-9]{2}_curated\.md$`
 
-**Example:**
-- `MGMT6022-2026-SP.module_M03_curated.md`
+**Examples:**
+- `MGMT6022-2026-SP_M03_curated.md`
+- `MKTG6051-2026-SP_M05_curated.md`
 
 ---
 
-### Assignment Files (Required course_id prefix)
+### Module Content Files (Using Type Codes)
 
-All assignment artifacts MUST start with `{course_id}`.
+All module content files use the universal format with type codes.
 
-**Pattern (general):**
-`{course_run_id}.assignment_{assignment_id}.{artifact_type}.{ext}`
+**Pattern:** `{CourseID}_M{NN}.{TypeCode}_{short-description}.{extension}`
 
-**Where:**
-- `artifact_type` examples: `instructions`, `rubric`, `submission`, `notes`, `feedback`
-- `ext` examples: `md`, `pdf`, `docx`
+**Type Codes:**
+- `.A` = Assignment (instructions, rubric, template, submission)
+- `.L` = Lecture (slides, notes, video transcripts)
+- `.R` = Resource (articles, books, video transcripts, references)
+- `.B` = Business case
 
-**Regex (common case):**
-`^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.assignment_[A-Z0-9\-]+\.[a-z0-9_]+\.[A-Za-z0-9]+$`
+**Examples (Assignments):**
+- `MKTG6051_M01.A_chapter-12-questions.md`
+- `MKTG6051_M02.A_survey-design-rubric.pdf`
+- `MGMT6022_M03.A_competitive-analysis-instructions.pdf`
+
+**Examples (Lectures):**
+- `MKTG6051_M02.L_survey-design.pptx`
+- `MGMT6022_M05.L_corporate-strategy-slides.pptx`
+- `MKTG6051_M03.L_market-research-notes.md`
+
+**Examples (Resources):**
+- `MKTG6051_M02.R_demand-and-supply.pdf`
+- `MGMT6022_M05.R_porter-five-forces.pdf`
+- `MKTG6051_M01.R_marketing-basics-article.pdf`
+
+**Examples (Business Cases):**
+- `MKTG6051_M02.B_airbus-v-boeing.docx`
+- `MGMT6022_M04.B_apple-supply-chain.pdf`
+
+**Regex (module content):**
+`^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.[ALRB]_[a-z0-9\-]+\.[a-z]+$`
+
+---
+
+### Course-Level Files (GK - Grounded Knowledge)
+
+For course-wide materials not tied to a specific module (syllabus, schedule documents, etc.), use `GK` instead of module number.
+
+**Pattern:** `{CourseID}_GK_{short-description}.{extension}`
+
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_GK_[a-z0-9\-]+\.[a-z]+$`
 
 **Examples:**
-- `MGMT6022-2026-SP.assignment_A01.instructions.md`
-- `MGMT6022-2026-SP.assignment_QUIZ-01.submission.docx`
-- `MGMT6022-2026-SP.assignment_PROJ-FINAL.rubric.pdf`
+- `MKTG6051_GK_syllabus.pdf`
+- `MKTG6051_GK_schedule.pdf`
+- `MGMT6022_GK_course-policies.pdf`
 
 ---
 
@@ -212,14 +282,14 @@ User-provided uploads may keep their original names.
 ## ENTITY ID STANDARDS
 
 ### Module ID (`module_id`)
-**Format:** `M{NN}` where NN is two-digit zero-padded number.
+**Format:** `M{NN}` where NN is two-digit zero-padded number, or `GK` for course-level materials.
 
-**Examples:** `M01`, `M02`, `M10`  
-**Regex:** `^M[0-9]{2}$`
+**Examples:** `M01`, `M02`, `M10`, `GK`  
+**Regex:** `^(M[0-9]{2}|GK)$`
 
 **Derivation:**
 1. If syllabus provides module numbers, normalize to 2 digits.
-2. If “Week 1”, map to `M01`, etc.
+2. If "Week 1", map to `M01`, etc.
 3. If no structure, assign sequentially based on schedule order.
 4. Module IDs do not change mid-term.
 
@@ -287,7 +357,8 @@ Required fields:
 **Examples:**
 - `MGMT6022-2026-SP.course_core.md#grading-policy`
 - `MGMT6022-2026-SP.course_schedule.md#assignment-calendar(A03)`
-- `MGMT6022.module_M03/MGMT6022.module_M03.module_manifest.md#metadata`
+- `MKTG6051_M03/MKTG6051_M03.manifest.md#metadata`
+- `MKTG6051_M02.A_survey-design-instructions.pdf`
 
 ---
 
@@ -298,41 +369,62 @@ Required fields:
 | course_id | `^[A-Z]{2,10}[0-9]{3,5}$` |
 | term_id | `^(20[0-9]{2})-(FA\|SP\|SU\|WI)$` |
 | course_run_id | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)$` |
-| module_id | `^M[0-9]{2}$` |
+| module_id | `^(M[0-9]{2}\|GK)$` |
 | GK filename | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)\.(course_core\|course_schedule\|student_profile)\.md$` |
 | index filename | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)\.index\.json$` |
-| module folder | `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}/$` |
-| module zip | `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.zip$` |
-| module manifest | `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.module_manifest\.md$` |
-| assignment file (general) | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)\.assignment_[A-Z0-9\-]+\.[a-z0-9_]+\.[A-Za-z0-9]+$` |
+| module folder | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$` |
+| module zip | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$` |
+| module manifest | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$` |
+| module content file | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.[ALRB]_[a-z0-9\-]+\.[a-z]+$` |
+| course-level GK file | `^[A-Z]{2,10}[0-9]{3,5}_GK_[a-z0-9\-]+\.[a-z]+$` |
 
 ---
 
 ## EXAMPLES: COMPLETE FILE AND ENTITY SET
 
-**Course:** MGMT6022  
+**Course:** MKTG6051  
 **Term:** Spring 2026
 
 ### Required identifiers
-- `course_id`: `MGMT6022`
+- `course_id`: `MKTG6051`
 - `term_id`: `2026-SP`
-- `course_run_id`: `MGMT6022-2026-SP`
+- `course_run_id`: `MKTG6051-2026-SP`
 
-### GK files
-- `MGMT6022-2026-SP.course_core.md`
-- `MGMT6022-2026-SP.course_schedule.md`
-- `MGMT6022-2026-SP.student_profile.md`
-- `MGMT6022-2026-SP.index.json`
+### GK files (Grounded Knowledge)
+- `MKTG6051-2026-SP.course_core.md`
+- `MKTG6051-2026-SP.course_schedule.md`
+- `MKTG6051-2026-SP.student_profile.md`
+- `MKTG6051-2026-SP.index.json`
+
+### Course-Level Materials (GK)
+- `MKTG6051_GK_syllabus.pdf`
+- `MKTG6051_GK_schedule.pdf`
 
 ### Modules
-- Folder: `MGMT6022.module_M01/`
-- ZIP: `MGMT6022.module_M01.zip`
-- Manifest: `MGMT6022.module_M01.module_manifest.md`
+- Folder: `MKTG6051_M01/`
+- ZIP: `MKTG6051_M01.zip`
+- Manifest: `MKTG6051_M01.manifest.md`
 
-### Assignments
-- `MGMT6022-2026-SP.assignment_A01.instructions.md`
-- `MGMT6022-2026-SP.assignment_QUIZ-01.submission.docx`
-- `MGMT6022-2026-SP.assignment_PROJ-FINAL.rubric.pdf`
+### Module Content Files (by Type Code)
+
+**Assignments (.A):**
+- `MKTG6051_M01.A_chapter-12-questions.md`
+- `MKTG6051_M02.A_survey-design-rubric.pdf`
+- `MKTG6051_M03.A_market-analysis-instructions.pdf`
+
+**Lectures (.L):**
+- `MKTG6051_M02.L_survey-design.pptx`
+- `MKTG6051_M03.L_market-research-slides.pptx`
+- `MKTG6051_M05.L_pricing-strategy-notes.md`
+
+**Resources (.R):**
+- `MKTG6051_M02.R_demand-and-supply.pdf`
+- `MKTG6051_M04.R_consumer-behavior-article.pdf`
+- `MKTG6051_M01.R_marketing-basics.pdf`
+
+**Business Cases (.B):**
+- `MKTG6051_M02.B_airbus-v-boeing.docx`
+- `MKTG6051_M04.B_tesla-marketing-strategy.pdf`
 
 ---
 
