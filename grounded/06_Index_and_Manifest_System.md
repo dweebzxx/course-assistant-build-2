@@ -36,17 +36,16 @@ This document defines the mandatory index and manifest system for the Course Ass
 ## INDEX FILE SPECIFICATION
 
 ### File Naming
-**Pattern:** `{course_id}.index.json`  
-**Example:** `MGMT-5001-SEC01-2025-FA.index.json`
+**Pattern:** `{course_id}_GK_index.json`  
+**Example:** `MGMT6022_GK_index.json`
 
 ### Required Top-Level Fields
 
 ```json
 {
-  "metadata": { ... },
-  "files": [ ... ],
-  "entities": { ... },
-  "sections": [ ... ],
+  "index_metadata": { ... },
+  "grounded_knowledge_files": [ ... ],
+  "working_memory_files": [ ... ],
   "cross_references": [ ... ]
 }
 ```
@@ -58,33 +57,30 @@ This document defines the mandatory index and manifest system for the Course Ass
 ### Required Fields
 
 ```json
-"metadata": {
-  "course_id": "MGMT-5001-SEC01-2025-FA",
-  "term_id": "2025-FA",
-  "doc_type": "index",
+"index_metadata": {
+  "course_id": "MKTG6051",
+  "term_id": "2026-SP",
+  "course_run_id": "MKTG6051-2026-SP",
+  "index_version": "1.0.0",
   "last_updated": "2026-01-25",
-  "timezone": "America/Chicago",
-  "index_scope": "all_grounded_and_working_files",
-  "total_files_indexed": 15,
-  "total_sections_indexed": 87,
-  "total_entities_indexed": 42
+  "timezone": "America/Chicago"
 }
 ```
 
 ### Optional Fields
 
 ```json
-"metadata": {
+"index_metadata": {
   "change_log": [
     {
       "date": "2026-01-25",
       "change": "Added Module 5 content",
-      "files_affected": ["M05/", "course-schedule.md"]
+      "files_affected": ["M05/", "MKTG6051_GK_course-schedule.md"]
     },
     {
       "date": "2026-01-20",
       "change": "Updated Assignment A03 due date",
-      "files_affected": ["course-schedule.md"]
+      "files_affected": ["MKTG6051_GK_course-schedule.md"]
     }
   ],
   "index_generation_date": "2026-01-25T14:30:00-06:00",
@@ -102,73 +98,88 @@ Catalog every file in the agent build (both Grounded Knowledge Files and Working
 ### Structure
 
 ```json
-"files": [
+"grounded_knowledge_files": [
   {
-    "file_id": "course_core",
-    "filename": "MGMT-5001-SEC01-2025-FA.course-core.md",
-    "file_type": "grounded_knowledge",
+    "filename": "MKTG6051_GK_course-core.md",
     "doc_type": "course_core",
-    "path": "./",
     "last_updated": "2026-01-20",
-    "section_count": 12,
-    "entity_count": 8,
-    "size_bytes": 15420
+    "sections": [
+      {
+        "section_id": "metadata",
+        "section_title": "Metadata",
+        "section_type": "metadata_block",
+        "entities": []
+      },
+      {
+        "section_id": "grading-policy",
+        "section_title": "Grading Policy",
+        "section_type": "policy",
+        "entities": []
+      }
+    ]
   },
   {
-    "file_id": "course_schedule",
-    "filename": "MGMT-5001-SEC01-2025-FA.course-schedule.md",
-    "file_type": "grounded_knowledge",
+    "filename": "MKTG6051_GK_course-schedule.md",
     "doc_type": "course_schedule",
-    "path": "./",
     "last_updated": "2026-01-25",
-    "section_count": 18,
-    "entity_count": 34,
-    "size_bytes": 22810
-  },
+    "sections": [
+      {
+        "section_id": "assignment-calendar",
+        "section_title": "Assignment Calendar",
+        "section_type": "schedule",
+        "entities": [
+          {
+            "entity_id": "A01",
+            "entity_type": "assignment",
+            "entity_title": "Marketing Strategy Analysis",
+            "key_fields": {
+              "due_date": "2026-02-10",
+              "module_id": "M03"
+            }
+          }
+        ]
+      }
+    ]
+  }
+],
+"working_memory_files": [
   {
-    "file_id": "M03_manifest",
-    "filename": "MKTG6051_M03.manifest.md",
-    "file_type": "module_manifest",
-    "doc_type": "module_manifest",
-    "path": "MKTG6051_M03/",
     "module_id": "M03",
-    "last_updated": "2026-01-15",
-    "section_count": 5,
-    "entity_count": 7,
-    "size_bytes": 4200
-  },
-  {
-    "file_id": "M03_lecture",
-    "filename": "MKTG6051_M03.L_competitive-strategy.pptx",
-    "file_type": "working_memory",
-    "doc_type": "lecture_slides",
-    "path": "MKTG6051_M03/",
-    "module_id": "M03",
-    "last_updated": "2026-01-12",
-    "section_count": null,
-    "entity_count": null,
-    "size_bytes": 2048000
+    "module_title": "Module 3: Competitive Strategy",
+    "upload_date": "2026-01-15",
+    "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md",
+    "files": [
+      {
+        "filepath": "MKTG6051_M03.L_competitive-strategy.pptx",
+        "filetype": "pptx",
+        "description": "Lecture slides",
+        "indexed": true
+      }
+    ]
   }
 ]
 ```
 
-### Required Fields (per file entry)
-- `file_id`: Unique identifier for this file (lowercase, underscores allowed)
-- `filename`: Exact filename with extension
-- `file_type`: One of `grounded_knowledge`, `module_manifest`, `working_memory`
-- `doc_type`: Document type (e.g., `course_core`, `assignment_instructions`, `lecture_slides`)
-- `path`: Relative path from agent root
-- `last_updated`: ISO date (YYYY-MM-DD)
+### Required Fields
 
-### Optional Fields
-- `module_id`: If file belongs to a module
-- `section_count`: Number of indexed sections (null if not applicable)
-- `entity_count`: Number of indexed entities (null if not applicable)
-- `size_bytes`: File size
+**For grounded_knowledge_files:**
+- `filename`: Exact filename with extension (must follow `{course_id}_GK_` pattern)
+- `doc_type`: One of `course_core`, `course_schedule`, `student_profile`
+- `last_updated`: ISO date (YYYY-MM-DD)
+- `sections`: Array of section objects with `section_id`, `section_title`, `section_type`, `entities`
+
+**For working_memory_files:**
+- `module_id`: Module identifier (e.g., `M01`, `M02`)
+- `module_title`: Human-readable module title
+- `upload_date`: ISO date (YYYY-MM-DD)
+- `manifest_file`: Path to module manifest file
+- `files`: Array of file objects with `filepath`, `filetype`, `description`, `indexed`
 
 ---
 
 ## SECTIONS BLOCK
+
+**NOTE:** This document describes an older index structure. According to the definitive File Set Register (03_Final_File_Set_Register.md), sections are now nested within the `grounded_knowledge_files` array rather than being a separate top-level block. The examples below use the older structure for reference but should be updated to match the register specification.
 
 ### Purpose
 Index every retrievable section across all files with stable anchor IDs. This is the **primary retrieval mechanism** for the agent.
@@ -180,7 +191,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "course_core#metadata",
     "file_id": "course_core",
-    "filename": "MGMT-5001-SEC01-2025-FA.course-core.md",
+    "filename": "MKTG6051_GK_course-core.md",
     "anchor": "#metadata",
     "section_title": "Metadata",
     "section_type": "metadata_block",
@@ -192,7 +203,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "course_core#grading-policy",
     "file_id": "course_core",
-    "filename": "MGMT-5001-SEC01-2025-FA.course-core.md",
+    "filename": "MKTG6051_GK_course-core.md",
     "anchor": "#grading-policy",
     "section_title": "Grading Policy",
     "section_type": "policy",
@@ -204,7 +215,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "course_schedule#assignment-calendar",
     "file_id": "course_schedule",
-    "filename": "MGMT-5001-SEC01-2025-FA.course-schedule.md",
+    "filename": "MKTG6051_GK_course-schedule.md",
     "anchor": "#assignment-calendar",
     "section_title": "Assignment Calendar",
     "section_type": "schedule",
@@ -257,7 +268,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "A03",
       "entity_type": "assignment",
       "title": "Marketing Strategy Analysis",
-      "authoritative_file": "course-schedule.md",
+      "authoritative_file": "MKTG6051_GK_course-schedule.md",
       "authoritative_section": "course_schedule#assignment-calendar",
       "due_date_display": "Monday, Feb 10, 2026",
       "due_date_iso": "2026-02-10",
@@ -272,7 +283,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "EXAM-MIDTERM",
       "entity_type": "exam",
       "title": "Midterm Exam",
-      "authoritative_file": "course-schedule.md",
+      "authoritative_file": "MKTG6051_GK_course-schedule.md",
       "authoritative_section": "course_schedule#exam-schedule",
       "due_date_display": "Wednesday, Mar 05, 2026",
       "due_date_iso": "2026-03-05",
@@ -289,7 +300,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "M03",
       "entity_type": "module",
       "title": "Module 3: Competitive Strategy",
-      "authoritative_file": "course-schedule.md",
+      "authoritative_file": "MKTG6051_GK_course-schedule.md",
       "authoritative_section": "course_schedule#module-sequence",
       "start_date_display": "Monday, Feb 03, 2026",
       "start_date_iso": "2026-02-03",
@@ -308,7 +319,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "M03-R01",
       "entity_type": "reading",
       "title": "Porter (1980) - Competitive Strategy, Ch. 1",
-      "authoritative_file": "course-schedule.md",
+      "authoritative_file": "MKTG6051_GK_course-schedule.md",
       "authoritative_section": "course_schedule#reading-schedule",
       "due_date_display": "Monday, Feb 03, 2026",
       "due_date_iso": "2026-02-03",
@@ -325,7 +336,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "PROJ-FINAL-MS01",
       "entity_type": "milestone",
       "title": "Final Project Milestone 1: Team Formation",
-      "authoritative_file": "course-schedule.md",
+      "authoritative_file": "MKTG6051_GK_course-schedule.md",
       "authoritative_section": "course_schedule#milestone-timeline",
       "due_date_display": "Friday, Feb 14, 2026",
       "due_date_iso": "2026-02-14",
@@ -333,7 +344,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "project_id": "PROJ-FINAL",
       "related_sections": [
         "course_schedule#milestone-timeline",
-        "student-profile.md#group-project-context"
+        "MKTG6051_GK_student-profile.md#group-project-context"
       ]
     }
   ]
@@ -443,7 +454,7 @@ For efficiency, the system MAY support partial INDEX updates where only changed 
 
 4. **Cite sources:**
    - Use format: `filename#anchor (entity_id)`
-   - Example: `course-schedule.md#assignment-calendar (A03)`
+   - Example: `MKTG6051_GK_course-schedule.md#assignment-calendar (A03)`
 
 5. **If content missing or TBD:**
    - State: "Not found in provided materials"
@@ -488,7 +499,7 @@ For efficiency, the system MAY support partial INDEX updates where only changed 
   "entity_id": "A07",
   "entity_type": "assignment",
   "title": "Final Reflection Essay",
-  "authoritative_file": "course-schedule.md",
+  "authoritative_file": "MKTG6051_GK_course-schedule.md",
   "authoritative_section": "course_schedule#assignment-calendar",
   "due_date_display": "TBD",
   "due_date_iso": null,
@@ -506,7 +517,7 @@ For efficiency, the system MAY support partial INDEX updates where only changed 
   "entity_id": "EXAM-FINAL",
   "entity_type": "exam",
   "title": "Final Exam",
-  "authoritative_file": "course-schedule.md",
+  "authoritative_file": "MKTG6051_GK_course-schedule.md",
   "authoritative_section": "course_schedule#exam-schedule",
   "due_date_display": "Wednesday, May 07, 2026",
   "due_date_iso": "2026-05-07",
@@ -542,103 +553,101 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
 
 ```json
 {
-  "metadata": {
+  "index_metadata": {
     "course_id": "MKTG6051",
     "term_id": "2026-SP",
-    "doc_type": "index",
+    "course_run_id": "MKTG6051-2026-SP",
+    "index_version": "1.0.0",
     "last_updated": "2026-01-25",
-    "timezone": "America/Chicago",
-    "index_scope": "all_grounded_and_working_files",
-    "total_files_indexed": 8,
-    "total_sections_indexed": 35,
-    "total_entities_indexed": 18
+    "timezone": "America/Chicago"
   },
-  "files": [
+  "grounded_knowledge_files": [
     {
-      "file_id": "course_core",
       "filename": "MKTG6051_GK_course-core.md",
-      "file_type": "grounded_knowledge",
       "doc_type": "course_core",
-      "path": "./",
       "last_updated": "2026-01-20",
-      "section_count": 8,
-      "entity_count": 0
+      "sections": [
+        {
+          "section_id": "grading-policy",
+          "section_title": "Grading Policy",
+          "section_type": "policy",
+          "entities": []
+        }
+      ]
     },
     {
-      "file_id": "course_schedule",
       "filename": "MKTG6051_GK_course-schedule.md",
-      "file_type": "grounded_knowledge",
       "doc_type": "course_schedule",
-      "path": "./",
       "last_updated": "2026-01-25",
-      "section_count": 12,
-      "entity_count": 18
+      "sections": [
+        {
+          "section_id": "assignment-calendar",
+          "section_title": "Assignment Calendar",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "A03",
+              "entity_type": "assignment",
+              "entity_title": "Marketing Strategy Analysis",
+              "key_fields": {
+                "due_date": "2026-02-10",
+                "due_time": "11:59 PM",
+                "module_id": "M03"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "module-sequence",
+          "section_title": "Module Sequence",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "M03",
+              "entity_type": "module",
+              "entity_title": "Module 3: Competitive Strategy",
+              "key_fields": {
+                "start_date": "2026-02-03",
+                "end_date": "2026-02-09",
+                "module_folder": "MKTG6051_M03/",
+                "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md"
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
-  "sections": [
+  "working_memory_files": [
     {
-      "section_id": "course_core#grading-policy",
-      "file_id": "course_core",
-      "filename": "MKTG6051_GK_course-core.md",
-      "anchor": "#grading-policy",
-      "section_title": "Grading Policy",
-      "section_type": "policy",
-      "entity_ids": []
-    },
-    {
-      "section_id": "course_schedule#assignment-calendar",
-      "file_id": "course_schedule",
-      "filename": "MKTG6051_GK_course-schedule.md",
-      "anchor": "#assignment-calendar",
-      "section_title": "Assignment Calendar",
-      "section_type": "schedule",
-      "entity_ids": ["A01", "A02", "A03", "QUIZ-01"]
+      "module_id": "M03",
+      "module_title": "Module 3: Competitive Strategy",
+      "upload_date": "2026-01-15",
+      "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md",
+      "files": [
+        {
+          "filepath": "MKTG6051_M03.A_strategy-analysis-instructions.pdf",
+          "filetype": "pdf",
+          "description": "Assignment instructions",
+          "indexed": true
+        }
+      ]
     }
   ],
-  "entities": {
-    "assignments": [
-      {
-        "entity_id": "A03",
-        "entity_type": "assignment",
-        "title": "Marketing Strategy Analysis",
-        "authoritative_file": "course-schedule.md",
-        "authoritative_section": "course_schedule#assignment-calendar",
-        "due_date_display": "Monday, Feb 10, 2026",
-        "due_date_iso": "2026-02-10",
-        "due_time": "11:59 PM",
-        "module_id": "M03",
-        "related_sections": [
-          "course_schedule#assignment-calendar",
-          "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf"
-        ]
-      }
-    ],
-    "modules": [
-      {
-        "entity_id": "M03",
-        "entity_type": "module",
-        "title": "Module 3: Competitive Strategy",
-        "authoritative_file": "course-schedule.md",
-        "authoritative_section": "course_schedule#module-sequence",
-        "start_date_display": "Monday, Feb 03, 2026",
-        "start_date_iso": "2026-02-03",
-        "end_date_display": "Sunday, Feb 09, 2026",
-        "end_date_iso": "2026-02-09",
-        "module_folder": "MKTG6051_M03/",
-        "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md"
-      }
-    ]
-  },
   "cross_references": [
     {
-      "from_entity": "A03",
-      "to_section": "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf",
-      "relationship": "detailed_in"
+      "entity_id": "A03",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#assignment-calendar",
+        "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf"
+      ]
     },
     {
-      "from_entity": "M03",
-      "to_entity": "A03",
-      "relationship": "contains"
+      "entity_id": "M03",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_M03/MKTG6051_M03.manifest.md"
+      ]
     }
   ]
 }

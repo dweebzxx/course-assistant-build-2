@@ -168,8 +168,8 @@
    - **Purpose:** Template for creating student-profile.md files
    - **Status:** ✅ KEEP (Essential template)
 
-4. **23_Index_Manifest_Template.yaml** (20K)
-   - **Purpose:** Template for creating INDEX.json files
+4. **23_Index_Template.json** (20K)
+   - **Purpose:** Template for creating {course_id}_GK_index.json files
    - **Status:** ✅ KEEP (Essential template)
 
 5. **24_Module_Package_Template.md** (6.2K)

@@ -1,0 +1,313 @@
+{
+  "_comment": [
+    "============================================================================",
+    "INDEX TEMPLATE",
+    "============================================================================",
+    "Filename Pattern: {course_id}_GK_index.json",
+    "Regex: ^[A-Z]{2,10}[0-9]{3,5}_GK_index\\.json$",
+    "Authority Tier: 4 (Authoritative for file/section locations, NOT content)",
+    "Example Filename: MGMT6022_GK_index.json",
+    "============================================================================"
+  ],
+  "index_metadata": {
+    "course_id": "{COURSE_ID}",
+    "term_id": "{YYYY}-{TT}",
+    "course_run_id": "{COURSE_ID}-{YYYY}-{TT}",
+    "index_version": "1.0.0",
+    "last_updated": "{YYYY-MM-DD}",
+    "timezone": "America/Chicago",
+    "doc_type": "index",
+    "index_scope": "all_grounded_and_working_files",
+    "total_files_indexed": "{N}",
+    "total_sections_indexed": "{N}",
+    "total_entities_indexed": "{N}",
+    "change_log": [
+      {
+        "date": "{YYYY-MM-DD}",
+        "change": "{Description of update}",
+        "files_affected": [
+          "{filename}"
+        ]
+      }
+    ],
+    "index_generation_date": "{YYYY-MM-DDTHH:MM:SS-06:00}",
+    "index_generator": "manual | script | agent"
+  },
+  "grounded_knowledge_files": [
+    {
+      "filename": "{COURSE_ID}_GK_course-core.md",
+      "doc_type": "course_core",
+      "last_updated": "{YYYY-MM-DD}",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata_block",
+          "entities": []
+        },
+        {
+          "section_id": "course-identification",
+          "section_title": "Course Identification",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "instructor-information",
+          "section_title": "Instructor Information",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "course-syllabus",
+          "section_title": "Course Syllabus",
+          "section_type": "syllabus",
+          "entities": []
+        },
+        {
+          "section_id": "course-structure",
+          "section_title": "Course Structure",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "grading-policy",
+          "section_title": "Grading Policy",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "course-policies",
+          "section_title": "Course Policies",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "required-resources",
+          "section_title": "Required Resources",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "learning-objectives",
+          "section_title": "Learning Objectives",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "group-project-context",
+          "section_title": "Group Project Context",
+          "section_type": "project_info",
+          "entities": []
+        }
+      ]
+    },
+    {
+      "filename": "{COURSE_ID}_GK_course-schedule.md",
+      "doc_type": "course_schedule",
+      "last_updated": "{YYYY-MM-DD}",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata_block",
+          "entities": []
+        },
+        {
+          "section_id": "term-calendar",
+          "section_title": "Term Calendar",
+          "section_type": "schedule",
+          "entities": []
+        },
+        {
+          "section_id": "module-sequence",
+          "section_title": "Module Sequence",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "M01",
+              "entity_type": "module",
+              "entity_title": "{Module 1 Title}",
+              "key_fields": {
+                "start_date": "{YYYY-MM-DD}",
+                "end_date": "{YYYY-MM-DD}"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "assignment-calendar",
+          "section_title": "Assignment Calendar",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "A01",
+              "entity_type": "assignment",
+              "entity_title": "{Assignment 1 Title}",
+              "key_fields": {
+                "due_date": "{YYYY-MM-DD}",
+                "due_time": "{h:mm AM/PM}",
+                "module_id": "M01"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "exam-schedule",
+          "section_title": "Exam Schedule",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "EXAM-MIDTERM",
+              "entity_type": "exam",
+              "entity_title": "Midterm Exam",
+              "key_fields": {
+                "date": "{YYYY-MM-DD}",
+                "time": "{h:mm AM/PM}"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "reading-schedule",
+          "section_title": "Reading Schedule",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "M01-R01",
+              "entity_type": "reading",
+              "entity_title": "{Reading 1 Title}",
+              "key_fields": {
+                "due_date": "{YYYY-MM-DD}",
+                "module_id": "M01"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "discussion-schedule",
+          "section_title": "Discussion Schedule",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "D01",
+              "entity_type": "discussion",
+              "entity_title": "{Discussion 1 Topic}",
+              "key_fields": {
+                "open_date": "{YYYY-MM-DD}",
+                "close_date": "{YYYY-MM-DD}",
+                "module_id": "M01"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "milestone-timeline",
+          "section_title": "Milestone Timeline",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "MS01",
+              "entity_type": "milestone",
+              "entity_title": "{Milestone 1 Title}",
+              "key_fields": {
+                "due_date": "{YYYY-MM-DD}",
+                "due_time": "{h:mm AM/PM}",
+                "project_id": "PROJ-FINAL"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "{COURSE_ID}_GK_student-profile.md",
+      "doc_type": "student_profile",
+      "last_updated": "{YYYY-MM-DD}",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata_block",
+          "entities": []
+        },
+        {
+          "section_id": "student-identification",
+          "section_title": "Student Identification",
+          "section_type": "student_context",
+          "entities": []
+        },
+        {
+          "section_id": "writing-style-profile",
+          "section_title": "Writing Style Profile",
+          "section_type": "student_context",
+          "entities": []
+        }
+      ]
+    }
+  ],
+  "working_memory_files": [
+    {
+      "module_id": "M01",
+      "module_title": "{Module 1 Title}",
+      "upload_date": "{YYYY-MM-DD}",
+      "manifest_file": "{COURSE_ID}_M01/{COURSE_ID}_M01.manifest.md",
+      "files": [
+        {
+          "filepath": "{COURSE_ID}_M01.A_assignment-instructions.pdf",
+          "filetype": "pdf",
+          "description": "Assignment instructions",
+          "indexed": true
+        },
+        {
+          "filepath": "{COURSE_ID}_M01.L_lecture-slides.pptx",
+          "filetype": "pptx",
+          "description": "Lecture slides",
+          "indexed": true
+        },
+        {
+          "filepath": "{COURSE_ID}_M01.R_reading-material.pdf",
+          "filetype": "pdf",
+          "description": "Required reading",
+          "indexed": true
+        }
+      ]
+    }
+  ],
+  "cross_references": [
+    {
+      "entity_id": "A01",
+      "referenced_in": [
+        "{COURSE_ID}_GK_course-schedule.md#assignment-calendar",
+        "{COURSE_ID}_M01/{COURSE_ID}_M01.A_assignment-instructions.pdf"
+      ]
+    },
+    {
+      "entity_id": "M01",
+      "referenced_in": [
+        "{COURSE_ID}_GK_course-schedule.md#module-sequence",
+        "{COURSE_ID}_M01/{COURSE_ID}_M01.manifest.md"
+      ]
+    }
+  ],
+  "_validation_checklist": {
+    "referential_integrity": [
+      "Every filename in grounded_knowledge_files exists",
+      "Every section_id is unique",
+      "Every entity_id is unique within its type",
+      "All cross_references point to valid entities and files"
+    ],
+    "id_format_compliance": [
+      "All entity_id values match regex patterns from Naming Standard",
+      "All section_id values match naming conventions"
+    ],
+    "date_format_compliance": [
+      "All dates use YYYY-MM-DD format",
+      "TBD dates use null for ISO values"
+    ],
+    "naming_compliance": [
+      "Filename follows pattern: {course_id}_GK_index.json",
+      "All GK files use {course_id}_GK_ prefix",
+      "All module files use {course_id}_M{NN} prefix"
+    ]
+  }
+}

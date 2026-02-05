@@ -95,9 +95,10 @@
    - Changed filename pattern to `{course_id}_GK_student-profile.md`
    - Updated constraint descriptions
 
-4. **23_Index_Manifest_Template.yaml**
+4. **23_Index_Template.json**
    - Updated all file references
    - Changed filename patterns throughout
+   - Converted from YAML to JSON format to align with definitive standard
 
 5. **24_Module_Package_Template.md**
    - Verified (already used correct module naming)
