@@ -17,12 +17,12 @@
 **Index Files Count**: **1**  
 **Total Initial Setup Files**: **4**
 
-1. `{course_run_id}.course_core.md` - Course policies, grading, structure, instructor, group project definition (Tier 2)
-2. `{course_run_id}.course_schedule.md` - Timeline, due dates, assignments, modules (Tier 1 - highest authority for dates)
-3. `{course_run_id}.student_profile.md` - Minimal student context (Tier 3)
-4. `{course_run_id}.index.json` - System index for retrieval (Tier 4)
+1. `{course_id}_GK_course-core.md` - Course syllabus, policies, grading, structure, instructor, group project (Tier 1 - highest authority)
+2. `{course_id}_GK_course-schedule.md` - Timeline, due dates, assignments, modules (Tier 2 - authoritative for dates)
+3. `{course_id}_GK_student-profile.md` - Minimal student context (Tier 3)
+4. `{course_id}_GK_index.json` - System index for retrieval (Tier 4)
 
-**Global Naming Rule**: All system-controlled files MUST start with `{course_id}`.
+**Global Naming Rule**: All system-controlled files MUST start with `{course_id}_GK_` for Grounded Knowledge files.
 
 ---
 
@@ -40,10 +40,11 @@
 - **Regex**: `^(20[0-9]{2})-(FA|SP|SU|WI)$`
 
 ### course_run_id
-- **Definition**: Course instance for a specific term
+- **Definition**: Course instance for a specific term (used in metadata only, not in filenames)
 - **Format**: `{course_id}-{term_id}`
 - **Example**: `MGMT6022-2026-SP`
 - **Regex**: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$`
+- **Usage**: Appears in document metadata fields, not in filenames
 
 ---
 
@@ -51,26 +52,27 @@
 
 ### File Type 1: Course Core
 
-**Purpose**: Authoritative source for course policies, grading system, structure, instructor information, and group project definition. Rarely updated after term start.
+**Purpose**: Authoritative source for course syllabus, policies, grading system, structure, instructor information, and group project definition. Tier 1 authority - highest priority for all course requirements.
 
 **File Type**: Markdown (.md)
 
 **Naming Rule**:  
-Pattern: `{course_run_id}.course_core.md`  
-Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_core\.md$`  
-Example: `MGMT6022-2026-SP.course_core.md`
+Pattern: `{course_id}_GK_course-core.md`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_GK_course-core\.md$`  
+Example: `MGMT6022_GK_course-core.md`
 
 **Content Outline**:
 1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, source_files)
 2. Course Identification (title, number, credits, section label if present, term dates)
 3. Instructor Information (name, title, contact, office hours)
-4. Course Structure (delivery mode, required tools, prerequisites)
-5. Grading Policy (components, weights, scale, calculation method)
-6. Course Policies (attendance, participation, late work, academic integrity, accommodations)
-7. Required Resources (textbooks, software, technology requirements)
-8. Learning Objectives (course-level goals)
-9. Group Project Context (yes/no, team name, project ID if applicable)
-10. Index References (section linking to INDEX entries)
+4. Course Syllabus (complete syllabus content)
+5. Course Structure (delivery mode, required tools, prerequisites)
+6. Grading Policy (components, weights, scale, calculation method)
+7. Course Policies (attendance, participation, late work, academic integrity, accommodations)
+8. Required Resources (textbooks, software, technology requirements)
+9. Learning Objectives (course-level goals)
+10. Group Project Context (yes/no, team name, project ID if applicable)
+11. Index References (section linking to INDEX entries)
 
 **Template Filename**: `20_Course_Core_Template.md` (Phase 4 deliverable)
 
@@ -85,22 +87,22 @@ Example: `MGMT6022-2026-SP.course_core.md`
 - Group project context is defined (yes/no selection)
 
 **Does NOT contain**:
-- Dates and deadlines (→ course_schedule.md is Tier 1 for all dates)
-- Student-specific context (→ student_profile.md)
+- Specific dates and deadlines (→ course-schedule.md is Tier 2 for all temporal information)
+- Student-specific context (→ student-profile.md)
 - Module content (→ Working Memory Files)
 
 ---
 
 ### File Type 2: Course Schedule
 
-**Purpose**: Authoritative source for all dates, deadlines, module sequence, and assignment calendar. Single source of truth for temporal information.
+**Purpose**: Authoritative source for all dates, deadlines, module sequence, and assignment calendar. Tier 2 authority - single source of truth for temporal information.
 
 **File Type**: Markdown (.md)
 
 **Naming Rule**:  
-Pattern: `{course_run_id}.course_schedule.md`  
-Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_schedule\.md$`  
-Example: `MGMT6022-2026-SP.course_schedule.md`
+Pattern: `{course_id}_GK_course-schedule.md`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_GK_course-schedule\.md$`  
+Example: `MGMT6022_GK_course-schedule.md`
 
 **Content Outline**:
 1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, source_files)
@@ -137,9 +139,9 @@ Example: `MGMT6022-2026-SP.course_schedule.md`
 **File Type**: Markdown (.md)
 
 **Naming Rule**:  
-Pattern: `{course_run_id}.student_profile.md`  
-Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.student_profile\.md$`  
-Example: `MGMT6022-2026-SP.student_profile.md`
+Pattern: `{course_id}_GK_student-profile.md`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_GK_student-profile\.md$`  
+Example: `MGMT6022_GK_student-profile.md`
 
 **Content Outline**:
 1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, student_name)
@@ -182,9 +184,9 @@ Example: `MGMT6022-2026-SP.student_profile.md`
 **File Type**: JSON (.json)
 
 **Naming Rule**:  
-Pattern: `{course_run_id}.index.json`  
-Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.index\.json$`  
-Example: `MGMT6022-2026-SP.index.json`
+Pattern: `{course_id}_GK_index.json`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_GK_index\.json$`  
+Example: `MGMT6022_GK_index.json`
 
 **Content Outline**:
 ```json
@@ -389,13 +391,13 @@ Example: `MKTG6051-2026-SP_M03_curated.md`
 
 | # | File Type       | Purpose                                                  | File Format | Authority Tier | Initial Setup   | Schema Validated |
 | - | --------------- | -------------------------------------------------------- | ----------- | -------------- | --------------- | ---------------- |
-| 1 | Course Core     | Policies, grading, structure, group project definition and assignment   | MD          | Tier 2         | Yes             | Yes              |
-| 2 | Course Schedule | Dates, deadlines, timeline (highest authority for dates) | MD          | Tier 1         | Yes             | Yes              |
+| 1 | Course Core     | Syllabus, policies, grading, structure, group project (highest authority) | MD          | Tier 1         | Yes             | Yes              |
+| 2 | Course Schedule | Dates, deadlines, timeline (authoritative for temporal info) | MD          | Tier 2         | Yes             | Yes              |
 | 3 | Student Profile | Student identification and comprehensive writing style profile | MD          | Tier 3         | Yes             | Yes              |
 | 4 | Index           | Retrieval targeting, integrity                           | JSON        | Tier 4         | Yes (generated) | Yes              |
 | 5 | Module Package  | Module materials container                               | Folder/ZIP  | Tier 5         | No (as needed)  | Manifest only    |
 
-**Note**: Assignment details live in course_schedule.md Assignment Calendar. Group project definition and student-specific assignment are both in course_core.md Group Project Context section.
+**Note**: Assignment details live in course-schedule.md Assignment Calendar. Group project definition and student-specific assignment are both in course-core.md Group Project Context section.
 
 ---
 
