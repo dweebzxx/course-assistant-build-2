@@ -1,0 +1,314 @@
+{
+  "index_metadata": {
+    "course_id": "MKTG6051",
+    "term_id": "2026-SP",
+    "course_run_id": "MKTG6051-2026-SP",
+    "index_version": "1.0.0",
+    "last_updated": "2026-02-05",
+    "timezone": "America/Chicago"
+  },
+  "grounded_knowledge_files": [
+    {
+      "filename": "MKTG6051_GK_course-core.md",
+      "doc_type": "course_core",
+      "last_updated": "2026-02-05",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata",
+          "entities": []
+        },
+        {
+          "section_id": "course-identification",
+          "section_title": "Course Identification",
+          "section_type": "course_info",
+          "entities": [
+            {
+              "entity_id": "MKTG6051",
+              "entity_type": "course",
+              "entity_title": "MKTG 6051 Marketing Research - Rapid Insights",
+              "key_fields": {
+                "section": "001",
+                "credits": "2",
+                "term": "Spring 2026 A"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "instructor-information",
+          "section_title": "Instructor Information",
+          "section_type": "instructor",
+          "entities": [
+            {
+              "entity_id": "instructor-linli-xu",
+              "entity_type": "instructor",
+              "entity_title": "Linli Xu",
+              "key_fields": {
+                "email": "linlixu@umn.edu",
+                "office": "3-209 Carlson School"
+              }
+            },
+            {
+              "entity_id": "ta-luqian-sun",
+              "entity_type": "teaching_assistant",
+              "entity_title": "Luqian Sun",
+              "key_fields": {
+                "email": "sun00680@umn.edu",
+                "office": "CSOM 4-269"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "grading-policy",
+          "section_title": "Grading Policy",
+          "section_type": "grading",
+          "entities": []
+        },
+        {
+          "section_id": "course-policies",
+          "section_title": "Course Policies",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "group-project-context",
+          "section_title": "Group Project Context",
+          "section_type": "project",
+          "entities": []
+        }
+      ]
+    },
+    {
+      "filename": "MKTG6051_GK_course-schedule.md",
+      "doc_type": "course_schedule",
+      "last_updated": "2026-02-05",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata",
+          "entities": []
+        },
+        {
+          "section_id": "module-sequence",
+          "section_title": "Module Sequence",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "M01",
+              "entity_type": "module",
+              "entity_title": "Module 01: Overview",
+              "key_fields": {
+                "start_date": "2026-01-20",
+                "end_date": "2026-01-25"
+              }
+            },
+            {
+              "entity_id": "M02",
+              "entity_type": "module",
+              "entity_title": "Module 02: Qualitative Research and Survey Research Part I",
+              "key_fields": {
+                "start_date": "2026-01-26",
+                "end_date": "2026-02-01"
+              }
+            },
+            {
+              "entity_id": "M03",
+              "entity_type": "module",
+              "entity_title": "Module 03: Survey Research Part II",
+              "key_fields": {
+                "start_date": "2026-02-02",
+                "end_date": "2026-02-08"
+              }
+            },
+            {
+              "entity_id": "M04",
+              "entity_type": "module",
+              "entity_title": "Module 04: Survey Sampling and Behavioral Testing",
+              "key_fields": {
+                "start_date": "2026-02-09",
+                "end_date": "2026-02-15"
+              }
+            },
+            {
+              "entity_id": "M05",
+              "entity_type": "module",
+              "entity_title": "Module 05: Data Cleaning and Descriptive Analysis",
+              "key_fields": {
+                "start_date": "2026-02-16",
+                "end_date": "2026-02-22"
+              }
+            },
+            {
+              "entity_id": "M06",
+              "entity_type": "module",
+              "entity_title": "Module 06: Linear Regression Analysis",
+              "key_fields": {
+                "start_date": "2026-02-23",
+                "end_date": "2026-03-01"
+              }
+            },
+            {
+              "entity_id": "M07",
+              "entity_type": "module",
+              "entity_title": "Module 07: Logistic Regression Analysis",
+              "key_fields": {
+                "start_date": "2026-03-02",
+                "end_date": "2026-03-08"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "assignment-calendar",
+          "section_title": "Assignment Calendar",
+          "section_type": "assignment",
+          "entities": [
+            {
+              "entity_id": "QUIZ-01",
+              "entity_type": "assignment",
+              "entity_title": "Quiz - Project Background",
+              "key_fields": {
+                "type": "quiz",
+                "module_id": "M01"
+              }
+            },
+            {
+              "entity_id": "QUIZ-02",
+              "entity_type": "assignment",
+              "entity_title": "Quiz - Qualitative Research",
+              "key_fields": {
+                "type": "quiz",
+                "module_id": "M02"
+              }
+            },
+            {
+              "entity_id": "QUIZ-03",
+              "entity_type": "assignment",
+              "entity_title": "Quiz - Survey Research",
+              "key_fields": {
+                "type": "quiz",
+                "module_id": "M02"
+              }
+            },
+            {
+              "entity_id": "QUIZ-04",
+              "entity_type": "assignment",
+              "entity_title": "Quiz - Data Cleaning and Descriptive Statistics",
+              "key_fields": {
+                "type": "quiz",
+                "module_id": "M05"
+              }
+            },
+            {
+              "entity_id": "QUIZ-05",
+              "entity_type": "assignment",
+              "entity_title": "Quiz - Linear Regression Analysis",
+              "key_fields": {
+                "type": "quiz",
+                "module_id": "M06"
+              }
+            },
+            {
+              "entity_id": "GRP-01",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Define research question and company",
+              "key_fields": {
+                "type": "group",
+                "module_id": "M01"
+              }
+            },
+            {
+              "entity_id": "GRP-02",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Qualitative Research Plan",
+              "key_fields": {
+                "type": "group",
+                "module_id": "M02"
+              }
+            },
+            {
+              "entity_id": "GRP-03",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Survey Research Plan",
+              "key_fields": {
+                "type": "group",
+                "module_id": "M03"
+              }
+            },
+            {
+              "entity_id": "GRP-04",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Final Project",
+              "key_fields": {
+                "type": "group",
+                "module_id": "M07"
+              }
+            },
+            {
+              "entity_id": "REV-01",
+              "entity_type": "assignment",
+              "entity_title": "Comments on Final Project Constructive Review",
+              "key_fields": {
+                "type": "individual",
+                "module_id": "M07"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "MKTG6051_GK_student-profile.md",
+      "doc_type": "student_profile",
+      "last_updated": "2026-02-05",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata",
+          "entities": []
+        },
+        {
+          "section_id": "student-identification",
+          "section_title": "Student Identification",
+          "section_type": "student_info",
+          "entities": []
+        },
+        {
+          "section_id": "writing-style-profile",
+          "section_title": "Writing Style Profile",
+          "section_type": "writing_style",
+          "entities": []
+        }
+      ]
+    }
+  ],
+  "working_memory_files": [],
+  "cross_references": [
+    {
+      "entity_id": "M01",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_GK_course-schedule.md#assignment-calendar"
+      ]
+    },
+    {
+      "entity_id": "M02",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_GK_course-schedule.md#assignment-calendar"
+      ]
+    },
+    {
+      "entity_id": "M03",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_GK_course-schedule.md#assignment-calendar"
+      ]
+    }
+  ]
+}
