@@ -275,7 +275,7 @@ Would you like me to check uploaded module files for this information?
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
 
@@ -526,7 +526,7 @@ I can show you what's scheduled for Module 5 based on the course schedule. Would
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 **AUTHORITATIVE SOURCE: course_schedule.md**
 

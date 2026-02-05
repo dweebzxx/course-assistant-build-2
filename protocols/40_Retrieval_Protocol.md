@@ -407,8 +407,8 @@ Source: MKTG6051_M03/MKTG6051_M03.manifest.md#overview
 - Lecture slides: MKTG6051_M03.L_competitive-strategy.pptx (45 slides)
 - Lecture video: MKTG6051_M03.L_competitive-strategy-video.mp4 (90 minutes)
 - Reading: MKTG6051_M03.R_porter-ch1.pdf
-- Assignment instructions: Assignment_A03_Instructions.pdf
-- Assignment rubric: Assignment_A03_Rubric.pdf
+- Assignment instructions: MKTG6051_M03.A_strategy-analysis-instructions.pdf
+- Assignment rubric: MKTG6051_M03.A_strategy-analysis-rubric.pdf
 - Discussion prompt: Discussion_D03_Prompt.md
 - Case study: Case_Study_Tesla.pdf
 
@@ -543,7 +543,7 @@ Note: The module instruction file lists a different date (February 12). If this 
 CONFLICT DETECTED:
 
 course_core.md#late-work-policy states: Late work accepted up to 48 hours with 10% penalty per day
-M02/Assignment_Instructions.pdf states: No late work accepted
+MKTG6051_M02/MKTG6051_M02.A_assignment-instructions.pdf states: No late work accepted
 
 The course_core.md late work policy is the authoritative source unless there has been a course update.
 

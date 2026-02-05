@@ -803,7 +803,7 @@ MODULE VERIFICATION REPORT: M06
 ❌ ERRORS DETECTED:
 
 Missing files (listed in manifest but not found):
-1. Assignment_A06_Rubric.pdf
+1. MKTG6051_M06.A_assignment-06-rubric.pdf
 2. MKTG6051_M06.R_reading-ch5.pdf
 
 Files found: 3
