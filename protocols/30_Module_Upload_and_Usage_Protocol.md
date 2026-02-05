@@ -437,7 +437,7 @@ MODULE VERIFICATION REPORT: {module_id}
 Files found in {module_id}/ folder:
 1. MKTG6051_M03.manifest.md
 2. MKTG6051_M03.L_competitive-strategy.pptx
-3. Reading_Porter_Ch1.pdf
+3. MKTG6051_M03.R_porter-ch1.pdf
 4. MKTG6051_M03.A_strategy-analysis-instructions.pdf
 
 Inventory check:
@@ -539,10 +539,10 @@ Provide the updated INDEX file.
   "end_date_display": "Sunday, Feb 09, 2026",
   "end_date_iso": "2026-02-09",
   "module_folder": "MKTG6051_M03/",
-  "manifest_file": "M03/MKTG6051_M03.manifest.md",
+  "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md",
   "related_sections": [
     "course_schedule#module-sequence",
-    "M03/MKTG6051_M03.manifest.md#overview"
+    "MKTG6051_M03/MKTG6051_M03.manifest.md#overview"
   ]
 }
 ```
@@ -705,7 +705,7 @@ Source: course_schedule.md#module-sequence (M03)
 **Module Materials:**
 - Lecture slides: MKTG6051_M03.L_competitive-strategy.pptx (45 slides)
 - Lecture video: MKTG6051_M03.L_competitive-strategy-video.mp4 (90 minutes)
-- Reading: Reading_Porter_Ch1.pdf
+- Reading: MKTG6051_M03.R_porter-ch1.pdf
 - Assignment instructions: MKTG6051_M03.A_strategy-analysis-instructions.pdf
 - Assignment rubric: MKTG6051_M03.A_strategy-analysis-rubric.pdf
 - Discussion prompt: Discussion_D03_Prompt.md
@@ -717,7 +717,7 @@ Source: course_schedule.md#module-sequence (M03)
 **Discussions:**
 - Discussion D03: Opens Monday, Feb 03, 2026 | Closes Friday, Feb 07, 2026
 
-Source: M03/MKTG6051_M03.manifest.md#overview, #file-inventory
+Source: MKTG6051_M03/MKTG6051_M03.manifest.md#overview, #file-inventory
 ```
 
 ### Prompt 2: Retrieve Specific File from Module
@@ -758,7 +758,7 @@ Based on INDEX and course_schedule.md, here is the module upload status:
 
 ✅ Module 1 (M01): Uploaded (folder: MKTG6051_M01/, manifest: MKTG6051_M01.manifest.md)
 ✅ Module 2 (M02): Uploaded (folder: MKTG6051_M02/, manifest: MKTG6051_M02.manifest.md)
-✅ Module 3 (M03): Uploaded (folder: M03/, manifest: MKTG6051_M03.manifest.md)
+✅ Module 3 (M03): Uploaded (folder: MKTG6051_M03/, manifest: MKTG6051_M03.manifest.md)
 ❌ Module 4 (M04): NOT uploaded
 ❌ Module 5 (M05): NOT uploaded
 ... (continues for all modules in schedule)
@@ -804,7 +804,7 @@ MODULE VERIFICATION REPORT: M06
 
 Missing files (listed in manifest but not found):
 1. Assignment_A06_Rubric.pdf
-2. Reading_Ch5.pdf
+2. MKTG6051_M06.R_reading-ch5.pdf
 
 Files found: 3
 Files expected (per manifest): 5

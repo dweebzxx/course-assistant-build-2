@@ -428,7 +428,7 @@ entities:
       module_id: "M01"
       related_sections:
         - "course_schedule#reading-schedule"
-        - "MKTG6051_M01/Reading_Ch1.pdf"  # If file exists in module
+        - "MKTG6051_M01/MKTG6051_M01.R_reading-ch1.pdf"  # If file exists in module
 
     - entity_id: "M01-R02"
       entity_type: "reading"
