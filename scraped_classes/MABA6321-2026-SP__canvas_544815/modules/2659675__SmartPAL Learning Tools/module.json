@@ -1,0 +1,14 @@
+{
+  "id": 2659675,
+  "position": 2,
+  "name": "SmartPAL Learning Tools",
+  "unlock_at": null,
+  "require_sequential_progress": false,
+  "requirement_type": "all",
+  "publish_final_grade": false,
+  "prerequisite_module_ids": [],
+  "state": "completed",
+  "completed_at": "2026-01-21T00:53:31Z",
+  "items_count": 5,
+  "items_url": "https://canvas.umn.edu/api/v1/courses/544815/modules/2659675/items"
+}

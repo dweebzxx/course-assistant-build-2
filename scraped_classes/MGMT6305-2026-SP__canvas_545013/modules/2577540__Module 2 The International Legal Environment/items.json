@@ -1,0 +1,28 @@
+[
+  {
+    "id": 15605740,
+    "position": 1,
+    "title": "Week 4: The International Legal Environment (February 11)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577540,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605740",
+    "page_url": "week-4-the-international-legal-environment-february-11",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-4-the-international-legal-environment-february-11"
+  },
+  {
+    "id": 15605741,
+    "position": 2,
+    "title": "Week 5: International Legal Environment (February 18)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577540,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605741",
+    "page_url": "week-5-international-legal-environment-february-18",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-5-international-legal-environment-february-18"
+  }
+]

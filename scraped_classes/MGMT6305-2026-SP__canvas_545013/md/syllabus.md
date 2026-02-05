@@ -1,0 +1,736 @@
+Syllabus
+
+# Syllabus
+
+## MGMT 6305 The International Environment of Business
+
+### INTRODUCTION
+
+Welcome to the International Environment of Business (“IEB”) course. Let me give you an overview of the IEB course.  It is about the external challenges confronting managers and firms competing internationally.  The activities of many firms have an international element –think, for example, of a local Minneapolis restaurant that imports some of the ingredients used in its menu offerings.  But the paradigmatic firms of interest in this course are large established multinational corporations (“MNEs”) and smaller ones just starting to internationalize their operations.  Both compete internationally and both need to manage international legal, political, and social dynamics affecting survival and success.
+
+MNEs often do that differently. An MNE typically owns or controls significant resources and operations in several, often disparate countries, cultures and markets.  MNE performance depends on internal and external income streams denominated in multiple currencies.  The MNE has operations situated in localities with different and often conflicting legal, political, and social policy priorities.  On top of these complexities, the MNE is characteristically engaged in a “two-tiered” conflict with rival firms.  The first tier involves conflicts in a host country involving the MNE and another MNE –think of, say, Minnesota-based Medtronic competing with another medical technology producer like Boston Scientific.  A second tier involves conflicts between the MNE and purely domestic producers in a host country –think here of, say, Medtronic operating in Germany and competing with the medical technology business under the corporate umbrella of Munich-based Siemens AG.  Resolution of conflict on both tiers depends heavily on legal, political, and social factors in home and host countries as well as in institutional “spaces” linking the two.
+
+Smaller MNEs compete and manage many of the same legal, political, and social factors differently.  They lack international resources and operations.  Indeed, that may be the reason smaller MNEs go abroad.  More often, they are following customers demanding an international presence as a condition for continued patronage at home.  When they go abroad, they often do so in steps analogous to swimming.  They “toe” the waters that are foreign markets by selling goods through international trade with some foreign counterpart. They “wade into the waters by setting up a foreign distributorship or by licensing some technology abroad, or by franchising their business processes to a foreign franchisee.  With time and some success, they might then “swim” in ways similar to large established MNEs.  They establish their own foreign subsidiary with its own plant, property, and equipment.  Now that smaller MNE is larger with competing at home and abroad and managing the same panoply of environmental factors.
+
+These competitive and environmental factors make MNEs so interesting to study.  They enter and exit foreign markets, compete with and coopt rival firms and host-country governments. The IEB course is about understanding this international theater, *as you like* *it*, and how MNEs act in it effectively.
+
+### IEB COURSE THEMES AND AIMS
+
+So the overall theme of the IEB course is understanding MNEs and different types of external factors shaping their behavior and performance.  We’ll answer these questions:  Why do firms go abroad?  Why do they do so as MNEs?  How are MNEs typically structured?  How do they compete with other foreign and domestic firms?  What legal, political, and social factors shape MNE behavior and performance generally?  How do great MNEs manage those factors, perhaps even turn them into advantages? We’ll address that overall theme and answer those questions through close analysis of case studies and readings (reading), classroom discussion (saying), and opportunities to participate in simulated negotiations relevant to the activities of MNEs, to the host countries where they operate, and to local firms and other individuals often collaborating with MNEs (doing).
+
+You should be reading materials, discussing them, and role-playing people in those materials to give these broad course themes concrete relevance and help you get the most from the IEB course.  By the end of the semester, your reading, saying, and doing should make plain to you certain heuristics useful in diagnosing environmental issues facing MNEs, useful in addressing those issues as a thoughtful international manager, lawyer, political consultant, and social commentator would.  In sum, completing this course should help become a corporate “diplomat” ready to lead an international firm’s daily operations and deal with strategic issues and decisions as they occasionally arise.
+
+### IEB COURSE APPROACH
+
+#### IEB As Craft and First Language
+
+In working through the IEB course and in answering the questions above, it will be helpful to think of certain analogies.  Take, for instance, the analogy of IEB as a craft rather than as a science.  There are few, if any, universal rules to govern the actions of MNEs managing legal, political, and social environmental factors.  IEB study is, thus, not like the study of a physical science such as chemistry, physics or geology.  IEB is more akin to a craft such as weaving, painting or jewelry-making.  The “right” thing to do in a particular business setting may have limited applicability to other situations.  IEB is a study of contingencies.  This course is designed to give you a mode of thinking about such contingencies.
+
+It may also be helpful to think of learning IEB as you think of learning your first language (but not your second language).  A second language is often learned by formal methods.  Aspirants study the grammar, vocabulary, and syntax of a second language through coursework or tutoring sessions.  Learning the first language is much less formal.  It is learned at home, at work, at play.  It is often the product of observation, mimicry, trial-and-error.  To a large extent, that is how students acquaint themselves with aspects of IEB.
+
+Because it is akin to a craft and because it is best learned by “doing,” there is little substitute for experiences involving conflict between MNEs and other firms, between those international firms and quasi-firm organizations, and between those international firms and home or host governments.  Hence, this course uses case analysis as the primary teaching tool.  Our cases are drawn from varied industrial contexts including aircraft manufacturers and airlines, consumer electronics, mining, and automobiles, as well as welding, waste disposal, metal engraving, coffee.  They come from varied country contexts such as the US, Western Europe and Japan, but also from developing countries in Latin America, the Middle East, and Sub-Saharan Africa.  They are larger MNEs competing globally and smaller ones doing foreign jobs here and there as they present themselves.  The MNEs we study will come from varied time periods running from the late 1960s to the 2020s.  With such variation, students will have a broad range of case experience for developing skills for evaluating different dimensions of the IEB that are realistic and founded on the specific characteristics of the situation at hand.
+
+#### Six IEB Course Modules
+
+The course is divided into six modules.  Each module includes cases raising related issues.  The first module (Sessions 1-6) introduces the IEB course and includes cases covering foundational issues in any IEB study:  Why do firms go abroad?  Why do they go as MNEs?  What organizational structures, norms of practice, ways of seeing the world affect MNE structure, strategy, and performance?  What’s special about how international firms compete in “global” industries.
+
+The second module of the course (Sessions 7-10) begins our survey of environmental factors shaping MNE structure, strategy, and performance.  We start with legal factors in the international environment.  We analyze legal cases touching international contracting and dispute resolution issues, including disputes with host-country governments.  The issues are important to both large, established MNEs and smaller ones going abroad in those stages we noted earlier.  Maybe these issues are more important for smaller MNEs because they are less likely to have ready access to legal professionals to help them avoid or deal adroitly with the international legal environment when it becomes inclement.  In an internationalizing SME, you may be your own lawyer.  And here you cannot afford to have a fool for a client.
+
+The third module (Sessions 11-14) shifts from legal to political issues shaping MNE strategy.  The quintessential political risk is expropriation of firm assets by an opportunistic host country government.  Here we’ll learn how this “obsolescing bargain” with MNEs is formed, breached, and then reformed.  We’ll learn how to anticipate and, perhaps, deter expropriation through a combination of products and services that can be bought and internal self-help. One strategy is to sue the host-country government as discussed in Module 2.  Another way is to make the host-country government a co-investor motivating the government to help rather than hinder foreign investing MNEs.  If taking that “political” rather than “legal” approach, then there are some “minority rules” to learn in advance.  In Module 3, you’ll learn them. You’ll also learn about some of the “latest” political risks tied to the populist inclination of many host-country governments in Europe. The politics and political risks of growing populism pose new threats building on old ideas. We’ll show how. And we’ll learn more about how MNEs manage risks associated with what Carl von Clausewitz called the “politics by other means” –war.
+
+The fourth module (Sessions 15-19) shifts our attention from polities to societies and the norms that guide business behavior.  We’ll study how MNEs from North America and Western Europe manage social norms that permit, even encourage unsafe working conditions, child labor, bribery, discrimination, and other business practices in developing countries. And in these exceptional times, who can resist analysis of the international business implications of giving so much power over international trade policy to one man living at 1600 Pennsylvania Avenue in DC and Mar-a-Lago in Florida? Module 4 will also give us an opportunity to think about current social issues giving individuals the chance to fund, found, and grow international businesses with a handful of cash remittable to family back home.  The biggest foreign capital inflow into most developing countries today is no longer foreign direct investment from MNEs or foreign portfolio flows from venture capitalists, or foreign aid from wealthy governments and international organizations.  It is remittances from migrants.  We’ll learn how remittances are re-shaping the developing world and providing all sorts of international business opportunities for us to exploit.
+
+The fifth module (Sessions 20-24) gives us an opportunity to put it all together.  We’ll devote a complete evening to simulating an opportunity to invest in up to three countries in Southeast Asia.  You’ll play the role of an MNE considering a multi-million dollar foreign direct investment project in Malaysia, Singapore, or Indonesia.  Or maybe you’ll play the role of a local Malaysian, Singaporean, or Indonesian firm interested in partnering with an MNE.  Or maybe you’ll play the role of the Malaysian, Singaporean, or Indonesian government seeking an MNE’s investment as long as it doesn’t cost too much to attract them and as long as the MNE’s investment also serves the country’s broader development goals.  Each of you will have a chance to think about and act on legal, political, and social issues we discussed in the past several weeks.
+
+The sixth and final module (Sessions 25-28) is devoted to you and your final presentations.  Over the semester, you and your group of 4-6 students will have been working on a real IEB problem facing a real MNE.  What is the problem?  How is the firm addressing it?  What connections do you draw from their problem and their strategy for addressing it to problems we’ve identified and strategies we’ve proposed to address them?  Those are the questions you’ll answer in our final two sessions where you and your group will have time to present and then to take questions from me and others in the IEB course.
+
+### IEB COURSE REQUIREMENTS
+
+#### IEB Class Participation
+
+This course relies heavily on case materials.  Analysis and discussion of different international business contexts is the primary activity in class meetings.  Individual preparation and participation are, therefore, essential to the success of the class in examining all the relevant issues.  The readings are your responsibility, and they will not necessarily be discussed directly in class, except as they apply directly to a case problem at hand.
+
+#### IEB Case Preparation
+
+Since case analysis and discussion is so important to the course, it is worth proposing an approach to preparing them effectively.  Preparation for case discussion can begin with a rapid reading of the assigned text and case materials.  Then, it is worthwhile to review the assignment questions for clues as to what issues require special attention.  The next step is normally to re-read the case carefully, taking notes which sort information, facts, and observations under several relevant headings.  Most students will then want to perform some quantitative analyses, exploring various hypotheses as to the nature and importance of certain phenomena.  You may use the Discussion Questions as guides for choosing relevant analyses to perform.  In addition to the Discussion Questions consider these generic case questions/analyses:
+
+What is the problem facing the firm internally (intra-firm) or externally (inter-firm or firm vrs. another type of rival such as a host-country government or supplier)?
+
+(Problem Analysis)
+
+How would you assess the firm’s past strategy and performance?
+
+(Past Firm/Environment Analysis)
+
+What is the firm’s current intent, i.e. what is the firm trying to accomplish in the near term?
+
+(Firm Intent Analysis)
+
+How would you assess the firm’s competitive environment including:
+
+the firm’s macro-economic environment (country or regional factors)?
+
+the firm’s industrial environment?
+
+the firm’s internal resources, capabilities and value-creating activities?
+
+the firm’s corporate environment?
+
+(Current Firm/Environment Analysis)
+
+What are your realistic alternatives for action by the firm in light of your answers to the previous questions?
+
+(Alternative Recommendation Analysis)
+
+How do you expect the firm’s internal and external rivals to respond to the actions you recommend:
+
+the firm’s principal internal stakeholder groups?
+
+the firm’s principal external rivals in the market or markets at issue?
+
+ (Competitor Reaction Analysis)
+
+How would you assess the sensitivity of your recommendations to slight changes in the short- and medium-term future environment?
+
+(Alternative Scenario Analysis)
+
+Finally, preparation will include notes that can be used to guide your interventions in class discussion on the issues judged to be critical to apparent dilemma facing and MNE, an SME, a host-country government or other actor on the IEB stage.
+
+### IEB Course Grading
+
+Grades for this course are based on five performance components totaling 100 course points.  The five 25 components are:  1) answers to discussion questions for one class session; 2) write-up on foreign investment simulation; 3) final case study project group report and presentation; 4) attendance and active participation in class meetings; and 5) a take-home final exam.  Each of these course performance components are discussed below in greater detail. 
+
+### 1.         Answers to discussion questions for one class session        (10 Points)
+
+For each class session there are discussion questions for you to think about in preparing materials for a given day.  I want you to write up and submit answers to the discussion for one class session from Sessions 7-16.  I will assign you a class session to write up answers to discussion questions based on your last (family) name.  Your answers should be typed in 12-point font and should not exceed 1000 words in total.
+
+ 
+
+### 2.         Write-up after foreign investment simulation                         (10 Points)
+
+After completing the foreign investment simulation on April 3, I want you to write an essay answering three questions:  1) What happened to you during the simulation; 2) How do you defend your actual deal with other parties or proposed but not completed deal?  and 3) What did the simulation teach you about the international environment of business?  Your answers should be typed in 12-point font and should not exceed 1000 words in total.
+
+ 
+
+### 3.         Group case study report and presentation                            (30 Points)
+
+The last four class sessions (Sessions 25-28) are devoted to group reports you will have written up and presented for feedback from me and other class members.  The report should be typed in 12-point font and should not exceed 4,000 words in total, exclusive of any references, tables, and figures.  It is due at the beginning of the class session when your group is presenting.  The group presentation should be made using power-point slides and should run from 20-30 minutes depending on the number of groups.  The group will then take questions from me and other class members for up to 10-20 minutes immediately after the presentation.  Power-point slides are to be submitted immediately after that same class session.  I will weigh the report and the presentation this way: 20 of the 30 total points available depend on the written report; 10 of the 30 total points available depend on the presentation and Q&A.
+
+### 4.         Attendance and activities participation in class sessions      (20 Points)
+
+Class participation constitutes a significant portion of the course grade.  It is important first because it provides me with the best and most frequent indication that you have prepared for class.  Second, it is important because your participation in class discussion teaches others.
+
+ For both reasons you need to make every reasonable effort to be in class on time and well prepared.  If you are absent from class without telling me in advance, or unless you missed because of a medical or family emergency, your participation grade will suffer.  The point is to come to class, to be prepared, and to be active.
+
+ In grading class participation, I will look at both the quantity and quality of your contributions.  With regard to quantity, the criteria are quite straightforward:
+
+I have never penalized someone for speaking up too often.  More has *almost always* been better.
+
+You should, however, try to include others.  The best interventions respond to a fellow student’s point and start a dialogue not a monologue.
+
+ 
+
+With regard to quality, some of the criteria normally applied include the following:
+
+Whether the points raised are relevant to the discussion.
+
+Whether the points raised go beyond a mere recitation of case facts, and actually draw out implications.
+
+Whether the points raised show evidence of analysis rather than mere expression of opinions.
+
+Whether the points raised build on points raised by others in the class.
+
+Whether the points raised contribute further to the class understanding of the issues under discussion.
+
+### 5.         Take-home final exam                                                            (30 Points)
+
+There will be a take-home final exam distributed at the end of the last class session. The exam will be open book & open notes. I will provide more specific details later in the semester.
+
+We will discuss these grading components in greater detail as the course unfolds.  Here is how final IEB course point totals correspond to final IEB course grades.
+
+### IEB Course Points                                  Final IEB Course Grade
+
+                        100 – 90                                                           A
+
+                        85 – 89                                                             A-
+
+                        80 – 84                                                             B+
+
+                        75 – 79                                                             B
+
+                        70 - 74                                                              B-
+
+                        65 – 69                                                             C+
+
+                        60 – 64                                                             C
+
+                        55 – 59                                                             C-
+
+                        < 55                                                                 Failed
+
+### IEB COURSE TEXTS, ADDITIONAL READINGS, LECTURE MATERIALS
+
+There is no textbook for the IEB course.  All readings are listed below and will be made available to you via electronic links at our Canvas website or in a case and readings packet available via the usual means.  If you are looking for a text to “bone-up” on general management issues, I like Robert Grant’s *Contemporary Strategy Analysis* (Blackwell Publishers).  Any recent edition will due. It is available via Amazon.com or other online booksellers.  Anything else we need for this course will be supplied by me to you electronically.
+
+### **STUDENT MATTERS**
+
+The Carlson School is part of the broader University community with additional policies that govern the conduct of students and instructors in any course. Below is a survey of University policies with summary information and links you can go to for more detail.  Please feel free to discuss these additional policies with me at any mutually convenient time.
+
+The University seeks an environment that promotes academic achievement and integrity, that is protective of free inquiry, and that serves the educational mission of the University. Similarly, the University seeks a community that is free from violence, threats, and intimidation; that is respectful of the rights, opportunities, and welfare of students, faculty, staff, and guests of the University; and that does not threaten the physical or mental health or safety of members of the University community. For more information, see the Board of Regents Policies located here: https://regents.umn.edu/policy/all.
+
+ 
+
+You are expected to do your own academic work and cite sources as necessary. Failing to do so is scholastic dishonesty. Scholastic dishonesty means plagiarizing; cheating on assignments or examinations; engaging in unauthorized collaboration on academic work; taking, acquiring, or using test materials without faculty permission; submitting false or incomplete records of academic achievement; acting alone or in cooperation with another to falsify records or to obtain dishonest grades, honors, awards, or professional endorsement; altering, forging, or misusing a University academic record; or fabricating or falsifying data, research procedures, or data analysis. If it is determined that a student has cheated, the student may be given an "F" or an "N" for the course, and may face additional sanctions from the University. For more information, see Board of Regents Policies located here: https://regents.umn.edu/policy/all.
+
+ The University is committed to providing quality education to all students regardless of disability. Determining appropriate disability accommodations is a collaborative process. You as a student must register with Disability Services and provide documentation of your disability. The course instructor must provide information regarding a course's content, methods, and essential components. The combination of this information will be used by Disability Services to determine appropriate accommodations for a particular student in a particular course. For more information, see the Board of Regents Policies located here: https://regents.umn.edu/policy/all.
+
+ As a student you may experience a range of issues that can cause barriers to learning such as strained relationships, increased anxiety, alcohol/drug problems, and feeling down, difficulty concentrating and/or lack of motivation. These mental health concerns or stressful events may lead to diminished academic performance and may reduce your ability to participate in daily activities. University of Minnesota services are available to assist you. For more information, see the Board of Regents Policies located here: https://regents.umn.edu/policy/all.  
+
+Students are responsible for knowing University policies on sexual harassment, discrimination, equity, diversity, and affirmative action. For information on those policies see the Board of Regents Policies located here: https://regents.umn.edu/policy/all.
+
+### **COURSE SCHEDULE OF SUBJECTS, READINGS AND ASSIGNMENTS**
+
+Session 1:                                Wednesday January 21, 2026, 5:45-7:15pm
+
+SUBJECT:                                Course Introduction:  The International Environment and Strategy
+
+READINGS:                             **None**
+
+CASE DISCUSSION:                **None**
+
+Session 2:                               Wednesday, January 21, 2026, 7:35-9:05pm
+
+SUBJECT:                                Why Do Firms Internationalize?
+
+READINGS:
+
+Dunning, J. 1988. ***The Eclectic Paradigm of International Production: A Restatement and Some Possible Extensions***. *Journal of International Business Studies*, Spring Volume:  1-31.
+
+Siegel, J. & Collins, D. 2006.  ***Introduction to International Strategy: Module Note***. Harvard Business School Publishing Product Number (HBSP) #9-706-481.
+
+CASE DISCUSSION:                ***Lincoln Electric***, HBSP #9-707-445
+
+Session 3:                               Wednesday, January 28, 2026, 5:45-7:15pm
+
+SUBJECT:                                Where and How Quickly Do Firms Internationalize?
+
+READINGS:
+
+Vernon, R. 1966***.  International Investment and International Trade in the Product Cycle***. *Quarterly Journal of Economics*, 80:  190-207.
+
+Ibarra, H.  1996.  ***National Cultures and Work-Related Values: The Hofstede Study***.  HBSP #9-496-044.
+
+CASE DISCUSSION:                ***The Espresso Lane to Global Markets***, W12038-PDF-ENG
+
+Session 4:                               Wednesday, January 28, 2026, 7:35-9:05pm
+
+SUBJECT:                                How Do Firms Organize to Internationalize?
+
+READINGS:
+
+Bartlett, C. & Ghoshal, S. 2003. ***What is a Global Manager?***  *Harvard Business Review* Article, HBSP # R0308F.
+
+Perlmutter, H. 1969. ***The Tortuous Evolution of the Multinational Corporation***. *Columbia Journal of World Business*, 4:  9-18.
+
+CASE DISCUSSION:    ***Philips vs. Matsushita: The Competitive Battle Continues***. HBSP #9-10-410
+
+Session 5:                               Wednesday, February 4, 2026, 5:45-7:15pm
+
+SUBJECT:                                How Do Firms and States Internationalize in Global Industries?
+
+READING:
+
+Porter, M. 1990. ***The Competitive Advantage of Nations***. Harvard Business Review Article, HBSP #90211.
+
+Krugman, P., Obstfeld, M., & Melitz, M. 2012.  ***Chapter 12: Controversies in Trade Policy.*** *International Economics: Theory and Policy (12th ed.)*, Addison-Wesley (Pearson), Boston, MA:  271-292.
+
+CASE DISCUSSION:    ***Airbus vs. Boeing (A)***, HBSP #9-707-747
+
+***Airbus vs. Boeing (B): Should Airbus Build the VLCT Alone?***, HBSP #9-707-448
+
+***Airbus vs. Boeing (F):  2002-2006***, HBSP # 9-707-452
+
+**Airbus vs. Boeing (L):  Discontinuing the *A380 (February 2019)***, HBSP #9-720-387
+
+Session 6:                               Wednesday, February 4, 2026, 7:35-9:05pm
+
+SUBJECT:                                Initial Group Meetings to Discuss Company Reports
+
+READING:                              **None**
+
+CASE DISCUSSION:                **None**
+
+**COURSE MODULE 2:  THE INTERNATIONAL LEGAL ENVIRONMENT**
+
+Session 7:                               Wednesday February 11, 2026, 5:45-7:15pm
+
+SUBJECT:                                International Contracting
+
+READING:
+
+Read relevant sections of [***Uniform Commercial Code, Article 2 (Sales)***](https://www.law.cornell.edu/ucc/2) referenced in *Brands*.
+
+Read relevant sections of the [***United Nations Convention on Contracts***](http://www.cisg.law.pace.edu/cisg/text/treaty.html)for the International Sale of Goods (CISG).
+
+CASE DISCUSSION:    [***Brands International Corporation v. Reach Companies, LLC***](https://law.justia.com/cases/federal/appellate-courts/ca8/23-2164/23-2164-2024-05-30.html), No. 23-2164, US Court of Appeals for the Eighth Circuit (2024).
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with A-C.
+
+Session 8:                               Wednesday, February 11, 2026, 7:35-9:05pm
+
+SUBJECT:                                International Arbitration
+
+READINGS:
+
+American Arbitration Association. 2013. [***Drafting Dispute Resolution Clauses:  A Practical Guide***](https://www.adr.org/sites/default/files/document_repository/Drafting%20Dispute%20Resolution%20Clauses%20A%20Practical%20Guide.pdf). American Arbitration Association: Minneapolis, MN.
+
+CASE DISCUSSION:                            [***Mitsubishi v. Soler Chrysler-Plymouth***](https://supreme.justia.com/cases/federal/us/473/614/), 473 U.S. 614 (1985).
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with D-F.
+
+Session 9:                               Wednesday, February 18, 2026, 5:45-7:15pm
+
+SUBJECT:                                International Investor-State Dispute Settlement
+
+READINGS:
+
+McMillan. 2022. [***McMillan LLP’s CUSMA Dispute Settlement Scoreboard***](https://mcmillan.ca/insights/mcmillan-llps-cusma-dispute-settlement-scoreboard/). McMillan LLP Law Firm, Toronto, Canada, March 11.
+
+CASE DISCUSSION: [***Finley Resources and Others v. Mexico***](https://jusmundi.com/en/document/decision/en-finley-resources-inc-mws-management-inc-and-prize-permanent-holdings-llc-v-united-mexican-states-decision-on-jurisdiction-and-liability-monday-4th-november-2024), ICSID Case No. ARB/21/25 (2024).
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with G-I.
+
+Session 10:                              Wednesday, February 18, 2026, 7:35-9:05pm
+
+SUBJECT:                                International Bribery and Corruption
+
+READINGS:
+
+SEC. 2023 [***Foreign Corrupt Practices Act (FCPA)***](https://www.sec.gov/enforcement/foreign-corrupt-practices-act).US Securities and Exchange Commission (SEC): Washington, DC.
+
+SEC. 2023. [***SEC Charges 3M with Foreign Corrupt Practices Act Violations Relating to China Subsidiary***](https://www.sec.gov/newsroom/press-releases/2023-160). US Securities and Exchange Commission: Washington, DC. August 25.
+
+CASE DISCUSSION: [***3M China Bribery Case.***](https://www.forbes.com/sites/antoniopequenoiv/2023/08/25/3m-will-pay-65-million-over-allegedly-funding-tourism-for-chinese-officials/)
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with J-L.
+
+COURSE MODULE 3:            THE INTERNATIONAL POLITICAL ENVIRONMENT
+
+Session 11:                              Wednesday, February 25, 2026, 5:45-7:15pm
+
+SUBJECT:                                Political Risk and International Investment I
+
+READINGS:
+
+Vaaler, P. 2015.  Note on International Credit Rating Agencies and Sovereign Risk Ratings. University of Minnesota:  Minneapolis, MN.
+
+MIGA. 2024. [***What We Do: Products (Information on Political Risk Insurance Types and Coverage)***](https://www.miga.org/products). (Review the types of PRI offered and key terms in glossary documents for each PRI type.)
+
+CASE DISCUSSION:  ***The Chad-Cameroon Petroleum Development and Pipeline Project (A)*** HBSP #202010.
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with M-O.
+
+Sessions 12:                            Wednesday, February 25, 2026, 7:35-9:05pm
+
+SUBJECT:                                Political Risk and International Investment II
+
+READINGS:
+
+James, B. & Vaaler, P. 2022.  ***State Ownership and Project Financing***.  In Wright, M., Wood, G., Cuervo-Cazurra, A., Sun, P., Okhmatovskiy, I., & Grosman, A. (Eds) 2022. *Oxford Handbook on State Capitalism and the Firm*, Oxford University Press:  Oxford, UK.
+
+CASE DISCUSSION:  ***The Chad-Cameroon Petroleum Development and Pipeline Project (B-D)*** HBSP #202012, 206139, and 207087.
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with P-R.
+
+Session 13:                              Wednesday, March 4, 2026, 5:45-7:15pm
+
+SUBJECT:                                International Business in Wartime
+
+READINGS:
+
+Kulikov, V., Simanovskyy, M., Eichenberg, A., & Angelina Braese, K. 2024. ***Navigating Wartime Communications: Multinational Corporations in the Russia-Ukraine War***. *Society and Economy*, 46(1): 1-23.
+
+Toro. 2025. [***Engo Company (Toro Distributor)***](https://www.toro.com/en-gb/locator). Toro Corporation: Bloomington, MN.
+
+Engo. 2025. [***Engo Company (Russia) Promotional Materials for Toro Products***](https://www.engorussia.ru/). Engo Company, Moscow, Russian Federation.
+
+[***Russian Language Summary of 2024 Annual Conference on “Turf Education” Run by Engo in Dubai***](https://www.youtube.com/watch?v=8JaR_S5poso)***,*** Apparently Co-Sponsored by Toro.
+
+CASE DISCUSSION:    [***Toro Earnings Call on Activity in Ukraine and Russia, March 2022***](https://www.fool.com/earnings/call-transcripts/2022/03/03/the-toro-company-ttc-q1-2022-earnings-call-transcr/).
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with S-U.
+
+Session 14:                              Wednesday, March 4, 2026, 7:35-9:05pm
+
+SUBJECT:                                Populism and International Investment
+
+READINGS:
+
+James, B., Lindner, T., Puhr, H., and Vaaler, P. 2024. ***The Right-Wing Shift: Partisanship, Populism, and MNE Project Risk in Europe.*** Working Paper: University of Minnesota, Minneapolis, MN.
+
+GUIDED DISCUSSION: ***Populism and Foreign Investment***
+
+Submit Answers to Discussion Questions If Last (Family) Name Starts with V-Z.
+
+SPRING VACATION MARCH 9-13, 2025. NO CLASS ON WEDNESDAY, MARCH 11, 2026.
+
+COURSE MODULE 4:            THE INTERNATIONAL SOCIAL ENVIRONMENT
+
+Session 15:                              Wednesday, March 18, 2026, 5:45-7:15pm
+
+SUBJECT:                                International Corporate Social Responsibility
+
+READINGS:
+
+Clement, R. 2005. ***The Lessons from Stakeholder Theory for US Business Leaders***. *Business Horizons*, 48: 255-264. Harvard Business School Publishing Product #BH122-PDF-ENG.
+
+Friedman, M. 1970. [***A Friedman Doctrine******‐******- The Social Responsibility of Business is to Increase its Profits.***](https://www.nytimes.com/1970/09/13/archives/a-friedman-doctrine-the-social-responsibility-of-business-is-to.html) *New York Times* online, September 13.
+
+Schwab, K. 2008. [***Global Corporate Citizenship: Working with Governments and Civil Society***](https://www.foreignaffairs.com/world/global-corporate-citizenship). *Foreign Affairs* online, January/February.
+
+GUIDED DISCUSSION:          ***How Much to Give to Two Chinese Cities***
+
+Session 16:                              Wednesday, March 18, 2026, 7:35-9:05pm
+
+SUBJECT:                                International Bluewashing
+
+READINGS:
+
+Burkett, C. & Bernardo, J. 2015. [***The Rana Plaza Class Action – Is Canada the Next Frontier for Global Human Rights Litigation?***](http://www.labourandemploymentlaw.com/2015/11/the-rana-plaza-class-action-is-canada-the-next-frontier-for-global-human-rights-litigation/)*Canadian Labor and Employment Law*, November 23.
+
+*Minnesota Star Tribune*. 2013. [***Business: Target Weighs Options after Deadly Factory Collapse, Fire in Bangladesh.***](https://www.startribune.com/target-weighs-options-after-deadly-factory-collapse-fire-in-bangladesh/206049081) *Minnesota Star and Tribune* online. May 4.
+
+Target. 2014. [***Target Talks Progress on Bangladesh Worker Safety***](https://corporate.target.com/news-features/article/2014/04/target-talks-progress-on-bangladesh-worker-safety)***.*** Target Stores: Minneapolis, MN, April 22.
+
+CASE DISCUSSION:                [***The Rana Plaza Disaster***](https://ethicsunwrapped.utexas.edu/video/collapse-at-rana-plaza)
+
+Session 17:                              Wednesday, March 25, 2026, 5:45-7:15pm
+
+SUBJECT:                                Migrant Remittances and International Entrepreneurship
+
+READINGS:
+
+Vaaler, P. 2015.  [***Cabbies and Capital:  Migrants Are Re-Shaping the Developing World***](https://eiexchange.com/content/79-cabbies-and-capital-migrants-are-re-shaping-the).  Entrepreneur and Innovation Exchange (EIX).  Schulze School of Entrepreneurship, University of St. Thomas:  Minneapolis, MN.
+
+CASE DISCUSSION:    [***The Supply Side: WalMex, India’s PhonePe Grow Ecosystems Inside Walmart International***](https://talkbusiness.net/2024/07/the-supply-side-walmex-indias-phonepe-grow-ecosystems-inside-walmart-international/).
+
+Session 18:                              Wednesday, March 25, 2026, 7:35-9:05pm
+
+SUBJECT:                                Discrimination and International Marketing
+
+READINGS:
+
+*Economist*. 2017. ***Uncharted Territory: Why Some Airlines Remove Israel from their Online Route Maps*****.** March 8.
+
+***Note on the Global Airline Industry 2020***. # W21009-PDF-ENG.
+
+GUIDED DISCUSSION:          ***Delta Airlines and Their Middle Eastern SkyTeam Allies***.
+
+Session 19:                              Wednesday, April 1, 2026, 5:45-7:15pm
+
+SUBJECT:                                Delegation and International Trade
+
+READINGS:                            To Be Determined
+
+GUIDED DISCUSSION:          ***Trump Tariffs and International Business Strategy***.
+
+COURSE MODULE 5:            SIMULATING THE INTERNATIONAL ENVIRONMENT
+
+Session 20:                              Wednesday, April 1, 2026, 7:35-9:05pm
+
+SUBJECT:                                Prepare for Foreign Investment Simulation (MICSA)
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+Sessions 21-22:                                    Wednesday, April 8, 2026, 5:45-9:05pm
+
+SUBJECT:                                Foreign Investment Simulation (MICSA)
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+Session 23:                              Wednesday, April 15, 2026, 5:45-7:15pm
+
+SUBJECT:                                Debrief Foreign Investment Simulation (MICSA)
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+Submit MICSA Write-Up.
+
+Session 24:                              Wednesday, April 15, 2026, 7:35-9:05pm
+
+SUBJECT:                                Work on Group Company Reports
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+COURSE MODULE 6:            YOUR COMPANY’S INTERNATIONAL ENVIRONMENT
+
+Sessions 25-26:                                    Wednesday, April 22, 2026, 5:45-9:05pm
+
+SUBJECT:                                Present Group Company Reports
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+Session 27:                              Wednesday, April 29, 2026, 5:45-7:15pm
+
+SUBJECT:                                Present Group Company Reports
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+Session 28:                              Wednesday, April 29, 2026, 7:35-9:05pm
+
+SUBJECT:                                Course Review and Conclusion
+
+READINGS:                            ***None***
+
+CASE:                                      ***None***
+
+***Distribute Take-Home Final Exam. The Exam Will Be Available at Approximately 8:15pm on Wednesday, April 29, 2026. The Exam is Due on or Before 11:59pm on Monday, May 4, 2026.***
+
+### **CASE SYNOPSES AND DISCUSSION QUESTIONS**
+
+LINCOLN ELECTRIC                                                                                                       **(Session 2)**
+
+**Synopsis**:  This case kicks off Module 1 and our study of foundational IEB concepts and issues.  Perhaps *the* foundational issue is why firms go abroad as an MNE.  Why not stay at home and trade goods and services with foreign firms in international markets?  And if the firm is so “bold” as to go abroad as an MNE, then how does it go abroad, that is, with what form of foreign direct investment (FDI). Lincoln Electric is a Cleveland-based welding services firm that has already gone abroad as an MNE but is now considering India as  new international market.  Lincoln’s CEO is mulling over whether to invest in India, and if so, with what form of FDI.  You will help him with that decision.  First, we’ll ground it in a broader theoretical framework explaining when it makes sense for firms to go abroad as an MNE or SME.  It is the ownership-location-internalization (OLI) framework.  The OLI framework might also help in addressing the second question about how to enter.
+
+***Discussion Questions:***
+
+* Should Lincoln Electric enter India?
+* If so, should Lincoln Electric own a manufacturing operation there? If so, then should the company acquire a local player or build their own greenfield plant?
+* If a joint venture is preferred, then think about how Lincoln Electric will ensure its ability to make key business decisions in India.
+* John Dunning analyzes the decision to internationalize a firm’s operations as a function of that firm’s ownership, location and internalization (OLI) factors. How do you apply the OLI factors to Lincoln Electric and its decision about whether to enter India.
+
+THE ESPRESSOR LANE TO GLOBAL MARKETS                                                             **(Session 3)**
+
+Synopsis: Founded in Trieste, Italy, Illy marketed a unique blend of coffee drinks in over 140 countries and in more than 50,000 of the world's best restaurants and coffeehouses. The company wanted to expand the reach of its own franchised coffee bar, *Espressamente*, through international expansion. Potential markets included Brazil, China, Germany, Japan, India, the United Kingdom and the United States. In addition to market selection, mode of entry was vital and included options such as exporting, franchising and joint venture. This case provides a practical example of the challenges faced in international business.  It also gives us an opportunity to understand alternative internationalization paths.  Do MNEs and SMEs follow economic or sociological considerations when taking that path?  Do they care more about a foreign country’s market size or cultural similarity?
+
+***Discussion Questions:***
+
+* Is espresso coffee retailing a global industry? What do you think is the most important factor behind Illy’s efforts to internationalize operations.?
+* And what about the pattern of internationalization? How does the path of foreign market entry and development confirm, disconfirm or perhaps render irrelevant Hofstede’s ideas about cultural distance and business practices across certain country groups?
+* Maybe Illy’s luck is running out. The last big national market for its product, the US is approaching maturity in the industry product life cycle is reaching maturity in other countries worth entering.  Defend or attack this assessment.  No fence-sitting allowed.
+
+PHILIPS V. MATSUSHITA:  THE COMPETITIVE BATTLE CONTINUES                         **(Session 4)**
+
+Synopsis:  This case contrasts the development of Philips' and Matsushita's international organizations and associated organizational capabilities. Philips, with fully developed national organizations abroad, struggles to coordinate its operations on a global scale, but encounters strong resistance to organizational and cultural changes. Grim financial results in early 1990s cast doubt on the company's previous 20 years of organizational and strategic change. Matsushita, the highly centralized industry leader, struggles to internationalize its organization by decentralizing assets, responsibilities, and decision making. Its attempts to build independent national organizations abroad are equally disappointing.  This case gives us an opportunity to raise issues relating internal strategy processes and structures to external global strategy content.  In short, how does MNE internal process and structure influence external conflict between the MNE and other firms?
+
+***Discussion Questions:***
+
+* How did Philips become the leading consumer electronics company in the world in the postwar era? What distinctive resources/abilities/competencies did Philips build?  What distinctive disadvantages?
+* How did Matsushita succeed in displacing Philips as No. 1? What were its distinctive resources/abilities/competencies?  And its distinctive disadvantages?
+* What do you think of the change each MNE has made to date -objectives, implementation, impact? Why is the change so hard for both of them?
+* What recommendations would you make to the Philips CEO? To the Matsushita CEO?
+
+AIRBUS V. BOEING CASE SERIES                                                                                     (**Session 5**)
+
+**Synopsis:**  Some industries –but only some- are inherently global in nature. They are given to one, two or only a few MNEs dominating the market.  Long-haul civil aircraft manufacturing may be one those industries.  If so, then it’s a “winner-take-all” or “winner-take-most” fight by the two MNEs seeking that domination: US-based Boeing and Europe-based Airbus.  Both have benefited from government support. Airbus was created as an entity owned by several European states. Boeing was always a privately-owned entity but received substantial US government revenue as a prime defense contractor.  Both MNEs think that support (and more) justified as they mull over whether and how to develop a new generation of superjumbo jet offerings for the travelling public.  Isn’t it “good” public policy for home-country governments to subsidize their national champion MNEs if that subsidy could help their MNE win the global market and shower the home country with all sorts of positive externalities:  more employment, technology, wealth, military power, independence and influence.  That’s the setting for our case where Boeing and Airbus (and their respective home-country governments) are mulling over whether to cooperate or compete in the production of superjumbo jets in the 1990s and 2000s, and then live with that decision in the 2010s.
+
+***Discussion Questions:***
+
+* What are the characteristics of a global industry?
+* Are there differences that matter between the subsidies that Airbus and Boeing receive? How do their respective home-country governments justify those subsidies?
+* What is “industrial policy” according to Krugman, Obstfeld and Melitz? How does their view of industrial policy differ with Michael Porter’s explanation of government’s role in fostering firm competitive advantages?
+* What is “strategic trade policy” and how does it matter in the Brander-Spence model of trade?
+* How do you explain the different decisions about whether to produce superjumbo jets at Airbus and Boeing?
+
+BRANDS INTERNATIONAL CORPORATION v. REACH COMPANIES, LLC                    (**Session 7**)
+
+**Synopsis**:  We begin module 2 with an introduction to legal issues associated with a cross-border sales transactions. The *Brands* case provides us with an opportunity to see how such transactions are negotiated between merchants, and how state and national versus international legal regimes regarding sales contracts and their interpretation differ. Among other points, *Brands* highlights the importance of carefully writing draft agreements, especially when those drafts address choice of law for their interpretation when breached. In this case, a contract for delivery of hand sanitizer on behalf of Canada-based Brands by Minnesota-based Reach failed to expressly exclude application of a separate international legal regime summarized under the UN Convention on Contracts for the International Sale of Goods (CISG). So the CISG rather than Minnesota law governed the contract. The big issue for the US Court of Appeals for the Eighth Circuit was about whether Brands could collect attorneys’ fees from Reach for Reach’s breach of contract. The Eighth Circuit’s 2024 opinion about whether Brands could recover those fees under the CISG reversed a 2023 decision by the lower US District Court for the District of Minnesota. At first glance, the 2024 decision seemed surprising. We’ll show why it wasn’t and what it means going forward for small, medium, and large MNEs doing business around the world.
+
+***Discussion Questions:***
+
+* Why does the CISG apply to the transaction in dispute between Brands and Reach (and how do you know)?
+* Assuming that Minnesota law governed the contract, do you think Brands would still have been able to recover attorneys’ fees from Reach?
+* What sources of law did the Eighth Circuit refer to in reversing the lower court and awarding Brands attorneys fees?
+* It’s pretty clear that the attorneys for both Brands and Reach –both large MNEs— didn’t understand how choice of law rules worked in an international transaction. What does that tell you about how law matters in international transaction negotiation and dispute resolution?
+
+MITSUBISHI V. SOLER CHRYSLER-PLYMOUTH                                                               (**Session 8**)
+
+**Synopsis**:  Litigation of cross-border sales and other transactions increasingly takes place in front of arbitral panels in boardrooms rather than judges and juries in courtrooms.  In this session we ask why.  Mitsubishi gives us a US perspective on this question.  And the AAA reading tells us how best to write agreements consistent with that US perspective.
+
+***Discussion Questions:***
+
+* What is the function of a dispute resolution clause?
+* What is arbitration compared to other non-judicial forms of dispute resolution?
+* Why do parties so often use arbitration in international transactions?
+* Mitsubishi seems to stand for the proposition that parties can contract away virtually all substantive rights to sue in US courts, including federal statutory rights. Is that an accurate reading of Mitsubishi?
+
+FINLEY RESOURCES AND OTHERS V. MEXICO                                                             (**Session 9**)
+
+**Synopsis**. How do MNEs sue a sovereign state? Up until the early 1960s the question was irrelevant. MNEs couldn’t. Then countries started signing international investment agreements (IIAs) including investor state dispute resolution terms permitting such suits under certain conditions. The *Finley* case helps us understand how such suits can go forward under two of the most important IIAs: The North American Free Trade Agreement (NAFTA) enacted in the early 1990s under the Clinton administration; and the US-Mexico-Canada Agreement (USMCA) enacted in the late 2010s under the (first) Trump administration. The *Finley* cases applies both IIAs, so we can get a sense of how both differ in the rights and obligations they impose on MNEs trying to hold states to account. The Finley case is long. First, browse through it just to get a sense of how long and winding a road it is for MNEs like Finley to exploit IIAs, particularly the newer USMCA. Then try to acquaint yourselves with the facts of the alleged breach of contract by Mexico’s state-owned subsidiary of Pemex, PEP.  Finally, look at the conclusion of the decision by the ICSID tribunal ultimately awarding damages –money— to Finley. Was it all worth it for Finley?
+
+***Discussion Questions:***
+
+* Which dispute resolution mechanisms were more effective for Finley in its dispute with the Mexican government?
+* How do NAFTA-based dispute resolution terms differ with USMCA-based terms?
+* Look at the McMillans LLP publication analyzing different ways to sue states under the USMCA. A direct lawsuit by an MNE against a state isn’t the only way to try and hold a state accountable. What’s wrong with using those alternatives?
+* If, after studying the *Finley* case, you were advising other small- or medium-sized MNEs about how IIAs “protect” themselves in transactions with foreign states, what advice would you emphasize?
+
+THE 3M CHINA BRIBERY CASE                                                                                      (**Session 10**)
+
+**Synopsis**. Issues of bribery and corruption often confront MNEs, particularly when dealing with host-country government officials, and particularly in developing countries. The US Foreign Corrupt Practices Act (FCPA) is a US response to that issue with its origins in two notorious instances of bribery involving the sale of military planes to Japan and civil aircraft to Pakistan. Since then, the FCPA has undergone several revisions and other wealthier industrialized countries in Western Europe and the Pacific have enacted similar laws. The 2023 3M China bribery case is important to understand not just to see how the FCPA works in practice but to understand how easy it is to detect by MNE headquarters and then respond to effectively. It is pretty clear that 3M’s healthcare subsidiary operations in China were bribing Chinese health ministry officials for years before 3M’s headquarters in suburban St. Paul discovered it. After this case was settled, 3M “spun off” its healthcare division into a separate MNE. Reviewing this case in light of the subsequent spin off will help us understand how MNE organization and oversight capability matter for the control of bribery abroad.
+
+***Discussion Questions:***
+
+* Look at the summary description of the FCPA and the summary of 3M’s FCPA violation in two documents published online by the SEC. What were the elements of 3M’s FCPA violation?
+* At first glance, the fines and disgorgement 3M paid out to settle the FCPA violations seemed to be pretty small compared to the business advantages 3M likely gained over the years it bribed Chinese health officials with luxury trips to “educational” conferences. What other costs do you think 3M’s FCPA violations prompted?
+* In 2023, 3M’s healthcare division was one of many in a highly diversified MNE. The spin-off of the healthcare division into a separate company in 2024 meant that the new MNE would serve only one industry. How does that matter for future oversight of operations for future FCPA violations?
+
+CHAD-CAMEROON PETROL’M DEVELOPMENT & PIPELINE PROJECT (A-D)    **(Sessions 11-12)**
+
+**Synopsis:**  On June 6, 2000, the World Bank's and IFC's board of directors was scheduled to vote on whether to approve funding for the $4 billion Chad-Cameroon Petroleum Development and Pipeline project. Although the project presented a unique opportunity to alleviate poverty in Chad, one of the poorest countries in the world, Chad had a president who had been labeled "warlord" and a history of civil war and oppression. This case describes the project, the setting, and the World Bank's reasons for participating in the deal--mainly an opportunity to alleviate poverty, enforce environmental standards, and minimize the impact on indigenous people. It also describes the very public and very ardent opposition to the project's environmental, social, and revenue management policies. Faced with a high-risk, but potentially high-return opportunity to improve conditions in Chad, students, we’ll discuss decide whether it is wise to approve funding for the deal.  This case illustrates not only the complexity of negotiating very large deals between public and private entities, but also the opportunity inherent in large-scale investment. We’ll assess whether the benefits received by the host countries are commensurate with the risks they bear. This discussion raises critical ethical issues related to investment in developing countries. With regard to project finance, the case illustrates the difference between project and corporate finance and shows that risk sharing and risk mitigation are motivations for using project finance.
+
+***Discussion Questions:***
+
+* What is political risk? How is it related to sovereign risk? (Session 11)
+* If you were going to buy political risk insurance in the late 1990s as terms of the Chad-Cameroon pipeline project are being negotiated, then what kind of coverage when (and how much) would you buy? (Session 11)
+* How do you justify the World Bank’s inclusion of Chad and Cameroon as partial equity owners in the two pipeline companies? Didn’t Ronald Reagan tell us that the nine most terrifying words in the English language are that “I’m from the government and I’m here to help.”? (Session 11)
+* What is project finance-based investment and why do you think it is used in the Chad Cameroon pipeline project? (Session 12)
+* Which part of the Memorandum of Understanding (MOU) signed in the 1990s when the Chad Cameroon pipeline investment terms were first negotiated proved most helpful when those terms were being re-negotiated in the 20002? (Session 12)
+* After all of the risk-management innovations included in this project, it still ended up having all sorts of snafus. What does that teach you about managing political risks in less developed countries? Is it nothing more than re-arranging deck chairs on the Titanic? (Session 12)
+
+TORO EARNINGS CALL ON ACTIVITY IN UKRAINE AND RUSSIA, MARCH 2022     (**Session 13**)
+
+**Synopsis.** Four years ago, it would’ve seemed strange to devote a course session to how (US) firms do business in wartime. Then the world changes, we get over the shock, and business pundits tell us we should’ve seen it (and planned for it) all along. So there. This session begins with four anecdotes about four firms doing business in and with Russia and Ukraine immediately after Russia’s invasion of Ukraine in February 2022. Each anecdote comes with a “lesson” for other firms that may face a similar situation in the near term. We’ll spend more time on one particular anecdote and lesson involving the Toro Corporation and its regional distributor in Russia and the Ukraine, Engo. I want you to read through the transcript of Toro’s quarterly earnings call with analysts from March 2022, only weeks after Russia’s invasion and Western countries aghast at Russia’s aggression imposed economic sanctions leading to business closures and exits throughout Russia. Opening comments from Toro’s CEO sought to anticipate and neutralize claims that the company was still doing business in Russia. Look closely at those comments and then the lack of any analyst follow-up questions about those comments. Then look at the Engo website and contemporary statements by Engo’s CEO Norbert Zatko (translated via Google from Russian to English). Something’s amiss. We’ll discuss that and see where it takes us about how MNEs conduct themselves with integrity in wartime.
+
+**Discussion Questions:**
+
+* Why do you think Toro does business internationally via distributors? What are the advantages and disadvantages of that approach?
+* Look at the Engo (Russia) website. What percentage of space and text do they devote to promoting Toro and Toro products for turf, lawncare, and golf course maintenance? Put another way, how important is Toro as a (an exclusive) supplier of products and services to Engo?
+* Think about the Toro CEO’s comments about “bad” information regarding Toro’s activities in Russia. Were they false? Were they misleading? Did it matter whether they are one, both, or neither?
+* Why do you think Toro analysts were so apparently uninterested in those comments? What does it tell you about business and finance community interests during wartime?
+
+WHAT DOES EUROPEAN POPULISM MEAN FOR INVESTMENT?                                 **(Session 14)**
+
+**Synopsis.** Populist politics, politicians, and parties are increasingly prominent in the industrialized democracies of Western and Central Europe. What does it mean for investment, particularly foreign-led investment? This session is dedicated to analysis and discussion of near-term populist political and investment trends. We will first review the comments of an economic expert working for a professional investment management company in the Netherlands, APG. Then, we will review findings from what may be the first broad-sample statistical study of foreign- and domestic-led infrastructure investment trends following national elections that lead to ebbs and flows of general, left-wing, and right-wing populist party political support. As you will see from both the comments and study, it is not so much populist politicians and parties that raise concerns for investors, it is *right-wing* populist politicians and parties that raise those concerns for *foreign-led* investors and their projects. We will analyze why that’s the case and what it means not only for Europe but for other parts of the world where right-wing populist parties or wings of such parties are ascendant.
+
+***Discussion Questions:***
+
+* What does “populism” mean to you? Some analysts think there are “varieties” of populism. If so, then how would you describe the European variety based on the comments from the APG expert?
+* In my paper with Chris Hartwell, Barclay James, and Thomas Lindner there are three theories of foreign investment and political risk: opportunistic, partisan, and (partisan) populist. How do the first two contribute to the last one?
+* If you were a non-German MNE looking to invest in a Germany increasingly attracted to right-wing populist parties like the *Alternative für Deutschland* (AfD), what would you do to make that investment give it a more “domestic” look?
+* Are right-wing populist parties good for investment in Europe? Are they good for the US?
+
+HOW MUCH TO GIVE TO TWO CHINESE CITIES                                                              **(Session 15)**
+
+This course session is dedicated to surveying and applying three perspectives on how firms generally and MNEs more specifically define and discharge social responsibilities: 1) an ethical egoist perspective defining and discharging them based on how much they serve MNE shareholder wealth maximization; 2) a stakeholder utilitarian perspective doing the same based on how much they serve a range of MNE stakeholders; and 3) a corporate citizenship deontological perspective doing the same based on MNE duties to act no matter their impact on shareholders or stakeholders. We’ll survey their histories, logics, and typical applications in MNEs today. Then we’ll apply them to a fictional scenario involving Target and two cities in China where Target sources many of the goods sold in their stores. I’ll go over the facts of this scenario involving natural catastrophes leaving thousands in need of food and homes. I will ask you to apply one of these three CSR perspectives in making recommendations to senior Target executives about how much to donate for how long. I am pretty sure you’re recommendations will differ substantially depending on which CSR perspective guides you.
+
+***Discussion Questions:***
+
+* Define in brief CSR and these three CSR perspectives. Which do you think explains the CSR activities of MNEs in the Twin Cities?
+* For some, Milton Friedman’s 1970 opinion piece in the *New York Times* seems like a heartless statement about CSR. For others, it is a realistic statement about the limitations of the firm as a moral entity and presumptive moral wisdom of firm executives. Where do you fall between these two positions?
+* How do you think Freeman’s formulation of stakeholder theory applies to MNEs with workers domestically and multiple foreign locales? And to domestic and foreign host governments?
+* Schwab describes MNEs as “citizens” with certain global duties to act for social purposes even if the economic benefit of such action is not easy to discern. Isn’t that the province of government?
+
+THE RANA PLAZA DISASTER                                                                                               **(Session 16)**
+
+**Synopsis.** “Bluewashing” refers to actions taken by firms that appear to serve some social purpose, but are actually meant to serve the firm’s self-interest, usually firm profitability.  This course session is devoted to understanding whether and how that term applies to the actions of Target and other foreign retailers buying from the Bangladesh-based Rana Plaza clothing manufacturing facility while also supposedly assuring the facility’s adherence to high-quality worker safety standards. The 2013 collapse of the facility in 2013 killed hundreds and led to criticism of foreign retailers, including Target for touting statements to stakeholders about their socially responsible approach as a form of advertising. It even led to a lawsuit for damages in Canada against another Canadian retailer, Loblaws. The aim of this course session is to understand when and how MNEs assume this safety oversight role and when it whipsaws on them legally or otherwise.
+
+***Discussion Questions:***
+
+* What intrinsic duties do MNEs owe foreign workers and communities when they engage them as suppliers?
+* How far can an MNE go before it assumes some duty to those workers and communities no matter where you stand on intrinsic duties? Why would any MNE exceed the intrinsic minimum?
+* Would you permit the Rana Plaza case to be heard in Canadian rather than in Bangladeshi courts?
+* After Rana Plaza, how would you advise Target on supervision of safety in other foreign supplier
+
+THE SUPPLY SIDE: WALMEX, INDIA’S PHONEPe GROW ECOSYSTEMS INSIDE WALMART INTERNATIONAL                                                                                                                     **(Session 17)**
+
+**Synopsis**. The fifth largest country in the world is the virtual country of Diasporia.  There are about 300,000,000 people living in countries where they were not born or raised. The bulk are migrants from countries of the Developing South (*e.g*., Philippines) living and working in countries of the Developed North (*e.g*., US). And those migrants are remitting to their home countries more than $650 billion annually.  Migrant remittances are now the largest foreign capital inflow into most developing countries.  What are the remittances used for? The lion’s share of a remitted dollar (or Euro or Yen) goes to finance household consumption of necessities like food and clothing and healthcare. But a substantial percentage also goes to funding, founding, and growing micro businesses in those same households. So migrants, remittances, and venture investment in developing countries are now an increasingly important part of the social environment of businesses large and small.  In this session we’ll learn how and why.  We’ll also learn how you can exploit business-related opportunities. The WalMex and PhonePe initiatives are two examples of intermediaries looking to exploit business opportunities related to remittances. We will evaluate these and then give you the opportunity to dream up your own “value-added” business idea. Maybe you’ll be the next MNE to win big from remittances.
+
+***Discussion Questions:***
+
+* What is a migrant? What are remittances?  Why have both grown so quickly since 2000?
+* How does economic “informality” change remittance use in a household in a developing country?
+* The WalMex and PhonePe initiatives are two attempts to build profitable ecosystems around migrants and their remittances. How do you evaluate the strengths and weaknesses of each?
+* What’s your value-added remittance idea? It doesn’t require you to be a big MNE like WalMart, just someone able to match a remitting migrant’s interest in the host country to a migrant recipient’s need in the home country. Let’s call it “transnational knowledge.”
+
+UNCHARTED TERRITORY: WHY SOME AIRLINES REMOVE ISRAEL FROM THEIR ONLINE ROUTE MAPS                                                                                                                  **(Session 18)**
+
+**Synopsis:** Alliances have been central features of US, European, and other international airline strategies since the 2010s. Reasons for their emergence are varied, but two major reasons stand out: national state regulation of air space and landing rights; and national state ownership of airlines. The first major reason lets national governments favor domestic airlines and airline business objectives. The second lets national governments control domestic airlines and government political objectives. Sometimes the two overlap as in the case of two Delta SkyTeam alliance members, Saudia and MEA (Lebanon). It may seem irrelevant, but both single out Israel for omission as a country on their airline route maps. We’ll analyze why they and a select group of other state-owned airlines from the Middle East “deny” Israel’s existence on their route maps: Is it to support home-country political objectives, airline business (profitability) objectives, or both? Get ready to learn more about “discriminatory product differentiation” among airlines Delta embraces as allies.
+
+***Discussion Questions**:*
+
+* How would you describe the structure of the international airline industry in the mid-2010s?
+* Which alliance is best positioned for success in the 2020s?
+* The 2017 *Economist* article suggests that some international airlines in the 2010s compete by subtly discriminating against Israelis and Jews. But many of these same airlines are also in alliances led by US airlines touting their record of non-discrimination. Which alliance is best positioned to avoid such intra-alliance conflicts in the 2020s?
+
+TRUMP TARIFFS AND INTERNATIONAL BUSINESS STRATEGY                           **(Session 19)**
+
+**Synopsis**: As I write up this syllabus in early January 2026, it is only a few days before the US Supreme Court is likely to render an opinion on the legality of President Trump’s tariffs imposed under the International Emergency Economic Powers Act (IEEPA). No matter the opinion, this case highlights new challenges facing foreign businesses trying to export to the US and domestic businesses trying to buy those goods and services. Tariffs like those imposed under the IEEPA raise costs for both firms. This guided discussion is intended to give you a better grounding for how we got to this point and what foreign exporting and US importing firms are doing to mitigate the negative business effects.
+
+***Discussion Questions:***
+
+* What is the origin of the IEEPA? How does it relate to other laws giving the executive branch of the US government so much power to regulate international trade, a power explicitly delegated to the legislative branch under the US Constitution?
+* Explain the reasoning of the US Supreme Court decision on the legality of President Trump’s tariff impositions under the IEEPA.
+* How would you advise a large European MNE exporting to the US on how to mitigate the negative effects of US tariffs?
+* How would you do the same for a small US business importing those goods from Europe?
+
+MANAGING INVESTMENT IN CHAOS:  SOUTHEAST ASIA                                    (**Sessions 21-22**)
+
+**Synopsis**:  It is Spring 2002.  Several countries in Southeast Asia are coping with lingering financial concerns, economic downturns, and political and social tensions stemming from the global economic slowdown and the reminiscent of the “Asian flu” which first gripped the region in the latter half of 1997.  Even so, Southeast Asia remains an attractive target for foreign direct investment, particularly in infrastructure industries like telecommunications, electricity, water and transport. Liberalizing trade regimes, low labor costs and government policies promoting private capital into infrastructure industries are some but certainly not all reasons for Southeast Asia’s enduring attraction. In this context, you may play the role of an MNE potentially investing in one of three Southeast Asian countries:  Malaysia, Singapore or Indonesia.  Your investment would be in either (fresh drinking) water or waste-water treatment facilities. To accomplish that you will need to negotiate with host-country governments from the three countries.  You may play one of those three roles.  There are also local firms in each country eager to work cooperatively with the MNEs and, perhaps, doing so with encouragement from the host-country governments.  You may play one of those six roles.  Whatever your role, you will have an entire evening devoted to figuring out how best to manage the “chaos” of strategic FDI in one of the fastest growing regions of the world.  Good luck!
+
+***Discussion Questions:***
+
+* How does “success” differ for MNEs versus local firms and host-country governments?
+* There are special economic zones (SREZs) that permit lower-cost investment but require the consent of multiple host-country governments. How do you negotiate the distribution of positive “externalities” (recall Boeing-Airbus case readings) between multiple host-country governments?
+* FDI agreements are also always incomplete. There are contingencies not covered by the agreement terms.  Who wins when there are silences in the agreements you will negotiate?  How do the likely “losers” in such cases mitigate their losses?
+* What did you learn about adroit FDI strategy from MICSA?
+
+### Tennessen Warning Notice Pursuant to MN Department of Administration’s Data Practices
+
+To make this class more accessible to all enrolled students, we intend to record all class lectures and discussions.  Since your audio/video may be part of those recordings we are informing you.  Along with the instructor and teaching assistants, these recordings will be shared with only the students enrolled in the class during this semester, in accordance with FERPA regulations.
+
+### Communication and Canvas Notifications
+
+The Canvas Notifications system is the main communication tool we will use for course-relevant announcements. If you have not altered your notification settings, you will receive announcements in your UMN email immediately when they are made. If you have altered these settings, it is highly recommended that you reset "Announcements" back to "Notify immediately" in [your communication settings](https://canvas.umn.edu/profile/communication) as seen below so that you receive notices in a timely manner.  
+![Notification frequency settings. 4 options: Notify immediately, Daily summary, Weekly summary, Notifications off](https://carlsonschool.umn.edu/sites/carlsonschool.umn.edu/files/announcements_notifications.png)  
+You may also choose to receive notifications through additional channels including a personal email address or push notifications on your phone if you install the Canvas app. Additional channels can be added through your [Canvas Settings](https://canvas.umn.edu/profile/settings).
+
+### Carlson & University Policies
+
+#### Student Academic Misconduct and Scholastic Dishonesty
+
+The Carlson School defines academic misconduct as any act by a student that misrepresents the student's own academic work or that compromises the academic work of another. Scholastic misconduct includes (but is not limited to) cheating on assignments or examinations, plagiarizing, i.e., misrepresenting as one's own work any work done by another, submitting the same paper, or substantially similar papers, to meet the requirement of more than one course without the approval and consent of the instructors concerned, or sabotaging another's work. Within this general definition, however, instructors determine what constitutes academic misconduct in the courses they teach. Students found guilty of academic misconduct face penalties ranging from lowering of the course grade or awarding a grade of F or N for the entire course, to suspension from the University.
+
+Review the [Student Conduct Code](https://z.umn.edu/policy-carlson_student_conduct_code) and [Student Conduct and Academic Integrity website](https://z.umn.edu/student_conduct_academic_integrity).
+
+If you are interested in learning more about how to cite sources and avoid plagiarism, U of M libraries offers online [tutorials and tools related to citations](https://z.umn.edu/research_citation_tools). You can also visit the [Center for Writing](https://z.umn.edu/center_for_writing) for additional assistance.
+
+#### Accommodations for Students with Disabilities
+
+The University of Minnesota is committed to providing all students equal access to learning opportunities.   
+The Disability Resource Center (DRC) is the campus office that works with students who have disabilities to provide and/or arrange reasonable accommodations. Students registered with the DRC, who have a letter requesting accommodations, are encouraged to contact the instructor early in the semester. Students who have, or think they may have, a disability (e.g. psychiatric, attention, learning, vision, hearing, physical, or systemic), are invited to contact the DRC for a confidential discussion at 612-626-1333 (V/TTY) or at [drc@umn.edu](mailto:drc@umn.edu). Additional information is available on the [Disability Resource Center website](https://z.umn.edu/disability_resource_center).
+
+#### Title IX
+
+[Title IX](https://z.umn.edu/title_ix_process) prohibits sex discrimination, including sexual harassment, sexual assault, stalking, and relationship violence, in education.
+
+#### Students with Mental Health and Stress Management
+
+As a student you may experience a range of issues that can cause barriers to learning, such as strained relationships, increased anxiety, alcohol/drug problems, feeling down, difficulty concentrating and/or lack of motivation. These mental health concerns or stressful events may lead to diminished academic performance or reduce a student's ability to participate in daily activities. University of Minnesota services are available to assist you with addressing these and other concerns you may be experiencing. Learn more about the broad range of confidential [mental health services](https://z.umn.edu/mental_health_services) available on campus.
+
+#### Student Writing Support
+
+As a student, you may experience challenges in your writing. The University of Minnesota has a [student writing support resource](https://z.umn.edu/student_writing_support) to help with your writing.
+
+#### Additional University Policies
+
+1. Grade definitions from the Administrative Policy: [*Grading and Transcripts: Twin Cities, Crookston, Morris, Rochester*](https://z.umn.edu/policy-grading_definitions_transcripts).
+2. Scholastic Dishonesty (see Board of Regents Policy: *[Student Conduct Code](https://z.umn.edu/policy-student_conduct_code)* and the Administrative Policy: [*Teaching and Learning: Instructor and Unit Responsibilities: Twin Cities, Morris, Rochester*](https://z.umn.edu/policy-instructor_unit_responsibilities)).
+3. Administrative Policy: [*Makeup Work for Legitimate Absences: Twin Cities, Crookston, Morris, Rochester*](https://z.umn.edu/policy-makeup_work)
+4. Board of Regents Policy: [*Student Conduct Code*](https://z.umn.edu/policy-student_conduct_code); Administrative Policy: [*Teaching and Learning: Student Responsibilities (Twin Cities, Crookston, Morris, Rochester)*](https://z.umn.edu/policy-student_responsibilities)
+5. Board of Regents Policy: *[Sexual Harassment, Sexual Assault, Stalking and Relationship Violence](https://z.umn.edu/policy-sexual_harassment_assault_stalking_relationship_violence)*
+6. Board of Regents Policy: *[Equity, Diversity, Equal Employment Opportunity, and Affirmative Action](https://z.umn.edu/policy-equity_diversity_eo_aa)*
+7. Board of Regents Policy: *[Disability Services](https://z.umn.edu/policy-disability_services)*
+8. Board of Regents Policy: [*Academic Freedom and Responsibility*](https://z.umn.edu/policy-academic_freedom_responsibility)

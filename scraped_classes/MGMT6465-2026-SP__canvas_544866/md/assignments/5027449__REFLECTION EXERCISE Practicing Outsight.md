@@ -1,0 +1,17 @@
+**REFLECTION EXERCISE, Challenge the Process--Practicing Outsight**
+
+*(Recall that you can do this OR the other Challenge the Process reflection; pick which best serves your development)*
+
+* *Take a few minutes to reflect, then answer each question below.**You may reference and resubmit content after initial submission.*
+* *As with all of our course's reflection exercises, taking time to think and organize your thoughts is what is most valuable. These are all designed as notes for your development, not my own reading/grading. The more thoughtful your reflection and answers, the more likely it is that these thought exercises will help you plan and write your final Leadership Development Plan.*
+* *You should share and capture in prose (or bullet points) what best serves you. Prompts are to encourage growth without pushing you to share more than you want.  Using GenAI on prompts would be an "interesting choice"—if an individual were outsourcing their introspection and leadership development to a robot, would you hire them? GPT might hire them, but you shouldn't.*
+
+**1. Your inputs.** It is commonly noted that leaders are ***always on the lookout*** for new sources of information, novel ideas, and creative insights. How do you get your information? List your top 4–5 most common sources of ideas/information (people, meetings, media, mentors, data, etc.). For each, note: a) What it’s good for; b) One blind spot it might create (what it causes you to miss)
+
+**2. Your outsight gaps.** Identify 2–3 perspectives you rarely access that could challenge your default thinking (e.g., customers/end users, frontline employees, skeptics/critics, competitors, adjacent industries, people unlike you).
+
+**3. Outsight list (specific sources).** Write 5 specific “outside your routine” sources you could tap (people or places). For each, include: a) Who/where; b) One question you’d ask; c) What you hope to learn
+
+**4. One assumption to test.** Name one assumption you’re carrying (about your work/project/career/team/leadership). What evidence supports it? What would disconfirm it? Which outsight source above could test it fastest?
+
+**5. Commit (next ~14 days)**. Choose one outsight action you will actually take in the next two weeks. Specify: a) What you’ll do + when; b) The 1–2 questions you’ll ask; b) How you’ll capture what you learn (3 bullets, notes, voice memo).

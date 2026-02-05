@@ -1,0 +1,28 @@
+[
+  {
+    "id": 15605744,
+    "position": 1,
+    "title": "Week 8: The International Social Environment (March 18)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577542,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605744",
+    "page_url": "week-8-the-international-social-environment-march-18",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-8-the-international-social-environment-march-18"
+  },
+  {
+    "id": 15605745,
+    "position": 2,
+    "title": "Week 9: The International Social Environment (March 25)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577542,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605745",
+    "page_url": "week-9-the-international-social-environment-march-25",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-9-the-international-social-environment-march-25"
+  }
+]

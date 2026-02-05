@@ -1,0 +1,218 @@
+<article class="markdown-body">
+<h1 id="maba-6321-homework-1---sql-solution" class="atx">MABA 6321 Homework 1 - SQL (solution)</h1>
+<h2 id="part-1-short-answers" class="atx">Part 1: Short Answers</h2>
+<ol>
+<li>Explain the following concepts in one or two sentences.</li>
+</ol>
+<ul>
+<li><strong>DBMS</strong>: refers to a general-purpose software system that facilitates the processes of defining, creating, using and maintaining databases</li>
+<li><strong>Primary Key</strong>: A primary key is a column or a set of columns in a database table that uniquely identifies each row in that table.</li>
+<li><strong>Foreign Key</strong>: is a field (or a set of fields) in one table that refers to the primary key in another table. It creates a relationship between two tables and enforces referential integrity.</li>
+<li><strong>DML</strong>: are SQL commands that maintain and query a database</li>
+<li><strong>DDL</strong>: are SQL commands that define a database, including creating, altering, and dropping tables and establishing constraints</li>
+<li><strong>Outer JOIN</strong>: is a type of SQL join that returns matched rows from two tables along with the unmatched rows from one or both tables, filling in missing values with NULLs.</li>
+</ul>
+<h2 id="part-2-hands-on" class="atx">Part 2: Hands On</h2>
+<pre><code class="fenced-code-block language-sql"><span class="token comment">-- ### 1. Find users from "New York", ordering results by `creationDate` and display only their id, display name, and location. Note that you should include cases such as "New York ...", "... New York", and "... New York ..." </span>
+
+
+<span class="token keyword">select</span> id<span class="token punctuation">,</span> displayname<span class="token punctuation">,</span> location <span class="token keyword">from</span> users 
+<span class="token keyword">where</span> location <span class="token operator">like</span> <span class="token string">"%New York%"</span> 
+<span class="token keyword">order</span> <span class="token keyword">by</span> creationdate<span class="token punctuation">;</span>
+
+<span class="token comment">-- 21 row(s) returned</span>
+
+<span class="token comment">-- # id, displayname, location</span>
+<span class="token comment">-- 5, Kasra Rahjerdi, New York, United States</span>
+<span class="token comment">-- 6, Kevin Montrose, New York City, New York</span>
+<span class="token comment">-- 8, David Fullerton, New York, NY</span>
+<span class="token comment">-- 82, Anna Lear, New York, NY</span>
+<span class="token comment">-- 107, Jeni, New York, United States</span>
+<span class="token comment">-- 113, SamtheBrand, New York, United States</span>
+<span class="token comment">-- 118, zompz, New York, NY</span>
+<span class="token comment">-- 120, Max, New York, United States</span>
+<span class="token comment">-- 122, Laura, New York, United States</span>
+<span class="token comment">-- 123, Abby T. Miller, New York, NY</span>
+
+
+<span class="token comment">-- ### 2. We know that both questions and answers are stored in the `posts` table. We wonder how many types are there in the posts table? Order results by post type ID. </span>
+
+
+<span class="token keyword">SELECT</span> <span class="token keyword">distinct</span> PostTypeId <span class="token keyword">FROM</span> posts
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> PostTypeID<span class="token punctuation">;</span>
+
+<span class="token comment">-- 4 row(s) returned</span>
+
+<span class="token comment">-- # PostTypeId</span>
+<span class="token comment">-- 1</span>
+<span class="token comment">-- 2</span>
+<span class="token comment">-- 4</span>
+<span class="token comment">-- 5</span>
+
+
+<span class="token comment">-- ### 3.  Continuing with the previous query, find out the count of each Post Type, ordering results from the highest to the lowest count. The column header for count must be "count" and the column header for `PostTypeID` should be "Post Type ID". </span>
+
+<span class="token comment">-- &gt; Hint: `count` is a reserved word in SQL. </span>
+
+
+<span class="token keyword">SELECT</span> PostTypeId <span class="token keyword">as</span> <span class="token identifier"><span class="token punctuation">`</span>Post Type ID<span class="token punctuation">`</span></span><span class="token punctuation">,</span> 
+    <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> <span class="token identifier"><span class="token punctuation">`</span>count<span class="token punctuation">`</span></span> <span class="token keyword">FROM</span> posts
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> PostTypeId 
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token identifier"><span class="token punctuation">`</span>count<span class="token punctuation">`</span></span> <span class="token keyword">desc</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 4 row(s) returned</span>
+
+<span class="token comment">-- # Post Type ID, count</span>
+<span class="token comment">-- 2, 1585</span>
+<span class="token comment">-- 1, 947</span>
+<span class="token comment">-- 5, 168</span>
+<span class="token comment">-- 4, 168</span>
+
+
+<span class="token comment">-- ### 4. If a question owner is satisified with one of the answers, he/she can mark the answer as an Accepted Answer (The answer's post id saved in `AcceptedAnswerID` field of the posts table). Show all the question posts on or after May 1, 2024 that DO NOT yet have an Accepted Answer, displaying the posts' id, type ID, creation date, owner user id, and title. </span>
+
+
+<span class="token keyword">Select</span> id<span class="token punctuation">,</span> posttypeid<span class="token punctuation">,</span> creationdate<span class="token punctuation">,</span> owneruserid<span class="token punctuation">,</span> title
+<span class="token keyword">from</span> posts 
+<span class="token keyword">where</span> posttypeid<span class="token operator">=</span><span class="token number">1</span> 
+    <span class="token operator">and</span> AcceptedAnswerId <span class="token operator">is</span> <span class="token boolean">null</span> 
+    <span class="token operator">and</span> creationdate <span class="token operator">&gt;=</span> <span class="token string">"2024-05-01"</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 6 row(s) returned</span>
+
+<span class="token comment">-- # id, posttypeid, creationdate, owneruserid, title</span>
+<span class="token comment">-- 3083, 1, 2024-05-01 22:46:56, 1290, Leg injury confusing the vet</span>
+<span class="token comment">-- 3087, 1, 2024-05-02 21:14:22, 1299, Why do my clothes smell like dog after laying in the wardrobe for so long?</span>
+<span class="token comment">-- 3088, 1, 2024-05-02 22:56:39, 165, What to do when a cat is in "attack mode"</span>
+<span class="token comment">-- 3091, 1, 2024-05-03 12:00:19, 1301, Is there a breed of rabbit that doesn't grow more than the size of a hand?</span>
+<span class="token comment">-- 3093, 1, 2024-05-03 14:04:38, 1166, Can dogs get head lice and transfer them to humans (or vice versa)?</span>
+<span class="token comment">-- 3095, 1, 2024-05-03 17:22:37, 1302, Do miniature cows with cat like agility exist?</span>
+
+<span class="token comment">-- ### 5. Show all the Answer posts in January 2024, ordering results by creation date and display the answer posts' ID, post type ID, creation date, and a trucated version of the answer body (the first 50 characters) as `body`. </span>
+
+<span class="token comment">-- Hint: `Left(string_value, x)` returns the first x characters of the string_value</span>
+
+
+<span class="token keyword">SELECT</span> id<span class="token punctuation">,</span> posttypeid<span class="token punctuation">,</span> creationdate<span class="token punctuation">,</span> 
+    <span class="token keyword">left</span><span class="token punctuation">(</span>body<span class="token punctuation">,</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">as</span> body <span class="token keyword">FROM</span> posts 
+<span class="token keyword">WHERE</span> postTypeid<span class="token operator">=</span><span class="token number">2</span> <span class="token operator">and</span>
+    creationdate <span class="token operator">BETWEEN</span> <span class="token string">"2024-01-01"</span> <span class="token operator">AND</span> <span class="token string">"2024-01-31"</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> CreationDate<span class="token punctuation">;</span>
+
+<span class="token comment">-- 150 row(s) returned</span>
+
+<span class="token comment">-- # id, posttypeid, creationdate, body</span>
+<span class="token comment">-- 1837, 2, 2024-01-01 12:10:37, &lt;p&gt;&lt;strong&gt;Explanation:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;It is lik</span>
+<span class="token comment">-- 1838, 2, 2024-01-02 15:20:43, &lt;p&gt;I hold the opinion that people need to train th</span>
+<span class="token comment">-- 1839, 2, 2024-01-02 16:16:10, &lt;p&gt;Kittens need to stay in with their mother for 1</span>
+<span class="token comment">-- 1841, 2, 2024-01-02 18:02:19, &lt;p&gt;It depends on the kitten, but a good guideline </span>
+<span class="token comment">-- 1845, 2, 2024-01-03 08:37:28, &lt;p&gt;&lt;strong&gt;tl;dr version:&lt;/strong&gt; Any combination</span>
+<span class="token comment">-- 1846, 2, 2024-01-03 11:15:02, &lt;p&gt;Unless you've directly observed one cat bullyin</span>
+<span class="token comment">-- 1847, 2, 2024-01-03 11:20:51, &lt;p&gt;Add a second litter box to the house.  &lt;/p&gt;&lt;p</span>
+<span class="token comment">-- 1850, 2, 2024-01-03 14:11:34, &lt;p&gt;I'm going to make some assumptions here - that </span>
+<span class="token comment">-- 1851, 2, 2024-01-03 14:16:05, &lt;p&gt;I've been told by vets that the most appropriat</span>
+<span class="token comment">-- 1852, 2, 2024-01-03 17:24:12, &lt;p&gt;The answer occurred to me the other day. No, I </span>
+
+
+
+<span class="token comment">-- ### 6. For each Answer post with 25 or higher scores, displaying their vote count for each type of votes, along with the post's id, title, and first 50 characters of their body.</span>
+
+
+<span class="token keyword">SELECT</span> p<span class="token punctuation">.</span>id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> <span class="token keyword">left</span><span class="token punctuation">(</span>body<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">as</span> body<span class="token punctuation">,</span> 
+    votetypeid<span class="token punctuation">,</span> <span class="token function">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> vote_count
+<span class="token keyword">FROM</span> posts <span class="token keyword">AS</span> p <span class="token keyword">JOIN</span> votes <span class="token keyword">as</span> v <span class="token keyword">ON</span> p<span class="token punctuation">.</span>Id <span class="token operator">=</span> v<span class="token punctuation">.</span>PostId
+<span class="token keyword">WHERE</span> score<span class="token operator">&gt;=</span><span class="token number">25</span> <span class="token operator">and</span> votetypeid<span class="token operator">=</span><span class="token number">2</span>
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> p<span class="token punctuation">.</span>id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> score<span class="token punctuation">,</span> votetypeid
+<span class="token keyword">order</span> <span class="token keyword">by</span> score <span class="token keyword">desc</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 15 row(s) returned</span>
+
+<span class="token comment">-- # id, title, body, votetypeid, vote_count</span>
+<span class="token comment">-- 120, Why does my cat keep patting my face?, &lt;p&gt;My cat has a habit of randomly patting my face , 2, 35</span>
+<span class="token comment">-- 519, How much purring is too much purring?, &lt;p&gt;I have an adolescent cat that I adopted as a ki, 2, 32</span>
+<span class="token comment">-- 2725, How do I get my cat to wear a tuxedo for several hours?, &lt;p&gt;My cat is quite dapper and handsome, so when we, 2, 31</span>
+<span class="token comment">-- 1001, Who should win at tug of war?, &lt;p&gt;I love playing tug of war with my dog.  This is, 2, 30</span>
+<span class="token comment">-- 490, , &lt;p&gt;Declawing is considered a last option before ha, 2, 29</span>
+<span class="token comment">-- 559, , &lt;p&gt;My dogs also scoot, which indicates it is time , 2, 29</span>
+<span class="token comment">-- 1, What causes a dog to lunge at an unknown child and how should the owner respond?, &lt;p&gt;I have a 2.5 year old pitbull/boxer mix.  He is, 2, 28</span>
+<span class="token comment">-- 14, Can cats safely eat raw meat?, &lt;p&gt;Is it safe to feed my cat raw meat, or should w, 2, 28</span>
+<span class="token comment">-- 67, How should I discipline my cat for bad behavior?, &lt;p&gt;There are a couple of things that I try and pre, 2, 28</span>
+<span class="token comment">-- 247, , &lt;p&gt;This is one way cats show affection or try to g, 2, 28</span>
+
+<span class="token comment">-- ##7. Find each customer's last payment date. A customer must be shown even if the customer does not have any payment. Show `customernumber`, `customername`, and last payment date (as "last_pay_date"). Order results by `customername`. </span>
+
+<span class="token keyword">SELECT</span> c<span class="token punctuation">.</span>customernumber<span class="token punctuation">,</span> customername<span class="token punctuation">,</span> <span class="token function">MAX</span><span class="token punctuation">(</span>paymentdate<span class="token punctuation">)</span> <span class="token keyword">AS</span> last_pay_date
+<span class="token keyword">FROM</span> customers <span class="token keyword">AS</span> c
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> payments <span class="token keyword">AS</span> p <span class="token keyword">ON</span> c<span class="token punctuation">.</span>customernumber <span class="token operator">=</span> p<span class="token punctuation">.</span>customernumber
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> c<span class="token punctuation">.</span>customernumber
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> customername<span class="token punctuation">;</span>
+
+<span class="token comment">-- 122 row(s) returned</span>
+
+<span class="token comment">-- # customernumber, customername, last_pay_date</span>
+<span class="token comment">-- 242, Alpha Cognac, 2005-06-03 00:00:00</span>
+<span class="token comment">-- 168, American Souvenirs Inc, </span>
+<span class="token comment">-- 249, Amica Models &amp; Co., 2004-09-19 00:00:00</span>
+<span class="token comment">-- 237, ANG Resellers, </span>
+<span class="token comment">-- 276, Anna's Decorations, Ltd, 2005-04-30 00:00:00</span>
+<span class="token comment">-- 465, Anton Designs, Ltd., </span>
+<span class="token comment">-- 206, Asian Shopping Network, Co, </span>
+<span class="token comment">-- 348, Asian Treasures, Inc., </span>
+<span class="token comment">-- 103, Atelier graphique, 2004-12-18 00:00:00</span>
+<span class="token comment">-- 471, Australian Collectables, Ltd, 2004-07-28 00:00:00</span>
+
+
+<span class="token comment">-- ### 8.  Write an `INSERT INTO` statement(s) to enter the following four entries into the `orderdetails` table.</span>
+
+<span class="token comment">-- A customer places the following two orders numbered 30 and 31 respectively.</span>
+
+<span class="token comment">-- |**Order Number** | **Product Code** | **quantity** | **unit price** | **Order line number** |</span>
+<span class="token comment">-- | -| -| -| -| -|</span>
+<span class="token comment">-- | 30 | S18_4600 | 20 | $79.99 | 1 |</span>
+<span class="token comment">-- | 30 | S700_1938 | 5 | $50.00 | 2 |</span>
+<span class="token comment">-- | 30 | S700_3962 | 15 | $65.00 | 3 |</span>
+<span class="token comment">-- | 30 | S24_4258 | 20 | $75.00 | 4 |</span>
+
+
+<span class="token keyword">Insert</span> <span class="token keyword">into</span> orders <span class="token punctuation">(</span>orderNumber<span class="token punctuation">,</span> orderDate<span class="token punctuation">,</span> 
+    requiredDate<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">,</span> customerNumber<span class="token punctuation">)</span>
+<span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">"2025-05-31"</span><span class="token punctuation">,</span> <span class="token string">"2025-06-07"</span><span class="token punctuation">,</span> <span class="token string">"In Process"</span><span class="token punctuation">,</span> <span class="token number">114</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 1 row(s) affected</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orderdetails
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S18_4600'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">79.99</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token punctuation">)</span> <span class="token punctuation">,</span> <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S700_1938'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token punctuation">)</span> <span class="token punctuation">,</span>
+ <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S700_3962'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S24_4258'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+ <span class="token comment">-- 4 rows affected</span>
+
+
+<span class="token comment">-- Alternatively, one can insert into `orderdetails` line by line:</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orderdetails <span class="token keyword">VALUES</span> <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S18_4600'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">79.99</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orderdetails <span class="token keyword">VALUES</span> <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S700_1938'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token punctuation">)</span> <span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orderdetails <span class="token keyword">VALUES</span> <span class="token punctuation">(</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token string">'S700_3962'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> orderdetails <span class="token keyword">VALUES</span> <span class="token punctuation">(</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token string">'S24_4258'</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 4 rows affected</span>
+
+
+<span class="token comment">-- ### 9. Write an update statement to update the line 1 of order 30 to increase the price for this item by 5. </span>
+
+<span class="token keyword">UPDATE</span> orderdetails <span class="token keyword">SET</span> priceEach <span class="token operator">=</span> priceEach <span class="token operator">+</span> <span class="token number">5</span>
+<span class="token keyword">WHERE</span> orderNumber <span class="token operator">=</span> <span class="token number">30</span> <span class="token operator">AND</span> orderlinenumber <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment">-- 1 rows affected.</span>
+
+<span class="token comment">-- ### 10. Delete the order line(s) for order 30 in `orderdetails` and the order 30 in orders.</span>
+
+
+<span class="token keyword">DELETE</span> <span class="token keyword">from</span> orderdetails 
+<span class="token keyword">WHERE</span> ordernumber<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 4 row(s) affected</span>
+
+<span class="token keyword">DELETE</span> <span class="token keyword">from</span> orders 
+<span class="token keyword">WHERE</span> ordernumber<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 1 row(s) affected</span></code></pre>
+</article>

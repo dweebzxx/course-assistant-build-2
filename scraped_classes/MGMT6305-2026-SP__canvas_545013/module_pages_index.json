@@ -1,0 +1,114 @@
+[
+  {
+    "module_canvas_id": 2577538,
+    "module_name": "Start Here",
+    "title": "Your Instructor",
+    "page_url": "your-instructor",
+    "html": "html/pages/Your Instructor.html",
+    "meta": "html/pages/Your Instructor.meta.json"
+  },
+  {
+    "module_canvas_id": 2577539,
+    "module_name": "Module 1: IEB Foundations",
+    "title": "Week 1: IEB Foundations (January 21)",
+    "page_url": "week-1-ieb-foundations-january-21",
+    "html": "html/pages/Week 1 IEB Foundations January 21.html",
+    "meta": "html/pages/Week 1 IEB Foundations January 21.meta.json"
+  },
+  {
+    "module_canvas_id": 2577539,
+    "module_name": "Module 1: IEB Foundations",
+    "title": "Week 2: IEB Foundations (January 28)",
+    "page_url": "week-2-ieb-foundations-january-28",
+    "html": "html/pages/Week 2 IEB Foundations January 28.html",
+    "meta": "html/pages/Week 2 IEB Foundations January 28.meta.json"
+  },
+  {
+    "module_canvas_id": 2577539,
+    "module_name": "Module 1: IEB Foundations",
+    "title": "Week 3: IEB Foundations (February 4)",
+    "page_url": "week-3-ieb-foundations-february-4",
+    "html": "html/pages/Week 3 IEB Foundations February 4.html",
+    "meta": "html/pages/Week 3 IEB Foundations February 4.meta.json"
+  },
+  {
+    "module_canvas_id": 2577540,
+    "module_name": "Module 2: The International Legal Environment",
+    "title": "Week 4: The International Legal Environment (February 11)",
+    "page_url": "week-4-the-international-legal-environment-february-11",
+    "html": "html/pages/Week 4 The International Legal Environment February 11.html",
+    "meta": "html/pages/Week 4 The International Legal Environment February 11.meta.json"
+  },
+  {
+    "module_canvas_id": 2577540,
+    "module_name": "Module 2: The International Legal Environment",
+    "title": "Week 5: International Legal Environment (February 18)",
+    "page_url": "week-5-international-legal-environment-february-18",
+    "html": "html/pages/Week 5 International Legal Environment February 18.html",
+    "meta": "html/pages/Week 5 International Legal Environment February 18.meta.json"
+  },
+  {
+    "module_canvas_id": 2577541,
+    "module_name": "Module 3: The International Political Environment",
+    "title": "Week 6: International Political Environment (February 25)",
+    "page_url": "week-6-international-political-environment-february-25",
+    "html": "html/pages/Week 6 International Political Environment February 25.html",
+    "meta": "html/pages/Week 6 International Political Environment February 25.meta.json"
+  },
+  {
+    "module_canvas_id": 2577541,
+    "module_name": "Module 3: The International Political Environment",
+    "title": "Week 7: The International Political Environment (March 4)",
+    "page_url": "week-7-the-international-political-environment-march-4",
+    "html": "html/pages/Week 7 The International Political Environment March 4.html",
+    "meta": "html/pages/Week 7 The International Political Environment March 4.meta.json"
+  },
+  {
+    "module_canvas_id": 2577542,
+    "module_name": "Module 4: The International Social Environment",
+    "title": "Week 8: The International Social Environment (March 18)",
+    "page_url": "week-8-the-international-social-environment-march-18",
+    "html": "html/pages/Week 8 The International Social Environment March 18.html",
+    "meta": "html/pages/Week 8 The International Social Environment March 18.meta.json"
+  },
+  {
+    "module_canvas_id": 2577542,
+    "module_name": "Module 4: The International Social Environment",
+    "title": "Week 9: The International Social Environment (March 25)",
+    "page_url": "week-9-the-international-social-environment-march-25",
+    "html": "html/pages/Week 9 The International Social Environment March 25.html",
+    "meta": "html/pages/Week 9 The International Social Environment March 25.meta.json"
+  },
+  {
+    "module_canvas_id": 2577543,
+    "module_name": "Module 5: Simulating the International Environment",
+    "title": "Week 10: Simulating the International Environment (April 1)",
+    "page_url": "week-10-simulating-the-international-environment-april-1",
+    "html": "html/pages/Week 10 Simulating the International Environment April 1.html",
+    "meta": "html/pages/Week 10 Simulating the International Environment April 1.meta.json"
+  },
+  {
+    "module_canvas_id": 2577543,
+    "module_name": "Module 5: Simulating the International Environment",
+    "title": "Week 11: Simulating the International Environment (April 8)",
+    "page_url": "week-11-simulating-the-international-environment-april-8",
+    "html": "html/pages/Week 11 Simulating the International Environment April 8.html",
+    "meta": "html/pages/Week 11 Simulating the International Environment April 8.meta.json"
+  },
+  {
+    "module_canvas_id": 2577544,
+    "module_name": "Module 6: Your Company's International Environment",
+    "title": "Week 12: Your Company's International Environment (April 15)",
+    "page_url": "week-12-your-companys-international-environment-april-15",
+    "html": "html/pages/Week 12 Your Companys International Environment April 15.html",
+    "meta": "html/pages/Week 12 Your Companys International Environment April 15.meta.json"
+  },
+  {
+    "module_canvas_id": 2577544,
+    "module_name": "Module 6: Your Company's International Environment",
+    "title": "Week 13: Your Company's International Environment (April 22)",
+    "page_url": "week-13-your-companys-international-environment-april-22",
+    "html": "html/pages/Week 13 Your Companys International Environment April 22.html",
+    "meta": "html/pages/Week 13 Your Companys International Environment April 22.meta.json"
+  }
+]

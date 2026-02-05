@@ -1,0 +1,14 @@
+{
+  "id": 2590047,
+  "position": 7,
+  "name": "Consolidated View of Key Assignments",
+  "unlock_at": null,
+  "require_sequential_progress": false,
+  "requirement_type": "all",
+  "publish_final_grade": false,
+  "prerequisite_module_ids": [],
+  "state": "completed",
+  "completed_at": "2026-02-05T03:55:39Z",
+  "items_count": 4,
+  "items_url": "https://canvas.umn.edu/api/v1/courses/544866/modules/2590047/items"
+}

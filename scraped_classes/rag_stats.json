@@ -1,0 +1,10 @@
+{
+  "run_root": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha",
+  "total_manifest_rows": 182,
+  "total_md_files_found": 182,
+  "missing_md_files": 0,
+  "documents_written": 182,
+  "chunks_written": 253,
+  "min_chars_per_chunk": 600,
+  "max_chars_per_chunk": 4500
+}

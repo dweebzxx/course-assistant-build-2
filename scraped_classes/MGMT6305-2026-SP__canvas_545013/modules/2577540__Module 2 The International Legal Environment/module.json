@@ -1,0 +1,14 @@
+{
+  "id": 2577540,
+  "position": 3,
+  "name": "Module 2: The International Legal Environment",
+  "unlock_at": null,
+  "require_sequential_progress": false,
+  "requirement_type": "all",
+  "publish_final_grade": false,
+  "prerequisite_module_ids": [],
+  "state": "completed",
+  "completed_at": "2026-01-21T00:53:33Z",
+  "items_count": 2,
+  "items_url": "https://canvas.umn.edu/api/v1/courses/545013/modules/2577540/items"
+}

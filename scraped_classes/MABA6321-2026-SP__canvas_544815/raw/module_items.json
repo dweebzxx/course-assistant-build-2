@@ -1,0 +1,589 @@
+[
+  {
+    "canvas_module_id": 2606744,
+    "canvas_module_name": "Start Here",
+    "items": [
+      {
+        "id": 15828161,
+        "position": 1,
+        "title": "Welcome and Meet Your Instructor",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606744,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828161",
+        "page_url": "welcome-and-meet-your-instructor",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/welcome-and-meet-your-instructor"
+      },
+      {
+        "id": 15828162,
+        "position": 2,
+        "title": "Canvas Information: Student Help Resources",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "ExternalUrl",
+        "module_id": 2606744,
+        "html_url": "https://canvas.umn.edu/api/v1/courses/544815/module_item_redirect/15828162",
+        "external_url": "https://it.umn.edu/canvas-transition-information-student",
+        "new_tab": true
+      },
+      {
+        "id": 15828163,
+        "position": 3,
+        "title": "Datasets",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606744,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828163",
+        "page_url": "datasets",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/datasets"
+      },
+      {
+        "id": 15828164,
+        "position": 4,
+        "title": "How to Log-in to Zoom Client and Update Zoom",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606744,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828164",
+        "page_url": "how-to-log-in-to-zoom-client-and-update-zoom",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/how-to-log-in-to-zoom-client-and-update-zoom"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2659675,
+    "canvas_module_name": "SmartPAL Learning Tools",
+    "items": [
+      {
+        "id": 16202103,
+        "position": 1,
+        "title": "SmartPAL User Guide",
+        "indent": 2,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2659675,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202103",
+        "page_url": "smartpal-user-guide-3",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/smartpal-user-guide-3"
+      },
+      {
+        "id": 16202104,
+        "position": 2,
+        "title": "SmartPAL App Activation",
+        "indent": 2,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2659675,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202104",
+        "content_id": 5213034,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213034"
+      },
+      {
+        "id": 16202105,
+        "position": 3,
+        "title": "SmartPAL Reflections",
+        "indent": 2,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2659675,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202105",
+        "content_id": 5213037,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213037"
+      },
+      {
+        "id": 16202106,
+        "position": 4,
+        "title": "SmartPAL Learning Engagement",
+        "indent": 2,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2659675,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202106",
+        "content_id": 5213036,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213036"
+      },
+      {
+        "id": 16202107,
+        "position": 5,
+        "title": "SmartPAL Post Survey",
+        "indent": 2,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2659675,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202107",
+        "content_id": 5213035,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213035"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2606746,
+    "canvas_module_name": "Module 1: Introduction to Database and SQL",
+    "items": [
+      {
+        "id": 15828173,
+        "position": 1,
+        "title": "Module 1: Overview",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606746,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828173",
+        "page_url": "module-1-overview",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-1-overview"
+      },
+      {
+        "id": 15828174,
+        "position": 2,
+        "title": "Module 1 Video: From Scheduling Chaos to Database Solutions",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606746,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828174",
+        "page_url": "module-1-video-from-scheduling-chaos-to-database-solutions",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-1-video-from-scheduling-chaos-to-database-solutions"
+      },
+      {
+        "id": 15828175,
+        "position": 3,
+        "title": "Module 1: Lectures and Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606746,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828175",
+        "page_url": "module-1-lectures-and-activities",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-1-lectures-and-activities"
+      },
+      {
+        "id": 15828176,
+        "position": 4,
+        "title": "Lab 1 - Basic SQL",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606746,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828176",
+        "content_id": 5072479,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072479"
+      },
+      {
+        "id": 15828177,
+        "position": 5,
+        "title": "Lab 1 Solution",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606746,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828177",
+        "page_url": "lab-1-solution",
+        "publish_at": "2026-01-27T23:59:00-06:00",
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/lab-1-solution"
+      },
+      {
+        "id": 15828178,
+        "position": 6,
+        "title": "Homework 1",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606746,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828178",
+        "content_id": 5072476,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072476"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2606747,
+    "canvas_module_name": "Module 2: Intermediate SQL",
+    "items": [
+      {
+        "id": 15828179,
+        "position": 1,
+        "title": "Module 2: Overview",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828179",
+        "page_url": "module-2-overview",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-2-overview"
+      },
+      {
+        "id": 15828180,
+        "position": 2,
+        "title": "Module 2 Videos: Voices From The Field",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828180",
+        "page_url": "module-2-videos-voices-from-the-field",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-2-videos-voices-from-the-field"
+      },
+      {
+        "id": 15828181,
+        "position": 3,
+        "title": "Module 2: Lectures and Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828181",
+        "page_url": "module-2-lectures-and-activities",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-2-lectures-and-activities"
+      },
+      {
+        "id": 15828182,
+        "position": 4,
+        "title": "Lab 2 - Intermediate SQL",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828182",
+        "content_id": 5072480,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072480"
+      },
+      {
+        "id": 15828183,
+        "position": 5,
+        "title": "Lab 2 Solution",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828183",
+        "page_url": "lab-2-solution",
+        "publish_at": "2026-02-03T23:59:00-06:00",
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/lab-2-solution"
+      },
+      {
+        "id": 15828184,
+        "position": 6,
+        "title": "Homework 1",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828184",
+        "content_id": 5072476,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072476"
+      },
+      {
+        "id": 15828185,
+        "position": 7,
+        "title": "Homework 1 Solution",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606747,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828185",
+        "page_url": "homework-1-solution",
+        "publish_at": "2026-02-03T23:59:00-06:00",
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/homework-1-solution"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2606748,
+    "canvas_module_name": "Module 3: Advanced SQL",
+    "items": [
+      {
+        "id": 15828186,
+        "position": 1,
+        "title": "Module 3: Overview",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828186",
+        "page_url": "module-3-overview",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-3-overview"
+      },
+      {
+        "id": 15828187,
+        "position": 2,
+        "title": "Module 3: Lectures and Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828187",
+        "page_url": "module-3-lectures-and-activities",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-3-lectures-and-activities"
+      },
+      {
+        "id": 15828188,
+        "position": 3,
+        "title": "Lab 3 - Advanced SQL",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828188",
+        "content_id": 5072481,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072481"
+      },
+      {
+        "id": 15828190,
+        "position": 5,
+        "title": "Homework 2",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828190",
+        "content_id": 5072477,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072477"
+      },
+      {
+        "id": 15828191,
+        "position": 6,
+        "title": "Homework 2 Solution",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828191",
+        "page_url": "homework-2-solution",
+        "publish_at": "2026-02-03T23:59:00-06:00",
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/homework-2-solution"
+      },
+      {
+        "id": 15828192,
+        "position": 7,
+        "title": "HonorLock Test (Please test before Each Quiz) ",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828192",
+        "content_id": 1138958,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138958"
+      },
+      {
+        "id": 15828193,
+        "position": 8,
+        "title": "Quiz 1",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2606748,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828193",
+        "content_id": 1138957,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138957"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2606749,
+    "canvas_module_name": "Module 4: Data Modeling with ER Diagrams",
+    "items": [
+      {
+        "id": 15828194,
+        "position": 1,
+        "title": "Module 4: Overview",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606749,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828194",
+        "page_url": "module-4-overview",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-overview"
+      },
+      {
+        "id": 15828195,
+        "position": 2,
+        "title": "Module 4 Video: My Journey on Data Modeling",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606749,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828195",
+        "page_url": "module-4-video-my-journey-on-data-modeling",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-video-my-journey-on-data-modeling"
+      },
+      {
+        "id": 15828196,
+        "position": 3,
+        "title": "Module 4 Videos: Voices From The Field",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606749,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828196",
+        "page_url": "module-4-videos-voices-from-the-field",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-videos-voices-from-the-field"
+      },
+      {
+        "id": 15828197,
+        "position": 4,
+        "title": "Module 4: Lectures and Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606749,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828197",
+        "page_url": "module-4-lectures-and-activities",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-lectures-and-activities"
+      },
+      {
+        "id": 15828198,
+        "position": 5,
+        "title": "Lab 4 - ER Diagram",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606749,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828198",
+        "content_id": 5072482,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072482"
+      },
+      {
+        "id": 15828200,
+        "position": 7,
+        "title": "Homework 3",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606749,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828200",
+        "content_id": 5072478,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072478"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2606750,
+    "canvas_module_name": "Module 5: Database Normalization & Design",
+    "items": [
+      {
+        "id": 15828201,
+        "position": 1,
+        "title": "Module 5: Overview",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828201",
+        "page_url": "module-5-overview",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-5-overview"
+      },
+      {
+        "id": 15828202,
+        "position": 2,
+        "title": "Module 5 Videos: Voices From The Field",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828202",
+        "page_url": "module-5-videos-voices-from-the-field",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-5-videos-voices-from-the-field"
+      },
+      {
+        "id": 15828203,
+        "position": 3,
+        "title": "Module 5: Lectures and Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828203",
+        "page_url": "module-5-lectures-and-activities",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-5-lectures-and-activities"
+      },
+      {
+        "id": 15828204,
+        "position": 4,
+        "title": "Lab 5 - Normalization and DB design",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828204",
+        "content_id": 5072483,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072483"
+      },
+      {
+        "id": 15828206,
+        "position": 6,
+        "title": "Homework 3",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828206",
+        "content_id": 5072478,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072478"
+      },
+      {
+        "id": 15828208,
+        "position": 8,
+        "title": "HonorLock Test (Please test before Each Quiz) ",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828208",
+        "content_id": 1138958,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138958"
+      },
+      {
+        "id": 15828209,
+        "position": 9,
+        "title": "Quiz 2",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2606750,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828209",
+        "content_id": 1138956,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138956"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2606753,
+    "canvas_module_name": "Misc",
+    "items": [
+      {
+        "id": 15828222,
+        "position": 1,
+        "title": "HonorLock Test (Please test before Each Quiz) ",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2606753,
+        "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828222",
+        "content_id": 1138958,
+        "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138958"
+      }
+    ]
+  }
+]

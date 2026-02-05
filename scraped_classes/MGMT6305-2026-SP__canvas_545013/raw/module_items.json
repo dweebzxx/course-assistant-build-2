@@ -1,0 +1,250 @@
+[
+  {
+    "canvas_module_id": 2577538,
+    "canvas_module_name": "Start Here",
+    "items": [
+      {
+        "id": 15605733,
+        "position": 1,
+        "title": "Your Instructor",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577538,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605733",
+        "page_url": "your-instructor",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/your-instructor"
+      },
+      {
+        "id": 16265037,
+        "position": 2,
+        "title": "Syllabus (Date: 2026.01.22)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2577538,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/16265037",
+        "content_id": 59174801,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/files/59174801"
+      },
+      {
+        "id": 16032618,
+        "position": 3,
+        "title": "2026 IEB Coursepack (https://hbsp.harvard.edu/import/1368403)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "ExternalUrl",
+        "module_id": 2577538,
+        "html_url": "https://canvas.umn.edu/api/v1/courses/545013/module_item_redirect/16032618",
+        "external_url": "https://hbsp.harvard.edu/import/1368403",
+        "new_tab": false
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2577539,
+    "canvas_module_name": "Module 1: IEB Foundations",
+    "items": [
+      {
+        "id": 15605737,
+        "position": 1,
+        "title": "Week 1: IEB Foundations (January 21)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577539,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605737",
+        "page_url": "week-1-ieb-foundations-january-21",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-1-ieb-foundations-january-21"
+      },
+      {
+        "id": 15605738,
+        "position": 2,
+        "title": "Week 2: IEB Foundations (January 28)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577539,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605738",
+        "page_url": "week-2-ieb-foundations-january-28",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-2-ieb-foundations-january-28"
+      },
+      {
+        "id": 15605739,
+        "position": 3,
+        "title": "Week 3: IEB Foundations (February 4)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577539,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605739",
+        "page_url": "week-3-ieb-foundations-february-4",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-3-ieb-foundations-february-4"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2577540,
+    "canvas_module_name": "Module 2: The International Legal Environment",
+    "items": [
+      {
+        "id": 15605740,
+        "position": 1,
+        "title": "Week 4: The International Legal Environment (February 11)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577540,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605740",
+        "page_url": "week-4-the-international-legal-environment-february-11",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-4-the-international-legal-environment-february-11"
+      },
+      {
+        "id": 15605741,
+        "position": 2,
+        "title": "Week 5: International Legal Environment (February 18)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577540,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605741",
+        "page_url": "week-5-international-legal-environment-february-18",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-5-international-legal-environment-february-18"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2577541,
+    "canvas_module_name": "Module 3: The International Political Environment",
+    "items": [
+      {
+        "id": 15605742,
+        "position": 1,
+        "title": "Week 6: International Political Environment (February 25)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577541,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605742",
+        "page_url": "week-6-international-political-environment-february-25",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-6-international-political-environment-february-25"
+      },
+      {
+        "id": 15605743,
+        "position": 2,
+        "title": "Week 7: The International Political Environment (March 4)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577541,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605743",
+        "page_url": "week-7-the-international-political-environment-march-4",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-7-the-international-political-environment-march-4"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2577542,
+    "canvas_module_name": "Module 4: The International Social Environment",
+    "items": [
+      {
+        "id": 15605744,
+        "position": 1,
+        "title": "Week 8: The International Social Environment (March 18)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577542,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605744",
+        "page_url": "week-8-the-international-social-environment-march-18",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-8-the-international-social-environment-march-18"
+      },
+      {
+        "id": 15605745,
+        "position": 2,
+        "title": "Week 9: The International Social Environment (March 25)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577542,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605745",
+        "page_url": "week-9-the-international-social-environment-march-25",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-9-the-international-social-environment-march-25"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2577543,
+    "canvas_module_name": "Module 5: Simulating the International Environment",
+    "items": [
+      {
+        "id": 15605746,
+        "position": 2,
+        "title": "Week 10: Simulating the International Environment (April 1)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577543,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605746",
+        "page_url": "week-10-simulating-the-international-environment-april-1",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-10-simulating-the-international-environment-april-1"
+      },
+      {
+        "id": 15605747,
+        "position": 3,
+        "title": "Week 11: Simulating the International Environment (April 8)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577543,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605747",
+        "page_url": "week-11-simulating-the-international-environment-april-8",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-11-simulating-the-international-environment-april-8"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2577544,
+    "canvas_module_name": "Module 6: Your Company's International Environment",
+    "items": [
+      {
+        "id": 15605748,
+        "position": 1,
+        "title": "Week 12: Your Company's International Environment (April 15)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577544,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605748",
+        "page_url": "week-12-your-companys-international-environment-april-15",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-12-your-companys-international-environment-april-15"
+      },
+      {
+        "id": 15605749,
+        "position": 2,
+        "title": "Week 13: Your Company's International Environment (April 22)",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2577544,
+        "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605749",
+        "page_url": "week-13-your-companys-international-environment-april-22",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-13-your-companys-international-environment-april-22"
+      }
+    ]
+  }
+]

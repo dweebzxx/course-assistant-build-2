@@ -1,0 +1,50 @@
+[
+  {
+    "id": 15705736,
+    "position": 1,
+    "title": "1.B Leader Assessment of Motivations and Personality (LAMP; Due: Thursday, 2/5, Noon CT).",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590047,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705736",
+    "content_id": 5027430,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027430"
+  },
+  {
+    "id": 15705737,
+    "position": 2,
+    "title": "1.A LPI 360 (self-assessment & choose raters; Due: Thursday, 2/5, 11:59pm CT)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590047,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705737",
+    "content_id": 5027429,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027429"
+  },
+  {
+    "id": 15705738,
+    "position": 3,
+    "title": "2. Leadership Challenge Initial Reflection (Due: Thursday, 2/12, 11:59pm CT)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590047,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705738",
+    "content_id": 5027431,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027431"
+  },
+  {
+    "id": 15705739,
+    "position": 4,
+    "title": "4. Submission Folder, Final Leadership Development Plan (Parts A-C; Due: Mon, 3/9 for EARLY GRADING or Fri, 3/13 by 11:59pm)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590047,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705739",
+    "content_id": 5027432,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027432"
+  }
+]

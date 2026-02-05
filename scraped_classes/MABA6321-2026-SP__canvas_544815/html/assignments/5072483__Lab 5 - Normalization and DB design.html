@@ -1,0 +1,76 @@
+<h1>MABA 6321 Lab 5 - Normalization and DB design</h1><p><a id="53577481" class="instructure_file_link inline_disabled" title="Link" href="https://canvas.umn.edu/courses/544815/files/58502053?verifier=zt5LN6S2P4KstNvZMNxbgaixfJTNiZQHbGvbbn4M&amp;wrap=1" target="_blank" data-api-endpoint="https://canvas.umn.edu/api/v1/courses/544815/files/58502053" data-api-returntype="File">sportsGoods.mwb</a></p><p>In this lab, we will focus on normalization and MySQL database design.</p><ul>
+<li>It is recommended that you create a single google doc to hold answers for all three questions.</li>
+</ul><h2>Part 1: Normalization</h2><p>For each problem below, transform the table(s) into a database design that satisfieds the 3rd normal form.</p><ul>
+<li>Do so step by step - first check and satisfy the 1st normal form, then the 2nd normal form, and the third normal form.</li>
+<li>Please give each table an appropriate name that reflects its granularity and content.</li>
+<li>Please also mark each table's primary key fields with PK (or bold or underline).</li>
+</ul><h3>1. employee training courses</h3><p>In this example, we consider a business scenario where a corporation tracks employee participation in professional training courses. Originally, all the information is stored in one table, which leads to data redundancy and update anomalies. The initial table looks like this:</p><ul>
+<li>
+<strong>EmployeeTraining</strong> (emp_id, name, dept, salary, training_course_id, training_date)</li>
+</ul><p><iframe title="YouTube video player" src="https://www.youtube.com/embed/tsm5iuTMNsI?si=Ld55CfScVABZ4gx1" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" class="phpally-ignore"></iframe></p><h3>2. Online Retails Sales</h3><p>Imagine you’re working with an e-commerce dataset that tracks sales transactions. The initial design is a single large table with order details, customer information, and product data, which leads to redundancy and potential data anomalies.</p><ul>
+<li>
+<strong>SalesData</strong> (order_id, order_date, customer_id, customer_name, email, shipping_address, product_id, product_name, unit_price, quantity)</li>
+</ul><p>&nbsp;</p><p><iframe title="YouTube video player" src="https://www.youtube.com/embed/_COCKcRbDrU?si=qA-sDJCNRjBYrL5X" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" class="phpally-ignore"></iframe></p><h2>Part 2. MySQL Database creation</h2><h3>3. Create a <code>SportsGoods</code> database</h3><p><code>sportsgood.mdb</code> is the MySQL workbench EER diagram we have created in the previous week. In this lab problem, we are going to create a database based on the EER model. We will then use generative AI (e.g. ChatGPT) to generate sample data and populate the database. Finally we will verify our database by creating a multi-table query.</p><ul>
+<li>
+<p><code>sportsgood.mwb</code> was created with out much regard to the field data type. We now want to make these improvements before creating the database.</p>
+<ul>
+<li>
+<p>All the financial fields should use a <code>decimal(10,2)</code> data type.</p>
+</li>
+<li>
+<p>Some fields should be integeter type (e.g. zip code, prodID, Onhands)</p>
+</li>
+<li>
+<p>Data/Datetime fields should have <code>date</code> and <code>datetime</code> data types, respectively.</p>
+</li>
+<li>
+<p>The database (schema) should be called <code>sportsgoods</code> instead of the default <code>mydb</code> (you can change it on the left panel, <strong>Catalog Tree</strong>).</p>
+</li>
+<li>
+<p>Add a comment to the <code>onHand</code> field "Number of units on hand" (later on, this provide a hint to ChatGPT what this field is about; other fields are self-explanatory)</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Using <strong>File</strong>&gt; <strong>Export</strong>&gt; <strong>Foreward Engeer SQL create script</strong> to create and save an SQL script for table and database creation. Note that in the last step, you can use <strong>save to Other file</strong> to save the generated script to <code>sportsgoods.sql</code>.</p>
+</li>
+<li>
+<p>Execute <code>sportsgoods.sql</code> in MySQL workbench to create the database and tables.</p>
+</li>
+<li>
+<p>Using <strong>GenAI</strong> (e.g. <strong>Copilot</strong> or <strong>ChatGPT</strong>, free version is fine) to generate the insert data scripts. One prompt could be:</p>
+<ul>
+<li>
+<p><em>I am going to provide a MySQL database creation script. Can you generate corresponding sample data for each table in the form of insert into SQL statements. Make sure the referential integration of the database is respected.</em></p>
+</li>
+<li>
+<p>Then, you can paste the sportsgoods.sql into the chatbot, when prompted.</p>
+</li>
+<li>
+<p>Copy the resulting SQL insert scripts to a SQL file, and execute it to populated the database.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Test your database with a multi-table query that select all tables and fields (with appropriate join conditions).</p>
+<ul>
+<li>
+<strong>Tip</strong>: watch out for duplicate column names.</li>
+</ul>
+</li>
+</ul><p><iframe title="YouTube video player" src="https://www.youtube.com/embed/yT2vRFJCk_E?si=j7SLjlB4QKrUgFc4" width="560" height="315" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" class="phpally-ignore"></iframe></p><hr><p><strong>Submission guidelines</strong>:</p><ul>
+<li>
+<p>For the first two questions.</p>
+<ul>
+<li>Type out the appropriate steps and resultant tables in each step, making sure the primary key for each table is properly identified.</li>
+</ul>
+</li>
+<li>
+<p>For the 3rd question,</p>
+<ul>
+<li>paste the <strong>dataqbase table creation</strong> script,</li>
+<li>the <strong>insert into</strong> scripts,</li>
+<li>and the <strong>query script and results</strong>.</li>
+</ul>
+</li>
+</ul>

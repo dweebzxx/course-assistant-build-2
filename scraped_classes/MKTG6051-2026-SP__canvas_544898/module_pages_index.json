@@ -1,0 +1,34 @@
+[
+  {
+    "module_canvas_id": 2594463,
+    "module_name": "Start Here",
+    "title": "Your Instructor",
+    "page_url": "your-instructor",
+    "html": "html/pages/Your Instructor.html",
+    "meta": "html/pages/Your Instructor.meta.json"
+  },
+  {
+    "module_canvas_id": 2594464,
+    "module_name": "Module 01",
+    "title": "Module 01: Overview",
+    "page_url": "module-01-overview",
+    "html": "html/pages/Module 01 Overview.html",
+    "meta": "html/pages/Module 01 Overview.meta.json"
+  },
+  {
+    "module_canvas_id": 2594465,
+    "module_name": "Module 02",
+    "title": "Module 02: Qualitative Research and Survey Research Part I",
+    "page_url": "module-02-qualitative-research-and-survey-research-part-i",
+    "html": "html/pages/Module 02 Qualitative Research and Survey Research Part I.html",
+    "meta": "html/pages/Module 02 Qualitative Research and Survey Research Part I.meta.json"
+  },
+  {
+    "module_canvas_id": 2594466,
+    "module_name": "Module 03",
+    "title": "Module 3: Survey Research Part II",
+    "page_url": "module-3-survey-research-part-ii",
+    "html": "html/pages/Module 3 Survey Research Part II.html",
+    "meta": "html/pages/Module 3 Survey Research Part II.meta.json"
+  }
+]

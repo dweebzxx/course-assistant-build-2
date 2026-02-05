@@ -1,0 +1,75 @@
+[
+  {
+    "canvas_course_id": 59753,
+    "course_code": "Full-Time & Mgmt Science MBA Academic Resources",
+    "course_name": "Full-Time & Mgmt Science MBA Academic Resources",
+    "skipped": true,
+    "reason": "academic_resources_shell"
+  },
+  {
+    "canvas_course_id": 544815,
+    "course_code": "MABA 6321 (070)",
+    "course_name": "MABA 6321 (070) Data Management and Big Data (Spring 2026)",
+    "derived_course_id": "MABA6321",
+    "term_id": "2026-SP",
+    "folder": "MABA6321-2026-SP__canvas_544815",
+    "exported_at": "2026-02-05T00:34:24",
+    "download_files": false,
+    "max_download_mb": 25
+  },
+  {
+    "canvas_course_id": 545013,
+    "course_code": "MGMT 6305 (090)",
+    "course_name": "MGMT 6305 (090) The International Environment of Business (Spring 2026)",
+    "derived_course_id": "MGMT6305",
+    "term_id": "2026-SP",
+    "folder": "MGMT6305-2026-SP__canvas_545013",
+    "exported_at": "2026-02-05T00:34:39",
+    "download_files": false,
+    "max_download_mb": 25
+  },
+  {
+    "canvas_course_id": 544866,
+    "course_code": "MGMT 6465 (050/051)",
+    "course_name": "MGMT 6465 (050/051) Leadership and Personal Development (Spring 2026)",
+    "derived_course_id": "MGMT6465",
+    "term_id": "2026-SP",
+    "folder": "MGMT6465-2026-SP__canvas_544866",
+    "exported_at": "2026-02-05T00:34:53",
+    "download_files": false,
+    "max_download_mb": 25
+  },
+  {
+    "canvas_course_id": 544898,
+    "course_code": "MKTG 6051 (001)",
+    "course_name": "MKTG 6051 (001) Marketing Research - Rapid Insights (Spring 2026)",
+    "derived_course_id": "MKTG6051",
+    "term_id": "2026-SP",
+    "folder": "MKTG6051-2026-SP__canvas_544898",
+    "exported_at": "2026-02-05T00:35:02",
+    "download_files": false,
+    "max_download_mb": 25
+  },
+  {
+    "canvas_course_id": 486812,
+    "course_code": "MKTG 6087 (070)",
+    "course_name": "MKTG 6087 (070) Power of Story (Spring 2025)",
+    "derived_course_id": "MKTG6087",
+    "term_id": "2026-SP",
+    "folder": "MKTG6087-2026-SP__canvas_486812",
+    "exported_at": "2026-02-05T00:35:26",
+    "download_files": false,
+    "max_download_mb": 25
+  },
+  {
+    "canvas_course_id": 486796,
+    "course_code": "MKTG 6088 (001)",
+    "course_name": "MKTG 6088 (001) Strategic Marketing (Spring 2025)",
+    "derived_course_id": "MKTG6088",
+    "term_id": "2026-SP",
+    "folder": "MKTG6088-2026-SP__canvas_486796",
+    "exported_at": "2026-02-05T00:35:39",
+    "download_files": false,
+    "max_download_mb": 25
+  }
+]

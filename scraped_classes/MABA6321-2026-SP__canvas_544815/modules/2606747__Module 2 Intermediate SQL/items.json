@@ -1,0 +1,91 @@
+[
+  {
+    "id": 15828179,
+    "position": 1,
+    "title": "Module 2: Overview",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828179",
+    "page_url": "module-2-overview",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-2-overview"
+  },
+  {
+    "id": 15828180,
+    "position": 2,
+    "title": "Module 2 Videos: Voices From The Field",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828180",
+    "page_url": "module-2-videos-voices-from-the-field",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-2-videos-voices-from-the-field"
+  },
+  {
+    "id": 15828181,
+    "position": 3,
+    "title": "Module 2: Lectures and Activities",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828181",
+    "page_url": "module-2-lectures-and-activities",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-2-lectures-and-activities"
+  },
+  {
+    "id": 15828182,
+    "position": 4,
+    "title": "Lab 2 - Intermediate SQL",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828182",
+    "content_id": 5072480,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072480"
+  },
+  {
+    "id": 15828183,
+    "position": 5,
+    "title": "Lab 2 Solution",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828183",
+    "page_url": "lab-2-solution",
+    "publish_at": "2026-02-03T23:59:00-06:00",
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/lab-2-solution"
+  },
+  {
+    "id": 15828184,
+    "position": 6,
+    "title": "Homework 1",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828184",
+    "content_id": 5072476,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072476"
+  },
+  {
+    "id": 15828185,
+    "position": 7,
+    "title": "Homework 1 Solution",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606747,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828185",
+    "page_url": "homework-1-solution",
+    "publish_at": "2026-02-03T23:59:00-06:00",
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/homework-1-solution"
+  }
+]

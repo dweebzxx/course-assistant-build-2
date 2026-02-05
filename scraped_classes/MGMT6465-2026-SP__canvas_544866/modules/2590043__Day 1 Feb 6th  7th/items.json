@@ -1,0 +1,213 @@
+[
+  {
+    "id": 15705615,
+    "position": 1,
+    "title": "START HERE - DAY 1 DETAILED RUN OF SHOW & SYLLABUS",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  },
+  {
+    "id": 16306443,
+    "position": 2,
+    "title": "MGMT6465_RUN OF SHOW_SPRING 2026_Day 1.pdf",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "File",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/16306443",
+    "content_id": 59466272,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/files/59466272"
+  },
+  {
+    "id": 16305798,
+    "position": 3,
+    "title": "MGMT6465_L&PD_Syllabus_Spring 2026_Campbell.pdf",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "File",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/16305798",
+    "content_id": 59431641,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/files/59431641"
+  },
+  {
+    "id": 15705620,
+    "position": 4,
+    "title": "ON DEMAND + DIGITAL RESOURCE PORTION: COMPLETE PRIOR TO 10 AM CT DAY 1 LIVE CLASS START",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  },
+  {
+    "id": 15705621,
+    "position": 5,
+    "title": "ON DEMAND MODULE: Evidence-Based Leadership (~25 minutes)",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  },
+  {
+    "id": 15705622,
+    "position": 6,
+    "title": "VIDEO: Leadership Foundations (Part 1)",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705622",
+    "page_url": "video-leadership-foundations-part-1",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/pages/video-leadership-foundations-part-1"
+  },
+  {
+    "id": 15705623,
+    "position": 7,
+    "title": "VIDEO: Leadership Foundations (Part 2)",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705623",
+    "page_url": "video-leadership-foundations-part-2",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/pages/video-leadership-foundations-part-2"
+  },
+  {
+    "id": 15705624,
+    "position": 8,
+    "title": "REFLECTION EXERCISE: Updating Your Notions of Leadership",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705624",
+    "content_id": 5027453,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027453"
+  },
+  {
+    "id": 15705647,
+    "position": 9,
+    "title": "ON DEMAND MODULE: Model the Way (~15 minutes)",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  },
+  {
+    "id": 15705648,
+    "position": 10,
+    "title": "VIDEO: Model the Way: Foundations + Strategies",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705648",
+    "page_url": "video-model-the-way-foundations-+-strategies-2",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/pages/video-model-the-way-foundations-+-strategies-2"
+  },
+  {
+    "id": 15705649,
+    "position": 11,
+    "title": "REFLECTION EXERCISE: Model the Way - Part 1 (Clarifying Your Values through Evidence)",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705649",
+    "content_id": 5027447,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027447"
+  },
+  {
+    "id": 15705625,
+    "position": 12,
+    "title": "ON DEMAND MODULE: Growth & Discomfort (~25 minutes)",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  },
+  {
+    "id": 15705626,
+    "position": 13,
+    "title": "VIDEO: Brene Brown's Ted Talk: The Power of Vulnerability",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705626",
+    "page_url": "video-brene-browns-ted-talk-the-power-of-vulnerability",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/pages/video-brene-browns-ted-talk-the-power-of-vulnerability"
+  },
+  {
+    "id": 15705627,
+    "position": 14,
+    "title": "REFLECTION EXERCISE: Leveling Up Our Growth & Self-Awareness with Vulnerability",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705627",
+    "content_id": 5027438,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027438"
+  },
+  {
+    "id": 15705632,
+    "position": 15,
+    "title": "LIVE IN-PERSON SESSION RESOURCES (CLASS STARTS @ 10AM CT)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  },
+  {
+    "id": 15705633,
+    "position": 16,
+    "title": "FRIDAY LIVE ZOOM SESSIONS: Leadership & Personal Development (Prof. Campbell)",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "ExternalUrl",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/api/v1/courses/544866/module_item_redirect/15705633",
+    "external_url": "https://umn.zoom.us/j/94095539811?pwd=P6gaLzOOGIJJa2b4tavWPpcbHMUX8U.1",
+    "new_tab": true
+  },
+  {
+    "id": 16306544,
+    "position": 17,
+    "title": "SATURDAY LIVE ZOOM SESSIONS: Leadership & Personal Development (Prof. Campbell)",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "ExternalUrl",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/api/v1/courses/544866/module_item_redirect/16306544",
+    "external_url": "https://umn.zoom.us/j/92578639587?pwd=lFwRVcWehP03axnt2seIHrCErOC45k.1",
+    "new_tab": true
+  },
+  {
+    "id": 16316436,
+    "position": 21,
+    "title": "MGMT6465 — Daily Exit Ticket",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "ExternalUrl",
+    "module_id": 2590043,
+    "html_url": "https://canvas.umn.edu/api/v1/courses/544866/module_item_redirect/16316436",
+    "external_url": "https://forms.gle/bTdtd96DiYGtxZb88",
+    "new_tab": true
+  },
+  {
+    "id": 15705635,
+    "position": 22,
+    "title": "EXTRA POST DAY 1 RELATED RESOURCES (some posted now, some posted after class)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2590043
+  }
+]

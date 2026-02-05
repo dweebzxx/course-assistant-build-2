@@ -1,0 +1,35 @@
+{
+  "upload_root": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload",
+  "files": [
+    {
+      "course_id": "MABA6321",
+      "path": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload/course_MABA6321/course_MABA6321__chunkset_001.md",
+      "bytes": 124637
+    },
+    {
+      "course_id": "MGMT6305",
+      "path": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload/course_MGMT6305/course_MGMT6305__chunkset_001.md",
+      "bytes": 67578
+    },
+    {
+      "course_id": "MGMT6465",
+      "path": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload/course_MGMT6465/course_MGMT6465__chunkset_001.md",
+      "bytes": 34616
+    },
+    {
+      "course_id": "MKTG6051",
+      "path": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload/course_MKTG6051/course_MKTG6051__chunkset_001.md",
+      "bytes": 21532
+    },
+    {
+      "course_id": "MKTG6087",
+      "path": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload/course_MKTG6087/course_MKTG6087__chunkset_001.md",
+      "bytes": 30880
+    },
+    {
+      "course_id": "MKTG6088",
+      "path": "/Users/josh/AI_Projects/canvas-class-export/runs/canvas_run_alpha/upload/course_MKTG6088/course_MKTG6088__chunkset_001.md",
+      "bytes": 15794
+    }
+  ]
+}

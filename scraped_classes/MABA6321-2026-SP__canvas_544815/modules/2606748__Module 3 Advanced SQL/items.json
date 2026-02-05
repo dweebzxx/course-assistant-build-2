@@ -1,0 +1,89 @@
+[
+  {
+    "id": 15828186,
+    "position": 1,
+    "title": "Module 3: Overview",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828186",
+    "page_url": "module-3-overview",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-3-overview"
+  },
+  {
+    "id": 15828187,
+    "position": 2,
+    "title": "Module 3: Lectures and Activities",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828187",
+    "page_url": "module-3-lectures-and-activities",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-3-lectures-and-activities"
+  },
+  {
+    "id": 15828188,
+    "position": 3,
+    "title": "Lab 3 - Advanced SQL",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828188",
+    "content_id": 5072481,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072481"
+  },
+  {
+    "id": 15828190,
+    "position": 5,
+    "title": "Homework 2",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828190",
+    "content_id": 5072477,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072477"
+  },
+  {
+    "id": 15828191,
+    "position": 6,
+    "title": "Homework 2 Solution",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828191",
+    "page_url": "homework-2-solution",
+    "publish_at": "2026-02-03T23:59:00-06:00",
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/homework-2-solution"
+  },
+  {
+    "id": 15828192,
+    "position": 7,
+    "title": "HonorLock Test (Please test before Each Quiz) ",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Quiz",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828192",
+    "content_id": 1138958,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138958"
+  },
+  {
+    "id": 15828193,
+    "position": 8,
+    "title": "Quiz 1",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Quiz",
+    "module_id": 2606748,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828193",
+    "content_id": 1138957,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138957"
+  }
+]

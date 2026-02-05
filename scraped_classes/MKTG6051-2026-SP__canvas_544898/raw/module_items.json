@@ -1,0 +1,279 @@
+[
+  {
+    "canvas_module_id": 2594463,
+    "canvas_module_name": "Start Here",
+    "items": [
+      {
+        "id": 15738853,
+        "position": 1,
+        "title": "Your Instructor",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2594463,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738853",
+        "page_url": "your-instructor",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/pages/your-instructor"
+      },
+      {
+        "id": 15738854,
+        "position": 2,
+        "title": "Canvas Information: Student Help Resources",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "ExternalUrl",
+        "module_id": 2594463,
+        "html_url": "https://canvas.umn.edu/api/v1/courses/544898/module_item_redirect/15738854",
+        "external_url": "https://it.umn.edu/canvas-transition-information-student",
+        "new_tab": true
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2594464,
+    "canvas_module_name": "Module 01",
+    "items": [
+      {
+        "id": 15738857,
+        "position": 1,
+        "title": "Module 01: Overview",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2594464,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738857",
+        "page_url": "module-01-overview",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/pages/module-01-overview"
+      },
+      {
+        "id": 15738858,
+        "position": 2,
+        "title": "Lecture PowerPoints & Group Guidelines",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "SubHeader",
+        "module_id": 2594464
+      },
+      {
+        "id": 15738859,
+        "position": 3,
+        "title": "Week1a_Intro.pdf",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594464,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738859",
+        "content_id": 59150071,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59150071"
+      },
+      {
+        "id": 16269639,
+        "position": 4,
+        "title": "Week1b_ResearchProcess.pptx",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594464,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16269639",
+        "content_id": 59196917,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59196917"
+      },
+      {
+        "id": 16202697,
+        "position": 5,
+        "title": "Group_Project_Guidelines Spring 2026.pdf",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594464,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16202697",
+        "content_id": 59048673,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59048673"
+      },
+      {
+        "id": 15738867,
+        "position": 11,
+        "title": "Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "SubHeader",
+        "module_id": 2594464
+      },
+      {
+        "id": 15738868,
+        "position": 12,
+        "title": "Quiz - Project Background",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2594464,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738868",
+        "content_id": 1132486,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/quizzes/1132486"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2594465,
+    "canvas_module_name": "Module 02",
+    "items": [
+      {
+        "id": 15738869,
+        "position": 1,
+        "title": "Module 02: Qualitative Research and Survey Research Part I",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2594465,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738869",
+        "page_url": "module-02-qualitative-research-and-survey-research-part-i",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/pages/module-02-qualitative-research-and-survey-research-part-i"
+      },
+      {
+        "id": 15738870,
+        "position": 2,
+        "title": "Lecture PowerPoints",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "SubHeader",
+        "module_id": 2594465
+      },
+      {
+        "id": 16289234,
+        "position": 4,
+        "title": "Wee2a_Qualitative Research.pptx",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594465,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16289234",
+        "content_id": 59303203,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59303203"
+      },
+      {
+        "id": 16296120,
+        "position": 7,
+        "title": "Week2b_Survey Research.pptx",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594465,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16296120",
+        "content_id": 59368554,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59368554"
+      },
+      {
+        "id": 15738879,
+        "position": 12,
+        "title": "Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "SubHeader",
+        "module_id": 2594465
+      },
+      {
+        "id": 15738880,
+        "position": 13,
+        "title": "Quiz - Qualitative Research",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2594465,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738880",
+        "content_id": 1132488,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/quizzes/1132488"
+      },
+      {
+        "id": 15738881,
+        "position": 14,
+        "title": "Group Research - Define research question and company",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2594465,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738881",
+        "content_id": 5038768,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/assignments/5038768"
+      }
+    ]
+  },
+  {
+    "canvas_module_id": 2594466,
+    "canvas_module_name": "Module 03",
+    "items": [
+      {
+        "id": 15738882,
+        "position": 1,
+        "title": "Module 3: Survey Research Part II",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "Page",
+        "module_id": 2594466,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738882",
+        "page_url": "module-3-survey-research-part-ii",
+        "publish_at": null,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/pages/module-3-survey-research-part-ii"
+      },
+      {
+        "id": 16309756,
+        "position": 3,
+        "title": "Week3a_Survey Questionnaire Design.pptx",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594466,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16309756",
+        "content_id": 59509069,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59509069"
+      },
+      {
+        "id": 15738892,
+        "position": 5,
+        "title": "Activities",
+        "indent": 0,
+        "quiz_lti": false,
+        "type": "SubHeader",
+        "module_id": 2594466
+      },
+      {
+        "id": 16309758,
+        "position": 6,
+        "title": "Flawed_Survey_Questionnaire_QuickBite.docx",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "File",
+        "module_id": 2594466,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16309758",
+        "content_id": 59509062,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59509062"
+      },
+      {
+        "id": 15738893,
+        "position": 7,
+        "title": "Group Research - Qualitative Research Plan",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Assignment",
+        "module_id": 2594466,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738893",
+        "content_id": 5038770,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/assignments/5038770"
+      },
+      {
+        "id": 15738894,
+        "position": 8,
+        "title": "Quiz - Survey Research",
+        "indent": 1,
+        "quiz_lti": false,
+        "type": "Quiz",
+        "module_id": 2594466,
+        "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738894",
+        "content_id": 1132484,
+        "url": "https://canvas.umn.edu/api/v1/courses/544898/quizzes/1132484"
+      }
+    ]
+  }
+]

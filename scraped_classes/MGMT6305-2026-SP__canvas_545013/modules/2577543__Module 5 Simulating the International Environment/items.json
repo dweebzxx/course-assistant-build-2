@@ -1,0 +1,28 @@
+[
+  {
+    "id": 15605746,
+    "position": 2,
+    "title": "Week 10: Simulating the International Environment (April 1)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577543,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605746",
+    "page_url": "week-10-simulating-the-international-environment-april-1",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-10-simulating-the-international-environment-april-1"
+  },
+  {
+    "id": 15605747,
+    "position": 3,
+    "title": "Week 11: Simulating the International Environment (April 8)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577543,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605747",
+    "page_url": "week-11-simulating-the-international-environment-april-8",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-11-simulating-the-international-environment-april-8"
+  }
+]

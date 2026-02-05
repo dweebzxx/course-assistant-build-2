@@ -1,0 +1,38 @@
+[
+  {
+    "id": 15705611,
+    "position": 1,
+    "title": "1.A LPI 360 (self-assessment & choose raters; Due: Thursday, 2/5, 11:59pm CT)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590042,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705611",
+    "content_id": 5027429,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027429"
+  },
+  {
+    "id": 15705612,
+    "position": 2,
+    "title": "1.B Leader Assessment of Motivations and Personality (LAMP; Due: Thursday, 2/5, Noon CT).",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2590042,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/15705612",
+    "content_id": 5027430,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/assignments/5027430"
+  },
+  {
+    "id": 15705614,
+    "position": 4,
+    "title": "Student Introductions & Interests Survey",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "ExternalUrl",
+    "module_id": 2590042,
+    "html_url": "https://canvas.umn.edu/api/v1/courses/544866/module_item_redirect/15705614",
+    "external_url": "https://z.umn.edu/MGMT6465IntroSurvey",
+    "new_tab": true
+  }
+]

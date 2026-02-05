@@ -1,0 +1,257 @@
+<h1>MABA 6321 Lab 1 - SQL and Database</h1>
+<pre><code class="language-sql">-- Note: by default, for all select statements, report only the first 10 rows (you may do so by appending limit 10 to the end of the query).
+-- The following practice problems are organized by sections, corresponding to module videos. 
+
+-- Problems for Video 2 --------------------------------
+
+-- ##1: retrieve vendor_id, vendor_name, and phone from the vendors table.
+SELECT vendor_id, vendor_name, vendor_phone
+FROM vendors LIMIT 10;
+
+-- # vendor_id, vendor_name, vendor_phone
+-- 1, US Postal Service, (800) 555-1205
+-- 2, National Information Data Ctr, (301) 555-8950
+-- 3, Register of Copyrights, 
+-- 4, Jobtrak, (800) 555-8725
+-- 5, Newbrige Book Clubs, (800) 555-9980
+-- 6, California Chamber Of Commerce, (916) 555-6670
+-- 7, Towne Advertiser's Mailing Svcs, 
+-- 8, BFI Industries, (559) 555-1551
+-- 9, Pacific Gas &amp; Electric, (800) 555-6081
+-- 10, Robbins Mobile Lock And Key, (559) 555-9375
+
+-- ##2: retrieve all general ledger accounts ordered by account numbers.
+
+SELECT *
+FROM general_ledger_accounts
+ORDER BY account_number
+LIMIT 10;
+
+-- # account_number, account_description
+-- 100, Cash
+-- 110, Accounts Receivable
+-- 120, Book Inventory
+-- 150, Furniture
+-- 160, Computer Equipment
+-- 162, Capitalized Lease
+-- 167, Software
+-- 170, Other Equipment
+-- 181, Book Development
+-- 200, Accounts Payable
+
+
+-- ##3: find invoices due in the 3rd quarter of 2024, showing their id, invoice_number, invoice_total, vendor_id, and due date and showing the latest invoices first. 
+
+
+select invoice_id, invoice_number, invoice_total, vendor_id, invoice_due_date
+from invoices
+where invoice_date between '2024-06-01' and '2024-08-31'
+order by invoice_date desc
+limit 10;
+
+-- # invoice_id, invoice_number, invoice_total, vendor_id, invoice_due_date
+-- 113, 40318, 21842.00, 72, 2024-07-20
+-- 110, 39104, 85.31, 72, 2024-07-20
+-- 109, 109596, 41.80, 102, 2024-07-11
+-- 108, 111897, 16.62, 117, 2024-06-14
+-- 107, 111-92R-10097, 16.33, 95, 2024-06-24
+-- 106, 111-92R-10096, 16.33, 95, 2024-06-25
+-- 105, 111-92R-10095, 32.70, 95, 2024-06-26
+-- 104, CBM9920-M-T77109, 290.00, 114, 2024-06-12
+-- 103, 111-92R-10094, 19.67, 95, 2024-06-27
+-- 102, P02-88D77S7, 856.92, 48, 2024-06-13
+
+
+-- ##4: show vendors’ id, city (“Vendor City"), and state ("Vendor State"). Make sure to use the column headers in the parentheses.
+SELECT vendor_id, vendor_city as `Vendor City`, vendor_state as `Vendor State`
+FROM vendors
+LIMIT 10;
+
+-- # vendor_id, Vendor City, Vendor State
+-- 1, Madison, WI
+-- 2, Washington, DC
+-- 3, Washington, DC
+-- 4, Los Angeles, CA
+-- 5, Washington, NJ
+-- 6, Sacramento, CA
+-- 7, Santa Ana, CA
+-- 8, Fresno, CA
+-- 9, San Francisco, CA
+-- 10, Fresno, CA
+
+-- Problems for Video 3 --------------------------------
+
+-- ##5: find invoices with positive credits in 2024, showing invoice_number, credit_total, and invoice_date.
+SELECT invoice_number, credit_total, invoice_date
+FROM invoices
+WHERE credit_total &gt; 0
+AND invoice_date between '2024-01-01' and '2024-12-31'
+LIMIT 10;
+
+-- # invoice_number, credit_total, invoice_date
+-- P-0608, 1200.00, 2024-04-11
+-- 97/522, 200.00, 2024-04-30
+-- 0-2060, 2295.95, 2024-05-08
+
+-- ##6: find invoices over $800 that have either a positive credit or a generous term (i.e., terms_id &gt;=4). Show invoice id, invoice_total, total credit, and terms_id.
+SELECT invoice_id, invoice_total, credit_total, terms_id
+FROM invoices
+WHERE invoice_total &gt;800
+AND (
+credit_total &gt;0
+OR terms_id &gt;=4
+);
+
+-- # invoice_id, invoice_total, credit_total, terms_id
+-- 2, 1083.58, 0.00, 4
+-- 3, 20551.18, 1200.00, 5
+-- 6, 2312.20, 0.00, 4
+-- 8, 1927.54, 0.00, 4
+-- 9, 2184.11, 0.00, 4
+-- 10, 2318.03, 0.00, 4
+-- 18, 904.14, 0.00, 4
+-- 19, 1962.13, 200.00, 4
+-- 34, 10976.06, 0.00, 4
+-- 36, 23517.58, 2295.95, 3
+
+-- ##7: find vendors whose default general ledger accounts are 540, 523, or 521. Show their ids, names, and default account numbers.
+SELECT vendor_id, vendor_name, default_account_number
+FROM vendors
+WHERE default_account_number
+IN ( 540, 523, 521 )
+LIMIT 10;
+
+-- vendor_id,vendor_name,default_account_number
+-- 8,BFI Industries,521
+-- 9,Pacific Gas &amp; Electric,521
+-- 117,Suburban Propane,521
+-- 10,Robbins Mobile Lock And Key,523
+-- 11,Bill Marvin Electric Inc,523
+-- 35,Cal State Termite,523
+-- 56,Springhouse Corp,523
+-- 58,Fresno Rack &amp; Shelving Inc,523
+-- 108,Gostanian General Building,523
+-- 2,National Information Data Ctr,540
+
+
+-- ##8: find vendors the names of which contain “ent” . Show vendor_id and vendor_name.
+SELECT vendor_id, vendor_name
+FROM vendors
+WHERE vendor_name LIKE "%ent%"
+LIMIT 10;
+
+-- # vendor_id, vendor_name
+-- 31, Enterprise Communications Inc
+-- 109, Kent H Landsberg Co
+-- 63, Lou Gentile's Flower Basket
+-- 22, Micro Center
+-- 82, Reiter's Scientific &amp; Pro Books
+-- 75, Retirement Plan Consultants
+-- 78, The Presort Center
+-- 38, Venture Communications Int'l
+-- 92, Zip Print &amp; Copy Center
+
+-- ##9: find June 2024 invoices that have not received any payment (i.e., no value for payment_date). Show invoice_id, payment_total, and payment_date.
+SELECT invoice_number, invoice_date, invoice_total
+FROM invoices
+WHERE payment_date IS NULL and invoice_date BETWEEN "2024-06-01" and "2024-06-30"
+LIMIT 10;
+-- or WHERE payment_date IS NULL and invoice_date like "2024-07-%";
+
+-- invoice_number,invoice_date,invoice_total
+-- 134116,2024-06-01,90.36
+-- 9982771,2024-06-03,503.20
+-- 111-92R-10092,2024-06-04,46.21
+-- 111-92R-10093,2024-06-05,39.77
+-- I77271-O01,2024-06-05,662.00
+-- 111-92R-10094,2024-06-06,19.67
+-- 111-92R-10095,2024-06-07,32.70
+-- 111-92R-10096,2024-06-08,16.33
+-- 111-92R-10097,2024-06-08,16.33
+-- 109596,2024-06-14,41.80
+
+-- ##10: find the distinct default_terms_id from all vendors
+SELECT DISTINCT default_terms_id
+FROM vendors
+LIMIT 10;
+
+-- default_terms_id
+-- 1
+-- 2
+-- 3
+-- 4
+-- 5
+
+
+-- Problems for Video 4 --------------------------------
+
+-- Note: for update/insert/delete queries, there are no result table. Instead you should copy and paste response as evidence of your completion of such a query. 
+
+
+-- ##11: We practice inserting rows in the following two steps.
+
+-- Step 1: Add a new vendor to the vendors table with the following information. 
+
+-- vendor_id: 124
+-- vendor_name: Land O' Lakes
+-- vendor_address1: 4001 Lexington Ave N
+-- vendor_city: Arden Hills
+-- vendor_state: MN
+-- vendor_zip_code: 55126
+-- default_terms_id: 4
+-- default_account_number: 580. 
+
+insert into vendors(vendor_id, vendor_name, vendor_address1, vendor_city, vendor_state, vendor_zip_code, default_terms_id, default_account_number)
+values (124, "Land O' Lakes", '4001 Lexington Ave N', 'Arden Hills', 'MN', 55126,4,580);
+
+-- 1 row(s) affected
+
+-- Step 2: Then, verify by displaying the record for vendor_id 124.
+
+select * from vendors where vendor_id=124;
+
+-- # vendor_id, vendor_name, vendor_address1, vendor_address2, vendor_city, vendor_state, vendor_zip_code, vendor_phone, vendor_contact_last_name, vendor_contact_first_name, default_terms_id, default_account_number
+-- 124, Land O' Lakes, 4001 Lexington Ave N, , Arden Hills, MN, 55126, , , , 4, 580
+
+-- ##12: Delete the vendor with vendor_id 124 from the vendors table.
+
+delete from vendors where vendor_id=124;
+
+-- 1 row(s) affected
+
+
+-- Problems for Video 5 --------------------------------
+
+-- ##13: In the following, we will replace all nulls in vendor_address2 with empty string, and then reverse it. 
+
+-- Step 1: we verify that if there are any NULL values in vendor_address2
+
+select * from vendors where  vendor_address2 is NULL;
+
+-- 103 row(s) returned
+
+-- Step 2: we verify that if there are any empty strings in vendor_address2
+
+select * from vendors where  vendor_address2 ='';
+
+-- 0 row(s) returned
+
+-- Step 3: replace all nulls in vendor_address2 with empty string
+
+-- Note: you may get an error: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.  To disable safe mode, toggle the option in Preferences -&gt; SQL Editor and reconnect
+-- Please follow the suggestion to toggle the Safe Mode to enable you to run a "unsafe" UPDATE query.
+
+UPDATE vendors 
+SET vendor_address2 = "" 
+WHERE vendor_address2 IS NULL;
+
+-- 103 row(s) affected Rows matched: 103  Changed: 103  Warnings: 0
+
+-- Step 4: replace call empty strings in vendor_address2 with NULLs. 
+
+UPDATE vendors 
+SET vendor_address2 = NULL 
+WHERE vendor_address2 = "";
+
+-- 103 row(s) affected Rows matched: 103  Changed: 103  Warnings: 0
+</code></pre>

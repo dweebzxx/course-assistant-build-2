@@ -1,0 +1,89 @@
+[
+  {
+    "id": 15828201,
+    "position": 1,
+    "title": "Module 5: Overview",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828201",
+    "page_url": "module-5-overview",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-5-overview"
+  },
+  {
+    "id": 15828202,
+    "position": 2,
+    "title": "Module 5 Videos: Voices From The Field",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828202",
+    "page_url": "module-5-videos-voices-from-the-field",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-5-videos-voices-from-the-field"
+  },
+  {
+    "id": 15828203,
+    "position": 3,
+    "title": "Module 5: Lectures and Activities",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828203",
+    "page_url": "module-5-lectures-and-activities",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-5-lectures-and-activities"
+  },
+  {
+    "id": 15828204,
+    "position": 4,
+    "title": "Lab 5 - Normalization and DB design",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828204",
+    "content_id": 5072483,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072483"
+  },
+  {
+    "id": 15828206,
+    "position": 6,
+    "title": "Homework 3",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828206",
+    "content_id": 5072478,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072478"
+  },
+  {
+    "id": 15828208,
+    "position": 8,
+    "title": "HonorLock Test (Please test before Each Quiz) ",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Quiz",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828208",
+    "content_id": 1138958,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138958"
+  },
+  {
+    "id": 15828209,
+    "position": 9,
+    "title": "Quiz 2",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Quiz",
+    "module_id": 2606750,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828209",
+    "content_id": 1138956,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/quizzes/1138956"
+  }
+]

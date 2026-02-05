@@ -1,0 +1,14 @@
+{
+  "id": 2577539,
+  "position": 2,
+  "name": "Module 1: IEB Foundations",
+  "unlock_at": null,
+  "require_sequential_progress": false,
+  "requirement_type": "all",
+  "publish_final_grade": false,
+  "prerequisite_module_ids": [],
+  "state": "completed",
+  "completed_at": "2026-01-21T00:53:33Z",
+  "items_count": 3,
+  "items_url": "https://canvas.umn.edu/api/v1/courses/545013/modules/2577539/items"
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "id": 15828173,
+    "position": 1,
+    "title": "Module 1: Overview",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606746,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828173",
+    "page_url": "module-1-overview",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-1-overview"
+  },
+  {
+    "id": 15828174,
+    "position": 2,
+    "title": "Module 1 Video: From Scheduling Chaos to Database Solutions",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606746,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828174",
+    "page_url": "module-1-video-from-scheduling-chaos-to-database-solutions",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-1-video-from-scheduling-chaos-to-database-solutions"
+  },
+  {
+    "id": 15828175,
+    "position": 3,
+    "title": "Module 1: Lectures and Activities",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606746,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828175",
+    "page_url": "module-1-lectures-and-activities",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-1-lectures-and-activities"
+  },
+  {
+    "id": 15828176,
+    "position": 4,
+    "title": "Lab 1 - Basic SQL",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606746,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828176",
+    "content_id": 5072479,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072479"
+  },
+  {
+    "id": 15828177,
+    "position": 5,
+    "title": "Lab 1 Solution",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606746,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828177",
+    "page_url": "lab-1-solution",
+    "publish_at": "2026-01-27T23:59:00-06:00",
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/lab-1-solution"
+  },
+  {
+    "id": 15828178,
+    "position": 6,
+    "title": "Homework 1",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606746,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828178",
+    "content_id": 5072476,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072476"
+  }
+]

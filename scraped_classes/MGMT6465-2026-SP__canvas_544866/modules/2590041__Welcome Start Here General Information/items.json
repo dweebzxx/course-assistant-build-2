@@ -1,0 +1,38 @@
+[
+  {
+    "id": 16303404,
+    "position": 1,
+    "title": "MGMT6465_L&PD_Syllabus_Spring 2026_Campbell.pdf",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "File",
+    "module_id": 2590041,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/16303404",
+    "content_id": 59431641,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/files/59431641"
+  },
+  {
+    "id": 15705608,
+    "position": 3,
+    "title": "Some of Beth's Philosophy and Approach to Teaching (Poets & Quants 40 under 40 Bio)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "ExternalUrl",
+    "module_id": 2590041,
+    "html_url": "https://canvas.umn.edu/api/v1/courses/544866/module_item_redirect/15705608",
+    "external_url": "https://poetsandquants.com/2019/04/22/2019-best-40-under-40-professors-elizabeth-campbell-university-of-minnesota-carlson/",
+    "new_tab": false
+  },
+  {
+    "id": 16303403,
+    "position": 4,
+    "title": "Campbell_CV_Jan 2026_websites.pdf",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "File",
+    "module_id": 2590041,
+    "html_url": "https://canvas.umn.edu/courses/544866/modules/items/16303403",
+    "content_id": 59431616,
+    "url": "https://canvas.umn.edu/api/v1/courses/544866/files/59431616"
+  }
+]

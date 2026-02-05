@@ -1,0 +1,44 @@
+{
+  "id": 544898,
+  "name": "MKTG 6051 (001) Marketing Research - Rapid Insights (Spring 2026)",
+  "course_code": "MKTG 6051 (001)",
+  "account_id": 820,
+  "created_at": "2025-08-01T16:23:29Z",
+  "start_at": null,
+  "default_view": "wiki",
+  "enrollment_term_id": 300,
+  "is_public": false,
+  "grading_standard_id": 8945,
+  "root_account_id": 1,
+  "uuid": "obVE8vaa3VsDSWw3zO3DY2DqXsQICG91db9R0CFo",
+  "license": "private",
+  "grade_passback_setting": null,
+  "end_at": null,
+  "public_syllabus": false,
+  "public_syllabus_to_auth": false,
+  "storage_quota_mb": 4194,
+  "is_public_to_auth_users": false,
+  "homeroom_course": false,
+  "course_color": null,
+  "friendly_name": null,
+  "apply_assignment_group_weights": true,
+  "calendar": {
+    "ics": "https://canvas.umn.edu/feeds/calendars/course_obVE8vaa3VsDSWw3zO3DY2DqXsQICG91db9R0CFo.ics"
+  },
+  "time_zone": "America/Chicago",
+  "blueprint": false,
+  "template": false,
+  "enrollments": [
+    {
+      "type": "student",
+      "role": "StudentEnrollment",
+      "role_id": 3,
+      "user_id": 1812750,
+      "enrollment_state": "active",
+      "limit_privileges_to_course_section": false
+    }
+  ],
+  "hide_final_grades": false,
+  "workflow_state": "available",
+  "restrict_enrollments_to_course_dates": false
+}

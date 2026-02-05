@@ -1,0 +1,7 @@
+[
+  {
+    "_error": "GET https://canvas.umn.edu/api/v1/courses/544898/files failed: 403 {\"status\":\"unauthorized\",\"errors\":[{\"message\":\"user not authorized to perform that action\"}]}",
+    "_url": "https://canvas.umn.edu/api/v1/courses/544898/files",
+    "_params": {}
+  }
+]

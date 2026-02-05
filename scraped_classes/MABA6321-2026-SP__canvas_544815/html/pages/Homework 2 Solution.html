@@ -1,0 +1,174 @@
+<article class="markdown-body">
+<h1 id="maba-6321-homework-2---advanced-sql" class="atx">MABA 6321 Homework 2 - Advanced SQL</h1>
+<h3 id="1--find-the-information-on-employees-who-have-other-employees-reporting-to-them-and-show-their-employee-number-last-name-first-name-extension-and-job-title-make-sure-the-output-does-not-have-duplicate-rows" class="atx">1. Find the information on <code>employees</code> who have other employees reporting to them and show their employee number, last name, first name,, extension, and job title. Make sure the output does not have duplicate rows.</h3>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span> employeeNumber<span class="token punctuation">,</span> lastName<span class="token punctuation">,</span> firstName<span class="token punctuation">,</span> extension<span class="token punctuation">,</span> jobTitle
+<span class="token keyword">FROM</span> employees
+<span class="token keyword">WHERE</span> employeeNumber <span class="token operator">IN</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span> reportsTo <span class="token keyword">FROM</span> employees<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 6 row(s) returned</span>
+
+<span class="token comment">-- # employeeNumber, lastName, firstName, extension, jobTitle</span>
+<span class="token comment">-- 1002, Murphy, Diane, x5800, President</span>
+<span class="token comment">-- 1056, Patterson, Mary, x4611, VP Sales</span>
+<span class="token comment">-- 1143, Bow, Anthony, x5428, Sales Manager (NA)</span>
+<span class="token comment">-- 1102, Bondur, Gerard, x5408, Sale Manager (EMEA)</span>
+<span class="token comment">-- 1088, Patterson, William, x4871, Sales Manager (APAC)</span>
+<span class="token comment">-- 1621, Nishi, Mami, x101, Sales Rep</span></code></pre>
+<h3 id="2-using-a-sub-query-to-find-the-largest-order-quantity-per-order-for-each-product-displaying-the-productand39s-code-largest-order-quantity-as-largest_order_quantity-ordering-results-from-the-highest-to-the-lowest" class="atx">2. Using a sub query to find the largest order quantity per order for each product, displaying the product's code, largest order quantity (as <code>largest_order_quantity</code>), ordering results from the highest to the lowest.</h3>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SELECT</span>  <span class="token keyword">distinct</span> p<span class="token punctuation">.</span>productCode<span class="token punctuation">,</span> p<span class="token punctuation">.</span>productName<span class="token punctuation">,</span> o<span class="token punctuation">.</span>quantityOrdered <span class="token keyword">AS</span> largest_order_quantity
+<span class="token keyword">FROM</span> orderdetails <span class="token keyword">AS</span> o <span class="token keyword">JOIN</span> products <span class="token keyword">AS</span> p
+<span class="token keyword">USING</span> <span class="token punctuation">(</span>productcode<span class="token punctuation">)</span>
+<span class="token keyword">WHERE</span> o<span class="token punctuation">.</span>quantityOrdered <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token function">max</span><span class="token punctuation">(</span>quantityOrdered<span class="token punctuation">)</span> 
+    <span class="token keyword">FROM</span> orderdetails
+    <span class="token keyword">WHERE</span> productcode  <span class="token operator">=</span> o<span class="token punctuation">.</span>productCode
+<span class="token punctuation">)</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> o<span class="token punctuation">.</span>quantityOrdered <span class="token keyword">desc</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 109 row(s) returned</span>
+
+<span class="token comment">-- # productCode, productName, largest_order_quantity</span>
+<span class="token comment">-- S12_4675, 1969 Dodge Charger, 97</span>
+<span class="token comment">-- S18_3278, 1969 Dodge Super Bee, 90</span>
+<span class="token comment">-- S700_2466, America West Airlines B757-200, 85</span>
+<span class="token comment">-- S700_3167, F/A 18 Hornet 1/72, 77</span>
+<span class="token comment">-- S12_3990, 1970 Plymouth Hemi Cuda, 77</span>
+<span class="token comment">-- S24_3856, 1956 Porsche 356A Coupe, 76</span>
+<span class="token comment">-- S18_1749, 1917 Grand Touring Sedan, 76</span>
+<span class="token comment">-- S24_2766, 1949 Jaguar XK 120, 76</span>
+<span class="token comment">-- S24_2300, 1962 Volkswagen Microbus, 70</span>
+<span class="token comment">-- S10_4698, 2003 Harley-Davidson Eagle Drag Bike, 66</span></code></pre>
+<h3 id="3-rewrite-the-above-query-using-cte-then-comment-on-the-advantages-of-the-cte-approach-relative-to-the-subquery-approach-paying-attention-to-the-execution-speed-of-the-two-queries-as-one-aspect-of-difference" class="atx">3. Rewrite the above query using CTE. Then comment on the advantages of the CTE approach relative to the subquery approach, paying attention to the execution speed of the two queries as one aspect of difference.</h3>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">WITH</span> largest_orders <span class="token keyword">as</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> productcode<span class="token punctuation">,</span> <span class="token function">max</span><span class="token punctuation">(</span>quantityOrdered<span class="token punctuation">)</span> <span class="token keyword">AS</span> largest_order_quantity
+    <span class="token keyword">FROM</span> orderdetails
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> productcode
+<span class="token punctuation">)</span> 
+<span class="token keyword">SELECT</span> productCode<span class="token punctuation">,</span> productName<span class="token punctuation">,</span> largest_order_quantity
+<span class="token keyword">FROM</span> products <span class="token keyword">JOIN</span> largest_orders <span class="token keyword">USING</span> <span class="token punctuation">(</span>productcode<span class="token punctuation">)</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> largest_order_quantity <span class="token keyword">desc</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 109 row(s) returned</span>
+
+<span class="token comment"># productCode, productName, largest_order_quantity</span>
+<span class="token comment">-- S12_4675, 1969 Dodge Charger, 97</span>
+<span class="token comment">-- S18_3278, 1969 Dodge Super Bee, 90</span>
+<span class="token comment">-- S700_2466, America West Airlines B757-200, 85</span>
+<span class="token comment">-- S700_3167, F/A 18 Hornet 1/72, 77</span>
+<span class="token comment">-- S12_3990, 1970 Plymouth Hemi Cuda, 77</span>
+<span class="token comment">-- S24_3856, 1956 Porsche 356A Coupe, 76</span>
+<span class="token comment">-- S18_1749, 1917 Grand Touring Sedan, 76</span>
+<span class="token comment">-- S24_2766, 1949 Jaguar XK 120, 76</span>
+<span class="token comment">-- S24_2300, 1962 Volkswagen Microbus, 70</span>
+<span class="token comment">-- S10_4698, 2003 Harley-Davidson Eagle Drag Bike, 66</span></code></pre>
+<p>-- The CTE approach is more readable and is also more computationally efficient since it does not need to compute largest_order_quanity over and over again for the same product.</p>
+<h3 id="4-use-cte-to-find-out-low-performing-products-with-each-product-line-where-a-productand39s-performance-defined-as-the-total-sales-of-a-product-a-single-sale-amount-is-calculated-from-order-details-as-quantityorderedpriceeach-and-low-performance-is-defined-as-below-50percent-of-average-total-sales-across-all-products-in-a-product-line-display-a-productand39s-code-name-line-total-sales-as-total_sales-and-avg_sales-round-avg_sales-to-two-decimal-places" class="atx">4. Use CTE to find out low performing products with each product line, where a product's performance defined as the total sales of a product (a single sale amount is calculated from order details as quantityOrdered*priceEach), and low performance is defined as below 50% of average total sales across all products in a product line. Display a product's code, name, line, total sales (as <code>total_sales</code>), and avg_sales. Round avg_sales to two decimal places.</h3>
+<blockquote>
+<p>tip: consider using chained CTEs, first computing each product's total sales, then average total sales.</p>
+</blockquote>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">WITH</span> product_sales <span class="token keyword">as</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> productcode<span class="token punctuation">,</span> <span class="token function">sum</span><span class="token punctuation">(</span>quantityOrdered<span class="token operator">*</span>priceEach<span class="token punctuation">)</span> <span class="token keyword">AS</span> sales
+    <span class="token keyword">FROM</span> orderdetails
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> productcode
+<span class="token punctuation">)</span><span class="token punctuation">,</span>    
+average_sales <span class="token keyword">AS</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> productline<span class="token punctuation">,</span> <span class="token function">round</span><span class="token punctuation">(</span><span class="token function">avg</span><span class="token punctuation">(</span>sales<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> avg_sales
+    <span class="token keyword">FROM</span> products <span class="token keyword">join</span> product_sales <span class="token keyword">USING</span> <span class="token punctuation">(</span>productcode<span class="token punctuation">)</span>
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> productline
+<span class="token punctuation">)</span>
+<span class="token keyword">SELECT</span> productCode<span class="token punctuation">,</span> productName<span class="token punctuation">,</span> productLine<span class="token punctuation">,</span> sales<span class="token punctuation">,</span> avg_sales
+<span class="token keyword">FROM</span> products <span class="token keyword">JOIN</span> average_sales <span class="token keyword">USING</span><span class="token punctuation">(</span>productLine<span class="token punctuation">)</span>
+<span class="token keyword">JOIN</span> product_sales <span class="token keyword">USING</span><span class="token punctuation">(</span>productcode<span class="token punctuation">)</span>
+<span class="token keyword">WHERE</span> sales <span class="token operator">&lt;</span> <span class="token number">0.5</span><span class="token operator">*</span>avg_sales<span class="token punctuation">;</span>
+
+<span class="token comment">-- 9 row(s) returned</span>
+
+<span class="token comment">-- # productCode, productName, productLine, sales, avg_sales</span>
+<span class="token comment">-- S18_4933, 1957 Ford Thunderbird, Classic Cars, 50101.57, 104160.07</span>
+<span class="token comment">-- S24_1444, 1970 Dodge Coronet, Classic Cars, 50255.45, 104160.07</span>
+<span class="token comment">-- S24_1628, 1966 Shelby Cobra 427 S/C, Classic Cars, 42015.54, 104160.07</span>
+<span class="token comment">-- S24_1937, 1939 Chevrolet Deluxe Coupe, Vintage Cars, 28052.94, 74898.32</span>
+<span class="token comment">-- S24_2840, 1958 Chevy Corvette Limited Edition, Classic Cars, 31627.96, 104160.07</span>
+<span class="token comment">-- S24_2972, 1982 Lamborghini Diablo, Classic Cars, 30972.87, 104160.07</span>
+<span class="token comment">-- S24_3969, 1936 Mercedes Benz 500k Roadster, Vintage Cars, 29763.39, 74898.32</span>
+<span class="token comment">-- S32_2206, 1982 Ducati 996 R, Motorcycles, 33268.76, 86263.55</span>
+<span class="token comment">-- S32_2509, 1954 Greyhound Scenicruiser, Trucks and Buses, 46519.05, 93101.23</span>
+
+<span class="token comment">### 5. Find each payment's amount along with the paying customer's cumulative payment up to this date, displaying customer number, payment date, payment amount, and customer_cum_amount, ordering results by customer number and payment date.</span>
+
+<span class="token identifier"><span class="token punctuation">`</span><span class="token punctuation">`</span></span><span class="token punctuation">`</span><span class="token keyword">sql</span>
+<span class="token keyword">SELECT</span> customerNumber<span class="token punctuation">,</span> paymentDate<span class="token punctuation">,</span> amount<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>amount<span class="token punctuation">)</span> <span class="token keyword">OVER</span> <span class="token punctuation">(</span><span class="token keyword">partition</span> <span class="token keyword">by</span> customerNumber <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> paymentDate<span class="token punctuation">)</span> <span class="token keyword">AS</span> customer_cum_amount
+<span class="token keyword">FROM</span> payments
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> customerNumber<span class="token punctuation">,</span> paymentDate<span class="token punctuation">;</span>
+
+<span class="token comment">-- 273 row(s) returned</span>
+
+<span class="token comment">-- # customerNumber, paymentDate, amount, customer_cum_amount</span>
+<span class="token comment">-- 103, 2003-06-05 00:00:00, 14571.44, 14571.44</span>
+<span class="token comment">-- 103, 2004-10-19 00:00:00, 6066.78, 20638.22</span>
+<span class="token comment">-- 103, 2004-12-18 00:00:00, 1676.14, 22314.36</span>
+<span class="token comment">-- 112, 2003-06-06 00:00:00, 32641.98, 32641.98</span>
+<span class="token comment">-- 112, 2004-08-20 00:00:00, 33347.88, 65989.86</span>
+<span class="token comment">-- 112, 2004-12-17 00:00:00, 14191.12, 80180.98</span>
+<span class="token comment">-- 114, 2003-05-20 00:00:00, 45864.03, 45864.03</span>
+<span class="token comment">-- 114, 2003-05-31 00:00:00, 7565.08, 53429.11</span>
+<span class="token comment">-- 114, 2004-03-10 00:00:00, 44894.74, 98323.85</span>
+<span class="token comment">-- 114, 2004-12-15 00:00:00, 82261.22, 180585.07</span></code></pre>
+<h3 id="6-monthly-order-cumulative-average-find-each-orderand39s-total-amount-computing-the-total-amount-from-orderdetails-along-with-the-same-monthand39s-average-order-amount-showing-each-orderand39s-number-date-customer-number-order-total-and-monthly-cumulative-average-as-cumulative_average" class="atx">6. (monthly order cumulative average) Find each order's total amount (computing the total amount from orderDetails), along with the same month's average order amount, showing each order's number, date, customer number, order total, and monthly cumulative average (as <code>cumulative_average</code>)</h3>
+<blockquote>
+<p>tip: to obtain the year-month, you may use <code>left(orderDate, 7)</code>, treating orderDate as a string.</p>
+</blockquote>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">WITH</span> order_totals <span class="token keyword">AS</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> ordernumber<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>quantityOrdered<span class="token operator">*</span>priceeach<span class="token punctuation">)</span> <span class="token keyword">AS</span> order_total
+    <span class="token keyword">FROM</span> orderdetails
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> ordernumber
+<span class="token punctuation">)</span> 
+<span class="token keyword">SELECT</span> orderNumber<span class="token punctuation">,</span> orderDate<span class="token punctuation">,</span> customerNumber<span class="token punctuation">,</span> order_total<span class="token punctuation">,</span> 
+<span class="token function">AVG</span><span class="token punctuation">(</span>order_total<span class="token punctuation">)</span> <span class="token keyword">OVER</span> <span class="token punctuation">(</span><span class="token keyword">PARTITION</span> <span class="token keyword">BY</span> <span class="token keyword">left</span><span class="token punctuation">(</span>orderDate<span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> orderDate<span class="token punctuation">,</span> orderNumber<span class="token punctuation">)</span> <span class="token keyword">AS</span> cumulative_average
+<span class="token keyword">FROM</span> orders <span class="token keyword">JOIN</span> order_totals <span class="token keyword">USING</span> <span class="token punctuation">(</span>ordernumber<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 326 row(s) returned</span>
+
+<span class="token comment">-- # orderNumber, orderDate, customerNumber, order_total, cumulative_average</span>
+<span class="token comment">-- 10100, 2003-01-06 00:00:00, 363, 10223.83, 10223.830000</span>
+<span class="token comment">-- 10101, 2003-01-09 00:00:00, 128, 10549.01, 10386.420000</span>
+<span class="token comment">-- 10102, 2003-01-10 00:00:00, 181, 5494.78, 8755.873333</span>
+<span class="token comment">-- 10103, 2003-01-29 00:00:00, 121, 50218.95, 19121.642500</span>
+<span class="token comment">-- 10104, 2003-01-31 00:00:00, 141, 40206.20, 23338.554000</span>
+<span class="token comment">-- 10105, 2003-02-11 00:00:00, 145, 53959.21, 53959.210000</span>
+<span class="token comment">-- 10106, 2003-02-17 00:00:00, 278, 52151.81, 53055.510000</span>
+<span class="token comment">-- 10107, 2003-02-24 00:00:00, 131, 22292.62, 42801.213333</span>
+<span class="token comment">-- 10108, 2003-03-03 00:00:00, 385, 51001.22, 51001.220000</span>
+<span class="token comment">-- 10109, 2003-03-10 00:00:00, 486, 25833.14, 38417.180000</span></code></pre>
+<h3 id="7-top-10-orders-find-the-top-10-order-of-all-time-displaying-the-orderand39s-number-total-amount-as-order_total-and-rank-as-order_rank" class="atx">7. (top 10 orders) Find the top 10 order of all time, displaying the order's number, total amount (as <code>order_total</code>), and rank (as <code>order_rank</code>).</h3>
+<blockquote>
+<p>tip: since order total must be computed from order details, consider chained CTEs that compute the order totals first, then rank them, then select top 10.</p>
+</blockquote>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">WITH</span> order_totals <span class="token keyword">AS</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> ordernumber<span class="token punctuation">,</span> <span class="token function">SUM</span><span class="token punctuation">(</span>quantityOrdered<span class="token operator">*</span>priceeach<span class="token punctuation">)</span> <span class="token keyword">AS</span> order_total
+    <span class="token keyword">FROM</span> orderdetails
+    <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> ordernumber
+<span class="token punctuation">)</span><span class="token punctuation">,</span>
+order_ranks <span class="token keyword">AS</span> <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> orderNumber<span class="token punctuation">,</span> order_total<span class="token punctuation">,</span> RANK<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">OVER</span> <span class="token punctuation">(</span><span class="token keyword">ORDER</span> <span class="token keyword">BY</span> order_total <span class="token keyword">DESC</span><span class="token punctuation">)</span> <span class="token keyword">AS</span> order_rank
+    <span class="token keyword">FROM</span> order_totals
+<span class="token punctuation">)</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> 
+<span class="token keyword">FROM</span> order_ranks 
+<span class="token keyword">WHERE</span> order_rank<span class="token operator">&lt;=</span><span class="token number">10</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 10 row(s) returned</span>
+
+<span class="token comment">-- # orderNumber, order_total, order_rank</span>
+<span class="token comment">-- 10165, 67392.85, 1</span>
+<span class="token comment">-- 10287, 61402.00, 2</span>
+<span class="token comment">-- 10310, 61234.67, 3</span>
+<span class="token comment">-- 10212, 59830.55, 4</span>
+<span class="token comment">-- 10207, 59265.14, 5</span>
+<span class="token comment">-- 10127, 58841.35, 6</span>
+<span class="token comment">-- 10204, 58793.53, 7</span>
+<span class="token comment">-- 10126, 57131.92, 8</span>
+<span class="token comment">-- 10222, 56822.65, 9</span>
+<span class="token comment">-- 10142, 56052.56, 10</span></code></pre>
+</article>

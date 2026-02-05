@@ -1,0 +1,53 @@
+<div id="kl_wrapper_3" class="kl_basic_bar kl_wrapper">
+<div id="kl_banner">
+<div id="kl_banner">
+<h2><span id="kl_banner_left"><span class="kl_mod_text">Homework 3 – ER Diagram and Normalizatio</span></span></h2>
+</div>
+<p>Questions 1-5 and Question 8 are covered in Module 4; The remaining question are covered in Module 5.</p>
+<ul>
+<li>Please answers all questions except question 8 in a single document (word or Google doc).</li>
+<li>For the question 8, please export your MySQL workbench EER diagram as a PDF file and submit it along with your document for other questions.</li>
+</ul>
+<h2>Part 1: short answers</h2>
+<p>For questions 1-5, explain the following concepts <strong>and give an example</strong>.</p>
+<ol>
+<li>Composite attribute</li>
+<li>Multi-valued attribute</li>
+<li>Cardinality of a relationship;</li>
+<li>One-to-many relationship</li>
+<li>Many-to-many relationship</li>
+</ol>
+<p>For questions 6-7, answer the question</p>
+<ol start="6">
+<li>What are the main benefits of normalization?</li>
+<li>When should one consider denormalization?</li>
+</ol>
+<h2>Part 2. ER Modeling / Normalization</h2>
+<h3>8. Lucy's Play School</h3>
+<p>Lucy's Playschool is a child day care center. The play school keeps track of each child's contact person, anergies, and rooms they are assigned to, and employees who work in these rooms.</p>
+<ul>
+<li>For each child, it tracks information including name, age, gender, birthday, and allergies. You may treat allergies as a single atomic field.</li>
+<li>Each child must have an adult contact person. It saves information including the contact person's contact phone number, and address (including street, city, state, and zip code). Each child has one adult as his/her contact person but an adult can be a contact person for multiple children (e.g. one family may enroll multiple kids in the center).</li>
+<li>The center has several rooms of different sizes. Each room has a room number, a designated capacity, and an assigned age group (infant, toddler, kid, pre-teen). For example, rooms 2 and 3 are for infants and room 4 is for toddlers.</li>
+<li>A child is assigned to a room based on his/her age and availability of space. Each child is assigned to one room. Each room may be assigned to multiple children. But the room may also be vacant (when the enrollment is low).</li>
+<li>A room may be managed by one or more employees. An employee can manage at most one room. Some employees do not manage any room (e.g. the reception desk employee).</li>
+<li>The center keeps track of each employee's name, phone number, education, and gender</li>
+</ul>
+<p>Based on the above description, Develop an ER Diagram for Lucy's Play School using MySQL workbench.</p>
+<ul>
+<li>You may ignore the data types for now.</li>
+<li>If you make any assumptions, please state them explicitly.</li>
+</ul>
+<h3>9. Movie Recommendation System</h3>
+<p>Imagine you are given a denormalized movie rating table that captures every detail in one place. Please transform the table into a database design that satisfies the 3rd normal form.</p>
+<ul>
+<li>Please do so step by step - first check and satisfy the 1st normal form, then the 2nd normal form, and the third normal form.</li>
+<li>Please give each table an appropriate name that reflects its granularity and content.</li>
+<li>Please also mark each table's primary key fields with PK (or bold or underline).</li>
+</ul>
+<p><strong>MovieRatings</strong> (user_id, user_name, user_age, movie_id, movie_title, movie_genre,director_id, director_name, rating, rating_timestamp)</p>
+<div id="kl_custom_block_1" class="">
+<p class="p2">&nbsp;</p>
+</div>
+</div>
+</div>

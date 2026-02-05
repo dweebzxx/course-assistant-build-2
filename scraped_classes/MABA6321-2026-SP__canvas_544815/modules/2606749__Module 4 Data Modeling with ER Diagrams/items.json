@@ -1,0 +1,78 @@
+[
+  {
+    "id": 15828194,
+    "position": 1,
+    "title": "Module 4: Overview",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606749,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828194",
+    "page_url": "module-4-overview",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-overview"
+  },
+  {
+    "id": 15828195,
+    "position": 2,
+    "title": "Module 4 Video: My Journey on Data Modeling",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606749,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828195",
+    "page_url": "module-4-video-my-journey-on-data-modeling",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-video-my-journey-on-data-modeling"
+  },
+  {
+    "id": 15828196,
+    "position": 3,
+    "title": "Module 4 Videos: Voices From The Field",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606749,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828196",
+    "page_url": "module-4-videos-voices-from-the-field",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-videos-voices-from-the-field"
+  },
+  {
+    "id": 15828197,
+    "position": 4,
+    "title": "Module 4: Lectures and Activities",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2606749,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828197",
+    "page_url": "module-4-lectures-and-activities",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/module-4-lectures-and-activities"
+  },
+  {
+    "id": 15828198,
+    "position": 5,
+    "title": "Lab 4 - ER Diagram",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606749,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828198",
+    "content_id": 5072482,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072482"
+  },
+  {
+    "id": 15828200,
+    "position": 7,
+    "title": "Homework 3",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2606749,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/15828200",
+    "content_id": 5072478,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5072478"
+  }
+]

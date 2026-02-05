@@ -1,0 +1,63 @@
+[
+  {
+    "id": 16202103,
+    "position": 1,
+    "title": "SmartPAL User Guide",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2659675,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202103",
+    "page_url": "smartpal-user-guide-3",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/pages/smartpal-user-guide-3"
+  },
+  {
+    "id": 16202104,
+    "position": 2,
+    "title": "SmartPAL App Activation",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2659675,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202104",
+    "content_id": 5213034,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213034"
+  },
+  {
+    "id": 16202105,
+    "position": 3,
+    "title": "SmartPAL Reflections",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2659675,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202105",
+    "content_id": 5213037,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213037"
+  },
+  {
+    "id": 16202106,
+    "position": 4,
+    "title": "SmartPAL Learning Engagement",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2659675,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202106",
+    "content_id": 5213036,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213036"
+  },
+  {
+    "id": 16202107,
+    "position": 5,
+    "title": "SmartPAL Post Survey",
+    "indent": 2,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2659675,
+    "html_url": "https://canvas.umn.edu/courses/544815/modules/items/16202107",
+    "content_id": 5213035,
+    "url": "https://canvas.umn.edu/api/v1/courses/544815/assignments/5213035"
+  }
+]

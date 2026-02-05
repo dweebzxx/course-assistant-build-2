@@ -1,0 +1,28 @@
+[
+  {
+    "id": 15605748,
+    "position": 1,
+    "title": "Week 12: Your Company's International Environment (April 15)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577544,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605748",
+    "page_url": "week-12-your-companys-international-environment-april-15",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-12-your-companys-international-environment-april-15"
+  },
+  {
+    "id": 15605749,
+    "position": 2,
+    "title": "Week 13: Your Company's International Environment (April 22)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577544,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605749",
+    "page_url": "week-13-your-companys-international-environment-april-22",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-13-your-companys-international-environment-april-22"
+  }
+]

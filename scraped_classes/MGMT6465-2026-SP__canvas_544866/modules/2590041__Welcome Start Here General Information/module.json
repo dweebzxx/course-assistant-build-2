@@ -1,0 +1,14 @@
+{
+  "id": 2590041,
+  "position": 1,
+  "name": "Welcome! Start Here: General Information",
+  "unlock_at": null,
+  "require_sequential_progress": false,
+  "requirement_type": "all",
+  "publish_final_grade": false,
+  "prerequisite_module_ids": [],
+  "state": "completed",
+  "completed_at": "2026-02-05T03:55:35Z",
+  "items_count": 3,
+  "items_url": "https://canvas.umn.edu/api/v1/courses/544866/modules/2590041/items"
+}

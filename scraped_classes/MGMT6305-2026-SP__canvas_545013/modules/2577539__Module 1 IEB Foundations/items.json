@@ -1,0 +1,41 @@
+[
+  {
+    "id": 15605737,
+    "position": 1,
+    "title": "Week 1: IEB Foundations (January 21)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577539,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605737",
+    "page_url": "week-1-ieb-foundations-january-21",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-1-ieb-foundations-january-21"
+  },
+  {
+    "id": 15605738,
+    "position": 2,
+    "title": "Week 2: IEB Foundations (January 28)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577539,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605738",
+    "page_url": "week-2-ieb-foundations-january-28",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-2-ieb-foundations-january-28"
+  },
+  {
+    "id": 15605739,
+    "position": 3,
+    "title": "Week 3: IEB Foundations (February 4)",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2577539,
+    "html_url": "https://canvas.umn.edu/courses/545013/modules/items/15605739",
+    "page_url": "week-3-ieb-foundations-february-4",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/545013/pages/week-3-ieb-foundations-february-4"
+  }
+]

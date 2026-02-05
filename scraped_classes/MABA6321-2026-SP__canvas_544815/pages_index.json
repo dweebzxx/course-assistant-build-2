@@ -1,0 +1,186 @@
+[
+  {
+    "module_canvas_id": 2606744,
+    "module_name": "Start Here",
+    "title": "Welcome and Meet Your Instructor",
+    "page_url": "welcome-and-meet-your-instructor",
+    "html": "html/pages/Welcome and Meet Your Instructor.html",
+    "meta": "html/pages/Welcome and Meet Your Instructor.meta.json"
+  },
+  {
+    "module_canvas_id": 2606744,
+    "module_name": "Start Here",
+    "title": "Datasets",
+    "page_url": "datasets",
+    "html": "html/pages/Datasets.html",
+    "meta": "html/pages/Datasets.meta.json"
+  },
+  {
+    "module_canvas_id": 2606744,
+    "module_name": "Start Here",
+    "title": "How to Log-in to Zoom Client and Update Zoom",
+    "page_url": "how-to-log-in-to-zoom-client-and-update-zoom",
+    "html": "html/pages/How to Log-in to Zoom Client and Update Zoom.html",
+    "meta": "html/pages/How to Log-in to Zoom Client and Update Zoom.meta.json"
+  },
+  {
+    "module_canvas_id": 2659675,
+    "module_name": "SmartPAL Learning Tools",
+    "title": "SmartPAL User Guide",
+    "page_url": "smartpal-user-guide-3",
+    "html": "html/pages/SmartPAL User Guide.html",
+    "meta": "html/pages/SmartPAL User Guide.meta.json"
+  },
+  {
+    "module_canvas_id": 2606746,
+    "module_name": "Module 1: Introduction to Database and SQL",
+    "title": "Module 1: Overview",
+    "page_url": "module-1-overview",
+    "html": "html/pages/Module 1 Overview.html",
+    "meta": "html/pages/Module 1 Overview.meta.json"
+  },
+  {
+    "module_canvas_id": 2606746,
+    "module_name": "Module 1: Introduction to Database and SQL",
+    "title": "Module 1 Video: From Scheduling Chaos to Database Solutions",
+    "page_url": "module-1-video-from-scheduling-chaos-to-database-solutions",
+    "html": "html/pages/Module 1 Video From Scheduling Chaos to Database Solutions.html",
+    "meta": "html/pages/Module 1 Video From Scheduling Chaos to Database Solutions.meta.json"
+  },
+  {
+    "module_canvas_id": 2606746,
+    "module_name": "Module 1: Introduction to Database and SQL",
+    "title": "Module 1: Lectures and Activities",
+    "page_url": "module-1-lectures-and-activities",
+    "html": "html/pages/Module 1 Lectures and Activities.html",
+    "meta": "html/pages/Module 1 Lectures and Activities.meta.json"
+  },
+  {
+    "module_canvas_id": 2606746,
+    "module_name": "Module 1: Introduction to Database and SQL",
+    "title": "Lab 1 Solution",
+    "page_url": "lab-1-solution",
+    "html": "html/pages/Lab 1 Solution.html",
+    "meta": "html/pages/Lab 1 Solution.meta.json"
+  },
+  {
+    "module_canvas_id": 2606747,
+    "module_name": "Module 2: Intermediate SQL",
+    "title": "Module 2: Overview",
+    "page_url": "module-2-overview",
+    "html": "html/pages/Module 2 Overview.html",
+    "meta": "html/pages/Module 2 Overview.meta.json"
+  },
+  {
+    "module_canvas_id": 2606747,
+    "module_name": "Module 2: Intermediate SQL",
+    "title": "Module 2 Videos: Voices From The Field",
+    "page_url": "module-2-videos-voices-from-the-field",
+    "html": "html/pages/Module 2 Videos Voices From The Field.html",
+    "meta": "html/pages/Module 2 Videos Voices From The Field.meta.json"
+  },
+  {
+    "module_canvas_id": 2606747,
+    "module_name": "Module 2: Intermediate SQL",
+    "title": "Module 2: Lectures and Activities",
+    "page_url": "module-2-lectures-and-activities",
+    "html": "html/pages/Module 2 Lectures and Activities.html",
+    "meta": "html/pages/Module 2 Lectures and Activities.meta.json"
+  },
+  {
+    "module_canvas_id": 2606747,
+    "module_name": "Module 2: Intermediate SQL",
+    "title": "Lab 2 Solution",
+    "page_url": "lab-2-solution",
+    "html": "html/pages/Lab 2 Solution.html",
+    "meta": "html/pages/Lab 2 Solution.meta.json"
+  },
+  {
+    "module_canvas_id": 2606747,
+    "module_name": "Module 2: Intermediate SQL",
+    "title": "Homework 1 Solution",
+    "page_url": "homework-1-solution",
+    "html": "html/pages/Homework 1 Solution.html",
+    "meta": "html/pages/Homework 1 Solution.meta.json"
+  },
+  {
+    "module_canvas_id": 2606748,
+    "module_name": "Module 3: Advanced SQL",
+    "title": "Module 3: Overview",
+    "page_url": "module-3-overview",
+    "html": "html/pages/Module 3 Overview.html",
+    "meta": "html/pages/Module 3 Overview.meta.json"
+  },
+  {
+    "module_canvas_id": 2606748,
+    "module_name": "Module 3: Advanced SQL",
+    "title": "Module 3: Lectures and Activities",
+    "page_url": "module-3-lectures-and-activities",
+    "html": "html/pages/Module 3 Lectures and Activities.html",
+    "meta": "html/pages/Module 3 Lectures and Activities.meta.json"
+  },
+  {
+    "module_canvas_id": 2606748,
+    "module_name": "Module 3: Advanced SQL",
+    "title": "Homework 2 Solution",
+    "page_url": "homework-2-solution",
+    "html": "html/pages/Homework 2 Solution.html",
+    "meta": "html/pages/Homework 2 Solution.meta.json"
+  },
+  {
+    "module_canvas_id": 2606749,
+    "module_name": "Module 4: Data Modeling with ER Diagrams",
+    "title": "Module 4: Overview",
+    "page_url": "module-4-overview",
+    "html": "html/pages/Module 4 Overview.html",
+    "meta": "html/pages/Module 4 Overview.meta.json"
+  },
+  {
+    "module_canvas_id": 2606749,
+    "module_name": "Module 4: Data Modeling with ER Diagrams",
+    "title": "Module 4 Video: My Journey on Data Modeling",
+    "page_url": "module-4-video-my-journey-on-data-modeling",
+    "html": "html/pages/Module 4 Video My Journey on Data Modeling.html",
+    "meta": "html/pages/Module 4 Video My Journey on Data Modeling.meta.json"
+  },
+  {
+    "module_canvas_id": 2606749,
+    "module_name": "Module 4: Data Modeling with ER Diagrams",
+    "title": "Module 4 Videos: Voices From The Field",
+    "page_url": "module-4-videos-voices-from-the-field",
+    "html": "html/pages/Module 4 Videos Voices From The Field.html",
+    "meta": "html/pages/Module 4 Videos Voices From The Field.meta.json"
+  },
+  {
+    "module_canvas_id": 2606749,
+    "module_name": "Module 4: Data Modeling with ER Diagrams",
+    "title": "Module 4: Lectures and Activities",
+    "page_url": "module-4-lectures-and-activities",
+    "html": "html/pages/Module 4 Lectures and Activities.html",
+    "meta": "html/pages/Module 4 Lectures and Activities.meta.json"
+  },
+  {
+    "module_canvas_id": 2606750,
+    "module_name": "Module 5: Database Normalization & Design",
+    "title": "Module 5: Overview",
+    "page_url": "module-5-overview",
+    "html": "html/pages/Module 5 Overview.html",
+    "meta": "html/pages/Module 5 Overview.meta.json"
+  },
+  {
+    "module_canvas_id": 2606750,
+    "module_name": "Module 5: Database Normalization & Design",
+    "title": "Module 5 Videos: Voices From The Field",
+    "page_url": "module-5-videos-voices-from-the-field",
+    "html": "html/pages/Module 5 Videos Voices From The Field.html",
+    "meta": "html/pages/Module 5 Videos Voices From The Field.meta.json"
+  },
+  {
+    "module_canvas_id": 2606750,
+    "module_name": "Module 5: Database Normalization & Design",
+    "title": "Module 5: Lectures and Activities",
+    "page_url": "module-5-lectures-and-activities",
+    "html": "html/pages/Module 5 Lectures and Activities.html",
+    "meta": "html/pages/Module 5 Lectures and Activities.meta.json"
+  }
+]
