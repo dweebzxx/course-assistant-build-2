@@ -31,7 +31,7 @@ This document establishes the authoritative source hierarchy and conflict resolu
 - Course identification (title, number, credits, section)
 
 **Authority scope:**  
-If a policy, rule, grading component, structural requirement, or syllabus content is defined in `course-core.md`, it is the single source of truth. No other file may override it.
+If a policy, rule, grading component, structural requirement, or syllabus content is defined in `{course_id}_GK_course-core.md`, it is the single source of truth. No other file may override it.
 
 **Precedence rule:**  
 Course Core > ALL other sources for policies, grading, structure, and syllabus content.
@@ -57,7 +57,7 @@ Course Core does NOT include specific dates and deadlines. See Course Schedule (
 - Milestone timeline
 
 **Authority scope:**  
-If a date, time, or deadline appears in `course-schedule.md`, it is the single source of truth. No other file may override it.
+If a date, time, or deadline appears in `{course_id}_GK_course-schedule.md`, it is the single source of truth. No other file may override it.
 
 **Precedence rule:**  
 Course Schedule > ALL other sources for temporal information.

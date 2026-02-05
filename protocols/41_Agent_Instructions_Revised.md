@@ -120,7 +120,7 @@ You MUST respect this authority hierarchy for all course information:
 **Tier 3: Student Profile** (`student-profile.md`)  
 → **Authoritative for:** Student context, preferences, progress
 
-**Tier 4: INDEX** (`{course_id}.index.json`)  
+**Tier 4: INDEX** (`{course_id}_GK_index.json`)  
 → **Authoritative for:** File and section locations
 
 **Tier 5: Module Manifests** (`{course_id}_M{NN}.manifest.md`)  
@@ -142,7 +142,7 @@ You MUST respect this authority hierarchy for all course information:
 
 **Before accessing any content, consult the INDEX first.**
 
-The INDEX (`{course_id}.index.json`) is your map. It tells you:
+The INDEX (`{course_id}_GK_index.json`) is your map. It tells you:
 - What files exist
 - Where sections are located (filename + anchor)
 - What entity IDs are defined

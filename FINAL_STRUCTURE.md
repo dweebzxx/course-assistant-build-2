@@ -66,7 +66,7 @@ course-assistant-build-2/
 │   ├── 20_Course_Core_Template.md
 │   ├── 21_Course_Schedule_Template.md
 │   ├── 22_Student_Profile_Template.md
-│   ├── 23_Index_Manifest_Template.yaml
+│   ├── 23_Index_Template.json
 │   └── 24_Module_Package_Template.md
 │
 └── validation/                          # Validation tools (1 file)
@@ -90,7 +90,7 @@ course-assistant-build-2/
 - templates/20_Course_Core_Template.md
 - templates/21_Course_Schedule_Template.md
 - templates/22_Student_Profile_Template.md
-- templates/23_Index_Manifest_Template.yaml
+- templates/23_Index_Template.json
 - templates/24_Module_Package_Template.md
 
 ### 🔍 Validation (7 files)

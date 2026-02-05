@@ -493,7 +493,7 @@ Provide the updated INDEX file.
 **Agent must:**
 1. Add new entries to INDEX as specified
 2. Validate referential integrity
-3. Output complete updated INDEX file: `{course_id}.index.json`
+3. Output complete updated INDEX file: `{course_id}_GK_index.json`
 
 **Example additions to INDEX:**
 

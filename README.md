@@ -68,7 +68,7 @@ course-assistant-build-2/
 │   ├── 20_Course_Core_Template.md            # Template for course-core.md
 │   ├── 21_Course_Schedule_Template.md        # Template for course-schedule.md
 │   ├── 22_Student_Profile_Template.md        # Template for student-profile.md
-│   ├── 23_Index_Manifest_Template.yaml       # Template for INDEX.json
+│   ├── 23_Index_Template.json                # Template for {course_id}_GK_index.json
 │   └── 24_Module_Package_Template.md         # Template for module manifests
 │
 ├── schema/                      # JSON schemas for validation
