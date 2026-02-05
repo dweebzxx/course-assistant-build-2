@@ -32,6 +32,8 @@ dist/
 !templates/*.md
 !templates/*.json
 !schema/*.json
+# Allow course_final_build directory files
+!course_final_build/**
 
 # Testing and temporary files
 test_output/

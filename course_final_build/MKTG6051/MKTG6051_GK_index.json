@@ -1,0 +1,393 @@
+{
+  "_comment": [
+    "============================================================================",
+    "INDEX FILE",
+    "============================================================================",
+    "Filename Pattern: MKTG6051_GK_index.json",
+    "Regex: ^[A-Z]{2,10}[0-9]{3,5}_GK_index\\.json$",
+    "Authority Tier: 4 (Authoritative for file/section locations, NOT content)",
+    "============================================================================"
+  ],
+  "index_metadata": {
+    "course_id": "MKTG6051",
+    "term_id": "2026-SP",
+    "course_run_id": "MKTG6051-2026-SP",
+    "index_version": "1.0.0",
+    "last_updated": "2026-02-05",
+    "timezone": "America/Chicago",
+    "doc_type": "index",
+    "index_scope": "all_grounded_and_working_files",
+    "total_files_indexed": "3",
+    "total_sections_indexed": "26",
+    "total_entities_indexed": "18",
+    "change_log": [
+      {
+        "date": "2026-02-05",
+        "change": "Initial index creation",
+        "files_affected": [
+          "MKTG6051_GK_course-core.md",
+          "MKTG6051_GK_course-schedule.md",
+          "MKTG6051_GK_student-profile.md"
+        ]
+      }
+    ],
+    "index_generation_date": "2026-02-05T11:11:40-06:00",
+    "index_generator": "manual"
+  },
+  "grounded_knowledge_files": [
+    {
+      "filename": "MKTG6051_GK_course-core.md",
+      "doc_type": "course_core",
+      "last_updated": "2026-02-05",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata_block",
+          "entities": []
+        },
+        {
+          "section_id": "course-identification",
+          "section_title": "Course Identification",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "instructor-information",
+          "section_title": "Instructor Information",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "course-syllabus",
+          "section_title": "Course Syllabus",
+          "section_type": "syllabus",
+          "entities": []
+        },
+        {
+          "section_id": "course-description",
+          "section_title": "Course Description",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "learning-objectives",
+          "section_title": "Learning Objectives",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "required-resources",
+          "section_title": "Required Resources",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "grading-policy",
+          "section_title": "Grading Policy",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "course-policies",
+          "section_title": "Course Policies",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "attendance-policy",
+          "section_title": "Attendance Policy",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "late-work-policy",
+          "section_title": "Late Work Policy",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "academic-integrity-policy",
+          "section_title": "Academic Integrity Policy",
+          "section_type": "policy",
+          "entities": []
+        },
+        {
+          "section_id": "assignment-specifications",
+          "section_title": "Assignment Specifications",
+          "section_type": "course_info",
+          "entities": []
+        },
+        {
+          "section_id": "group-project-context",
+          "section_title": "Group Project Context",
+          "section_type": "project_info",
+          "entities": [
+            {
+              "entity_id": "PROJ-FINAL",
+              "entity_type": "project",
+              "entity_title": "Final Project",
+              "key_fields": {
+                "project_scope": "Real-world market research project"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "filename": "MKTG6051_GK_course-schedule.md",
+      "doc_type": "course_schedule",
+      "last_updated": "2026-02-05",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata_block",
+          "entities": []
+        },
+        {
+          "section_id": "term-dates",
+          "section_title": "Term Dates",
+          "section_type": "schedule",
+          "entities": []
+        },
+        {
+          "section_id": "class-meeting-schedule",
+          "section_title": "Class Meeting Schedule",
+          "section_type": "schedule",
+          "entities": []
+        },
+        {
+          "section_id": "module-sequence",
+          "section_title": "Module Sequence",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "M01",
+              "entity_type": "module",
+              "entity_title": "Module 01",
+              "key_fields": {
+                "start_date": null,
+                "end_date": null
+              }
+            },
+            {
+              "entity_id": "M02",
+              "entity_type": "module",
+              "entity_title": "Module 02",
+              "key_fields": {
+                "start_date": null,
+                "end_date": null
+              }
+            },
+            {
+              "entity_id": "M03",
+              "entity_type": "module",
+              "entity_title": "Module 03",
+              "key_fields": {
+                "start_date": null,
+                "end_date": null
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "assignment-calendar",
+          "section_title": "Assignment Calendar",
+          "section_type": "schedule",
+          "entities": [
+            {
+              "entity_id": "QUIZ-01",
+              "entity_type": "quiz",
+              "entity_title": "Quiz - Project Background",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M01"
+              }
+            },
+            {
+              "entity_id": "QUIZ-02",
+              "entity_type": "quiz",
+              "entity_title": "Quiz - Qualitative Research",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M01"
+              }
+            },
+            {
+              "entity_id": "QUIZ-03",
+              "entity_type": "quiz",
+              "entity_title": "Quiz Data Cleaning and Descriptive Statistics",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M02"
+              }
+            },
+            {
+              "entity_id": "QUIZ-04",
+              "entity_type": "quiz",
+              "entity_title": "Quiz - Survey Research",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M02"
+              }
+            },
+            {
+              "entity_id": "QUIZ-05",
+              "entity_type": "quiz",
+              "entity_title": "Quiz - Linear Regression Analysis",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M03"
+              }
+            },
+            {
+              "entity_id": "A01",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Define research question and company",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M01"
+              }
+            },
+            {
+              "entity_id": "A02",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Qualitative Research Plan",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M01"
+              }
+            },
+            {
+              "entity_id": "A03",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Survey Research Plan",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M02"
+              }
+            },
+            {
+              "entity_id": "A04",
+              "entity_type": "assignment",
+              "entity_title": "Group Research - Final Project",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M03"
+              }
+            },
+            {
+              "entity_id": "A05",
+              "entity_type": "assignment",
+              "entity_title": "Comments on Final Project Constructive Review",
+              "key_fields": {
+                "due_date": null,
+                "due_time": "11:59 PM",
+                "module_id": "M03"
+              }
+            }
+          ]
+        },
+        {
+          "section_id": "weekly-overview",
+          "section_title": "Weekly Overview",
+          "section_type": "schedule",
+          "entities": []
+        },
+        {
+          "section_id": "office-hours-schedule",
+          "section_title": "Office Hours Schedule",
+          "section_type": "schedule",
+          "entities": []
+        }
+      ]
+    },
+    {
+      "filename": "MKTG6051_GK_student-profile.md",
+      "doc_type": "student_profile",
+      "last_updated": "2026-02-05",
+      "sections": [
+        {
+          "section_id": "metadata",
+          "section_title": "Metadata",
+          "section_type": "metadata_block",
+          "entities": []
+        },
+        {
+          "section_id": "student-identification",
+          "section_title": "Student Identification",
+          "section_type": "student_context",
+          "entities": []
+        },
+        {
+          "section_id": "writing-style-profile",
+          "section_title": "Writing Style Profile",
+          "section_type": "student_context",
+          "entities": []
+        }
+      ]
+    }
+  ],
+  "working_memory_files": [],
+  "cross_references": [
+    {
+      "entity_id": "M01",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_GK_course-schedule.md#assignment-calendar"
+      ]
+    },
+    {
+      "entity_id": "M02",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_GK_course-schedule.md#assignment-calendar"
+      ]
+    },
+    {
+      "entity_id": "M03",
+      "referenced_in": [
+        "MKTG6051_GK_course-schedule.md#module-sequence",
+        "MKTG6051_GK_course-schedule.md#assignment-calendar"
+      ]
+    },
+    {
+      "entity_id": "PROJ-FINAL",
+      "referenced_in": [
+        "MKTG6051_GK_course-core.md#group-project-context"
+      ]
+    }
+  ],
+  "_validation_checklist": {
+    "referential_integrity": [
+      "Every filename in grounded_knowledge_files exists",
+      "Every section_id is unique",
+      "Every entity_id is unique within its type",
+      "All cross_references point to valid entities and files"
+    ],
+    "id_format_compliance": [
+      "All entity_id values match regex patterns from Naming Standard",
+      "All section_id values match naming conventions"
+    ],
+    "date_format_compliance": [
+      "All dates use YYYY-MM-DD format",
+      "TBD dates use null for ISO values"
+    ],
+    "naming_compliance": [
+      "Filename follows pattern: MKTG6051_GK_index.json",
+      "All GK files use MKTG6051_GK_ prefix",
+      "All module files use MKTG6051_M{NN} prefix"
+    ]
+  }
+}
