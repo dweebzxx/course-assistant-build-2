@@ -368,7 +368,7 @@ Example: `MKTG6051_M03_curated.md`
 
 **Naming Rule**: `AI_Course_Assistant_Instructions_{course_run_id}.md`
 
-**Example**: `AI_Course_Assistant_Instructions_MGMT6022-2026-SP.md`
+**Example**: `AI_Course_Assistant_Instructions_MGMT6022.md`
 
 **Usage**: Paste into Custom GPT instructions field (not uploaded as file)
 
@@ -381,7 +381,7 @@ Example: `MKTG6051_M03_curated.md`
 **Naming Rule (optional alignment)**:
 
 * Preferred: `{course_run_id}.writing_style_profile_josh.md`
-* Example: `MGMT6022-2026-SP.writing_style_profile_josh.md`
+* Example: `MGMT6022_writing_style_profile_josh.md`
 
 **Note**: This may be embedded into student_profile.md instead of existing as a separate file.
 
