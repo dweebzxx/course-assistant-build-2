@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://course-assistant.schema/course_schedule.json",
   "title": "Course Schedule File Schema",
-  "description": "Schema for course_schedule.md Grounded Knowledge File - Tier 1 authority for all dates and deadlines",
+  "description": "Schema for course-schedule.md Grounded Knowledge File - Tier 2 authority for all dates and deadlines",
   "type": "object",
   "required": ["metadata", "term_dates", "module_sequence", "assignment_calendar"],
   "properties": {

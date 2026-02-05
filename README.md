@@ -25,9 +25,9 @@ Each agent is **single-course, single-term, single-student** focused for maximum
 ### Building a Course Assistant (5 Steps)
 
 1. **Create Required Files** (using templates/)
-   - `{course_run_id}.course_core.md` - Policies, grading, structure
-   - `{course_run_id}.course_schedule.md` - Dates, deadlines, assignments
-   - `{course_run_id}.student_profile.md` - Student context and writing style
+   - `{course_run_id}.course-core.md` - Policies, grading, structure
+   - `{course_run_id}.course-schedule.md` - Dates, deadlines, assignments
+   - `{course_run_id}.student-profile.md` - Student context and writing style
 
 2. **Generate INDEX** (using validation script)
    ```bash
@@ -65,16 +65,16 @@ course-assistant-build-2/
 │   └── 07_Date_Time_Standard.md              # Date/time formatting rules
 │
 ├── templates/                   # File creation templates
-│   ├── 20_Course_Core_Template.md            # Template for course_core.md
-│   ├── 21_Course_Schedule_Template.md        # Template for course_schedule.md
-│   ├── 22_Student_Profile_Template.md        # Template for student_profile.md
+│   ├── 20_Course_Core_Template.md            # Template for course-core.md
+│   ├── 21_Course_Schedule_Template.md        # Template for course-schedule.md
+│   ├── 22_Student_Profile_Template.md        # Template for student-profile.md
 │   ├── 23_Index_Manifest_Template.yaml       # Template for INDEX.json
 │   └── 24_Module_Package_Template.md         # Template for module manifests
 │
 ├── schema/                      # JSON schemas for validation
-│   ├── schema.course_core.json               # Validates course_core.md
-│   ├── schema.course_schedule.json           # Validates course_schedule.md
-│   ├── schema.student_profile.json           # Validates student_profile.md
+│   ├── schema.course_core.json               # Validates course-core.md
+│   ├── schema.course_schedule.json           # Validates course-schedule.md
+│   ├── schema.student_profile.json           # Validates student-profile.md
 │   ├── schema.index_manifest.json            # Validates INDEX.json
 │   ├── schema.module_package.json            # Validates module manifests
 │   └── schema.group_project.json             # Validates group project sections
@@ -100,17 +100,18 @@ course-assistant-build-2/
 
 Every course assistant requires exactly 4 files:
 
-1. **Course Core** (`course_core.md`) - Tier 2 Authority
+1. **Course Core** (`course-core.md`) - Tier 1 Authority (HIGHEST)
+   - Complete course syllabus content
    - Course policies, grading structure, instructor info
    - Group project definition
-   - Does NOT contain dates/deadlines
+   - Authoritative for all course requirements
 
-2. **Course Schedule** (`course_schedule.md`) - Tier 1 Authority  
+2. **Course Schedule** (`course-schedule.md`) - Tier 2 Authority  
    - ALL dates, deadlines, due times
    - Module sequence and timeline
-   - Highest authority for temporal information
+   - Authoritative for temporal information
 
-3. **Student Profile** (`student_profile.md`) - Tier 3 Authority
+3. **Student Profile** (`student-profile.md`) - Tier 3 Authority
    - Student identification (first name only)
    - Comprehensive writing style profile
    - Timezone and preferences
@@ -124,8 +125,8 @@ Every course assistant requires exactly 4 files:
 
 When information conflicts, priority order:
 
-1. **Tier 1:** Course Schedule (dates/deadlines)
-2. **Tier 2:** Course Core (policies/structure)
+1. **Tier 1:** Course Core (syllabus, policies, structure)
+2. **Tier 2:** Course Schedule (dates/deadlines)
 3. **Tier 3:** Student Profile (student context)
 4. **Tier 4:** INDEX (retrieval metadata)
 5. **Tier 5:** Module Working Memory Files
@@ -138,14 +139,14 @@ See `grounded/04_Authority_and_Precedence_Rules.md` for complete rules.
 All system files use strict naming patterns:
 
 - **course_id:** Course code only (e.g., `MGMT6022`)
-- **term_id:** Year and term (e.g., `2026-SP`)
-- **course_run_id:** Combined identifier (e.g., `MGMT6022-2026-SP`)
+- **term_id:** Year and term (e.g., `2026-SP`) - used in metadata only
+- **GK files:** Use `{course_id}_GK_` prefix (e.g., `MGMT6022_GK_course-core.md`)
 
 Example filenames:
-- `MGMT6022-2026-SP.course_core.md`
-- `MGMT6022-2026-SP.course_schedule.md`
-- `MGMT6022-2026-SP.student_profile.md`
-- `MGMT6022-2026-SP.index.json`
+- `MGMT6022_GK_course-core.md`
+- `MGMT6022_GK_course-schedule.md`
+- `MGMT6022_GK_student-profile.md`
+- `MGMT6022_GK_index.json`
 
 See `grounded/05_Naming_and_ID_Standard.md` for complete patterns.
 
@@ -248,9 +249,9 @@ Here's a complete example of building a course assistant:
 ### Step 2: Create Files from Templates
 ```bash
 # Copy templates
-cp templates/20_Course_Core_Template.md MGMT6022-2026-SP.course_core.md
-cp templates/21_Course_Schedule_Template.md MGMT6022-2026-SP.course_schedule.md
-cp templates/22_Student_Profile_Template.md MGMT6022-2026-SP.student_profile.md
+cp templates/20_Course_Core_Template.md MGMT6022_GK_course-core.md
+cp templates/21_Course_Schedule_Template.md MGMT6022_GK_course-schedule.md
+cp templates/22_Student_Profile_Template.md MGMT6022_GK_student-profile.md
 
 # Fill in content following template structure
 ```
@@ -258,9 +259,9 @@ cp templates/22_Student_Profile_Template.md MGMT6022-2026-SP.student_profile.md
 ### Step 3: Validate and Generate INDEX
 ```bash
 # Validate each file
-python validation/validate_system.py --validate-file MGMT6022-2026-SP.course_core.md
-python validation/validate_system.py --validate-file MGMT6022-2026-SP.course_schedule.md
-python validation/validate_system.py --validate-file MGMT6022-2026-SP.student_profile.md
+python validation/validate_system.py --validate-file MGMT6022_GK_course-core.md
+python validation/validate_system.py --validate-file MGMT6022_GK_course-schedule.md
+python validation/validate_system.py --validate-file MGMT6022_GK_student-profile.md
 
 # Generate INDEX
 python validation/validate_system.py --generate-index --course-id MGMT6022-2026-SP
@@ -270,7 +271,7 @@ python validation/validate_system.py --generate-index --course-id MGMT6022-2026-
 1. Create new Custom GPT in ChatGPT
 2. Customize `protocols/41_Agent_Instructions_Revised.md` with course details
 3. Paste instructions into GPT configuration
-4. Upload 4 files: course_core.md, course_schedule.md, student_profile.md, index.json
+4. Upload 4 files: course-core.md, course-schedule.md, student-profile.md, index.json
 
 ### Step 5: Verify and Test
 1. Follow `setup/50_Setup_Prompt_Sequence.md` (7 verification prompts)

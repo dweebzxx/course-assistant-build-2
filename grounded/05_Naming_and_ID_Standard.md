@@ -355,8 +355,8 @@ Required fields:
 **Rule:** When referencing course-scoped files, filenames use `{course_id}_GK_` prefix.
 
 **Examples:**
-- `MGMT6022-2026-SP.course_core.md#grading-policy`
-- `MGMT6022-2026-SP.course_schedule.md#assignment-calendar(A03)`
+- `MGMT6022_GK_course-core.md#grading-policy`
+- `MGMT6022_GK_course-schedule.md#assignment-calendar(A03)`
 - `MKTG6051_M03/MKTG6051_M03.manifest.md#metadata`
 - `MKTG6051_M02.A_survey-design-instructions.pdf`
 

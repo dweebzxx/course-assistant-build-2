@@ -10,7 +10,7 @@
 
 ## PURPOSE
 
-This document provides a step-by-step setup sequence for initializing a new Course Assistant AI agent build. Follow these prompts in order after uploading the initial Grounded Knowledge Files (course_core.md, course_schedule.md, student_profile.md, and INDEX.json).
+This document provides a step-by-step setup sequence for initializing a new Course Assistant AI agent build. Follow these prompts in order after uploading the initial Grounded Knowledge Files (course-core.md, course-schedule.md, student-profile.md, and INDEX.json).
 
 ---
 
@@ -55,7 +55,7 @@ Do NOT list the section contents, just confirm you can see the structure.
 ```
 
 **Expected Behavior:**
-- Agent lists all three files: course_core.md, course_schedule.md, student_profile.md
+- Agent lists all three files: course-core.md, course-schedule.md, student-profile.md
 - Agent confirms doc_type for each
 - Agent confirms last_updated date for each
 - Agent confirms it can see section structure (counts major sections)
@@ -117,18 +117,18 @@ Do NOT list individual entity details, just provide the counts.
 ```
 I want to test your understanding of the authority hierarchy. Please answer this question:
 
-"If course_schedule.md states Assignment A01 is due Monday, Feb 10, 2026, but a module instruction file states it is due February 12, 2026, which date should you report as the authoritative due date? Explain your reasoning and cite the authority hierarchy."
+"If course-schedule.md states Assignment A01 is due Monday, Feb 10, 2026, but a module instruction file states it is due February 12, 2026, which date should you report as the authoritative due date? Explain your reasoning and cite the authority hierarchy."
 ```
 
 **Expected Behavior:**
-- Agent states course_schedule.md is authoritative (Tier 1 for dates)
+- Agent states course-schedule.md is authoritative (Tier 1 for dates)
 - Agent explains conflict resolution protocol
 - Agent cites the 6-tier authority hierarchy
-- Agent states it would flag the conflict and defer to course_schedule.md
+- Agent states it would flag the conflict and defer to course-schedule.md
 
 **Pass Criteria:**
-- ✅ Agent correctly identifies course_schedule.md as Tier 1 authority for dates
-- ✅ Agent states it would use Feb 10, 2026 (from course_schedule.md)
+- ✅ Agent correctly identifies course-schedule.md as Tier 1 authority for dates
+- ✅ Agent states it would use Feb 10, 2026 (from course-schedule.md)
 - ✅ Agent mentions conflict flagging protocol
 - ✅ Agent cites authority hierarchy
 
@@ -147,9 +147,9 @@ What is the late work policy for this course? Please cite your source using the 
 ```
 
 **Expected Behavior:**
-- Agent retrieves late work policy from course_core.md#late-work-policy (or equivalent section)
+- Agent retrieves late work policy from course-core.md#late-work-policy (or equivalent section)
 - Agent extracts policy exactly as stated (no synthesis)
-- Agent cites source using format: `Source: course_core.md#section-anchor`
+- Agent cites source using format: `Source: course-core.md#section-anchor`
 - If policy not found, agent states "Not found in provided materials"
 
 **Pass Criteria:**
@@ -162,7 +162,7 @@ What is the late work policy for this course? Please cite your source using the 
 - ❌ Agent synthesizes or invents policy
 - ❌ Agent fails to cite source
 - ❌ Agent uses incorrect citation format
-- ❌ Agent cites wrong source (e.g., course_schedule.md for a policy)
+- ❌ Agent cites wrong source (e.g., course-schedule.md for a policy)
 
 ---
 
@@ -174,9 +174,9 @@ When is Assignment A01 due? Include both the date and time, and cite your source
 ```
 
 **Expected Behavior:**
-- Agent retrieves due_date_display, due_date_iso, and due_time from course_schedule.md
+- Agent retrieves due_date_display, due_date_iso, and due_time from course-schedule.md
 - Agent formats response as: `DayOfWeek, Mon DD, YYYY at h:mm AM/PM CT`
-- Agent cites source using format: `Source: course_schedule.md#section-anchor (A01)`
+- Agent cites source using format: `Source: course-schedule.md#section-anchor (A01)`
 - If assignment not found, agent states "Not found in provided materials"
 
 **Pass Criteria:**

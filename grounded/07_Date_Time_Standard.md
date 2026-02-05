@@ -161,7 +161,7 @@ This document defines the mandatory date and time formatting standards for all G
 **Agent Response:**
 ```
 Assignment A03 is due Monday, Feb 10, 2026 at 11:59 PM CT.
-Source: course_schedule.md#assignment-calendar (A03)
+Source: course-schedule.md#assignment-calendar (A03)
 ```
 
 ---
@@ -190,7 +190,7 @@ Source: course_schedule.md#assignment-calendar (A03)
 **Agent Response:**
 ```
 The midterm exam is on Wednesday, Mar 05, 2026 at 2:00 PM CT.
-Source: course_schedule.md#exam-schedule (EXAM-MIDTERM)
+Source: course-schedule.md#exam-schedule (EXAM-MIDTERM)
 ```
 
 ---
@@ -219,7 +219,7 @@ Source: course_schedule.md#exam-schedule (EXAM-MIDTERM)
 **Agent Response:**
 ```
 Module 3 runs from Monday, Feb 03, 2026 to Sunday, Feb 09, 2026.
-Source: course_schedule.md#module-sequence (M03)
+Source: course-schedule.md#module-sequence (M03)
 ```
 
 ---
@@ -277,7 +277,7 @@ Source: course_schedule.md#module-sequence (M03)
 **Agent Response:**
 ```
 Assignment A07 due date: TBD (To Be Determined)
-Source: course_schedule.md#assignment-calendar (A07)
+Source: course-schedule.md#assignment-calendar (A07)
 
 This due date has not been announced yet. Please check Canvas for updates or ask the instructor.
 ```
@@ -303,7 +303,7 @@ This due date has not been announced yet. Please check Canvas for updates or ask
 **Agent Response:**
 ```
 Assignment A05 is due during the week of Feb 03, 2026 (specific date and time TBD).
-Source: course_schedule.md#assignment-calendar (A05)
+Source: course-schedule.md#assignment-calendar (A05)
 ```
 
 **Rule:** Do NOT pick a specific date within the range. State the range and mark specific date as TBD.
@@ -348,7 +348,7 @@ Assignments due this week (Jan 20 - Jan 26):
 - Assignment A02: Due Monday, Jan 20, 2026 at 11:59 PM CT (OVERDUE)
 - Discussion D02: Closes Sunday, Jan 26, 2026 at 11:59 PM CT (DUE TOMORROW)
 
-Source: course_schedule.md#assignment-calendar
+Source: course-schedule.md#assignment-calendar
 ```
 
 **Note:** Agent must know or be told the current date to calculate relative deadlines.
@@ -402,7 +402,7 @@ Source: course_schedule.md#assignment-calendar
 **Agent Response:**
 ```
 Assignment A04 is due Monday, Feb 10, 2026 at 2:00 PM CT (start of class).
-Source: course_schedule.md#assignment-calendar (A04)
+Source: course-schedule.md#assignment-calendar (A04)
 ```
 
 ---
@@ -432,7 +432,7 @@ Source: course_schedule.md#assignment-calendar (A04)
 **Agent Response:**
 ```
 Reading M04-R01 is due before class on Wednesday, Feb 12, 2026 (class starts at 2:00 PM CT).
-Source: course_schedule.md#reading-schedule (M04-R01)
+Source: course-schedule.md#reading-schedule (M04-R01)
 ```
 
 ---
@@ -454,7 +454,7 @@ Source: course_schedule.md#reading-schedule (M04-R01)
 **Agent Response:**
 ```
 Industry Workshop is scheduled for Saturday, Feb 15, 2026 to Sunday, Feb 16, 2026, 9:00 AM to 5:00 PM CT each day (required attendance).
-Source: course_schedule.md#special-events
+Source: course-schedule.md#special-events
 ```
 
 ---
@@ -473,7 +473,7 @@ Assignment A03 due date: Monday, Feb 10, 2026
 
 Days until due: 16 days
 
-Source: course_schedule.md#assignment-calendar (A03)
+Source: course-schedule.md#assignment-calendar (A03)
 ```
 
 ---
@@ -492,7 +492,7 @@ Overdue assignments:
 - Assignment A01: Was due Monday, Jan 13, 2026 at 11:59 PM CT (12 days overdue)
 - Discussion D01: Was due Sunday, Jan 19, 2026 at 11:59 PM CT (6 days overdue)
 
-Source: course_schedule.md#assignment-calendar
+Source: course-schedule.md#assignment-calendar
 ```
 
 ---

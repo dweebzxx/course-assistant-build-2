@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://course-assistant.schema/student_profile.json",
   "title": "Student Profile File Schema",
-  "description": "Schema for student_profile.md Grounded Knowledge File - Contains student identification and comprehensive writing style profile",
+  "description": "Schema for student-profile.md Grounded Knowledge File - Contains student identification and comprehensive writing style profile",
   "type": "object",
   "required": ["metadata", "student_identification"],
   "properties": {

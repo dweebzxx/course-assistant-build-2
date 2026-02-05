@@ -109,15 +109,15 @@
 #### **VALIDATION SCHEMAS - ALL ESSENTIAL**
 
 1. **schema.course_core.json** (6.1K)
-   - **Purpose:** JSON schema for validating course_core.md structure
+   - **Purpose:** JSON schema for validating course-core.md structure
    - **Status:** ✅ KEEP (Essential validation)
 
 2. **schema.course_schedule.json** (7.3K)
-   - **Purpose:** JSON schema for validating course_schedule.md structure
+   - **Purpose:** JSON schema for validating course-schedule.md structure
    - **Status:** ✅ KEEP (Essential validation)
 
 3. **schema.student_profile.json** (6.0K)
-   - **Purpose:** JSON schema for validating student_profile.md structure
+   - **Purpose:** JSON schema for validating student-profile.md structure
    - **Status:** ✅ KEEP (Essential validation)
 
 4. **schema.index_manifest.json** (11K)
@@ -157,15 +157,15 @@
 #### **CORE TEMPLATES - ALL ESSENTIAL**
 
 1. **20_Course_Core_Template.md** (12K)
-   - **Purpose:** Template for creating course_core.md files
+   - **Purpose:** Template for creating course-core.md files
    - **Status:** ✅ KEEP (Essential template)
 
 2. **21_Course_Schedule_Template.md** (7.1K)
-   - **Purpose:** Template for creating course_schedule.md files
+   - **Purpose:** Template for creating course-schedule.md files
    - **Status:** ✅ KEEP (Essential template)
 
 3. **22_Student_Profile_Template.md** (13K)
-   - **Purpose:** Template for creating student_profile.md files
+   - **Purpose:** Template for creating student-profile.md files
    - **Status:** ✅ KEEP (Essential template)
 
 4. **23_Index_Manifest_Template.yaml** (20K)

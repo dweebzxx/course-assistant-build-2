@@ -354,7 +354,7 @@ Recommendation: Use descriptive names, avoid spaces
 **Naming Rule**:
 Pattern: `{course_run_id}_M{NN}_curated.md`
 Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)_M[0-9]{2}_curated\.md$`
-Example: `MKTG6051-2026-SP_M03_curated.md`
+Example: `MKTG6051_M03_curated.md`
 
 **Authority**: Once promoted, curated module content has equal authority to other Grounded Knowledge Files and supersedes Working Memory module files for the curated content.
 
