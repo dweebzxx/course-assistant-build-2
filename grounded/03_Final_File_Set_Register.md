@@ -76,7 +76,7 @@ Example: `MGMT6022_GK_course-core.md`
 
 **Template Filename**: `20_Course_Core_Template.md` (Phase 4 deliverable)
 
-**Schema Filename**: `schema/schema.course_core.json` (Phase 7 deliverable)
+**Schema Filename**: `schema/10_Course_Core_Schema.json` (Phase 7 deliverable)
 
 **Validation Checks**:
 - Required metadata fields present (course_id, term_id, course_run_id, doc_type, last_updated, timezone)
@@ -117,7 +117,7 @@ Example: `MGMT6022_GK_course-schedule.md`
 
 **Template Filename**: `21_Course_Schedule_Template.md` (Phase 4 deliverable)
 
-**Schema Filename**: `schema/schema.course_schedule.json` (Phase 7 deliverable)
+**Schema Filename**: `schema/11_Course_Schedule_Schema.json` (Phase 7 deliverable)
 
 **Validation Checks**:
 - Required metadata fields present
@@ -151,7 +151,7 @@ Example: `MGMT6022_GK_student-profile.md`
 
 **Template Filename**: `22_Student_Profile_Template.md` (Phase 4 deliverable)
 
-**Schema Filename**: `schema/schema.student_profile.json` (Phase 7 deliverable)
+**Schema Filename**: `schema/12_Student_Profile_Schema.json` (Phase 7 deliverable)
 
 **Validation Checks**:
 - Required metadata fields present (course_id, term_id, course_run_id, doc_type, last_updated, timezone, student_name)
@@ -299,7 +299,7 @@ Example: `MKTG6051_M03.manifest.md`
 
 **Template Filename**: `24_Module_Package_Template.md` (Phase 4 deliverable - for module_manifest.md)
 
-**Schema Filename**: `schema/schema.module_package.json` (Phase 7 deliverable - for module_manifest.md)
+**Schema Filename**: `schema/14_Module_Package_Schema.json` (Phase 7 deliverable - for module_manifest.md)
 
 **Validation Checks**:
 

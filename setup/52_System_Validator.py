@@ -141,13 +141,14 @@ class SystemValidator:
         'time_12h': r'^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$'
     }
     
-    # File naming patterns (updated to use new naming convention)
-    # Format: {CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}
+    # File naming patterns (updated per 05_Naming_and_ID_Standard.md)
+    # GK (Grounded Knowledge) files use pattern: {course_id}_GK_{doc-type}.md
+    # Module content files: {CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}
     FILE_NAMING_PATTERNS = {
-        'course_core': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_core\.md$',
-        'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_schedule\.md$',
-        'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.student_profile\.md$',
-        'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.index\.json$',
+        'course_core': r'^[A-Z]{2,10}[0-9]{3,5}_GK_course-core\.md$',
+        'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}_GK_course-schedule\.md$',
+        'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}_GK_student-profile\.md$',
+        'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}_GK_index\.json$',
         'module_manifest': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$',
         'module_folder': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$',
         'module_zip': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$',
@@ -330,8 +331,14 @@ class SystemValidator:
             
         return True
     
-    def validate_referential_integrity(self, index_data: Dict, all_files: Dict[str, Dict]) -> bool:
-        """Validate referential integrity between INDEX and referenced files."""
+    def validate_referential_integrity(self, index_data: Dict, all_files: Dict[str, Dict], index_filename: str = 'GK_index.json') -> bool:
+        """Validate referential integrity between INDEX and referenced files.
+        
+        Args:
+            index_data: The parsed INDEX JSON data
+            all_files: Dictionary of all files and their parsed data
+            index_filename: The actual filename of the index file for error reporting
+        """
         all_valid = True
         
         # Build lookup maps
@@ -370,7 +377,7 @@ class SystemValidator:
             if filename and filename not in all_files:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Referenced file not found: {filename}',
                     f'File ID: {file_id}'
                 )
@@ -387,7 +394,7 @@ class SystemValidator:
             if file_id and file_id not in file_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Section references unknown file_id: {file_id}',
                     f'Section: {section_id}'
                 )
@@ -398,7 +405,7 @@ class SystemValidator:
                 if file_lookup.get(file_id) != filename:
                     self.report.add_error(
                         'REFERENTIAL_INTEGRITY',
-                        'INDEX.json',
+                        index_filename,
                         f'Section filename mismatch',
                         f'Section {section_id}: filename={filename}, but file_id {file_id} maps to {file_lookup.get(file_id)}'
                     )
@@ -408,7 +415,7 @@ class SystemValidator:
             if anchor and not re.match(self.NAMING_PATTERNS['anchor'], anchor):
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Invalid anchor format: {anchor}',
                     f'Section: {section_id}'
                 )
@@ -426,7 +433,7 @@ class SystemValidator:
                     if auth_file and auth_file not in [f.get('filename') for f in index_data.get('files', [])]:
                         self.report.add_error(
                             'REFERENTIAL_INTEGRITY',
-                            'INDEX.json',
+                            index_filename,
                             f'Entity references unknown file: {auth_file}',
                             f'Entity: {entity_id} ({entity_type})'
                         )
@@ -436,7 +443,7 @@ class SystemValidator:
                     if auth_section and auth_section not in section_lookup:
                         self.report.add_error(
                             'REFERENTIAL_INTEGRITY',
-                            'INDEX.json',
+                            index_filename,
                             f'Entity references unknown section: {auth_section}',
                             f'Entity: {entity_id} ({entity_type})'
                         )
@@ -452,7 +459,7 @@ class SystemValidator:
             if from_entity and from_entity not in entity_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference from unknown entity: {from_entity}'
                 )
                 all_valid = False
@@ -460,7 +467,7 @@ class SystemValidator:
             if from_section and from_section not in section_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference from unknown section: {from_section}'
                 )
                 all_valid = False
@@ -468,7 +475,7 @@ class SystemValidator:
             if to_entity and to_entity not in entity_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference to unknown entity: {to_entity}'
                 )
                 all_valid = False
@@ -476,7 +483,7 @@ class SystemValidator:
             if to_section and to_section not in section_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference to unknown section: {to_section}'
                 )
                 all_valid = False
@@ -491,16 +498,16 @@ class SystemValidator:
         if doc_type:
             return doc_type
         
-        # Try to infer from filename
-        if 'course_core' in filename:
+        # Try to infer from filename (updated for GK naming pattern)
+        if 'course-core' in filename or 'course_core' in filename:
             return 'course_core'
-        elif 'course_schedule' in filename:
+        elif 'course-schedule' in filename or 'course_schedule' in filename:
             return 'course_schedule'
-        elif 'student_profile' in filename:
+        elif 'student-profile' in filename or 'student_profile' in filename:
             return 'student_profile'
-        elif 'INDEX' in filename:
+        elif '_GK_index' in filename or 'INDEX' in filename:
             return 'index'
-        elif 'module_manifest' in filename:
+        elif '.manifest' in filename or 'module_manifest' in filename:
             return 'module_manifest'
         
         return None
@@ -531,13 +538,13 @@ class SystemValidator:
                 self.report.add_error('DOC_TYPE', filename, 'Could not detect doc_type')
                 return False
             
-            # Map doc_type to schema
+            # Map doc_type to schema (updated for numbered schema filenames)
             schema_map = {
-                'course_core': 'schema.course_core',
-                'course_schedule': 'schema.course_schedule',
-                'student_profile': 'schema.student_profile',
-                'index': 'schema.index_manifest',
-                'module_manifest': 'schema.module_package'
+                'course_core': '10_Course_Core_Schema',
+                'course_schedule': '11_Course_Schedule_Schema',
+                'student_profile': '12_Student_Profile_Schema',
+                'index': '13_Index_Manifest_Schema',
+                'module_manifest': '14_Module_Package_Schema'
             }
             
             schema_name = schema_map.get(doc_type)
@@ -594,15 +601,16 @@ class SystemValidator:
             self.validate_file(json_file)
         
         # Find INDEX file and validate referential integrity
-        index_files = [f for f in json_files if 'INDEX' in f.name]
+        # Support both old pattern (INDEX.json) and new GK pattern ({course_id}_GK_index.json)
+        index_files = [f for f in json_files if '_GK_index' in f.name or 'INDEX' in f.name]
         if index_files:
             for index_file in index_files:
                 try:
                     with open(index_file, 'r', encoding='utf-8') as f:
                         index_data = json.load(f)
-                    self.validate_referential_integrity(index_data, all_files_data)
+                    self.validate_referential_integrity(index_data, all_files_data, index_file.name)
                 except Exception as e:
-                    self.report.add_error('INDEX', index_file.name, 'Error validating referential integrity', str(e))
+                    self.report.add_error('REFERENTIAL_INTEGRITY', index_file.name, 'Error validating referential integrity', str(e))
         
         return self.report.is_passing()
 
