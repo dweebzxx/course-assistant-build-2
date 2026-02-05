@@ -24,12 +24,13 @@ dist/
 *~
 
 # Course Assistant specific
-*.course_core.md
-*.course_schedule.md
-*.student_profile.md
-*.index.json
+*_GK_course-core.md
+*_GK_course-schedule.md
+*_GK_student-profile.md
+*_GK_index.json
 *_M[0-9][0-9].manifest.md
 !templates/*.md
+!templates/*.json
 !schema/*.json
 
 # Testing and temporary files

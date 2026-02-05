@@ -317,7 +317,7 @@ Example: `MKTG6051_M03.manifest.md`
 1. Student uploads folder or zip when starting module
 2. Student prompts: "Index module {module_id}"
 3. Agent locates module_manifest.md, reads file inventory
-4. Agent updates `{course_run_id}.index.json` with module entries
+4. Agent updates `{course_id}_GK_index.json` with module entries
 5. Agent confirms: "Module {module_id} indexed. X files available."
 
 ---
