@@ -141,13 +141,14 @@ class SystemValidator:
         'time_12h': r'^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$'
     }
     
-    # File naming patterns (updated to use new naming convention)
-    # Format: {CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}
+    # File naming patterns (updated per 05_Naming_and_ID_Standard.md)
+    # GK (Grounded Knowledge) files use pattern: {course_id}_GK_{doc-type}.md
+    # Module content files: {CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}
     FILE_NAMING_PATTERNS = {
-        'course_core': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_core\.md$',
-        'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_schedule\.md$',
-        'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.student_profile\.md$',
-        'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.index\.json$',
+        'course_core': r'^[A-Z]{2,10}[0-9]{3,5}_GK_course-core\.md$',
+        'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}_GK_course-schedule\.md$',
+        'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}_GK_student-profile\.md$',
+        'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}_GK_index\.json$',
         'module_manifest': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$',
         'module_folder': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$',
         'module_zip': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$',
@@ -491,16 +492,16 @@ class SystemValidator:
         if doc_type:
             return doc_type
         
-        # Try to infer from filename
-        if 'course_core' in filename:
+        # Try to infer from filename (updated for GK naming pattern)
+        if 'course-core' in filename or 'course_core' in filename:
             return 'course_core'
-        elif 'course_schedule' in filename:
+        elif 'course-schedule' in filename or 'course_schedule' in filename:
             return 'course_schedule'
-        elif 'student_profile' in filename:
+        elif 'student-profile' in filename or 'student_profile' in filename:
             return 'student_profile'
-        elif 'INDEX' in filename:
+        elif '_GK_index' in filename or 'INDEX' in filename:
             return 'index'
-        elif 'module_manifest' in filename:
+        elif '.manifest' in filename or 'module_manifest' in filename:
             return 'module_manifest'
         
         return None
@@ -531,13 +532,13 @@ class SystemValidator:
                 self.report.add_error('DOC_TYPE', filename, 'Could not detect doc_type')
                 return False
             
-            # Map doc_type to schema
+            # Map doc_type to schema (updated for numbered schema filenames)
             schema_map = {
-                'course_core': 'schema.course_core',
-                'course_schedule': 'schema.course_schedule',
-                'student_profile': 'schema.student_profile',
-                'index': 'schema.index_manifest',
-                'module_manifest': 'schema.module_package'
+                'course_core': '10_Course_Core_Schema',
+                'course_schedule': '11_Course_Schedule_Schema',
+                'student_profile': '12_Student_Profile_Schema',
+                'index': '13_Index_Manifest_Schema',
+                'module_manifest': '14_Module_Package_Schema'
             }
             
             schema_name = schema_map.get(doc_type)

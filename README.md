@@ -31,16 +31,16 @@ Each agent is **single-course, single-term, single-student** focused for maximum
 
 2. **Generate INDEX** (using validation script)
    ```bash
-   python validation/validate_system.py --generate-index
+   python setup/52_System_Validator.py --generate-index
    ```
 
 3. **Validate Files** (using validation script)
    ```bash
-   python validation/validate_system.py --validate-all
+   python setup/52_System_Validator.py --validate-all
    ```
 
 4. **Configure Agent** (using protocols/)
-   - Customize `protocols/41_Agent_Instructions_Revised.md` for your course
+   - Customize `protocols/41_Agent_Instructions.md` for your course
    - Upload the 3 knowledge files + INDEX.json to custom GPT
 
 5. **Verify Setup** (using setup/)
@@ -72,24 +72,22 @@ course-assistant-build-2/
 │   └── 24_Module_Package_Template.md         # Template for module manifests
 │
 ├── schema/                      # JSON schemas for validation
-│   ├── schema.course_core.json               # Validates course-core.md
-│   ├── schema.course_schedule.json           # Validates course-schedule.md
-│   ├── schema.student_profile.json           # Validates student-profile.md
-│   ├── schema.index_manifest.json            # Validates INDEX.json
-│   ├── schema.module_package.json            # Validates module manifests
-│   └── schema.group_project.json             # Validates group project sections
+│   ├── 10_Course_Core_Schema.json             # Validates course-core.md
+│   ├── 11_Course_Schedule_Schema.json         # Validates course-schedule.md
+│   ├── 12_Student_Profile_Schema.json         # Validates student-profile.md
+│   ├── 13_Index_Manifest_Schema.json          # Validates INDEX.json
+│   ├── 14_Module_Package_Schema.json          # Validates module manifests
+│   └── schema.group_project.json              # Validates group project sections
 │
 ├── protocols/                   # Operational protocols
 │   ├── 30_Module_Upload_and_Usage_Protocol.md    # How to upload modules
 │   ├── 40_Retrieval_Protocol.md                  # How agents retrieve info
-│   └── 41_Agent_Instructions_Revised.md          # Agent instruction template
+│   └── 41_Agent_Instructions.md                  # Agent instruction template
 │
 ├── setup/                       # Setup and testing
 │   ├── 50_Setup_Prompt_Sequence.md           # Verification prompts
-│   └── 51_Acceptance_Test_Suite.md           # Comprehensive tests
-│
-└── validation/                  # Validation tools
-    └── validate_system.py                    # Validation script
+│   ├── 51_Acceptance_Test_Suite.md           # Comprehensive tests
+│   └── 52_System_Validator.py                # Validation script
 ```
 
 ---
@@ -154,26 +152,26 @@ See `grounded/05_Naming_and_ID_Standard.md` for complete patterns.
 
 ## 🛠️ Using the Validation Script
 
-The validation script (`validation/validate_system.py`) provides:
+The validation script (`setup/52_System_Validator.py`) provides:
 
 ### Validate All Files
 ```bash
-python validation/validate_system.py --validate-all
+python setup/52_System_Validator.py --validate-all
 ```
 
 ### Validate Specific File
 ```bash
-python validation/validate_system.py --validate-file path/to/file.md
+python setup/52_System_Validator.py --validate-file path/to/file.md
 ```
 
 ### Generate INDEX
 ```bash
-python validation/validate_system.py --generate-index --course-id MGMT6022-2026-SP
+python setup/52_System_Validator.py --generate-index --course-id MGMT6022-2026-SP
 ```
 
 ### Check Naming Conventions
 ```bash
-python validation/validate_system.py --check-naming path/to/files/
+python setup/52_System_Validator.py --check-naming path/to/files/
 ```
 
 See validation script for complete options and usage.
@@ -259,17 +257,17 @@ cp templates/22_Student_Profile_Template.md MGMT6022_GK_student-profile.md
 ### Step 3: Validate and Generate INDEX
 ```bash
 # Validate each file
-python validation/validate_system.py --validate-file MGMT6022_GK_course-core.md
-python validation/validate_system.py --validate-file MGMT6022_GK_course-schedule.md
-python validation/validate_system.py --validate-file MGMT6022_GK_student-profile.md
+python setup/52_System_Validator.py --validate-file MGMT6022_GK_course-core.md
+python setup/52_System_Validator.py --validate-file MGMT6022_GK_course-schedule.md
+python setup/52_System_Validator.py --validate-file MGMT6022_GK_student-profile.md
 
 # Generate INDEX
-python validation/validate_system.py --generate-index --course-id MGMT6022-2026-SP
+python setup/52_System_Validator.py --generate-index --course-id MGMT6022-2026-SP
 ```
 
 ### Step 4: Configure Custom GPT
 1. Create new Custom GPT in ChatGPT
-2. Customize `protocols/41_Agent_Instructions_Revised.md` with course details
+2. Customize `protocols/41_Agent_Instructions.md` with course details
 3. Paste instructions into GPT configuration
 4. Upload 4 files: course-core.md, course-schedule.md, student-profile.md, index.json
 
