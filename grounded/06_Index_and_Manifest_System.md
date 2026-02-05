@@ -127,10 +127,10 @@ Catalog every file in the agent build (both Grounded Knowledge Files and Working
   },
   {
     "file_id": "M03_manifest",
-    "filename": "M03.module_manifest.md",
+    "filename": "MKTG6051_M03.manifest.md",
     "file_type": "module_manifest",
     "doc_type": "module_manifest",
-    "path": "M03/",
+    "path": "MKTG6051_M03/",
     "module_id": "M03",
     "last_updated": "2026-01-15",
     "section_count": 5,
@@ -139,10 +139,10 @@ Catalog every file in the agent build (both Grounded Knowledge Files and Working
   },
   {
     "file_id": "M03_lecture",
-    "filename": "Module_03_Lecture.pptx",
+    "filename": "MKTG6051_M03.L_competitive-strategy.pptx",
     "file_type": "working_memory",
     "doc_type": "lecture_slides",
-    "path": "M03/",
+    "path": "MKTG6051_M03/",
     "module_id": "M03",
     "last_updated": "2026-01-12",
     "section_count": null,
@@ -216,7 +216,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "M03_manifest#overview",
     "file_id": "M03_manifest",
-    "filename": "M03.module_manifest.md",
+    "filename": "MKTG6051_M03.manifest.md",
     "anchor": "#overview",
     "section_title": "Module Overview",
     "section_type": "module_overview",
@@ -265,7 +265,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "module_id": "M03",
       "related_sections": [
         "course_schedule#assignment-calendar",
-        "M03/Assignment_A03_Instructions.pdf"
+        "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf"
       ]
     },
     {
@@ -295,11 +295,11 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "start_date_iso": "2026-02-03",
       "end_date_display": "Sunday, Feb 09, 2026",
       "end_date_iso": "2026-02-09",
-      "module_folder": "M03/",
-      "manifest_file": "M03/M03.module_manifest.md",
+      "module_folder": "MKTG6051_M03/",
+      "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md",
       "related_sections": [
         "course_schedule#module-sequence",
-        "M03/M03.module_manifest.md#overview"
+        "MKTG6051_M03/MKTG6051_M03.manifest.md#overview"
       ]
     }
   ],
@@ -315,7 +315,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "module_id": "M03",
       "related_sections": [
         "course_schedule#reading-schedule",
-        "M03/Reading_Porter_Ch1.pdf"
+        "MKTG6051_M03/MKTG6051_M03.R_porter-ch1.pdf"
       ]
     }
   ],
@@ -369,7 +369,7 @@ Explicitly map relationships between entities and sections for enhanced retrieva
 "cross_references": [
   {
     "from_entity": "A03",
-    "to_section": "M03/Assignment_A03_Instructions.pdf",
+    "to_section": "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf",
     "relationship": "detailed_in"
   },
   {
@@ -523,16 +523,16 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
 
 ```json
 {
-  "file_id": "M05_video",
-  "filename": "Module_05_Lecture_Video.mp4",
+  "file_id": "M05_lecture",
+  "filename": "MKTG6051_M05.L_pricing-strategy.pptx",
   "file_type": "working_memory",
-  "doc_type": "video",
-  "path": "M05/",
+  "doc_type": "lecture_slides",
+  "path": "MKTG6051_M05/",
   "module_id": "M05",
   "last_updated": "2026-02-15",
   "section_count": null,
   "entity_count": null,
-  "size_bytes": 104857600
+  "size_bytes": 2048000
 }
 ```
 
@@ -543,8 +543,8 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
 ```json
 {
   "metadata": {
-    "course_id": "MGMT-5001-SEC01-2025-FA",
-    "term_id": "2025-FA",
+    "course_id": "MKTG6051",
+    "term_id": "2026-SP",
     "doc_type": "index",
     "last_updated": "2026-01-25",
     "timezone": "America/Chicago",
@@ -556,7 +556,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
   "files": [
     {
       "file_id": "course_core",
-      "filename": "MGMT-5001-SEC01-2025-FA.course_core.md",
+      "filename": "MKTG6051-2026-SP.course_core.md",
       "file_type": "grounded_knowledge",
       "doc_type": "course_core",
       "path": "./",
@@ -566,7 +566,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
     },
     {
       "file_id": "course_schedule",
-      "filename": "MGMT-5001-SEC01-2025-FA.course_schedule.md",
+      "filename": "MKTG6051-2026-SP.course_schedule.md",
       "file_type": "grounded_knowledge",
       "doc_type": "course_schedule",
       "path": "./",
@@ -579,7 +579,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
     {
       "section_id": "course_core#grading-policy",
       "file_id": "course_core",
-      "filename": "MGMT-5001-SEC01-2025-FA.course_core.md",
+      "filename": "MKTG6051-2026-SP.course_core.md",
       "anchor": "#grading-policy",
       "section_title": "Grading Policy",
       "section_type": "policy",
@@ -588,7 +588,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
     {
       "section_id": "course_schedule#assignment-calendar",
       "file_id": "course_schedule",
-      "filename": "MGMT-5001-SEC01-2025-FA.course_schedule.md",
+      "filename": "MKTG6051-2026-SP.course_schedule.md",
       "anchor": "#assignment-calendar",
       "section_title": "Assignment Calendar",
       "section_type": "schedule",
@@ -609,7 +609,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
         "module_id": "M03",
         "related_sections": [
           "course_schedule#assignment-calendar",
-          "M03/Assignment_A03_Instructions.pdf"
+          "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf"
         ]
       }
     ],
@@ -624,15 +624,15 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
         "start_date_iso": "2026-02-03",
         "end_date_display": "Sunday, Feb 09, 2026",
         "end_date_iso": "2026-02-09",
-        "module_folder": "M03/",
-        "manifest_file": "M03/M03.module_manifest.md"
+        "module_folder": "MKTG6051_M03/",
+        "manifest_file": "MKTG6051_M03/MKTG6051_M03.manifest.md"
       }
     ]
   },
   "cross_references": [
     {
       "from_entity": "A03",
-      "to_section": "M03/Assignment_A03_Instructions.pdf",
+      "to_section": "MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf",
       "relationship": "detailed_in"
     },
     {

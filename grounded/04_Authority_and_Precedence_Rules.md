@@ -112,7 +112,7 @@ INDEX does NOT override content in Grounded Knowledge Files. It only organizes a
 
 ### TIER 5: Module Manifests (Authoritative for Module Content Inventory)
 
-**File:** `{module_id}.module_manifest.md` (within module packages)
+**File:** `{course_id}_M{NN}.manifest.md` (within module packages)
 
 **Authoritative for:**
 - What files are included in a specific module package
@@ -396,7 +396,7 @@ Source: [module_id]/[filename] (uploaded module content)
 ```
 According to the Module 3 lecture slides, the assignment should include a SWOT analysis.
 
-Source: M03/Module_03_Lecture.pptx (uploaded module content)
+Source: MKTG6051_M03/MKTG6051_M03.L_competitive-strategy.pptx (uploaded module content)
 ```
 
 ### Multi-Source Citations

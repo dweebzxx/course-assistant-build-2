@@ -115,11 +115,12 @@ class ValidationReport:
 class SystemValidator:
     """Main validator for Course Assistant system files."""
     
-    # Naming convention regex patterns
+    # Naming convention regex patterns (updated per new naming standard)
     NAMING_PATTERNS = {
-        'course_id': r'^[A-Z0-9\-]+$',
+        'course_id': r'^[A-Z]{2,10}[0-9]{3,5}$',
         'term_id': r'^(20\d{2})-(FA|SP|SU|WI)$',
-        'module_id': r'^M\d{2}$',
+        'course_run_id': r'^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$',
+        'module_id': r'^(M\d{2}|GK)$',  # Updated to include GK for course-level materials
         'assignment_id': r'^[A-Z]+-?\d{2}(-[A-Z0-9]+)?$',
         'deliverable_id': r'^[A-Z0-9\-]+-DEL\d{2}$',
         'reading_id': r'^(M\d{2}-)?R\d{2}$',
@@ -128,7 +129,9 @@ class SystemValidator:
         'member_id': r'^(Member \d{2}|Josh)$',
         'section_id': r'^[a-z0-9_]+#[a-z0-9\-]+$',
         'file_id': r'^[a-z0-9_]+$',
-        'anchor': r'^#[a-z0-9\-]+$'
+        'anchor': r'^#[a-z0-9\-]+$',
+        # Type codes for module content files
+        'type_code': r'^[ALRB]$'  # A=Assignment, L=Lecture, R=Resource, B=Business case
     }
     
     # Date/time patterns
@@ -138,14 +141,18 @@ class SystemValidator:
         'time_12h': r'^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$'
     }
     
-    # File naming patterns
+    # File naming patterns (updated to use new naming convention)
+    # Format: {CourseID}_M{ModuleNumber}.{TypeCode}_{short-description}.{extension}
     FILE_NAMING_PATTERNS = {
-        'course_core': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_course_core\.md$',
-        'student_profile': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_student_profile\.md$',
-        'index_manifest': r'^[A-Z0-9\-]+_20\d{2}-(FA|SP|SU|WI)_INDEX\.json$',
-        'module_manifest': r'^M\d{2}_module_manifest\.md$',
-        'assignment_record': r'^[A-Z]+-?\d{2}(-[A-Z0-9]+)?_assignment\.md$',
-        'group_project': r'^(GP\d{2}|PROJ-[A-Z0-9\-]+)_project\.md$'
+        'course_core': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_core\.md$',
+        'course_schedule': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.course_schedule\.md$',
+        'student_profile': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.student_profile\.md$',
+        'index_manifest': r'^[A-Z]{2,10}[0-9]{3,5}-20\d{2}-(FA|SP|SU|WI)\.index\.json$',
+        'module_manifest': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$',
+        'module_folder': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$',
+        'module_zip': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$',
+        'module_content': r'^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.[ALRB]_[a-z0-9\-]+\.[a-z]+$',
+        'course_level_gk': r'^[A-Z]{2,10}[0-9]{3,5}_GK_[a-z0-9\-]+\.[a-z]+$'
     }
     
     def __init__(self, base_path: str = "."):
@@ -296,11 +303,10 @@ class SystemValidator:
         # Map doc_type to expected pattern
         pattern_map = {
             'course_core': 'course_core',
+            'course_schedule': 'course_schedule',
             'student_profile': 'student_profile',
             'index': 'index_manifest',
-            'module_manifest': 'module_manifest',
-            'assignment_record': 'assignment_record',
-            'group_project': 'group_project'
+            'module_manifest': 'module_manifest'
         }
         
         if doc_type not in pattern_map:
@@ -488,16 +494,14 @@ class SystemValidator:
         # Try to infer from filename
         if 'course_core' in filename:
             return 'course_core'
+        elif 'course_schedule' in filename:
+            return 'course_schedule'
         elif 'student_profile' in filename:
             return 'student_profile'
         elif 'INDEX' in filename:
             return 'index'
         elif 'module_manifest' in filename:
             return 'module_manifest'
-        elif '_assignment' in filename:
-            return 'assignment_record'
-        elif '_project' in filename:
-            return 'group_project'
         
         return None
     
@@ -529,12 +533,11 @@ class SystemValidator:
             
             # Map doc_type to schema
             schema_map = {
-                'course_core': 'schema.course_knowledge',
-                'student_profile': 'schema.student_knowledge',
+                'course_core': 'schema.course_core',
+                'course_schedule': 'schema.course_schedule',
+                'student_profile': 'schema.student_profile',
                 'index': 'schema.index_manifest',
-                'module_manifest': 'schema.module_package',
-                'assignment_record': 'schema.assignment_record',
-                'group_project': 'schema.group_project'
+                'module_manifest': 'schema.module_package'
             }
             
             schema_name = schema_map.get(doc_type)

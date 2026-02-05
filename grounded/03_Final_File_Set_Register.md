@@ -1,23 +1,49 @@
-# Final File Set Register
+# Final File Set Register - Updated
 **Agent Build Scope**: Single course, single term, single student (Josh)  
 **Register Date**: 2026-01-25  
-**Architecture**: 3-File Grounded Knowledge + INDEX + Working Memory Files  
+**Architecture**: 4-File Grounded Knowledge + INDEX + Working Memory Files  
 **Status**: Definitive specification for Phases 3-8
 
 ---
 
 ## Register Summary
 
-**Total Initial Setup Files**: 4 files  
+**Total Initial Setup Files**: 5 files  
 **Grounded Knowledge Files**: 3 files  
 **Required Index/Manifest Files**: 1 file  
-**Working Memory File Types**: 2 primary types (modules, ad-hoc)
+**Working Memory File Types**: 1 primary type (module packages)
 
-**Final Grounded Knowledge Files Count (N)**: **3**
+**Final Grounded Knowledge Files Count (N)**: **3**  
+**Index Files Count**: **1**  
+**Total Initial Setup Files**: **4**
 
-1. `{course_id}.course_core.md` - Course policies, grading, structure, instructor
-2. `{course_id}.course_schedule.md` - Timeline, due dates, assignments, modules
-3. `{course_id}.student_profile.md` - Student context, preferences, group project
+1. `{course_run_id}.course_core.md` - Course policies, grading, structure, instructor, group project definition (Tier 2)
+2. `{course_run_id}.course_schedule.md` - Timeline, due dates, assignments, modules (Tier 1 - highest authority for dates)
+3. `{course_run_id}.student_profile.md` - Minimal student context (Tier 3)
+4. `{course_run_id}.index.json` - System index for retrieval (Tier 4)
+
+**Global Naming Rule**: All system-controlled files MUST start with `{course_id}`.
+
+---
+
+## REQUIRED IDENTIFIERS (MUST MATCH NAMING STANDARD)
+
+### course_id
+- **Definition**: Course code only (no term, no year, no institution/school names)
+- **Example**: `MGMT6022`
+- **Regex**: `^[A-Z]{2,10}[0-9]{3,5}$`
+- **Explicit non-example**: `CARLSON-SCHOOL` is NOT a course_id
+
+### term_id
+- **Definition**: Academic term identifier
+- **Example**: `2026-SP`
+- **Regex**: `^(20[0-9]{2})-(FA|SP|SU|WI)$`
+
+### course_run_id
+- **Definition**: Course instance for a specific term
+- **Format**: `{course_id}-{term_id}`
+- **Example**: `MGMT6022-2026-SP`
+- **Regex**: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$`
 
 ---
 
@@ -25,38 +51,43 @@
 
 ### File Type 1: Course Core
 
-**Purpose**: Authoritative source for course policies, grading system, structure, and instructor information. Rarely updated after term start.
+**Purpose**: Authoritative source for course policies, grading system, structure, instructor information, and group project definition. Rarely updated after term start.
 
 **File Type**: Markdown (.md)
 
 **Naming Rule**:  
-Pattern: `{course_id}.course_core.md`  
-Regex: `^[A-Z0-9\-]+\.course_core\.md$`  
-Example: `CARLSON-SCHOOL-2025-FA.course_core.md`
+Pattern: `{course_run_id}.course_core.md`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_core\.md$`  
+Example: `MGMT6022-2026-SP.course_core.md`
 
 **Content Outline**:
-1. Metadata block (course_id, term_id, doc_type, last_updated, timezone, source_files)
-2. Course Identification (title, number, credits, section, term dates)
+1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, source_files)
+2. Course Identification (title, number, credits, section label if present, term dates)
 3. Instructor Information (name, title, contact, office hours)
 4. Course Structure (delivery mode, required tools, prerequisites)
 5. Grading Policy (components, weights, scale, calculation method)
 6. Course Policies (attendance, participation, late work, academic integrity, accommodations)
 7. Required Resources (textbooks, software, technology requirements)
 8. Learning Objectives (course-level goals)
-9. Index References (section linking to INDEX entries)
+9. Group Project Context (yes/no, team name, project ID if applicable)
+10. Index References (section linking to INDEX entries)
 
 **Template Filename**: `20_Course_Core_Template.md` (Phase 4 deliverable)
 
 **Schema Filename**: `schema/schema.course_core.json` (Phase 7 deliverable)
 
 **Validation Checks**:
-- Required metadata fields present (course_id, term_id, doc_type, last_updated, timezone)
+- Required metadata fields present (course_id, term_id, course_run_id, doc_type, last_updated, timezone)
 - All section headers match template hierarchy
-- All dates use display_date + iso_date pairs
-- All times use h:mm AM/PM format
 - Grading component weights sum to 100%
 - No personal identifying information (except instructor)
 - All section anchors are unique and follow pattern: `{#section-name}`
+- Group project context is defined (yes/no selection)
+
+**Does NOT contain**:
+- Dates and deadlines (→ course_schedule.md is Tier 1 for all dates)
+- Student-specific context (→ student_profile.md)
+- Module content (→ Working Memory Files)
 
 ---
 
@@ -67,12 +98,12 @@ Example: `CARLSON-SCHOOL-2025-FA.course_core.md`
 **File Type**: Markdown (.md)
 
 **Naming Rule**:  
-Pattern: `{course_id}.course_schedule.md`  
-Regex: `^[A-Z0-9\-]+\.course_schedule\.md$`  
-Example: `CARLSON-SCHOOL-2025-FA.course_schedule.md`
+Pattern: `{course_run_id}.course_schedule.md`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_schedule\.md$`  
+Example: `MGMT6022-2026-SP.course_schedule.md`
 
 **Content Outline**:
-1. Metadata block (course_id, term_id, doc_type, last_updated, timezone, source_files)
+1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, source_files)
 2. Term Calendar (start_date, end_date, key deadlines, holidays, exam periods)
 3. Module Sequence (module_id, title, topics, start_date, end_date, learning_objectives)
 4. Assignment Calendar (assignment_id, title, type, due_date, due_time, points, module_id)
@@ -101,41 +132,44 @@ Example: `CARLSON-SCHOOL-2025-FA.course_schedule.md`
 
 ### File Type 3: Student Profile
 
-**Purpose**: Authoritative source for student context, preferences, constraints, and group project information. Updated as student discovers preferences.
+**Purpose**: Minimal authoritative source for student context. Portable across courses with minimal editing. Contains only: student identification and comprehensive writing style profile.
 
 **File Type**: Markdown (.md)
 
 **Naming Rule**:  
-Pattern: `{course_id}.student_profile.md`  
-Regex: `^[A-Z0-9\-]+\.student_profile\.md$`  
-Example: `CARLSON-SCHOOL-2025-FA.student_profile.md`
+Pattern: `{course_run_id}.student_profile.md`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.student_profile\.md$`  
+Example: `MGMT6022-2026-SP.student_profile.md`
 
 **Content Outline**:
-1. Metadata block (course_id, term_id, doc_type, last_updated, timezone)
-2. Student Core (name: Josh, timezone: America/Chicago)
-3. Learning Preferences (communication style, study approach, note-taking, planning)
-4. Time Constraints (work schedule, other commitments, availability windows)
-5. Technology Profile (access, tools, comfort level)
-6. Writing Style Profile (reference to Writing_Style_Profile_Josh.md or inline summary)
-7. Course Goals (student-specific objectives)
-8. Group Project Context (project_id, role, responsibilities, team structure as Member 01-XX, communication norms, milestone ownership)
-9. Known Challenges (subject areas needing support)
-10. Progress Tracking (optional: completed modules, current focus)
-11. Index References (section linking to INDEX entries)
+1. Metadata block (course_id, term_id, course_run_id, doc_type, last_updated, timezone, student_name)
+2. Student Identification (name: Josh, preferred name, program, year label if desired, timezone)
+3. Writing Style Profile (comprehensive profile including: Quick Reference Card, Voice & Personality, Sentence Structure Rules, Punctuation Rules, Vocabulary & Word Choice, Tone & Confidence, Opening & Closing Patterns, Transitions & Flow, Formatting Preferences, Context-Based Register Variations, Writing Samples, Common Mistakes to Avoid, Implementation Checklist)
+4. Index References (section linking to INDEX entries)
 
 **Template Filename**: `22_Student_Profile_Template.md` (Phase 4 deliverable)
 
 **Schema Filename**: `schema/schema.student_profile.json` (Phase 7 deliverable)
 
 **Validation Checks**:
-- Required metadata fields present
+- Required metadata fields present (course_id, term_id, course_run_id, doc_type, last_updated, timezone, student_name)
 - All section headers match template hierarchy
 - Student name is "Josh" only (first name, no last name)
 - Timezone is "America/Chicago" or "CT"
-- Group project section uses Member 01, Member 02, etc. (no personal names)
-- No email addresses, phone numbers, or personal identifiers for group members
-- All dates use display_date + iso_date pairs where applicable
 - All section anchors unique
+
+**Removed Sections** (moved or deprecated):
+- Course Goals (deprecated - too course-specific)
+- Learning Preferences (deprecated - too variable)
+- Schedule and Constraints (deprecated - too variable)
+- Technology Profile (deprecated - too variable)
+- Progress Tracking (deprecated - too maintenance-heavy)
+- Agent Interaction History (deprecated - not needed)
+- Communication Preferences (deprecated - use writing style instead)
+- Group Project Assignment (moved to course_core.md)
+- Team Structure (removed - simplified group project model)
+- Milestone Ownership (removed - simplified group project model)
+- Known Challenges (removed - not needed)
 
 ---
 
@@ -148,9 +182,9 @@ Example: `CARLSON-SCHOOL-2025-FA.student_profile.md`
 **File Type**: JSON (.json)
 
 **Naming Rule**:  
-Pattern: `{course_id}.index.json`  
-Regex: `^[A-Z0-9\-]+\.index\.json$`  
-Example: `CARLSON-SCHOOL-2025-FA.index.json`
+Pattern: `{course_run_id}.index.json`  
+Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.index\.json$`  
+Example: `MGMT6022-2026-SP.index.json`
 
 **Content Outline**:
 ```json
@@ -158,6 +192,7 @@ Example: `CARLSON-SCHOOL-2025-FA.index.json`
   "index_metadata": {
     "course_id": "string",
     "term_id": "string",
+    "course_run_id": "string",
     "index_version": "string (semantic version)",
     "last_updated": "YYYY-MM-DD",
     "timezone": "America/Chicago"
@@ -207,21 +242,22 @@ Example: `CARLSON-SCHOOL-2025-FA.index.json`
     }
   ]
 }
-```
+````
 
 **Template Filename**: `23_Index_Template.json` (Phase 4 deliverable)
 
 **Schema Filename**: `schema/schema.index.json` (Phase 7 deliverable)
 
 **Validation Checks**:
-- Valid JSON syntax
-- All referenced filenames exist
-- All section_id anchors exist in referenced files
-- No orphan entity_id (every entity must be defined somewhere)
-- No duplicate entity_id within same entity_type
-- All cross_references point to valid filename#section_id combinations
-- All dates use YYYY-MM-DD format
-- Timezone is "America/Chicago"
+
+* Valid JSON syntax
+* All referenced filenames exist
+* All section_id anchors exist in referenced files
+* No orphan entity_id (every entity must be defined somewhere)
+* No duplicate entity_id within same entity_type
+* All cross_references point to valid filename#section_id combinations
+* All dates use YYYY-MM-DD format
+* Timezone is "America/Chicago"
 
 ---
 
@@ -233,18 +269,20 @@ Example: `CARLSON-SCHOOL-2025-FA.index.json`
 
 **File Type**: Folder (directory) or ZIP archive
 
-**Naming Rule**:  
-Folder: `{module_id}/`  
-ZIP: `{module_id}.zip`  
-Regex: `^[A-Z0-9\-]+(/|\.zip)$`  
-Example: `CARLSON-FA25-M03/` or `CARLSON-FA25-M03.zip`
+**Naming Rule (MUST start with course_id)**:
+Folder: `{course_id}_M{NN}/`
+ZIP: `{course_id}_M{NN}.zip`
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}(/|\.zip)$`
+Examples: `MKTG6051_M03/` or `MKTG6051_M03.zip`
 
 **Required Contents**:
-- MUST include: `{module_id}.module_manifest.md` (at root of folder/zip)
-- MAY include: Any number of PDFs, slides, docs, readings, assignment files, subdirectories
+
+* MUST include: `{course_id}_M{NN}.manifest.md` (at root of folder/zip)
+* MAY include: Any number of PDFs, slides, docs, readings, assignment files, subdirectories
 
 **Content Outline** (for module_manifest.md):
-1. Metadata (module_id, module_title, course_id, term_id, last_updated)
+
+1. Metadata (module_id, module_title, course_id, term_id, course_run_id, last_updated)
 2. Module Overview (topics, learning objectives, duration)
 3. File Inventory (table listing all files in package with paths, types, descriptions)
 4. Assignment Links (references to assignment_id in course_schedule.md)
@@ -252,25 +290,32 @@ Example: `CARLSON-FA25-M03/` or `CARLSON-FA25-M03.zip`
 6. Dependencies (prerequisite modules, required prior knowledge)
 7. Notes (instructor notes, known issues, updates)
 
+**Module Manifest Naming Rule**:
+Pattern: `{course_id}_M{NN}.manifest.md`
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$`
+Example: `MKTG6051_M03.manifest.md`
+
 **Template Filename**: `24_Module_Package_Template.md` (Phase 4 deliverable - for module_manifest.md)
 
 **Schema Filename**: `schema/schema.module_package.json` (Phase 7 deliverable - for module_manifest.md)
 
 **Validation Checks**:
-- Module package contains module_manifest.md file
-- Manifest module_id matches package name
-- All files listed in manifest exist in package
-- All files in package are listed in manifest
-- All assignment_id references exist in course_schedule.md
-- All reading_id references exist in course_schedule.md
-- Dates use display_date + iso_date pairs
-- No personal identifying information
+
+* Module package contains module_manifest.md file
+* Manifest module_id matches module_id in package name
+* All files listed in manifest exist in package
+* All files in package are listed in manifest
+* All assignment_id references exist in course_schedule.md
+* All reading_id references exist in course_schedule.md
+* Dates use display_date + iso_date pairs
+* No personal identifying information
 
 **Upload Workflow**:
+
 1. Student uploads folder or zip when starting module
 2. Student prompts: "Index module {module_id}"
 3. Agent locates module_manifest.md, reads file inventory
-4. Agent updates INDEX.json with module entries
+4. Agent updates `{course_run_id}.index.json` with module entries
 5. Agent confirms: "Module {module_id} indexed. X files available."
 
 ---
@@ -281,24 +326,18 @@ Example: `CARLSON-FA25-M03/` or `CARLSON-FA25-M03.zip`
 
 **File Type**: Any (PDF, DOCX, PPTX, TXT, MD, etc.)
 
-**Naming Rule**:  
-No strict pattern (user-chosen filenames acceptable)  
+**Naming Rule**:
+No strict pattern (user-chosen filenames acceptable)
 Recommendation: Use descriptive names, avoid spaces
 
-**Content Outline**: N/A (content is free-form)
-
-**Template Filename**: N/A (not templated)
-
-**Schema Filename**: N/A (not schema-validated)
-
-**Validation Checks**: None (Working Memory Files are not schema-validated)
+**Validation Checks**: None (ad-hoc uploads are not schema-validated)
 
 **Usage**:
-- Student uploads file via chat interface
-- Student asks question referencing file
-- Agent treats as supplementary source (lower authority than Grounded Knowledge Files)
-- Agent may cite: "Based on uploaded file [filename]..."
-- If contradiction with Grounded Knowledge Files, agent flags conflict
+
+* Student uploads file via chat interface
+* Student asks question referencing file
+* Agent treats as supplementary source (lower authority than Grounded Knowledge Files)
+* If contradiction with Grounded Knowledge Files, agent flags conflict
 
 ---
 
@@ -310,26 +349,10 @@ Recommendation: Use descriptive names, avoid spaces
 
 **File Type**: Markdown (.md)
 
-**Naming Rule**:  
-Pattern: `{course_id}.module_{module_id}_curated.md`  
-Regex: `^[A-Z0-9\-]+\.module_[A-Z0-9\-]+_curated\.md$`  
-Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
-
-**Promotion Workflow**:
-1. Student identifies high-value module content
-2. Student requests: "Curate Module {module_id} into Grounded Knowledge"
-3. Agent extracts key content following template structure
-4. Agent generates curated file
-5. User reviews and approves
-6. User uploads curated file as Grounded Knowledge
-7. Agent updates INDEX, marks curated content as authoritative
-8. Original module package remains as Working Memory for completeness
-
-**Template Filename**: `25_Curated_Module_Template.md` (Phase 4 deliverable)
-
-**Schema Filename**: `schema/schema.curated_module.json` (Phase 7 deliverable)
-
-**Validation Checks**: Same as other Grounded Knowledge Files
+**Naming Rule**:
+Pattern: `{course_run_id}_M{NN}_curated.md`
+Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)_M[0-9]{2}_curated\.md$`
+Example: `MKTG6051-2026-SP_M03_curated.md`
 
 **Authority**: Once promoted, curated module content has equal authority to other Grounded Knowledge Files and supersedes Working Memory module files for the curated content.
 
@@ -339,23 +362,11 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 
 ### File Type 8: Agent Instructions
 
-**Purpose**: Custom GPT instruction set governing agent behavior, retrieval protocol, and response formatting.
-
 **File Type**: Markdown (.md)
 
-**Naming Rule**: `AI_Course_Assistant_Instructions_{course_id}.md`
+**Naming Rule**: `AI_Course_Assistant_Instructions_{course_run_id}.md`
 
-**Content Outline**:
-1. Agent identity and role
-2. Scope constraints (single course, single term, single student)
-3. Retrieval protocol (Phase 6 output)
-4. Authority hierarchy (from Phase 2 decision memo)
-5. Citation requirements
-6. Date/time formatting rules
-7. Failure behaviors (what to do when information missing)
-8. Writing style alignment (reference to Writing_Style_Profile_Josh.md)
-
-**Template Filename**: `AI_Course_Assisstant_Instructions_Template.md` (provided as input, revised in Phase 6)
+**Example**: `AI_Course_Assistant_Instructions_MGMT6022-2026-SP.md`
 
 **Usage**: Paste into Custom GPT instructions field (not uploaded as file)
 
@@ -363,151 +374,37 @@ Example: `CARLSON-SCHOOL-2025-FA.module_M03_curated.md`
 
 ### File Type 9: Writing Style Profile
 
-**Purpose**: Documents Josh's writing preferences, tone, and style for assignment support.
-
 **File Type**: Markdown (.md)
 
-**Naming Rule**: `Writing_Style_Profile_Josh.md`
+**Naming Rule (optional alignment)**:
 
-**Content Outline**: See provided input file
+* Preferred: `{course_run_id}.writing_style_profile_josh.md`
+* Example: `MGMT6022-2026-SP.writing_style_profile_josh.md`
 
-**Usage**: May be uploaded as Grounded Knowledge File OR referenced inline in student_profile.md
+**Note**: This may be embedded into student_profile.md instead of existing as a separate file.
 
 ---
 
 ## FILE SET SUMMARY TABLE
 
-| # | File Type | Purpose | File Format | Authority Tier | Initial Setup | Schema Validated |
-|---|-----------|---------|-------------|----------------|---------------|------------------|
-| 1 | Course Core | Policies, grading, structure | MD | Tier 2 | Yes | Yes |
-| 2 | Course Schedule | Dates, deadlines, timeline | MD | Tier 1 | Yes | Yes |
-| 3 | Student Profile | Student context, preferences | MD | Tier 3 | Yes | Yes |
-| 4 | Index | Retrieval targeting, integrity | JSON | Tier 4 | Yes (generated) | Yes |
-| 5 | Module Package | Module materials container | Folder/ZIP | Tier 6 | No (as needed) | Manifest only |
-| 6 | Ad-Hoc Files | Supplementary materials | Any | Tier 6 | No (as needed) | No |
-| 7 | Curated Module | Promoted module content | MD | Tier 2 | No (optional) | Yes |
-| 8 | Agent Instructions | Agent behavior rules | MD | N/A (system) | Yes (not uploaded) | No |
-| 9 | Writing Style | Student writing profile | MD | N/A (reference) | Optional | No |
+| # | File Type       | Purpose                                                  | File Format | Authority Tier | Initial Setup   | Schema Validated |
+| - | --------------- | -------------------------------------------------------- | ----------- | -------------- | --------------- | ---------------- |
+| 1 | Course Core     | Policies, grading, structure, group project definition and assignment   | MD          | Tier 2         | Yes             | Yes              |
+| 2 | Course Schedule | Dates, deadlines, timeline (highest authority for dates) | MD          | Tier 1         | Yes             | Yes              |
+| 3 | Student Profile | Student identification and comprehensive writing style profile | MD          | Tier 3         | Yes             | Yes              |
+| 4 | Index           | Retrieval targeting, integrity                           | JSON        | Tier 4         | Yes (generated) | Yes              |
+| 5 | Module Package  | Module materials container                               | Folder/ZIP  | Tier 5         | No (as needed)  | Manifest only    |
 
----
-
-## GROUNDED KNOWLEDGE FILES: FINAL COUNT AND CONTENTS
-
-**Final Grounded Knowledge Files Count (N)**: **3** (initial setup)
-
-**Optional additions**: Curated Module files (0 to N, based on user requests)
-
-### File 1: {course_id}.course_core.md
-
-**Contains**:
-- Course identification (title, number, credits, section, term dates)
-- Instructor information (name, title, contact, office hours)
-- Course structure (delivery mode, tools, prerequisites)
-- Grading policy (components, weights, scale, calculation)
-- Course policies (attendance, late work, academic integrity, accommodations)
-- Required resources (textbooks, software, technology)
-- Learning objectives (course-level goals)
-
-**Does NOT contain**:
-- Dates and deadlines (→ course_schedule.md)
-- Student-specific context (→ student_profile.md)
-- Module content (→ Working Memory Files)
-
----
-
-### File 2: {course_id}.course_schedule.md
-
-**Contains**:
-- Term calendar (start, end, key deadlines, holidays)
-- Module sequence (IDs, titles, topics, date ranges, objectives)
-- Assignment calendar (IDs, titles, types, due dates/times, points, modules)
-- Exam schedule (IDs, types, dates/times, coverage, location)
-- Reading schedule (IDs, modules, sources, pages, due dates)
-- Discussion schedule (IDs, modules, topics, open/close dates)
-- Milestone timeline (IDs, deliverables, due dates, owners)
-
-**Does NOT contain**:
-- Policies and grading rules (→ course_core.md)
-- Assignment detailed requirements (→ Module Working Memory Files or curated assignments)
-- Student preferences (→ student_profile.md)
-
----
-
-### File 3: {course_id}.student_profile.md
-
-**Contains**:
-- Student core (name: Josh, timezone)
-- Learning preferences (communication, study, note-taking, planning)
-- Time constraints (work schedule, commitments, availability)
-- Technology profile (access, tools, comfort)
-- Writing style profile (inline or reference)
-- Course goals (student-specific objectives)
-- Group project context (anonymized team structure, roles, norms, milestones)
-- Known challenges (subject areas needing support)
-- Progress tracking (optional)
-
-**Does NOT contain**:
-- Course policies (→ course_core.md)
-- Due dates (→ course_schedule.md)
-- Personal names of group members (anonymized as Member 01-XX)
-- Module content (→ Working Memory Files)
-
----
-
-## UPDATE TRACKING
-
-**Versioning**: Not required (use last_updated field instead)
-
-**Change Log**: Optional field in each file to document updates
-
-**INDEX Regeneration**: Required after any Grounded Knowledge File update
-
-**Validation**: Run schema validation after every update (Phase 7 validator)
-
----
-
-## COMPLETION CHECKLIST (For Phase 4-8)
-
-**Phase 4 (Templates)**:
-- [ ] 20_Course_Core_Template.md
-- [ ] 21_Course_Schedule_Template.md
-- [ ] 22_Student_Profile_Template.md
-- [ ] 23_Index_Template.json
-- [ ] 24_Module_Package_Template.md (module_manifest.md template)
-- [ ] 25_Curated_Module_Template.md (optional pathway)
-
-**Phase 5 (Module Protocol)**:
-- [ ] Module upload workflow documented
-- [ ] Module indexing protocol documented
-- [ ] Module manifest requirements documented
-
-**Phase 6 (Retrieval Protocol)**:
-- [ ] Section-level retrieval rules
-- [ ] Authority hierarchy enforcement
-- [ ] Citation format requirements
-- [ ] Conflict detection and resolution
-
-**Phase 7 (Schemas)**:
-- [ ] schema/schema.course_core.json
-- [ ] schema/schema.course_schedule.json
-- [ ] schema/schema.student_profile.json
-- [ ] schema/schema.index.json
-- [ ] schema/schema.module_package.json
-- [ ] schema/schema.curated_module.json
-- [ ] validate_system.py
-
-**Phase 8 (Setup and Testing)**:
-- [ ] Setup prompt sequence
-- [ ] Acceptance test suite
-- [ ] Validation report
+**Note**: Assignment details live in course_schedule.md Assignment Calendar. Group project definition and student-specific assignment are both in course_core.md Group Project Context section.
 
 ---
 
 ## REGISTER APPROVAL
 
-**Status**: Definitive specification  
-**Approved by**: Systems Architecture (Phase 2)  
-**Date**: 2026-01-25  
+**Status**: Definitive specification
+**Approved by**: Systems Architecture (Phase 2)
+**Date**: 2026-01-25
+**Updated**: 2026-01-30 (Architecture updates: naming standard alignment, writing profile integration, group project consolidation)
 **Next Phase**: Phase 3 (Naming and ID Standard)
 
 ---

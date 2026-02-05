@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/student_profile.json",
+  "title": "Student Profile File Schema",
+  "description": "Schema for student_profile.md Grounded Knowledge File - Contains student identification and comprehensive writing style profile",
+  "type": "object",
+  "required": ["metadata", "student_identification"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "course_run_id", "doc_type", "last_updated", "timezone"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,10}[0-9]{3,5}$",
+          "description": "Course code only, e.g., MGMT6022"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$",
+          "description": "Academic term identifier"
+        },
+        "course_run_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$",
+          "description": "Course instance identifier: {course_id}-{term_id}"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["student_profile"]
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "student_name": {
+          "type": "string",
+          "pattern": "^Josh$",
+          "description": "Student first name (Josh)"
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "student_identification": {
+      "type": "object",
+      "required": ["first_name"],
+      "properties": {
+        "first_name": {
+          "type": "string",
+          "pattern": "^Josh$",
+          "description": "Student first name (Josh)"
+        },
+        "preferred_name": {
+          "type": "string"
+        },
+        "program": {
+          "type": "string"
+        },
+        "year": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        }
+      }
+    },
+    "writing_style_profile": {
+      "type": "object",
+      "description": "Comprehensive writing style profile for AI assistance",
+      "properties": {
+        "quick_reference": {
+          "type": "object",
+          "properties": {
+            "core_voice_summary": {
+              "type": "string"
+            },
+            "sentence_distribution": {
+              "type": "object",
+              "properties": {
+                "short_percentage": { "type": "number" },
+                "medium_percentage": { "type": "number" },
+                "long_percentage": { "type": "number" }
+              }
+            },
+            "do_nots": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "always_do": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "voice_and_personality": {
+          "type": "object",
+          "properties": {
+            "overall_character": { "type": "string" },
+            "emotional_tone": { "type": "string" },
+            "relationship_to_reader": { "type": "string" },
+            "authenticity_markers": { "type": "string" }
+          }
+        },
+        "sentence_structure": {
+          "type": "object",
+          "properties": {
+            "active_voice_percentage": { "type": "number" },
+            "passive_voice_percentage": { "type": "number" },
+            "sentence_variety_patterns": { "type": "string" }
+          }
+        },
+        "punctuation_rules": {
+          "type": "object",
+          "properties": {
+            "do_use": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "do_not_use": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "vocabulary": {
+          "type": "object",
+          "properties": {
+            "lexical_diversity_level": { "type": "string" },
+            "signature_words": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "words_to_avoid": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "formality_spectrum": { "type": "string" }
+          }
+        },
+        "tone_and_confidence": {
+          "type": "object",
+          "properties": {
+            "confidence_level": { "type": "string" },
+            "hedging_patterns": { "type": "string" },
+            "first_person_usage": { "type": "string" }
+          }
+        },
+        "formatting_preferences": {
+          "type": "object",
+          "properties": {
+            "paragraph_length": { "type": "string" },
+            "use_of_lists": { "type": "string" },
+            "headers_and_subheaders": { "type": "string" }
+          }
+        },
+        "context_variations": {
+          "type": "object",
+          "properties": {
+            "academic_formal": { "type": "object" },
+            "professional_business": { "type": "object" },
+            "casual_personal": { "type": "object" }
+          }
+        },
+        "writing_samples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "context": { "type": "string" },
+              "sample_text": { "type": "string" },
+              "annotations": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

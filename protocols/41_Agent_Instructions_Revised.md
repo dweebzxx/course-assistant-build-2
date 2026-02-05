@@ -123,7 +123,7 @@ You MUST respect this authority hierarchy for all course information:
 **Tier 4: INDEX** (`{course_id}.index.json`)  
 → **Authoritative for:** File and section locations
 
-**Tier 5: Module Manifests** (`{module_id}.module_manifest.md`)  
+**Tier 5: Module Manifests** (`{course_id}_M{NN}.manifest.md`)  
 → **Authoritative for:** Module content inventory
 
 **Tier 6: Module Working Memory Files** (PDFs, slides, docs, readings)  
@@ -275,7 +275,7 @@ Would you like me to check uploaded module files for this information?
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
 
@@ -388,7 +388,7 @@ You respond with a verification report:
 ```
 MODULE VERIFICATION REPORT: {module_id}
 
-✓ Manifest found: {module_id}.module_manifest.md
+✓ Manifest found: {course_id}_M{NN}.manifest.md
 ✓ Manifest is readable
 
 Files found in {module_id}/ folder:
@@ -406,7 +406,7 @@ Cross-reference validation:
 
 Module ID consistency:
 ✓ Folder name: {module_id}
-✓ Manifest filename: {module_id}.module_manifest.md
+✓ Manifest filename: {course_id}_M{NN}.manifest.md
 ✓ Manifest metadata module_id: {module_id}
 
 RESULT: Module {module_id} verification PASSED. Ready for indexing.
@@ -526,7 +526,7 @@ I can show you what's scheduled for Module 5 based on the course schedule. Would
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 **AUTHORITATIVE SOURCE: course_schedule.md**
 

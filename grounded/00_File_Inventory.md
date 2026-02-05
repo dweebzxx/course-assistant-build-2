@@ -58,14 +58,16 @@ These materials demonstrate structure patterns and inform template design but ar
 
 ### Observed Architecture (from illustrative examples)
 
-**Grounded Knowledge Files Pattern (2-file system)**:
-1. `{course_id}.course_knowledge.md` - Contains course policies, schedule, assignments, grading
-2. `{course_id}.student_knowledge.md` - Contains student profile, preferences, constraints, group project details
+**Grounded Knowledge Files Pattern (4-file system)**:
+1. `{course_id}.course_core.md` - Contains course policies, grading, structure, group project definition (Tier 2)
+2. `{course_id}.course_schedule.md` - Contains all dates, deadlines, assignment calendar (Tier 1 - highest authority for dates)
+3. `{course_id}.student_profile.md` - Contains minimal student context: identification, writing style, group project assignment, known challenges (Tier 3)
+4. `{course_id}.index.json` - Machine-parseable index for retrieval (Tier 4)
 
 **Working Memory Files Pattern**:
 - Module folders uploaded as needed (evidenced by tree structure)
-- Original PDF syllabi as reference
-- Assignment materials, readings, slides within module packages
+- Module manifest required (`{course_id}_M{NN}.manifest.md`)
+- Allowed file types: .md, .txt, .csv, .xlsx, .pdf only
 
 **Agent Instructions**:
 - Template exists at `AI_Course_Assisstant_Instructions_Template.md`

@@ -136,7 +136,7 @@ If a module file states a different date than `course_schedule.md`:
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
 
@@ -180,7 +180,7 @@ This due date has not been announced yet. Please check Canvas for updates or ask
 - Brief description (if available)
 
 **Step 4:** Check `related_sections` for detailed instruction files in module packages.
-- Example: `M03/Assignment_A03_Instructions.pdf`
+- Example: `MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf`
 
 **Step 5:** Retrieve detailed requirements from the module instruction file.
 
@@ -216,8 +216,8 @@ Assignment A03: Marketing Strategy Analysis
 
 **Sources:**
 - course_schedule.md#assignment-calendar (A03) [dates and basic info]
-- M03/Assignment_A03_Instructions.pdf [detailed requirements]
-- M03/Assignment_A03_Rubric.pdf [grading criteria]
+- MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf [detailed requirements]
+- MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-rubric.pdf [grading criteria]
 
 Would you like help with any specific section of this assignment?
 ```
@@ -372,10 +372,10 @@ For now, I can show you all upcoming deadlines. Would you like to see that inste
 - `manifest_file`
 
 **Step 3:** Retrieve module overview from the module manifest:
-- `{module_id}.module_manifest.md#overview`
+- `{course_id}_M{NN}.manifest.md#overview`
 
 **Step 4:** Retrieve file inventory from the module manifest:
-- `{module_id}.module_manifest.md#file-inventory`
+- `{course_id}_M{NN}.manifest.md#file-inventory`
 
 **Step 5:** Cross-reference with INDEX to find assignments, readings, discussions associated with this module.
 
@@ -401,18 +401,18 @@ Source: course_schedule.md#module-sequence (M03)
 - Evaluate strategic positioning options
 - Apply competitive analysis to real-world cases
 
-Source: M03/M03.module_manifest.md#overview
+Source: MKTG6051_M03/MKTG6051_M03.manifest.md#overview
 
 **Module Materials:**
-- Lecture slides: Module_03_Lecture_Slides.pptx (45 slides)
-- Lecture video: Module_03_Lecture_Video.mp4 (90 minutes)
-- Reading: Reading_Porter_Ch1.pdf
-- Assignment instructions: Assignment_A03_Instructions.pdf
-- Assignment rubric: Assignment_A03_Rubric.pdf
+- Lecture slides: MKTG6051_M03.L_competitive-strategy.pptx (45 slides)
+- Lecture video: MKTG6051_M03.L_competitive-strategy-video.mp4 (90 minutes)
+- Reading: MKTG6051_M03.R_porter-ch1.pdf
+- Assignment instructions: MKTG6051_M03.A_strategy-analysis-instructions.pdf
+- Assignment rubric: MKTG6051_M03.A_strategy-analysis-rubric.pdf
 - Discussion prompt: Discussion_D03_Prompt.md
 - Case study: Case_Study_Tesla.pdf
 
-Source: M03/M03.module_manifest.md#file-inventory
+Source: MKTG6051_M03/MKTG6051_M03.manifest.md#file-inventory
 
 **Assignments Due in Module 3:**
 - Assignment A03: Due Monday, Feb 10, 2026 at 11:59 PM CT
@@ -423,7 +423,7 @@ Source: M03/M03.module_manifest.md#file-inventory
 Sources: course_schedule.md#assignment-calendar, course_schedule.md#discussion-schedule
 
 **Estimated Time Commitment:** 8-10 hours
-Source: M03/M03.module_manifest.md#overview
+Source: MKTG6051_M03/MKTG6051_M03.manifest.md#overview
 
 Would you like more details about any specific material?
 ```
@@ -517,7 +517,7 @@ Sources:
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
 
@@ -543,7 +543,7 @@ Note: The module instruction file lists a different date (February 12). If this 
 CONFLICT DETECTED:
 
 course_core.md#late-work-policy states: Late work accepted up to 48 hours with 10% penalty per day
-M02/Assignment_Instructions.pdf states: No late work accepted
+MKTG6051_M02/MKTG6051_M02.A_assignment-instructions.pdf states: No late work accepted
 
 The course_core.md late work policy is the authoritative source unless there has been a course update.
 
@@ -597,7 +597,7 @@ Would you like me to check uploaded module files for this information?
 ```
 The grading rubric for Assignment A03 is available in:
 
-M03/Assignment_A03_Rubric.pdf
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-rubric.pdf
 
 This file is in the uploaded Module 3 package. The rubric includes:
 - Industry analysis (40 points)
@@ -605,7 +605,7 @@ This file is in the uploaded Module 3 package. The rubric includes:
 - Strategic recommendations (20 points)
 - Writing quality and APA formatting (10 points)
 
-Source: M03/Assignment_A03_Rubric.pdf (uploaded module content)
+Source: MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-rubric.pdf (uploaded module content)
 
 Would you like me to explain any specific rubric criteria?
 ```

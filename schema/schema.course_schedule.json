@@ -1,0 +1,231 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://course-assistant.schema/course_schedule.json",
+  "title": "Course Schedule File Schema",
+  "description": "Schema for course_schedule.md Grounded Knowledge File - Tier 1 authority for all dates and deadlines",
+  "type": "object",
+  "required": ["metadata", "term_dates", "module_sequence", "assignment_calendar"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["course_id", "term_id", "course_run_id", "doc_type", "last_updated", "timezone"],
+      "properties": {
+        "course_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,10}[0-9]{3,5}$",
+          "description": "Course code only, e.g., MGMT6022"
+        },
+        "term_id": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(FA|SP|SU|WI)$",
+          "description": "Academic term identifier"
+        },
+        "course_run_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)$",
+          "description": "Course instance identifier: {course_id}-{term_id}"
+        },
+        "doc_type": {
+          "type": "string",
+          "enum": ["course_schedule"],
+          "description": "Document type identifier"
+        },
+        "last_updated": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+          "description": "ISO date of last update (YYYY-MM-DD)"
+        },
+        "timezone": {
+          "type": "string",
+          "description": "IANA timezone name or abbreviation",
+          "examples": ["America/Chicago", "CT"]
+        },
+        "source_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Original source filenames"
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "change"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "term_dates": {
+      "type": "object",
+      "required": ["term_start", "term_end", "classes_begin", "classes_end"],
+      "properties": {
+        "term_start": {
+          "$ref": "#/definitions/date_field"
+        },
+        "term_end": {
+          "$ref": "#/definitions/date_field"
+        },
+        "classes_begin": {
+          "$ref": "#/definitions/date_field"
+        },
+        "classes_end": {
+          "$ref": "#/definitions/date_field"
+        },
+        "finals_period_start": {
+          "$ref": "#/definitions/date_field"
+        },
+        "finals_period_end": {
+          "$ref": "#/definitions/date_field"
+        }
+      }
+    },
+    "class_meeting_schedule": {
+      "type": "object",
+      "description": "Simplified class meeting schedule with day, time, and format",
+      "properties": {
+        "regular_meetings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["day", "time", "format"],
+            "properties": {
+              "day": {
+                "type": "string",
+                "description": "Day of the week"
+              },
+              "time": {
+                "type": "string",
+                "description": "Time range, e.g., '2:00 PM - 3:30 PM'"
+              },
+              "format": {
+                "type": "string",
+                "enum": ["In-person", "Online", "Hybrid"],
+                "description": "Meeting format"
+              }
+            }
+          }
+        }
+      }
+    },
+    "module_sequence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["module_id", "title", "start_date_display", "start_date_iso", "end_date_display", "end_date_iso"],
+        "properties": {
+          "module_id": {
+            "type": "string",
+            "pattern": "^M\\d{2}$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "start_date_display": {
+            "type": "string",
+            "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+          },
+          "start_date_iso": {
+            "type": "string",
+            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "end_date_display": {
+            "type": "string",
+            "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+          },
+          "end_date_iso": {
+            "type": "string",
+            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "topics": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assignment_calendar": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["assignment_id", "title", "type", "due_date_display", "due_date_iso"],
+        "properties": {
+          "assignment_id": {
+            "type": "string",
+            "pattern": "^[A-Z]+-?\\d{2}(-[A-Z0-9]+)?$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["individual", "quiz", "discussion", "exam", "group", "presentation"],
+            "description": "Assignment type"
+          },
+          "module_id": {
+            "type": ["string", "null"],
+            "pattern": "^M\\d{2}$"
+          },
+          "due_date_display": {
+            "type": "string",
+            "pattern": "^((Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})|TBD)$"
+          },
+          "due_date_iso": {
+            "type": ["string", "null"],
+            "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "due_time": {
+            "type": ["string", "null"],
+            "pattern": "^(1[0-2]|[1-9]):[0-5][0-9] (AM|PM)$"
+          },
+          "points": {
+            "type": ["number", "null"],
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "office_hours_schedule": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string",
+            "enum": ["In-person", "Online", "Hybrid"]
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "date_field": {
+      "type": "object",
+      "required": ["display_date", "iso_date"],
+      "properties": {
+        "display_date": {
+          "type": "string",
+          "pattern": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (0[1-9]|[12][0-9]|3[01]), (20\\d{2})$"
+        },
+        "iso_date": {
+          "type": "string",
+          "pattern": "^(20\\d{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        }
+      }
+    }
+  }
+}
