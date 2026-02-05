@@ -1,0 +1,9 @@
+[
+  {
+    "_error": "GET https://canvas.umn.edu/api/v1/courses/544898/pages failed: 404 {\"message\":\"That page has been disabled for this course\"}",
+    "_url": "https://canvas.umn.edu/api/v1/courses/544898/pages",
+    "_params": {
+      "sort": "title"
+    }
+  }
+]

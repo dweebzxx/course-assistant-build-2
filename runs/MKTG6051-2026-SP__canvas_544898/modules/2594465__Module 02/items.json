@@ -1,0 +1,81 @@
+[
+  {
+    "id": 15738869,
+    "position": 1,
+    "title": "Module 02: Qualitative Research and Survey Research Part I",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "Page",
+    "module_id": 2594465,
+    "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738869",
+    "page_url": "module-02-qualitative-research-and-survey-research-part-i",
+    "publish_at": null,
+    "url": "https://canvas.umn.edu/api/v1/courses/544898/pages/module-02-qualitative-research-and-survey-research-part-i"
+  },
+  {
+    "id": 15738870,
+    "position": 2,
+    "title": "Lecture PowerPoints",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2594465
+  },
+  {
+    "id": 16289234,
+    "position": 4,
+    "title": "Wee2a_Qualitative Research.pptx",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "File",
+    "module_id": 2594465,
+    "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16289234",
+    "content_id": 59303203,
+    "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59303203"
+  },
+  {
+    "id": 16296120,
+    "position": 7,
+    "title": "Week2b_Survey Research.pptx",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "File",
+    "module_id": 2594465,
+    "html_url": "https://canvas.umn.edu/courses/544898/modules/items/16296120",
+    "content_id": 59368554,
+    "url": "https://canvas.umn.edu/api/v1/courses/544898/files/59368554"
+  },
+  {
+    "id": 15738879,
+    "position": 12,
+    "title": "Activities",
+    "indent": 0,
+    "quiz_lti": false,
+    "type": "SubHeader",
+    "module_id": 2594465
+  },
+  {
+    "id": 15738880,
+    "position": 13,
+    "title": "Quiz - Qualitative Research",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "Quiz",
+    "module_id": 2594465,
+    "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738880",
+    "content_id": 1132488,
+    "url": "https://canvas.umn.edu/api/v1/courses/544898/quizzes/1132488"
+  },
+  {
+    "id": 15738881,
+    "position": 14,
+    "title": "Group Research - Define research question and company",
+    "indent": 1,
+    "quiz_lti": false,
+    "type": "Assignment",
+    "module_id": 2594465,
+    "html_url": "https://canvas.umn.edu/courses/544898/modules/items/15738881",
+    "content_id": 5038768,
+    "url": "https://canvas.umn.edu/api/v1/courses/544898/assignments/5038768"
+  }
+]

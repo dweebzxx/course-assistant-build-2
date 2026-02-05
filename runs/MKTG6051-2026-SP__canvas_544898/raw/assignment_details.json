@@ -1,0 +1,1458 @@
+[
+  {
+    "id": 5038765,
+    "position": 1,
+    "points_possible": 13.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:29Z",
+    "updated_at": "2026-01-26T23:30:15Z",
+    "due_at": "2026-02-23T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": "2026-03-09T04:59:00Z",
+    "unlock_at": "2026-02-16T06:00:00Z",
+    "assignment_group_id": 1057508,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "lock_info": {
+      "unlock_at": "2026-02-16T06:00:00Z",
+      "asset_string": "assignment_5038765"
+    },
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjQ2Y2MwNDZkLTQ2NzAtNDcxNC1iMjJiLTViNzAzNmUzZWIxNyJ9.XbOObtDaBiSaedOQ0wt51iEP_V53Jrb7hlAQ7kAEAU4",
+    "lti_context_id": "46cc046d-4670-4714-b22b-5b7036e3eb17",
+    "course_id": 544898,
+    "name": "Quiz – Data Cleaning and Descriptive Statistics",
+    "submission_types": [
+      "online_quiz"
+    ],
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": true,
+    "can_duplicate": false,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "description": null,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038765",
+    "quiz_id": 1132487,
+    "anonymous_submissions": false,
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": true,
+    "lock_explanation": "This assignment is locked until Feb 16 at 12am.",
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/quizzes/1132487/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038764,
+    "position": 2,
+    "description": "<p>This quiz is different from the rest of the quizzes we'll have this term in that I'm primarily looking for your opinions. I will ask you some questions about the group project. Don't start the quiz until after you've had a chance to review the syllabus and group project guidelines. You'll have 30 minutes to complete the quiz, but you can probably complete it much faster.</p>",
+    "points_possible": 1.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:28Z",
+    "updated_at": "2026-01-20T06:00:20Z",
+    "due_at": "2026-01-24T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": "2026-01-20T06:00:00Z",
+    "assignment_group_id": 1057508,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6ImFjZTkwYTJmLTZlMGYtNGQ1My05MzhiLTMxNzdjNzQ1MjhlZSIsImx0aV9hc3NpZ25tZW50X2Rlc2NyaXB0aW9uIjoiXHUwMDNjcFx1MDAzZVRoaXMgcXVpeiBpcyBkaWZmZXJlbnQgZnJvbSB0aGUgcmVzdCBvZiB0aGUgcXVpenplcyB3ZSdsbCBoYXZlIHRoaXMgdGVybSBpbiB0aGF0IEknbSBwcmltYXJpbHkgbG9va2luZyBmb3IgeW91ciBvcGluaW9ucy4gSSB3aWxsIGFzayB5b3Ugc29tZSBxdWVzdGlvbnMgYWJvdXQgdGhlIGdyb3VwIHByb2plY3QuIERvbid0IHN0YXJ0IHRoZSBxdWl6IHVudGlsIGFmdGVyIHlvdSd2ZSBoYWQgYSBjaGFuY2UgdG8gcmV2aWV3IHRoZSBzeWxsYWJ1cyBhbmQgZ3JvdXAgcHJvamVjdCBndWlkZWxpbmVzLiBZb3UnbGwgaGF2ZSAzMCBtaW51dGVzIHRvIGNvbXBsZXRlIHRoZSBxdWl6LCBidXQgeW91IGNhbiBwcm9iYWJseSBjb21wbGV0ZSBpdCBtdWNoIGZhc3Rlci5cdTAwM2MvcFx1MDAzZSJ9.35wqpKJ0oWRB9CnL55cNWf3-IQMm8mcxdj1pLHJb_SM",
+    "lti_context_id": "ace90a2f-6e0f-4d53-938b-3177c74528ee",
+    "course_id": 544898,
+    "name": "Quiz - Project Background",
+    "submission_types": [
+      "online_quiz"
+    ],
+    "has_submitted_submissions": true,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": true,
+    "is_quiz_assignment": true,
+    "can_duplicate": false,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038764",
+    "quiz_id": 1132486,
+    "anonymous_submissions": false,
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": false,
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/quizzes/1132486/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038766,
+    "position": 3,
+    "description": "<p>Test your knowledge of this week's materials. You have 20 minutes to complete the quiz.</p>",
+    "points_possible": 5.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:30Z",
+    "updated_at": "2026-01-17T22:47:41Z",
+    "due_at": "2026-02-02T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": "2026-03-09T04:59:00Z",
+    "unlock_at": "2026-01-26T06:00:00Z",
+    "assignment_group_id": 1057508,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6Ijg1OGYzMjc0LTA2M2QtNDRmNi05Y2UwLWRlZmRlMDc5YjM1NiIsImx0aV9hc3NpZ25tZW50X2Rlc2NyaXB0aW9uIjoiXHUwMDNjcFx1MDAzZVRlc3QgeW91ciBrbm93bGVkZ2Ugb2YgdGhpcyB3ZWVrJ3MgbWF0ZXJpYWxzLiBZb3UgaGF2ZSAyMCBtaW51dGVzIHRvIGNvbXBsZXRlIHRoZSBxdWl6Llx1MDAzYy9wXHUwMDNlIn0.VAadLgMOQ5Wxart0ISWpA6qKelqbqzvyW_f4e-13bN0",
+    "lti_context_id": "858f3274-063d-44f6-9ce0-defde079b356",
+    "course_id": 544898,
+    "name": "Quiz - Qualitative Research",
+    "submission_types": [
+      "online_quiz"
+    ],
+    "has_submitted_submissions": true,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": true,
+    "is_quiz_assignment": true,
+    "can_duplicate": false,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038766",
+    "quiz_id": 1132488,
+    "anonymous_submissions": false,
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": false,
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/quizzes/1132488/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038762,
+    "position": 4,
+    "description": "<p><span>Test your knowledge of this week's materials. You have 40 minutes to complete the quiz.</span></p>",
+    "points_possible": 7.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:25Z",
+    "updated_at": "2026-02-02T20:07:34Z",
+    "due_at": "2026-02-11T05:59:59Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": "2026-03-09T04:59:59Z",
+    "unlock_at": "2026-02-02T06:00:00Z",
+    "assignment_group_id": 1057508,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjY2NTI1ZDkwLTM4MjMtNGJhZS04MjFjLWJiNjFiN2QwNGMwYiIsImx0aV9hc3NpZ25tZW50X2Rlc2NyaXB0aW9uIjoiXHUwMDNjcFx1MDAzZVx1MDAzY3NwYW5cdTAwM2VUZXN0IHlvdXIga25vd2xlZGdlIG9mIHRoaXMgd2VlaydzIG1hdGVyaWFscy4gWW91IGhhdmUgNDAgbWludXRlcyB0byBjb21wbGV0ZSB0aGUgcXVpei5cdTAwM2Mvc3Bhblx1MDAzZVx1MDAzYy9wXHUwMDNlIn0.mLIA-0M3X0ajPVkv_WJLYMwSq6KbRDJVXwVBOrq46oM",
+    "lti_context_id": "66525d90-3823-4bae-821c-bb61b7d04c0b",
+    "course_id": 544898,
+    "name": "Quiz - Survey Research",
+    "submission_types": [
+      "online_quiz"
+    ],
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": true,
+    "can_duplicate": false,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038762",
+    "quiz_id": 1132484,
+    "anonymous_submissions": false,
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": false,
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/quizzes/1132484/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038761,
+    "position": 6,
+    "points_possible": 8.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:24Z",
+    "updated_at": "2026-01-26T23:30:07Z",
+    "due_at": "2026-03-02T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": "2026-03-09T04:59:00Z",
+    "unlock_at": "2026-02-23T06:00:00Z",
+    "assignment_group_id": 1057508,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "lock_info": {
+      "unlock_at": "2026-02-23T06:00:00Z",
+      "asset_string": "assignment_5038761"
+    },
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjQxMTlhN2FjLWQ1YWItNGYxMy04MTJjLWRjZTM1OTFmYThlYiJ9.v9b5um_J5q4f0dMp4P-8SIBiq_M2jTIcqgKlu4owKXs",
+    "lti_context_id": "4119a7ac-d5ab-4f13-812c-dce3591fa8eb",
+    "course_id": 544898,
+    "name": "Quiz - Linear Regression Analysis",
+    "submission_types": [
+      "online_quiz"
+    ],
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": true,
+    "can_duplicate": false,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "description": null,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038761",
+    "quiz_id": 1132483,
+    "anonymous_submissions": false,
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": true,
+    "lock_explanation": "This assignment is locked until Feb 23 at 12am.",
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/quizzes/1132483/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038768,
+    "position": 1,
+    "description": "<p>Submit a 1-page proposal. Define a problem for the organization of your choice that can be addressed by qualitative and survey research. Make sure the conclusion of the research will lead to actional insights. You will have a chance to revise this problem when you submit future plans.&nbsp;</p>",
+    "points_possible": 5.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:38Z",
+    "updated_at": "2026-02-02T03:51:57Z",
+    "due_at": "2026-02-02T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": "2026-01-20T06:00:00Z",
+    "assignment_group_id": 1057509,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": 97171,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjExMWQxYTc5LTQ3ZjMtNDcwYi04MDkxLWI1ZjUzNTY5ZGM5YiIsImx0aV9hc3NpZ25tZW50X2Rlc2NyaXB0aW9uIjoiXHUwMDNjcFx1MDAzZVN1Ym1pdCBhIDEtcGFnZSBwcm9wb3NhbC4gRGVmaW5lIGEgcHJvYmxlbSBmb3IgdGhlIG9yZ2FuaXphdGlvbiBvZiB5b3VyIGNob2ljZSB0aGF0IGNhbiBiZSBhZGRyZXNzZWQgYnkgcXVhbGl0YXRpdmUgYW5kIHN1cnZleSByZXNlYXJjaC4gTWFrZSBzdXJlIHRoZSBjb25jbHVzaW9uIG9mIHRoZSByZXNlYXJjaCB3aWxsIGxlYWQgdG8gYWN0aW9uYWwgaW5zaWdodHMuIFlvdSB3aWxsIGhhdmUgYSBjaGFuY2UgdG8gcmV2aXNlIHRoaXMgcHJvYmxlbSB3aGVuIHlvdSBzdWJtaXQgZnV0dXJlIHBsYW5zLlx1MDAyNm5ic3A7XHUwMDNjL3BcdTAwM2UifQ.inHg1fGYAC474gQta6IsbwlPRqjq62FPEynJCjy7ePc",
+    "lti_context_id": "111d1a79-47f3-470b-8091-b5f53569dc9b",
+    "course_id": 544898,
+    "name": "Group Research - Define research question and company",
+    "submission_types": [
+      "online_upload"
+    ],
+    "has_submitted_submissions": true,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": true,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038768",
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": false,
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/assignments/5038768/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038770,
+    "position": 2,
+    "description": "<p>Define a problem that is optimally addressed by qualitative research.<span>&nbsp;</span><em><strong>Develop a realistic plan that you will actually execute</strong></em>. Your plan should include:</p>\n<ul>\n<li>Problem definition</li>\n<li>Explanation why your qualitative technique is optimal to address this problem</li>\n<li>Example of findings or results (e.g., quotes, figures, charts)</li>\n<li>Logistics (execution dates, locations, compensation plan if any, plan for pretesting)</li>\n<li>Appendix with research documents (e.g., screener, discussion guide, any other materials)</li>\n</ul>\n<p>You can recruit participants a number of ways. Make sure to justify appropriateness of the sample both for research purposes and practicality.</p>\n<ul>\n<li>Convenience sample - friends/classmates</li>\n<li>Posters - around/off-campus</li>\n<li>Social media advertisement</li>\n<li>Customer observation (store, at home, online)</li>\n<li>etc.</li>\n</ul>",
+    "points_possible": 50.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:39Z",
+    "updated_at": "2026-02-02T03:51:57Z",
+    "due_at": "2026-02-09T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": "2026-01-26T06:00:00Z",
+    "assignment_group_id": 1057509,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": 97171,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjM3OTY1NzZmLWJhZjktNGVlYi1hNzdlLThkYmM5YzJmMDcxNSIsImx0aV9hc3NpZ25tZW50X2Rlc2NyaXB0aW9uIjoiXHUwMDNjcFx1MDAzZURlZmluZSBhIHByb2JsZW0gdGhhdCBpcyBvcHRpbWFsbHkgYWRkcmVzc2VkIGJ5IHF1YWxpdGF0aXZlIHJlc2VhcmNoLlx1MDAzY3NwYW5cdTAwM2VcdTAwMjZuYnNwO1x1MDAzYy9zcGFuXHUwMDNlXHUwMDNjZW1cdTAwM2VcdTAwM2NzdHJvbmdcdTAwM2VEZXZlbG9wIGEgcmVhbGlzdGljIHBsYW4gdGhhdCB5b3Ugd2lsbCBhY3R1YWxseSBleGVjdXRlXHUwMDNjL3N0cm9uZ1x1MDAzZVx1MDAzYy9lbVx1MDAzZS4gWW91ciBwbGFuIHNob3VsZCBpbmNsdWRlOlx1MDAzYy9wXHUwMDNlXG5cdTAwM2N1bFx1MDAzZVxuXHUwMDNjbGlcdTAwM2VQcm9ibGVtIGRlZmluaXRpb25cdTAwM2MvbGlcdTAwM2Vcblx1MDAzY2xpXHUwMDNlRXhwbGFuYXRpb24gd2h5IHlvdXIgcXVhbGl0YXRpdmUgdGVjaG5pcXVlIGlzIG9wdGltYWwgdG8gYWRkcmVzcyB0aGlzIHByb2JsZW1cdTAwM2MvbGlcdTAwM2Vcblx1MDAzY2xpXHUwMDNlRXhhbXBsZSBvZiBmaW5kaW5ncyBvciByZXN1bHRzIChlLmcuLCBxdW90ZXMsIGZpZ3VyZXMsIGNoYXJ0cylcdTAwM2MvbGlcdTAwM2Vcblx1MDAzY2xpXHUwMDNlTG9naXN0aWNzIChleGVjdXRpb24gZGF0ZXMsIGxvY2F0aW9ucywgY29tcGVuc2F0aW9uIHBsYW4gaWYgYW55LCBwbGFuIGZvciBwcmV0ZXN0aW5nKVx1MDAzYy9saVx1MDAzZVxuXHUwMDNjbGlcdTAwM2VBcHBlbmRpeCB3aXRoIHJlc2VhcmNoIGRvY3VtZW50cyAoZS5nLiwgc2NyZWVuZXIsIGRpc2N1c3Npb24gZ3VpZGUsIGFueSBvdGhlciBtYXRlcmlhbHMpXHUwMDNjL2xpXHUwMDNlXG5cdTAwM2MvdWxcdTAwM2Vcblx1MDAzY3BcdTAwM2VZb3UgY2FuIHJlY3J1aXQgcGFydGljaXBhbnRzIGEgbnVtYmVyIG9mIHdheXMuIE1ha2Ugc3VyZSB0byBqdXN0aWZ5IGFwcHJvcHJpYXRlbmVzcyBvZiB0aGUgc2FtcGxlIGJvdGggZm9yIHJlc2VhcmNoIHB1cnBvc2VzIGFuZCBwcmFjdGljYWxpdHkuXHUwMDNjL3BcdTAwM2Vcblx1MDAzY3VsXHUwMDNlXG5cdTAwM2NsaVx1MDAzZUNvbnZlbmllbmNlIHNhbXBsZSAtIGZyaWVuZHMvY2xhc3NtYXRlc1x1MDAzYy9saVx1MDAzZVxuXHUwMDNjbGlcdTAwM2VQb3N0ZXJzIC0gYXJvdW5kL29mZi1jYW1wdXNcdTAwM2MvbGlcdTAwM2Vcblx1MDAzY2xpXHUwMDNlU29jaWFsIG1lZGlhIGFkdmVydGlzZW1lbnRcdTAwM2MvbGlcdTAwM2Vcblx1MDAzY2xpXHUwMDNlQ3VzdG9tZXIgb2JzZXJ2YXRpb24gKHN0b3JlLCBhdCBob21lLCBvbmxpbmUpXHUwMDNjL2xpXHUwMDNlXG5cdTAwM2NsaVx1MDAzZWV0Yy5cdTAwM2MvbGlcdTAwM2Vcblx1MDAzYy91bFx1MDAzZSJ9.3deotsFgbuvQaw9u73oY8f1HEtSk61bkDalhMj0i2eA",
+    "lti_context_id": "3796576f-baf9-4eeb-a77e-8dbc9c2f0715",
+    "course_id": 544898,
+    "name": "Group Research - Qualitative Research Plan",
+    "submission_types": [
+      "online_upload"
+    ],
+    "has_submitted_submissions": true,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038770",
+    "use_rubric_for_grading": false,
+    "free_form_criterion_comments": false,
+    "rubric": [
+      {
+        "id": "_5243",
+        "points": 10.0,
+        "description": "Problem Definition",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "blank",
+            "points": 10.0,
+            "description": "Excellent",
+            "long_description": "Clearly defines a specific problem, expertly outlining its relevance and scope for qualitative research"
+          },
+          {
+            "id": "_8958",
+            "points": 8.0,
+            "description": "Good",
+            "long_description": "Adequately defines a problem, with a clear scope suitable for qualitative research"
+          },
+          {
+            "id": "_1530",
+            "points": 5.0,
+            "description": "Satisfactory",
+            "long_description": "Defines a problem, but scope could be better aligned with qualitative research"
+          },
+          {
+            "id": "_9783",
+            "points": 3.0,
+            "description": "Needs Improvement",
+            "long_description": "The problem is defined but lacks clarity or relevance to qualitative research"
+          },
+          {
+            "id": "blank_2",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "The problem is not clearly defined or unsuitable for qualitative research"
+          }
+        ]
+      },
+      {
+        "id": "_1549",
+        "points": 5.0,
+        "description": "Technique Justification",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_7768",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Provides a compelling justification for the chosen qualitative technique, with evidence or literature support"
+          },
+          {
+            "id": "_6674",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Provides a clear justification for the chosen technique, with some evidence support"
+          },
+          {
+            "id": "_1023",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Justification for the technique is provided but lacks depth or evidence"
+          },
+          {
+            "id": "_2755",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Provides weak justification for the chosen technique with little to no evidence support"
+          },
+          {
+            "id": "_1523",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Does not provide a justification for the chosen technique"
+          }
+        ]
+      },
+      {
+        "id": "_8419",
+        "points": 5.0,
+        "description": "Example of Findings/Results",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_5351",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Offers detailed, hypothetical examples of findings with rich quotes, figures, and charts demonstrating depth and insight"
+          },
+          {
+            "id": "_8220",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Provides clear examples of findings with relevant quotes, figures, and charts"
+          },
+          {
+            "id": "_7305",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Provides some examples of findings, but they lack depth or relevance"
+          },
+          {
+            "id": "_3435",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Examples provided are minimal and do not effectively demonstrate potential findings"
+          },
+          {
+            "id": "_5184",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "No examples or irrelevant examples provided"
+          }
+        ]
+      },
+      {
+        "id": "_5563",
+        "points": 5.0,
+        "description": "Logistics",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_3279",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Plan is exceptionally detailed with feasible execution dates, locations, and a comprehensive compensation plan. Includes an effective pretesting strategy"
+          },
+          {
+            "id": "_8094",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Plan is well-developed with clear logistics, reasonable dates, locations, and a clear compensation plan. Pretesting is planned"
+          },
+          {
+            "id": "_8829",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Logistics are outlined but lack detail in certain areas such as dates, locations, compensation, or pretesting"
+          },
+          {
+            "id": "_9412",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Logistics such as dates, locations, or compensation are vague or poorly planned. Pretesting is not adequately considered"
+          },
+          {
+            "id": "_5208",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Logistics are missing or completely unrealistic. No consideration for pretesting"
+          }
+        ]
+      },
+      {
+        "id": "_1914",
+        "points": 5.0,
+        "description": "Appendix - Screener",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_2654",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Appendix includes a professional, well-designed screener, thoroughly prepared and relevant"
+          },
+          {
+            "id": "_7457",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Appendix includes a screener that is clear and functional but may lack some detail"
+          },
+          {
+            "id": "_8813",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Appendix includes a screener; however, it is basic and could be more detailed"
+          },
+          {
+            "id": "_4340",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Appendix screener is present but poorly designed or not fully functional"
+          },
+          {
+            "id": "_1631",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Appendix is missing a screener or provided screener is unusable"
+          }
+        ]
+      },
+      {
+        "id": "_9442",
+        "points": 5.0,
+        "description": "Appendix - Discussion Guide/Other Materials",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_7889",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Appendix includes a comprehensive discussion guide with additional materials, all of which are highly relevant and professional"
+          },
+          {
+            "id": "_3328",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Adequately defines a problem, with a clear scope suitable for qualitative research"
+          },
+          {
+            "id": "_5476",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Defines a problem, but scope could be better aligned with qualitative research"
+          },
+          {
+            "id": "_5730",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Appendix includes discussion guides or materials but they are poorly prepared and lack relevance"
+          },
+          {
+            "id": "_8125",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Appendix is missing discussion guides or materials or what is provided is irrelevant or unusable"
+          }
+        ]
+      },
+      {
+        "id": "_7050",
+        "points": 5.0,
+        "description": "Sample Justification and Appropriateness",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_4457",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Justifies the sampling method with a robust argument, aligning perfectly with research needs and practicality"
+          },
+          {
+            "id": "_3266",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Sample is well-justified with a good explanation connecting it to research needs and practical concerns"
+          },
+          {
+            "id": "_7999",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Sample justification is satisfactory; however, the connection to research practicality needs strengthening"
+          },
+          {
+            "id": "_4305",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Sample is somewhat justified but the explanation is weak and lacks practical relevance"
+          },
+          {
+            "id": "_518",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "No justification provided for the sample or it is inappropriate for the research"
+          }
+        ]
+      },
+      {
+        "id": "_2885",
+        "points": 5.0,
+        "description": "Recruitment Strategy",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_4088",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "Recruitment methods are diverse, well-justified, and perfectly suited to the research problem. Ethical considerations are addressed"
+          },
+          {
+            "id": "_8931",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "Recruitment methods are appropriate with a good justification and consideration for ethics"
+          },
+          {
+            "id": "_629",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "Recruitment methods are adequate, but the strategy or ethical considerations could be enhanced"
+          },
+          {
+            "id": "_3398",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "Recruitment methods are poorly chosen with limited justification and minimal ethical consideration"
+          },
+          {
+            "id": "_9282",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Recruitment methods are inappropriate with no justification or ethical consideration"
+          }
+        ]
+      },
+      {
+        "id": "_6182",
+        "points": 5.0,
+        "description": "Overall Quality and Feasibility",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_2398",
+            "points": 5.0,
+            "description": "Excellent",
+            "long_description": "The research plan is outstanding in quality, with feasibility clearly established through a thoughtful, well-structured approach"
+          },
+          {
+            "id": "_9165",
+            "points": 4.0,
+            "description": "Good",
+            "long_description": "The research plan is of good quality and generally feasible, with minor areas for improvement"
+          },
+          {
+            "id": "_354",
+            "points": 3.0,
+            "description": "Satisfactory",
+            "long_description": "The research plan is acceptable, with some issues in quality or feasibility that need addressing"
+          },
+          {
+            "id": "_498",
+            "points": 2.0,
+            "description": "Needs Improvement",
+            "long_description": "The research plan has significant issues in quality or feasibility, requiring considerable revision"
+          },
+          {
+            "id": "_1630",
+            "points": 1.0,
+            "description": "Needs considerable improvement",
+            "long_description": "The research plan is of poor quality and not feasible, requiring complete restructuring"
+          }
+        ]
+      }
+    ],
+    "rubric_settings": {
+      "id": 519115,
+      "title": "Qual Rubric",
+      "points_possible": 50.0,
+      "free_form_criterion_comments": false,
+      "hide_score_total": false,
+      "hide_points": false
+    },
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": false,
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/assignments/5038770/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038771,
+    "position": 3,
+    "points_possible": 50.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:40Z",
+    "updated_at": "2026-02-02T06:00:15Z",
+    "due_at": "2026-02-16T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": "2026-02-02T06:00:00Z",
+    "assignment_group_id": 1057509,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": 97171,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "lock_info": {
+      "asset_string": "assignment_5038771",
+      "context_module": {
+        "id": 2594467,
+        "name": "Module 04",
+        "context_type": "Course",
+        "context_id": 544898,
+        "workflow_state": "unpublished",
+        "unlock_at": null
+      }
+    },
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjA2YjU5YmViLTI3MTgtNDRiOS1iNzUzLTUyNWViYTdiNGQxNyJ9.eIPWGI8IMADq0tLG3rc0vg1und24qqObK9CbUj_ARoY",
+    "lti_context_id": "06b59beb-2718-44b9-b753-525eba7b4d17",
+    "course_id": 544898,
+    "name": "Group Research - Survey Research Plan",
+    "submission_types": [
+      "online_upload"
+    ],
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "description": null,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038771",
+    "use_rubric_for_grading": false,
+    "free_form_criterion_comments": false,
+    "rubric": [
+      {
+        "id": "_7150",
+        "points": 10.0,
+        "description": "Problem Definition",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "blank",
+            "points": 10.0,
+            "description": "Excellent",
+            "long_description": "Clearly and specifically defines a problem, showing deep understanding of how it can be addressed by a survey"
+          },
+          {
+            "id": "_6288",
+            "points": 8.0,
+            "description": "Good",
+            "long_description": "Defines a problem with good understanding and scope for a survey approach"
+          },
+          {
+            "id": "_6481",
+            "points": 6.0,
+            "description": "Satisfactory",
+            "long_description": "Defines a problem suitable for a survey but with less precision in understanding or scope"
+          },
+          {
+            "id": "_8414",
+            "points": 4.0,
+            "description": "Needs Improvement",
+            "long_description": "The problem definition is vague and only partially suited for survey research"
+          },
+          {
+            "id": "blank_2",
+            "points": 2.0,
+            "description": "Needs considerable improvement",
+            "long_description": "The problem is poorly defined and unsuitable for a survey approach"
+          }
+        ]
+      },
+      {
+        "id": "_4982",
+        "points": 10.0,
+        "description": "Survey optimal explanation",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_5826",
+            "points": 10.0,
+            "description": "Excellent",
+            "long_description": "Provides strong rationale for the suitability of surveys"
+          },
+          {
+            "id": "_7946",
+            "points": 8.0,
+            "description": "Good",
+            "long_description": "Gives a clear explanation for choosing surveys"
+          },
+          {
+            "id": "_3435",
+            "points": 6.0,
+            "description": "Satisfactory",
+            "long_description": "Offers an adequate explanation for surveys"
+          },
+          {
+            "id": "_8526",
+            "points": 4.0,
+            "description": "Needs Improvement",
+            "long_description": "Explanation for survey choice is provided but lacks depth"
+          },
+          {
+            "id": "_8403",
+            "points": 2.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Fails to explain why surveys are chosen"
+          }
+        ]
+      },
+      {
+        "id": "_3966",
+        "points": 10.0,
+        "description": "Sample output",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_4903",
+            "points": 10.0,
+            "description": "Excellent",
+            "long_description": "Presents detailed, well-thought-out sample outputs with detailed charts and statistical analyses to illustrate potential findings"
+          },
+          {
+            "id": "_4204",
+            "points": 8.0,
+            "description": "Good",
+            "long_description": "Provides clear sample outputs with relevant charts and basic statistical analyses"
+          },
+          {
+            "id": "_3887",
+            "points": 6.0,
+            "description": "Satisfactory",
+            "long_description": "Sample outputs are provided but lack detail in charts and analyses"
+          },
+          {
+            "id": "_7653",
+            "points": 4.0,
+            "description": "Needs Improvement",
+            "long_description": "Sample outputs are minimal, lacking in clarity or relevance to illustrate potential findings"
+          },
+          {
+            "id": "_7905",
+            "points": 2.0,
+            "description": "Needs considerable improvement",
+            "long_description": "No sample outputs provided or what is given is incorrect or irrelevant"
+          }
+        ]
+      },
+      {
+        "id": "_7527",
+        "points": 10.0,
+        "description": "Logistics",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_5694",
+            "points": 10.0,
+            "description": "Excellent",
+            "long_description": "Plan includes comprehensive logistics with specific dates, chosen platform, detailed sample population, and compensation plan with a pretest strategy"
+          },
+          {
+            "id": "_6611",
+            "points": 8.0,
+            "description": "Good",
+            "long_description": "Plan outlines clear logistics with dates, platform choice, and sample population with a basic compensation and pretest plan"
+          },
+          {
+            "id": "_3526",
+            "points": 6.0,
+            "description": "Satisfactory",
+            "long_description": "Logistics are present but lack detail in dates, platform choice, or compensation; pretesting plan is underdeveloped"
+          },
+          {
+            "id": "_728",
+            "points": 4.0,
+            "description": "Needs Improvement",
+            "long_description": "Logistics are vague with insufficient details on critical elements and a weak pretesting plan"
+          },
+          {
+            "id": "_4233",
+            "points": 2.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Logistics are missing, unrealistic, or have no pretesting plan"
+          }
+        ]
+      },
+      {
+        "id": "_4421",
+        "points": 10.0,
+        "description": "Appendix - Research Documents",
+        "long_description": null,
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_2965",
+            "points": 10.0,
+            "description": "Excellent",
+            "long_description": "Provides full access to research documents including a comprehensive Qualtrics survey and other materials with professional preparation"
+          },
+          {
+            "id": "_2624",
+            "points": 8.0,
+            "description": "Good",
+            "long_description": "Provides access to all necessary research documents with good preparation, though some may lack detail"
+          },
+          {
+            "id": "_3786",
+            "points": 6.0,
+            "description": "Satisfactory",
+            "long_description": "Provides some research documents but they may be incomplete or lack professional preparation"
+          },
+          {
+            "id": "_9720",
+            "points": 4.0,
+            "description": "Needs Improvement",
+            "long_description": "Appendix includes research documents but they are poorly prepared or lack relevance"
+          },
+          {
+            "id": "_7179",
+            "points": 2.0,
+            "description": "Needs considerable improvement",
+            "long_description": "Appendix is missing critical research documents or what is provided is irrelevant or unusable"
+          }
+        ]
+      }
+    ],
+    "rubric_settings": {
+      "id": 519116,
+      "title": "Survey Plan Rubric",
+      "points_possible": 50.0,
+      "free_form_criterion_comments": false,
+      "hide_score_total": false,
+      "hide_points": false
+    },
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": true,
+    "lock_explanation": "This assignment is part of an unpublished module and is not available yet.",
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/assignments/5038771/submissions?zip=1",
+    "post_manually": false,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038769,
+    "position": 1,
+    "points_possible": 60.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:39Z",
+    "updated_at": "2026-02-02T03:51:57Z",
+    "due_at": "2026-03-08T05:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": "2026-01-20T06:00:00Z",
+    "assignment_group_id": 1057510,
+    "peer_reviews": true,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": true,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": 97171,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "lock_info": {
+      "asset_string": "assignment_5038769",
+      "context_module": {
+        "id": 2594470,
+        "name": "Module 07",
+        "context_type": "Course",
+        "context_id": 544898,
+        "workflow_state": "unpublished",
+        "unlock_at": null
+      }
+    },
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6ImJhYjcwZDIzLWEyZDItNDgyZS1hYTI2LTAxOGFmNWNkZjliMyJ9.y5TN8scIB95x5eyfZbwYBc69ac8suC0AZX9soM9c4m4",
+    "lti_context_id": "bab70d23-a2d2-482e-aa26-018af5cdf9b3",
+    "course_id": 544898,
+    "name": "Group Research - Final Project",
+    "submission_types": [
+      "online_upload"
+    ],
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "description": null,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038769",
+    "peer_review_count": 1,
+    "peer_reviews_assign_at": null,
+    "use_rubric_for_grading": false,
+    "free_form_criterion_comments": true,
+    "rubric": [
+      {
+        "id": "_6273",
+        "points": 10.0,
+        "description": "Problem Definition(s)",
+        "long_description": "Problem definitions should be clear, address an important problem, and lead to actionable insights.",
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "blank",
+            "points": 10.0,
+            "description": "Full Marks",
+            "long_description": ""
+          },
+          {
+            "id": "blank_2",
+            "points": 0.0,
+            "description": "No Marks",
+            "long_description": ""
+          }
+        ]
+      },
+      {
+        "id": "_2728",
+        "points": 10.0,
+        "description": "Qualitative Methods",
+        "long_description": "The study should be properly designed. It should answer the question(s) in the problem definition. Execution should be strong (given appropriate class-related constraints). Analyses appropriate and reporting insightful. The main text and appendix should have enough details so readers understand the details of the research project.",
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_2735",
+            "points": 10.0,
+            "description": "Full Marks",
+            "long_description": ""
+          },
+          {
+            "id": "_8319",
+            "points": 0.0,
+            "description": "No Marks",
+            "long_description": ""
+          }
+        ]
+      },
+      {
+        "id": "_7428",
+        "points": 10.0,
+        "description": "Survey Methods",
+        "long_description": "The study should be properly designed. It should answer the question(s) in the problem definition. Execution should be strong (given appropriate class-related constraints). Analyses appropriate and reporting insightful. Statistics should be listed in the main text or appendix as appropriate. The main text and appendix should have enough details so readers understand the details of the research project.",
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_3076",
+            "points": 10.0,
+            "description": "Full Marks",
+            "long_description": ""
+          },
+          {
+            "id": "_4685",
+            "points": 0.0,
+            "description": "No Marks",
+            "long_description": ""
+          }
+        ]
+      },
+      {
+        "id": "_7604",
+        "points": 10.0,
+        "description": "Recommendations and Limitations",
+        "long_description": "Recommendations should primarily flow from the evidence given in the research topics. Limitations of methods or findings should be discussed.",
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_5497",
+            "points": 10.0,
+            "description": "Full Marks",
+            "long_description": ""
+          },
+          {
+            "id": "_2849",
+            "points": 0.0,
+            "description": "No Marks",
+            "long_description": ""
+          }
+        ]
+      },
+      {
+        "id": "_4200",
+        "points": 10.0,
+        "description": "Appendix",
+        "long_description": "Enough details should be provided in the appendix so readers understand research methods and analyses.",
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_9163",
+            "points": 10.0,
+            "description": "Full Marks",
+            "long_description": ""
+          },
+          {
+            "id": "_3034",
+            "points": 0.0,
+            "description": "No Marks",
+            "long_description": ""
+          }
+        ]
+      },
+      {
+        "id": "_9817",
+        "points": 10.0,
+        "description": "Overall Quality of Communication",
+        "long_description": "The research report should include a clear narrative with conclusions backed by insightful research and analytics. Reporting (e.g., graphs, charts, statistics, quotes, illustrations) should be easy to understand with a focus on the main topics.",
+        "ignore_for_scoring": null,
+        "criterion_use_range": false,
+        "ratings": [
+          {
+            "id": "_1166",
+            "points": 10.0,
+            "description": "Full Marks",
+            "long_description": ""
+          },
+          {
+            "id": "_115",
+            "points": 0.0,
+            "description": "No Marks",
+            "long_description": ""
+          }
+        ]
+      }
+    ],
+    "rubric_settings": {
+      "id": 519114,
+      "title": "Final Project Rubric",
+      "points_possible": 60.0,
+      "free_form_criterion_comments": true,
+      "hide_score_total": false,
+      "hide_points": false
+    },
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": true,
+    "lock_explanation": "This assignment is part of an unpublished module and is not available yet.",
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/assignments/5038769/submissions?zip=1",
+    "post_manually": true,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  },
+  {
+    "id": 5038767,
+    "position": 1,
+    "points_possible": 50.0,
+    "grading_type": "points",
+    "created_at": "2025-12-09T22:41:38Z",
+    "updated_at": "2026-01-27T16:59:56Z",
+    "due_at": "2026-03-12T04:59:00Z",
+    "final_grader_id": null,
+    "grader_count": 0,
+    "graders_anonymous_to_graders": false,
+    "grader_comments_visible_to_graders": true,
+    "grader_names_visible_to_final_grader": true,
+    "lock_at": null,
+    "unlock_at": "2026-01-20T06:00:00Z",
+    "assignment_group_id": 1057511,
+    "peer_reviews": false,
+    "anonymous_peer_reviews": false,
+    "automatic_peer_reviews": false,
+    "intra_group_peer_reviews": false,
+    "post_to_sis": false,
+    "grade_group_students_individually": false,
+    "group_category_id": null,
+    "grading_standard_id": null,
+    "moderated_grading": false,
+    "hide_in_gradebook": false,
+    "omit_from_final_grade": false,
+    "suppress_assignment": false,
+    "anonymous_instructor_annotations": false,
+    "anonymous_grading": false,
+    "allowed_attempts": -1,
+    "annotatable_attachment_id": null,
+    "lock_info": {
+      "asset_string": "assignment_5038767",
+      "context_module": {
+        "id": 2594470,
+        "name": "Module 07",
+        "context_type": "Course",
+        "context_id": 544898,
+        "workflow_state": "unpublished",
+        "unlock_at": null
+      }
+    },
+    "secure_params": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsdGlfYXNzaWdubWVudF9pZCI6IjI4MjE5ZDc4LWE3ZmEtNGRjYi05MzVhLWRkZGNjZTc1YjA3ZCJ9.77eKtSmkfvs1U32GhquaIGA42IDhPyi1feN9FZqzaaY",
+    "lti_context_id": "28219d78-a7fa-4dcb-935a-dddcce75b07d",
+    "course_id": 544898,
+    "name": "Comments on Final Project (Constructive Review)",
+    "submission_types": [
+      "none"
+    ],
+    "has_submitted_submissions": false,
+    "due_date_required": false,
+    "max_name_length": 255,
+    "in_closed_grading_period": false,
+    "graded_submissions_exist": false,
+    "is_quiz_assignment": false,
+    "can_duplicate": true,
+    "original_course_id": null,
+    "original_assignment_id": null,
+    "original_lti_resource_link_id": null,
+    "original_assignment_name": null,
+    "original_quiz_id": null,
+    "workflow_state": "published",
+    "important_dates": false,
+    "description": null,
+    "muted": true,
+    "html_url": "https://canvas.umn.edu/courses/544898/assignments/5038767",
+    "published": true,
+    "only_visible_to_overrides": false,
+    "visible_to_everyone": true,
+    "locked_for_user": true,
+    "lock_explanation": "This assignment is part of an unpublished module and is not available yet.",
+    "submissions_download_url": "https://canvas.umn.edu/courses/544898/assignments/5038767/submissions?zip=1",
+    "post_manually": true,
+    "anonymize_students": false,
+    "new_quizzes_anonymous_participants": false,
+    "require_lockdown_browser": false,
+    "restrict_quantitative_data": false
+  }
+]
