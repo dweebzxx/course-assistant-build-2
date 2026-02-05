@@ -1,11 +1,11 @@
 # Course Core Template
 
-**Filename Pattern:** `{course_run_id}.course_core.md`  
-**Regex:** `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_core\.md$`  
-**Authority Tier:** 2 (Authoritative for policies, grading, structure, group project definition)  
-**Example Filename:** `MGMT6022-2026-SP.course_core.md`
+**Filename Pattern:** `{course_id}_GK_course-core.md`  
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_GK_course-core\.md$`  
+**Authority Tier:** 1 (Highest authority for syllabus, policies, grading, structure, group project)  
+**Example Filename:** `MGMT6022_GK_course-core.md`
 
-**Purpose:** Contains course policies, grading structure, instructor information, and group project definition. Does NOT contain temporal information (dates, deadlines) - see course_schedule.md for all dates.
+**Purpose:** Contains complete course syllabus, policies, grading structure, instructor information, and group project definition. Tier 1 authority - highest priority for all course requirements. Does NOT contain specific dates and deadlines - see course-schedule.md (Tier 2) for all temporal information.
 
 ---
 
@@ -61,6 +61,22 @@
 | Name | Email | Office Hours | Responsibilities |
 |------|-------|--------------|------------------|
 | {TA Name or "None"} | {Email} | {Hours} | {Responsibilities} |
+
+---
+
+## Course Syllabus
+<!-- anchor: #course-syllabus -->
+
+**Syllabus Overview:**
+
+{Include the complete course syllabus content here. This section should contain all syllabus information including course overview, expectations, requirements, and any syllabus-specific policies. This is the authoritative source for syllabus content.}
+
+**Key Syllabus Points:**
+- {Major syllabus point 1}
+- {Major syllabus point 2}
+- {Major syllabus point 3}
+
+**Syllabus Version:** {Version number if applicable, e.g., "v1.0" or "Updated 2026-01-15"}
 
 ---
 

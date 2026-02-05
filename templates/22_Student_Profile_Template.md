@@ -1,13 +1,13 @@
 # Student Profile Template
 
-**Filename Pattern:** `{course_run_id}.student_profile.md`  
-**Regex:** `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.student_profile\.md$`  
+**Filename Pattern:** `{course_id}_GK_student-profile.md`  
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_GK_student-profile\.md$`  
 **Authority Tier:** 3 (Authoritative for student context)  
-**Example Filename:** `MGMT6022-2026-SP.student_profile.md`
+**Example Filename:** `MGMT6022_GK_student-profile.md`
 
 **Purpose:** Captures minimal student-specific context required for personalized agent responses. This file is designed to be portable across courses with minimal editing.
 
-**Constraint:** This file is authoritative for student context ONLY. It may NOT contradict course requirements defined in course_core.md or course_schedule.md.
+**Constraint:** This file is authoritative for student context ONLY. It may NOT contradict course requirements defined in course-core.md or course-schedule.md.
 
 ---
 
