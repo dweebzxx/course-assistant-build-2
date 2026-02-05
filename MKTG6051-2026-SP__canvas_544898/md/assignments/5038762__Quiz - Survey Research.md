@@ -1,1 +1,0 @@
-Test your knowledge of this week's materials. You have 40 minutes to complete the quiz.

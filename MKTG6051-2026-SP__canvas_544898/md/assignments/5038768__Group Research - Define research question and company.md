@@ -1,1 +1,0 @@
-Submit a 1-page proposal. Define a problem for the organization of your choice that can be addressed by qualitative and survey research. Make sure the conclusion of the research will lead to actional insights. You will have a chance to revise this problem when you submit future plans.
