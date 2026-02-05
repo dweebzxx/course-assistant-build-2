@@ -2,9 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://course-assistant.schema/course_core.json",
   "title": "Course Core File Schema",
-  "description": "Schema for course_core.md Grounded Knowledge File - Tier 2 authority for policies, grading, structure, and group project definition",
+  "description": "Schema for course-core.md Grounded Knowledge File - Tier 1 authority (highest) for syllabus, policies, grading, structure, and group project definition. Filename pattern: {course_id}_GK_course-core.md",
   "type": "object",
-  "required": ["metadata", "course_identification", "grading_policy", "course_policies"],
+  "required": ["metadata", "course_identification", "course_syllabus", "grading_policy", "course_policies"],
   "properties": {
     "metadata": {
       "type": "object",
@@ -96,6 +96,27 @@
               "type": "string"
             }
           }
+        }
+      }
+    },
+    "course_syllabus": {
+      "type": "object",
+      "description": "Complete course syllabus content - Tier 1 authoritative source",
+      "properties": {
+        "syllabus_overview": {
+          "type": "string",
+          "description": "Complete syllabus text or summary"
+        },
+        "syllabus_version": {
+          "type": "string",
+          "description": "Version number or date of syllabus"
+        },
+        "key_syllabus_points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Major points from the syllabus"
         }
       }
     },

@@ -1,9 +1,9 @@
 # Course Schedule Template
 
-**Filename Pattern:** `{course_run_id}.course_schedule.md`  
-**Regex:** `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.course_schedule\.md$`  
-**Authority Tier:** 1 (Authoritative for ALL dates, times, and deadlines)  
-**Example Filename:** `MGMT6022-2026-SP.course_schedule.md`
+**Filename Pattern:** `{course_id}_GK_course-schedule.md`  
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_GK_course-schedule\.md$`  
+**Authority Tier:** 2 (Authoritative for all dates, deadlines, and temporal information)  
+**Example Filename:** `MGMT6022_GK_course-schedule.md`
 
 ---
 

@@ -125,39 +125,39 @@ Every file created/managed by this system MUST start with `{course_id}`.
 
 ### Grounded Knowledge Files (GK)
 
-**Pattern:** `{course_run_id}.{doc_type}.md`
+**Pattern:** `{course_id}_GK_{doc-type}.md`
 
-**Allowed doc_type values:**
-- `course_core`
-- `course_schedule`
-- `student_profile`
+**Allowed doc-type values:**
+- `course-core`
+- `course-schedule`
+- `student-profile`
 
 **Regex:**
-`^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.(course_core|course_schedule|student_profile)\.md$`
+`^[A-Z]{2,10}[0-9]{3,5}_GK_(course-core|course-schedule|student-profile)\.md$`
 
 **Examples (valid):**
-- `MGMT6022-2026-SP.course_core.md`
-- `MGMT6022-2026-SP.course_schedule.md`
-- `MGMT6022-2026-SP.student_profile.md`
-- `MKTG6051-2026-SP.course_core.md`
+- `MGMT6022_GK_course-core.md`
+- `MGMT6022_GK_course-schedule.md`
+- `MGMT6022_GK_student-profile.md`
+- `MKTG6051_GK_course-core.md`
 
 **Examples (invalid):**
-- `CARLSON-SCHOOL-2026-SP.course_core.md` (not a course id)
-- `MGMT6022-2026-SP-SEC01.course_core.md` (section not part of this standard)
-- `MGMT6022.course_core.md` (missing term scoping)
+- `CARLSON-SCHOOL_GK_course-core.md` (not a course id)
+- `MGMT6022-2026-SP_GK_course-core.md` (term_id should not be in filename)
+- `MGMT6022_GK_course_core.md` (use hyphens, not underscores in doc-type)
 
 ---
 
 ### INDEX File
 
-**Pattern:** `{course_run_id}.index.json`
+**Pattern:** `{course_id}_GK_index.json`
 
 **Regex:**
-`^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.index\.json$`
+`^[A-Z]{2,10}[0-9]{3,5}_GK_index\.json$`
 
 **Example:**
-- `MGMT6022-2026-SP.index.json`
-- `MKTG6051-2026-SP.index.json`
+- `MGMT6022_GK_index.json`
+- `MKTG6051_GK_index.json`
 
 ---
 
@@ -209,14 +209,14 @@ Every file created/managed by this system MUST start with `{course_id}`.
 
 ### Curated Module File (Optional)
 
-**Pattern:** `{course_run_id}_M{NN}_curated.md`
+**Pattern:** `{course_id}_M{NN}_curated.md`
 
 **Regex:**
-`^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)_M[0-9]{2}_curated\.md$`
+`^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}_curated\.md$`
 
 **Examples:**
-- `MGMT6022-2026-SP_M03_curated.md`
-- `MKTG6051-2026-SP_M05_curated.md`
+- `MGMT6022_M03_curated.md`
+- `MKTG6051_M05_curated.md`
 
 ---
 
@@ -352,11 +352,11 @@ Required fields:
 
 **Format:** `{filename}#{section_id}` or `{filename}#{section_id}({entity_id})`
 
-**Rule:** When referencing course-scoped files, the filename must include `course_run_id` and therefore starts with `course_id`.
+**Rule:** When referencing course-scoped files, filenames use `{course_id}_GK_` prefix.
 
 **Examples:**
-- `MGMT6022-2026-SP.course_core.md#grading-policy`
-- `MGMT6022-2026-SP.course_schedule.md#assignment-calendar(A03)`
+- `MGMT6022_GK_course-core.md#grading-policy`
+- `MGMT6022_GK_course-schedule.md#assignment-calendar(A03)`
 - `MKTG6051_M03/MKTG6051_M03.manifest.md#metadata`
 - `MKTG6051_M02.A_survey-design-instructions.pdf`
 
@@ -370,8 +370,8 @@ Required fields:
 | term_id | `^(20[0-9]{2})-(FA\|SP\|SU\|WI)$` |
 | course_run_id | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)$` |
 | module_id | `^(M[0-9]{2}\|GK)$` |
-| GK filename | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)\.(course_core\|course_schedule\|student_profile)\.md$` |
-| index filename | `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA\|SP\|SU\|WI)\.index\.json$` |
+| GK filename | `^[A-Z]{2,10}[0-9]{3,5}_GK_(course-core\|course-schedule\|student-profile)\.md$` |
+| index filename | `^[A-Z]{2,10}[0-9]{3,5}_GK_index\.json$` |
 | module folder | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$` |
 | module zip | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$` |
 | module manifest | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$` |
@@ -391,10 +391,10 @@ Required fields:
 - `course_run_id`: `MKTG6051-2026-SP`
 
 ### GK files (Grounded Knowledge)
-- `MKTG6051-2026-SP.course_core.md`
-- `MKTG6051-2026-SP.course_schedule.md`
-- `MKTG6051-2026-SP.student_profile.md`
-- `MKTG6051-2026-SP.index.json`
+- `MKTG6051_GK_course-core.md`
+- `MKTG6051_GK_course-schedule.md`
+- `MKTG6051_GK_student-profile.md`
+- `MKTG6051_GK_index.json`
 
 ### Course-Level Materials (GK)
 - `MKTG6051_GK_syllabus.pdf`

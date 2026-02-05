@@ -1,1 +1,38 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Course Assistant specific
+*.course_core.md
+*.course_schedule.md
+*.student_profile.md
+*.index.json
+*_M[0-9][0-9].manifest.md
+!templates/*.md
+!schema/*.json
+
+# Testing and temporary files
+test_output/
+tmp/
+*.tmp

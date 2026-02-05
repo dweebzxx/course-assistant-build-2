@@ -163,7 +163,7 @@ Every module manifest must include the following sections with stable anchor IDs
 - `term_id`: Reference to term
 - `doc_type`: Must be "module_manifest"
 - `last_updated`: ISO date (YYYY-MM-DD)
-- `authoritative_schedule_reference`: Section reference to course_schedule.md where this module is defined
+- `authoritative_schedule_reference`: Section reference to course-schedule.md where this module is defined
 
 **Example:**
 ```markdown
@@ -175,7 +175,7 @@ Every module manifest must include the following sections with stable anchor IDs
 - **Term ID:** 2026-SP
 - **Document Type:** module_manifest
 - **Last Updated:** 2026-01-15
-- **Authoritative Schedule Reference:** course_schedule.md#module-sequence (M03)
+- **Authoritative Schedule Reference:** course-schedule.md#module-sequence (M03)
 ```
 
 #### Section 2: Module Overview
@@ -218,7 +218,7 @@ This module explores competitive strategy frameworks including Porter's Five For
 - **End Date (display):** Sunday, Feb 09, 2026
 - **End Date (ISO):** 2026-02-09
 
-**Note:** These dates are for reference only. Authoritative dates are in `course_schedule.md#module-sequence (M03)`.
+**Note:** These dates are for reference only. Authoritative dates are in `course-schedule.md#module-sequence (M03)`.
 ```
 
 #### Section 4: Prerequisites and Dependencies
@@ -295,16 +295,16 @@ This module explores competitive strategy frameworks including Porter's Five For
 ## Cross-References to Grounded Knowledge Files {#cross-references}
 
 **Assignments:**
-- Assignment A03: `course_schedule.md#assignment-calendar (A03)`
+- Assignment A03: `course-schedule.md#assignment-calendar (A03)`
 
 **Readings:**
-- Reading M03-R01: `course_schedule.md#reading-schedule (M03-R01)`
+- Reading M03-R01: `course-schedule.md#reading-schedule (M03-R01)`
 
 **Discussions:**
-- Discussion D03: `course_schedule.md#discussion-schedule (D03)`
+- Discussion D03: `course-schedule.md#discussion-schedule (D03)`
 
 **Related Course Core Sections:**
-- Learning objectives alignment: `course_core.md#learning-objectives`
+- Learning objectives alignment: `course-core.md#learning-objectives`
 ```
 
 ### Optional Sections
@@ -445,8 +445,8 @@ Inventory check:
 ✅ No extra files found
 
 Cross-reference validation:
-✅ course_schedule.md#assignment-calendar (A03) → Valid
-✅ course_schedule.md#reading-schedule (M03-R01) → Valid
+✅ course-schedule.md#assignment-calendar (A03) → Valid
+✅ course-schedule.md#reading-schedule (M03-R01) → Valid
 
 Module ID consistency:
 ✅ Folder name: M03
@@ -532,7 +532,7 @@ Provide the updated INDEX file.
   "entity_id": "M03",
   "entity_type": "module",
   "title": "Module 3: Competitive Strategy",
-  "authoritative_file": "course_schedule.md",
+  "authoritative_file": "course-schedule.md",
   "authoritative_section": "course_schedule#module-sequence",
   "start_date_display": "Monday, Feb 03, 2026",
   "start_date_iso": "2026-02-03",
@@ -561,11 +561,11 @@ When user asks about an assignment (e.g., "What are the requirements for Assignm
 
 **Step 1: Consult INDEX**
 - Locate assignment entity A03 in `entities.assignments`
-- Extract `authoritative_section` (e.g., `course_schedule.md#assignment-calendar`)
+- Extract `authoritative_section` (e.g., `course-schedule.md#assignment-calendar`)
 - Extract `related_sections` (e.g., `["MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf"]`)
 
 **Step 2: Consult Grounded Knowledge Files FIRST**
-- Retrieve assignment entry from `course_schedule.md#assignment-calendar (A03)`
+- Retrieve assignment entry from `course-schedule.md#assignment-calendar (A03)`
 - Extract: due date, title, module_id, high-level description
 
 **Step 3: Consult Module Files for Detailed Instructions**
@@ -583,7 +583,7 @@ When user asks about an assignment (e.g., "What are the requirements for Assignm
 Assignment A03: Marketing Strategy Analysis
 
 **Due Date:** Monday, Feb 10, 2026 at 11:59 PM CT
-**Source:** course_schedule.md#assignment-calendar (A03)
+**Source:** course-schedule.md#assignment-calendar (A03)
 
 **Requirements (from detailed instructions):**
 - Length: 5-7 pages, double-spaced
@@ -607,26 +607,26 @@ Would you like help with any specific section of this assignment?
 
 ### Handling Contradictions
 
-**Scenario:** Module file states a due date that differs from course_schedule.md.
+**Scenario:** Module file states a due date that differs from course-schedule.md.
 
 **Agent behavior:**
 
 ```
 CONFLICT DETECTED:
 
-course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
+course-schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
 MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
-The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
+The Grounded Knowledge File (course-schedule.md) is the authoritative source for dates.
 
 Assignment A03 is due: Monday, Feb 10, 2026 at 11:59 PM CT
 
-Source: course_schedule.md#assignment-calendar (A03) [AUTHORITATIVE]
+Source: course-schedule.md#assignment-calendar (A03) [AUTHORITATIVE]
 
-Note: The module instruction file lists a different date (February 12). If this is a course update, please update course_schedule.md and regenerate the INDEX.
+Note: The module instruction file lists a different date (February 12). If this is a course update, please update course-schedule.md and regenerate the INDEX.
 ```
 
-**User action required:** User must update course_schedule.md if the date changed, or correct the module file if it contains an error.
+**User action required:** User must update course-schedule.md if the date changed, or correct the module file if it contains an error.
 
 ---
 
@@ -644,7 +644,7 @@ If assignment requirements in module PDFs are updated multiple times per term, c
 3. User adds to agent as Grounded Knowledge File
 4. INDEX is updated to reference curated file as authoritative for requirements
 
-**Example filename:** `MKTG6051-2026-SP_M03_curated.md`
+**Example filename:** `MKTG6051_M03_curated.md`
 
 **Curated file structure:**
 ```markdown
@@ -661,7 +661,7 @@ If assignment requirements in module PDFs are updated multiple times per term, c
 - **Submission Format:** PDF via Canvas
 - **Rubric:** See MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-rubric.pdf
 
-**Authoritative Schedule Reference:** course_schedule.md#assignment-calendar (A03)
+**Authoritative Schedule Reference:** course-schedule.md#assignment-calendar (A03)
 **Detailed Instructions:** MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf (supportive)
 ```
 
@@ -694,7 +694,7 @@ What is in Module 3?
 Module 3: Competitive Strategy (M03)
 
 **Dates:** Monday, Feb 03, 2026 to Sunday, Feb 09, 2026
-Source: course_schedule.md#module-sequence (M03)
+Source: course-schedule.md#module-sequence (M03)
 
 **Learning Objectives:**
 - Analyze industry structure using Porter's Five Forces
@@ -754,7 +754,7 @@ Which modules have been uploaded so far?
 ```
 Module Upload Status:
 
-Based on INDEX and course_schedule.md, here is the module upload status:
+Based on INDEX and course-schedule.md, here is the module upload status:
 
 ✅ Module 1 (M01): Uploaded (folder: MKTG6051_M01/, manifest: MKTG6051_M01.manifest.md)
 ✅ Module 2 (M02): Uploaded (folder: MKTG6051_M02/, manifest: MKTG6051_M02.manifest.md)
@@ -767,7 +767,7 @@ Total modules in course: 12
 Uploaded: 3
 Remaining: 9
 
-Source: INDEX.json, course_schedule.md#module-sequence
+Source: INDEX.json, course-schedule.md#module-sequence
 ```
 
 ---

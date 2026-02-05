@@ -29,19 +29,19 @@ What is the course policy on academic integrity?
 
 **Expected Behavior:**
 1. Agent consults INDEX to locate policy section
-2. Agent retrieves content from `course_core.md#academic-integrity` (or equivalent section)
+2. Agent retrieves content from `course-core.md#academic-integrity` (or equivalent section)
 3. Agent extracts policy exactly as stated (no paraphrasing unless very long)
-4. Agent cites source using format: `Source: course_core.md#section-anchor`
+4. Agent cites source using format: `Source: course-core.md#section-anchor`
 5. If policy not found, agent states "Not found in provided materials" and suggests where to find it
 
 **Required Citation Format:**
 ```
-Source: course_core.md#academic-integrity
+Source: course-core.md#academic-integrity
 ```
 (Or equivalent section anchor)
 
 **Pass Criteria:**
-- ✅ Agent retrieves correct policy text (if present in course_core.md)
+- ✅ Agent retrieves correct policy text (if present in course-core.md)
 - ✅ Agent cites source using exact format: `filename#section-anchor`
 - ✅ Agent does NOT synthesize or invent policy
 - ✅ If missing, agent states "Not found in provided materials"
@@ -49,7 +49,7 @@ Source: course_core.md#academic-integrity
 **Fail Criteria:**
 - ❌ Agent invents or synthesizes policy
 - ❌ Agent fails to cite source
-- ❌ Agent cites incorrect source (e.g., course_schedule.md)
+- ❌ Agent cites incorrect source (e.g., course-schedule.md)
 - ❌ Agent uses incorrect citation format
 
 ---
@@ -65,14 +65,14 @@ How much is the final exam worth in the overall grade?
 
 **Expected Behavior:**
 1. Agent consults INDEX to locate grading policy section
-2. Agent retrieves content from `course_core.md#grading-policy`
+2. Agent retrieves content from `course-core.md#grading-policy`
 3. Agent extracts exact percentage or points for final exam
-4. Agent cites source using format: `Source: course_core.md#grading-policy`
+4. Agent cites source using format: `Source: course-core.md#grading-policy`
 5. If not found, agent states "Not found in provided materials"
 
 **Required Citation Format:**
 ```
-Source: course_core.md#grading-policy
+Source: course-core.md#grading-policy
 ```
 
 **Pass Criteria:**
@@ -99,14 +99,14 @@ When is Assignment A03 due?
 
 **Expected Behavior:**
 1. Agent consults INDEX to locate assignment A03
-2. Agent retrieves `due_date_display`, `due_date_iso`, and `due_time` from `course_schedule.md#assignment-calendar`
+2. Agent retrieves `due_date_display`, `due_date_iso`, and `due_time` from `course-schedule.md#assignment-calendar`
 3. Agent formats response as: `DayOfWeek, Mon DD, YYYY at h:mm AM/PM CT`
-4. Agent cites source using format: `Source: course_schedule.md#assignment-calendar (A03)`
+4. Agent cites source using format: `Source: course-schedule.md#assignment-calendar (A03)`
 5. If not found or TBD, agent states appropriately
 
 **Required Citation Format:**
 ```
-Source: course_schedule.md#assignment-calendar (A03)
+Source: course-schedule.md#assignment-calendar (A03)
 ```
 
 **Pass Criteria:**
@@ -134,13 +134,13 @@ What are the dates for Module 3?
 
 **Expected Behavior:**
 1. Agent consults INDEX to locate module M03
-2. Agent retrieves `start_date_display`, `start_date_iso`, `end_date_display`, `end_date_iso` from `course_schedule.md#module-sequence`
+2. Agent retrieves `start_date_display`, `start_date_iso`, `end_date_display`, `end_date_iso` from `course-schedule.md#module-sequence`
 3. Agent formats response as date range: `DayOfWeek, Mon DD, YYYY to DayOfWeek, Mon DD, YYYY`
-4. Agent cites source using format: `Source: course_schedule.md#module-sequence (M03)`
+4. Agent cites source using format: `Source: course-schedule.md#module-sequence (M03)`
 
 **Required Citation Format:**
 ```
-Source: course_schedule.md#module-sequence (M03)
+Source: course-schedule.md#module-sequence (M03)
 ```
 
 **Pass Criteria:**
@@ -171,13 +171,13 @@ What assignments are due this week?
 2. Agent defines "this week" as current_date to current_date + 7 days
 3. Agent consults INDEX to retrieve all assignments with `due_date_iso` in range
 4. Agent lists assignments with due dates and times
-5. Agent cites source for each assignment: `Source: course_schedule.md#assignment-calendar (entity_id)`
+5. Agent cites source for each assignment: `Source: course-schedule.md#assignment-calendar (entity_id)`
 6. Agent discloses assumption: "Assuming today is Monday, Feb 03, 2026"
 
 **Required Citation Format:**
 ```
-Source: course_schedule.md#assignment-calendar (A03)
-Source: course_schedule.md#discussion-schedule (D03)
+Source: course-schedule.md#assignment-calendar (A03)
+Source: course-schedule.md#discussion-schedule (D03)
 ```
 (One citation per entity)
 
@@ -208,7 +208,7 @@ Do I have any overdue assignments?
 **Expected Behavior:**
 1. Agent determines current date (Feb 10, 2026)
 2. Agent consults INDEX to retrieve all assignments with `due_date_iso < current_date`
-3. Agent checks `student_profile.md#progress-tracking` to see if assignment is marked complete
+3. Agent checks `student-profile.md#progress-tracking` to see if assignment is marked complete
 4. Agent lists any overdue assignments that are NOT marked complete
 5. Agent cites source for each
 6. If progress tracking not maintained, agent states limitation
@@ -216,8 +216,8 @@ Do I have any overdue assignments?
 
 **Required Citation Format:**
 ```
-Source: course_schedule.md#assignment-calendar (A02)
-Source: student_profile.md#progress-tracking
+Source: course-schedule.md#assignment-calendar (A02)
+Source: student-profile.md#progress-tracking
 ```
 
 **Pass Criteria:**
@@ -246,11 +246,11 @@ What are the requirements for Assignment A05?
 
 **Expected Behavior:**
 1. Agent consults INDEX to locate assignment A05
-2. Agent retrieves basic info from `course_schedule.md#assignment-calendar (A05)`: title, due date, points
+2. Agent retrieves basic info from `course-schedule.md#assignment-calendar (A05)`: title, due date, points
 3. Agent checks INDEX for `related_sections` pointing to module files (e.g., `MKTG6051_M05/MKTG6051_M05.A_assignment-05-instructions.pdf`)
 4. Agent retrieves detailed requirements from module instruction file (if available)
 5. Agent synthesizes response:
-   - Due date from course_schedule.md (AUTHORITATIVE)
+   - Due date from course-schedule.md (AUTHORITATIVE)
    - Detailed requirements from module file (SUPPORTIVE)
    - Cites BOTH sources
 6. If detailed requirements not found, agent states "Not found in provided materials" and suggests checking module upload
@@ -258,15 +258,15 @@ What are the requirements for Assignment A05?
 **Required Citation Format:**
 ```
 Sources:
-- course_schedule.md#assignment-calendar (A05) [dates and basic info]
+- course-schedule.md#assignment-calendar (A05) [dates and basic info]
 - MKTG6051_M05/MKTG6051_M05.A_assignment-05-instructions.pdf [detailed requirements]
 ```
 
 **Pass Criteria:**
-- ✅ Agent retrieves due date from course_schedule.md
+- ✅ Agent retrieves due date from course-schedule.md
 - ✅ Agent checks for detailed requirements in module files
 - ✅ Agent cites BOTH sources (schedule + module file)
-- ✅ Agent marks course_schedule.md as authoritative for dates
+- ✅ Agent marks course-schedule.md as authoritative for dates
 - ✅ If detailed requirements missing, agent states clearly and suggests module upload check
 
 **Fail Criteria:**
@@ -290,7 +290,7 @@ I noticed Assignment A03 instructions say it's due February 12, but the course s
 1. Agent recognizes this as a conflict scenario
 2. Agent flags conflict explicitly: "CONFLICT DETECTED:"
 3. Agent reports both sources and their values
-4. Agent states course_schedule.md is authoritative (Tier 1 for dates)
+4. Agent states course-schedule.md is authoritative (Tier 1 for dates)
 5. Agent provides authoritative answer (Feb 10)
 6. Agent suggests user verify with instructor if concerned
 
@@ -298,16 +298,16 @@ I noticed Assignment A03 instructions say it's due February 12, but the course s
 ```
 CONFLICT DETECTED:
 
-course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
+course-schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
 MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
-The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
+The Grounded Knowledge File (course-schedule.md) is the authoritative source for dates.
 
 Assignment A03 is due: Monday, Feb 10, 2026 at 11:59 PM CT
 
-Source: course_schedule.md#assignment-calendar (A03) [AUTHORITATIVE]
+Source: course-schedule.md#assignment-calendar (A03) [AUTHORITATIVE]
 
-Note: The module instruction file lists a different date (February 12). If this is a course update, please verify with the instructor or update course_schedule.md.
+Note: The module instruction file lists a different date (February 12). If this is a course update, please verify with the instructor or update course-schedule.md.
 ```
 
 **Pass Criteria:**
@@ -336,7 +336,7 @@ What is in Module 3?
 
 **Expected Behavior:**
 1. Agent consults INDEX to locate module M03
-2. Agent retrieves module overview from `course_schedule.md#module-sequence (M03)`: dates, title, topics
+2. Agent retrieves module overview from `course-schedule.md#module-sequence (M03)`: dates, title, topics
 3. Agent checks if module files are uploaded (checks INDEX `working_memory_files` section)
 4. If module uploaded:
    - Agent retrieves learning objectives and file inventory from `MKTG6051_M03/MKTG6051_M03.manifest.md`
@@ -349,13 +349,13 @@ What is in Module 3?
 
 **Required Citation Format:**
 ```
-Source: course_schedule.md#module-sequence (M03)
+Source: course-schedule.md#module-sequence (M03)
 Source: MKTG6051_M03/MKTG6051_M03.manifest.md#overview
 Source: MKTG6051_M03/MKTG6051_M03.manifest.md#file-inventory
 ```
 
 **Pass Criteria:**
-- ✅ Agent retrieves module dates and title from course_schedule.md
+- ✅ Agent retrieves module dates and title from course-schedule.md
 - ✅ Agent checks for uploaded module files
 - ✅ If uploaded, agent retrieves learning objectives and file inventory
 - ✅ If not uploaded, agent states limitation and explains upload process
@@ -379,21 +379,21 @@ What is my role in the group project?
 ```
 
 **Expected Behavior:**
-1. Agent consults `student_profile.md#group-project-context`
+1. Agent consults `student-profile.md#group-project-context`
 2. Agent retrieves student role, responsibilities, and team structure
 3. Agent uses anonymized team member labels (Member 01, Member 02, etc.)
-4. Agent cross-references with `course_schedule.md#milestone-timeline` to identify upcoming milestones student owns
+4. Agent cross-references with `course-schedule.md#milestone-timeline` to identify upcoming milestones student owns
 5. Agent cites both sources
 6. Agent does NOT include personal names of other team members
 
 **Required Citation Format:**
 ```
-Source: student_profile.md#group-project-context
-Source: course_schedule.md#milestone-timeline
+Source: student-profile.md#group-project-context
+Source: course-schedule.md#milestone-timeline
 ```
 
 **Pass Criteria:**
-- ✅ Agent retrieves student role from student_profile.md
+- ✅ Agent retrieves student role from student-profile.md
 - ✅ Agent lists responsibilities clearly
 - ✅ Agent uses anonymized team structure (Member 01, etc.)
 - ✅ Agent identifies upcoming milestones student owns
@@ -402,7 +402,7 @@ Source: course_schedule.md#milestone-timeline
 
 **Fail Criteria:**
 - ❌ Agent includes personal names of other team members
-- ❌ Agent fails to cite student_profile.md
+- ❌ Agent fails to cite student-profile.md
 - ❌ Agent does not cross-reference milestones
 - ❌ Agent invents role or responsibilities
 

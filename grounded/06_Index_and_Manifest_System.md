@@ -79,12 +79,12 @@ This document defines the mandatory index and manifest system for the Course Ass
     {
       "date": "2026-01-25",
       "change": "Added Module 5 content",
-      "files_affected": ["M05/", "course_schedule.md"]
+      "files_affected": ["M05/", "course-schedule.md"]
     },
     {
       "date": "2026-01-20",
       "change": "Updated Assignment A03 due date",
-      "files_affected": ["course_schedule.md"]
+      "files_affected": ["course-schedule.md"]
     }
   ],
   "index_generation_date": "2026-01-25T14:30:00-06:00",
@@ -105,7 +105,7 @@ Catalog every file in the agent build (both Grounded Knowledge Files and Working
 "files": [
   {
     "file_id": "course_core",
-    "filename": "MGMT-5001-SEC01-2025-FA.course_core.md",
+    "filename": "MGMT-5001-SEC01-2025-FA.course-core.md",
     "file_type": "grounded_knowledge",
     "doc_type": "course_core",
     "path": "./",
@@ -116,7 +116,7 @@ Catalog every file in the agent build (both Grounded Knowledge Files and Working
   },
   {
     "file_id": "course_schedule",
-    "filename": "MGMT-5001-SEC01-2025-FA.course_schedule.md",
+    "filename": "MGMT-5001-SEC01-2025-FA.course-schedule.md",
     "file_type": "grounded_knowledge",
     "doc_type": "course_schedule",
     "path": "./",
@@ -180,7 +180,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "course_core#metadata",
     "file_id": "course_core",
-    "filename": "MGMT-5001-SEC01-2025-FA.course_core.md",
+    "filename": "MGMT-5001-SEC01-2025-FA.course-core.md",
     "anchor": "#metadata",
     "section_title": "Metadata",
     "section_type": "metadata_block",
@@ -192,7 +192,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "course_core#grading-policy",
     "file_id": "course_core",
-    "filename": "MGMT-5001-SEC01-2025-FA.course_core.md",
+    "filename": "MGMT-5001-SEC01-2025-FA.course-core.md",
     "anchor": "#grading-policy",
     "section_title": "Grading Policy",
     "section_type": "policy",
@@ -204,7 +204,7 @@ Index every retrievable section across all files with stable anchor IDs. This is
   {
     "section_id": "course_schedule#assignment-calendar",
     "file_id": "course_schedule",
-    "filename": "MGMT-5001-SEC01-2025-FA.course_schedule.md",
+    "filename": "MGMT-5001-SEC01-2025-FA.course-schedule.md",
     "anchor": "#assignment-calendar",
     "section_title": "Assignment Calendar",
     "section_type": "schedule",
@@ -257,7 +257,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "A03",
       "entity_type": "assignment",
       "title": "Marketing Strategy Analysis",
-      "authoritative_file": "course_schedule.md",
+      "authoritative_file": "course-schedule.md",
       "authoritative_section": "course_schedule#assignment-calendar",
       "due_date_display": "Monday, Feb 10, 2026",
       "due_date_iso": "2026-02-10",
@@ -272,7 +272,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "EXAM-MIDTERM",
       "entity_type": "exam",
       "title": "Midterm Exam",
-      "authoritative_file": "course_schedule.md",
+      "authoritative_file": "course-schedule.md",
       "authoritative_section": "course_schedule#exam-schedule",
       "due_date_display": "Wednesday, Mar 05, 2026",
       "due_date_iso": "2026-03-05",
@@ -289,7 +289,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "M03",
       "entity_type": "module",
       "title": "Module 3: Competitive Strategy",
-      "authoritative_file": "course_schedule.md",
+      "authoritative_file": "course-schedule.md",
       "authoritative_section": "course_schedule#module-sequence",
       "start_date_display": "Monday, Feb 03, 2026",
       "start_date_iso": "2026-02-03",
@@ -308,7 +308,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "M03-R01",
       "entity_type": "reading",
       "title": "Porter (1980) - Competitive Strategy, Ch. 1",
-      "authoritative_file": "course_schedule.md",
+      "authoritative_file": "course-schedule.md",
       "authoritative_section": "course_schedule#reading-schedule",
       "due_date_display": "Monday, Feb 03, 2026",
       "due_date_iso": "2026-02-03",
@@ -325,7 +325,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "entity_id": "PROJ-FINAL-MS01",
       "entity_type": "milestone",
       "title": "Final Project Milestone 1: Team Formation",
-      "authoritative_file": "course_schedule.md",
+      "authoritative_file": "course-schedule.md",
       "authoritative_section": "course_schedule#milestone-timeline",
       "due_date_display": "Friday, Feb 14, 2026",
       "due_date_iso": "2026-02-14",
@@ -333,7 +333,7 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
       "project_id": "PROJ-FINAL",
       "related_sections": [
         "course_schedule#milestone-timeline",
-        "student_profile.md#group-project-context"
+        "student-profile.md#group-project-context"
       ]
     }
   ]
@@ -443,7 +443,7 @@ For efficiency, the system MAY support partial INDEX updates where only changed 
 
 4. **Cite sources:**
    - Use format: `filename#anchor (entity_id)`
-   - Example: `course_schedule.md#assignment-calendar (A03)`
+   - Example: `course-schedule.md#assignment-calendar (A03)`
 
 5. **If content missing or TBD:**
    - State: "Not found in provided materials"
@@ -488,7 +488,7 @@ For efficiency, the system MAY support partial INDEX updates where only changed 
   "entity_id": "A07",
   "entity_type": "assignment",
   "title": "Final Reflection Essay",
-  "authoritative_file": "course_schedule.md",
+  "authoritative_file": "course-schedule.md",
   "authoritative_section": "course_schedule#assignment-calendar",
   "due_date_display": "TBD",
   "due_date_iso": null,
@@ -506,7 +506,7 @@ For efficiency, the system MAY support partial INDEX updates where only changed 
   "entity_id": "EXAM-FINAL",
   "entity_type": "exam",
   "title": "Final Exam",
-  "authoritative_file": "course_schedule.md",
+  "authoritative_file": "course-schedule.md",
   "authoritative_section": "course_schedule#exam-schedule",
   "due_date_display": "Wednesday, May 07, 2026",
   "due_date_iso": "2026-05-07",
@@ -556,7 +556,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
   "files": [
     {
       "file_id": "course_core",
-      "filename": "MKTG6051-2026-SP.course_core.md",
+      "filename": "MKTG6051_GK_course-core.md",
       "file_type": "grounded_knowledge",
       "doc_type": "course_core",
       "path": "./",
@@ -566,7 +566,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
     },
     {
       "file_id": "course_schedule",
-      "filename": "MKTG6051-2026-SP.course_schedule.md",
+      "filename": "MKTG6051_GK_course-schedule.md",
       "file_type": "grounded_knowledge",
       "doc_type": "course_schedule",
       "path": "./",
@@ -579,7 +579,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
     {
       "section_id": "course_core#grading-policy",
       "file_id": "course_core",
-      "filename": "MKTG6051-2026-SP.course_core.md",
+      "filename": "MKTG6051_GK_course-core.md",
       "anchor": "#grading-policy",
       "section_title": "Grading Policy",
       "section_type": "policy",
@@ -588,7 +588,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
     {
       "section_id": "course_schedule#assignment-calendar",
       "file_id": "course_schedule",
-      "filename": "MKTG6051-2026-SP.course_schedule.md",
+      "filename": "MKTG6051_GK_course-schedule.md",
       "anchor": "#assignment-calendar",
       "section_title": "Assignment Calendar",
       "section_type": "schedule",
@@ -601,7 +601,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
         "entity_id": "A03",
         "entity_type": "assignment",
         "title": "Marketing Strategy Analysis",
-        "authoritative_file": "course_schedule.md",
+        "authoritative_file": "course-schedule.md",
         "authoritative_section": "course_schedule#assignment-calendar",
         "due_date_display": "Monday, Feb 10, 2026",
         "due_date_iso": "2026-02-10",
@@ -618,7 +618,7 @@ For non-text files (PDFs, PowerPoint, images), `section_count` and `entity_count
         "entity_id": "M03",
         "entity_type": "module",
         "title": "Module 3: Competitive Strategy",
-        "authoritative_file": "course_schedule.md",
+        "authoritative_file": "course-schedule.md",
         "authoritative_section": "course_schedule#module-sequence",
         "start_date_display": "Monday, Feb 03, 2026",
         "start_date_iso": "2026-02-03",
