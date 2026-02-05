@@ -331,8 +331,14 @@ class SystemValidator:
             
         return True
     
-    def validate_referential_integrity(self, index_data: Dict, all_files: Dict[str, Dict]) -> bool:
-        """Validate referential integrity between INDEX and referenced files."""
+    def validate_referential_integrity(self, index_data: Dict, all_files: Dict[str, Dict], index_filename: str = 'GK_index.json') -> bool:
+        """Validate referential integrity between INDEX and referenced files.
+        
+        Args:
+            index_data: The parsed INDEX JSON data
+            all_files: Dictionary of all files and their parsed data
+            index_filename: The actual filename of the index file for error reporting
+        """
         all_valid = True
         
         # Build lookup maps
@@ -371,7 +377,7 @@ class SystemValidator:
             if filename and filename not in all_files:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Referenced file not found: {filename}',
                     f'File ID: {file_id}'
                 )
@@ -388,7 +394,7 @@ class SystemValidator:
             if file_id and file_id not in file_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Section references unknown file_id: {file_id}',
                     f'Section: {section_id}'
                 )
@@ -399,7 +405,7 @@ class SystemValidator:
                 if file_lookup.get(file_id) != filename:
                     self.report.add_error(
                         'REFERENTIAL_INTEGRITY',
-                        'INDEX.json',
+                        index_filename,
                         f'Section filename mismatch',
                         f'Section {section_id}: filename={filename}, but file_id {file_id} maps to {file_lookup.get(file_id)}'
                     )
@@ -409,7 +415,7 @@ class SystemValidator:
             if anchor and not re.match(self.NAMING_PATTERNS['anchor'], anchor):
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Invalid anchor format: {anchor}',
                     f'Section: {section_id}'
                 )
@@ -427,7 +433,7 @@ class SystemValidator:
                     if auth_file and auth_file not in [f.get('filename') for f in index_data.get('files', [])]:
                         self.report.add_error(
                             'REFERENTIAL_INTEGRITY',
-                            'INDEX.json',
+                            index_filename,
                             f'Entity references unknown file: {auth_file}',
                             f'Entity: {entity_id} ({entity_type})'
                         )
@@ -437,7 +443,7 @@ class SystemValidator:
                     if auth_section and auth_section not in section_lookup:
                         self.report.add_error(
                             'REFERENTIAL_INTEGRITY',
-                            'INDEX.json',
+                            index_filename,
                             f'Entity references unknown section: {auth_section}',
                             f'Entity: {entity_id} ({entity_type})'
                         )
@@ -453,7 +459,7 @@ class SystemValidator:
             if from_entity and from_entity not in entity_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference from unknown entity: {from_entity}'
                 )
                 all_valid = False
@@ -461,7 +467,7 @@ class SystemValidator:
             if from_section and from_section not in section_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference from unknown section: {from_section}'
                 )
                 all_valid = False
@@ -469,7 +475,7 @@ class SystemValidator:
             if to_entity and to_entity not in entity_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference to unknown entity: {to_entity}'
                 )
                 all_valid = False
@@ -477,7 +483,7 @@ class SystemValidator:
             if to_section and to_section not in section_lookup:
                 self.report.add_error(
                     'REFERENTIAL_INTEGRITY',
-                    'INDEX.json',
+                    index_filename,
                     f'Cross-reference to unknown section: {to_section}'
                 )
                 all_valid = False
@@ -595,15 +601,16 @@ class SystemValidator:
             self.validate_file(json_file)
         
         # Find INDEX file and validate referential integrity
-        index_files = [f for f in json_files if 'INDEX' in f.name]
+        # Support both old pattern (INDEX.json) and new GK pattern ({course_id}_GK_index.json)
+        index_files = [f for f in json_files if '_GK_index' in f.name or 'INDEX' in f.name]
         if index_files:
             for index_file in index_files:
                 try:
                     with open(index_file, 'r', encoding='utf-8') as f:
                         index_data = json.load(f)
-                    self.validate_referential_integrity(index_data, all_files_data)
+                    self.validate_referential_integrity(index_data, all_files_data, index_file.name)
                 except Exception as e:
-                    self.report.add_error('INDEX', index_file.name, 'Error validating referential integrity', str(e))
+                    self.report.add_error('REFERENTIAL_INTEGRITY', index_file.name, 'Error validating referential integrity', str(e))
         
         return self.report.is_passing()
 
