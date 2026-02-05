@@ -247,7 +247,7 @@ What are the requirements for Assignment A05?
 **Expected Behavior:**
 1. Agent consults INDEX to locate assignment A05
 2. Agent retrieves basic info from `course_schedule.md#assignment-calendar (A05)`: title, due date, points
-3. Agent checks INDEX for `related_sections` pointing to module files (e.g., `M05/Assignment_A05_Instructions.pdf`)
+3. Agent checks INDEX for `related_sections` pointing to module files (e.g., `MKTG6051_M05/MKTG6051_M05.A_assignment-05-instructions.pdf`)
 4. Agent retrieves detailed requirements from module instruction file (if available)
 5. Agent synthesizes response:
    - Due date from course_schedule.md (AUTHORITATIVE)
@@ -259,7 +259,7 @@ What are the requirements for Assignment A05?
 ```
 Sources:
 - course_schedule.md#assignment-calendar (A05) [dates and basic info]
-- M05/Assignment_A05_Instructions.pdf [detailed requirements]
+- MKTG6051_M05/MKTG6051_M05.A_assignment-05-instructions.pdf [detailed requirements]
 ```
 
 **Pass Criteria:**
@@ -299,7 +299,7 @@ I noticed Assignment A03 instructions say it's due February 12, but the course s
 CONFLICT DETECTED:
 
 course_schedule.md#assignment-calendar (A03) states: Due Monday, Feb 10, 2026 at 11:59 PM
-M03/Assignment_A03_Instructions.pdf states: Due February 12, 2026
+MKTG6051_M03/MKTG6051_M03.A_strategy-analysis-instructions.pdf states: Due February 12, 2026
 
 The Grounded Knowledge File (course_schedule.md) is the authoritative source for dates.
 
@@ -339,7 +339,7 @@ What is in Module 3?
 2. Agent retrieves module overview from `course_schedule.md#module-sequence (M03)`: dates, title, topics
 3. Agent checks if module files are uploaded (checks INDEX `working_memory_files` section)
 4. If module uploaded:
-   - Agent retrieves learning objectives and file inventory from `M03/M03.module_manifest.md`
+   - Agent retrieves learning objectives and file inventory from `MKTG6051_M03/MKTG6051_M03.manifest.md`
    - Agent lists module materials
 5. If module not uploaded:
    - Agent states module files not yet uploaded
@@ -350,8 +350,8 @@ What is in Module 3?
 **Required Citation Format:**
 ```
 Source: course_schedule.md#module-sequence (M03)
-Source: M03/M03.module_manifest.md#overview
-Source: M03/M03.module_manifest.md#file-inventory
+Source: MKTG6051_M03/MKTG6051_M03.manifest.md#overview
+Source: MKTG6051_M03/MKTG6051_M03.manifest.md#file-inventory
 ```
 
 **Pass Criteria:**

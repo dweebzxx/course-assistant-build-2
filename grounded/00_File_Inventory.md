@@ -66,7 +66,7 @@ These materials demonstrate structure patterns and inform template design but ar
 
 **Working Memory Files Pattern**:
 - Module folders uploaded as needed (evidenced by tree structure)
-- Module manifest required (`{module_id}.module_manifest.md`)
+- Module manifest required (`{course_id}_M{NN}.manifest.md`)
 - Allowed file types: .md, .txt, .csv, .xlsx, .pdf only
 
 **Agent Instructions**:

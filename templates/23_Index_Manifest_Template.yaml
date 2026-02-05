@@ -69,20 +69,20 @@ files:
 
   # --- Module Manifests ---
   - file_id: "M01_manifest"
-    filename: "M01.module_manifest.md"
+    filename: "MKTG6051_M01.manifest.md"
     file_type: "module_manifest"
     doc_type: "module_manifest"
-    path: "M01/"
+    path: "MKTG6051_M01/"
     module_id: "M01"
     last_updated: "{YYYY-MM-DD}"
     section_count: {N}
     entity_count: {N}
 
   - file_id: "M02_manifest"
-    filename: "M02.module_manifest.md"
+    filename: "MKTG6051_M02.manifest.md"
     file_type: "module_manifest"
     doc_type: "module_manifest"
-    path: "M02/"
+    path: "MKTG6051_M02/"
     module_id: "M02"
     last_updated: "{YYYY-MM-DD}"
     section_count: {N}
@@ -92,10 +92,10 @@ files:
 
   # --- Working Memory Files (Examples) ---
   - file_id: "M01_lecture"
-    filename: "Module_01_Lecture.pptx"
+    filename: "MKTG6051_M01.L_intro-lecture.pptx"
     file_type: "working_memory"
     doc_type: "lecture_slides"
-    path: "M01/"
+    path: "MKTG6051_M01/"
     module_id: "M01"
     last_updated: "{YYYY-MM-DD}"
     section_count: null
@@ -103,10 +103,10 @@ files:
     size_bytes: 2048000
 
   - file_id: "M01_assignment"
-    filename: "Assignment_A01_Instructions.pdf"
+    filename: "MKTG6051_M01.A_assignment-01-instructions.pdf"
     file_type: "working_memory"
     doc_type: "assignment_instructions"
-    path: "M01/"
+    path: "MKTG6051_M01/"
     module_id: "M01"
     last_updated: "{YYYY-MM-DD}"
     section_count: null
@@ -304,11 +304,11 @@ entities:
       start_date_iso: "{YYYY-MM-DD}"                   # e.g., "2026-01-20"
       end_date_display: "{DayOfWeek, Mon DD, YYYY}"
       end_date_iso: "{YYYY-MM-DD}"
-      module_folder: "M01/"
-      manifest_file: "M01/M01.module_manifest.md"
+      module_folder: "MKTG6051_M01/"
+      manifest_file: "MKTG6051_M01/MKTG6051_M01.manifest.md"
       related_sections:
         - "course_schedule#module-sequence"
-        - "M01/M01.module_manifest.md#overview"
+        - "MKTG6051_M01/MKTG6051_M01.manifest.md#overview"
 
     - entity_id: "M02"
       entity_type: "module"
@@ -319,8 +319,8 @@ entities:
       start_date_iso: "{YYYY-MM-DD}"
       end_date_display: "{DayOfWeek, Mon DD, YYYY}"
       end_date_iso: "{YYYY-MM-DD}"
-      module_folder: "M02/"
-      manifest_file: "M02/M02.module_manifest.md"
+      module_folder: "MKTG6051_M02/"
+      manifest_file: "MKTG6051_M02/MKTG6051_M02.manifest.md"
       related_sections:
         - "course_schedule#module-sequence"
 
@@ -340,7 +340,7 @@ entities:
       weight: "{X%}"  # Optional: grading weight
       related_sections:
         - "course_schedule#assignment-calendar"
-        - "M01/Assignment_A01_Instructions.pdf"  # If module file exists
+        - "MKTG6051_M01/MKTG6051_M01.A_assignment-01-instructions.pdf"  # If module file exists
 
     - entity_id: "A02"
       entity_type: "assignment"
@@ -428,7 +428,7 @@ entities:
       module_id: "M01"
       related_sections:
         - "course_schedule#reading-schedule"
-        - "M01/Reading_Ch1.pdf"  # If file exists in module
+        - "MKTG6051_M01/Reading_Ch1.pdf"  # If file exists in module
 
     - entity_id: "M01-R02"
       entity_type: "reading"
@@ -519,11 +519,11 @@ entities:
 cross_references:
   # Entity-to-Section relationships (detailed_in)
   - from_entity: "A01"
-    to_section: "M01/Assignment_A01_Instructions.pdf"
+    to_section: "MKTG6051_M01/MKTG6051_M01.A_assignment-01-instructions.pdf"
     relationship: "detailed_in"
 
   - from_entity: "A02"
-    to_section: "M02/Assignment_A02_Instructions.pdf"
+    to_section: "MKTG6051_M02/MKTG6051_M02.A_assignment-02-instructions.pdf"
     relationship: "detailed_in"
 
   # Entity-to-Entity relationships (contains)

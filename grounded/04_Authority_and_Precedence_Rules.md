@@ -112,7 +112,7 @@ INDEX does NOT override content in Grounded Knowledge Files. It only organizes a
 
 ### TIER 5: Module Manifests (Authoritative for Module Content Inventory)
 
-**File:** `{module_id}.module_manifest.md` (within module packages)
+**File:** `{course_id}_M{NN}.manifest.md` (within module packages)
 
 **Authoritative for:**
 - What files are included in a specific module package

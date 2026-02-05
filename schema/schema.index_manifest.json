@@ -131,7 +131,8 @@
           },
           "module_id": {
             "type": "string",
-            "pattern": "^M\\d{2}$"
+            "pattern": "^(M\\d{2}|GK)$",
+            "description": "Module identifier: M01-M99 or GK for course-level materials"
           },
           "section_count": {
             "type": ["integer", "null"],

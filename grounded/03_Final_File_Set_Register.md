@@ -270,14 +270,14 @@ Example: `MGMT6022-2026-SP.index.json`
 **File Type**: Folder (directory) or ZIP archive
 
 **Naming Rule (MUST start with course_id)**:
-Folder: `{course_id}.module_{module_id}/`
-ZIP: `{course_id}.module_{module_id}.zip`
-Regex: `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}(/|\.zip)$`
-Examples: `MGMT6022.module_M03/` or `MGMT6022.module_M03.zip`
+Folder: `{course_id}_M{NN}/`
+ZIP: `{course_id}_M{NN}.zip`
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}(/|\.zip)$`
+Examples: `MKTG6051_M03/` or `MKTG6051_M03.zip`
 
 **Required Contents**:
 
-* MUST include: `{course_id}.module_{module_id}.module_manifest.md` (at root of folder/zip)
+* MUST include: `{course_id}_M{NN}.manifest.md` (at root of folder/zip)
 * MAY include: Any number of PDFs, slides, docs, readings, assignment files, subdirectories
 
 **Content Outline** (for module_manifest.md):
@@ -291,9 +291,9 @@ Examples: `MGMT6022.module_M03/` or `MGMT6022.module_M03.zip`
 7. Notes (instructor notes, known issues, updates)
 
 **Module Manifest Naming Rule**:
-Pattern: `{course_id}.module_{module_id}.module_manifest.md`
-Regex: `^[A-Z]{2,10}[0-9]{3,5}\.module_M[0-9]{2}\.module_manifest\.md$`
-Example: `MGMT6022.module_M03.module_manifest.md`
+Pattern: `{course_id}_M{NN}.manifest.md`
+Regex: `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$`
+Example: `MKTG6051_M03.manifest.md`
 
 **Template Filename**: `24_Module_Package_Template.md` (Phase 4 deliverable - for module_manifest.md)
 
@@ -350,9 +350,9 @@ Recommendation: Use descriptive names, avoid spaces
 **File Type**: Markdown (.md)
 
 **Naming Rule**:
-Pattern: `{course_run_id}.module_{module_id}_curated.md`
-Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)\.module_M[0-9]{2}_curated\.md$`
-Example: `MGMT6022-2026-SP.module_M03_curated.md`
+Pattern: `{course_run_id}_M{NN}_curated.md`
+Regex: `^[A-Z]{2,10}[0-9]{3,5}-20[0-9]{2}-(FA|SP|SU|WI)_M[0-9]{2}_curated\.md$`
+Example: `MKTG6051-2026-SP_M03_curated.md`
 
 **Authority**: Once promoted, curated module content has equal authority to other Grounded Knowledge Files and supersedes Working Memory module files for the curated content.
 
