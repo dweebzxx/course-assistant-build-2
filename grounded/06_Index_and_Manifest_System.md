@@ -4,7 +4,11 @@
 **Document Type:** Index and manifest specification  
 **Date:** 2026-01-25  
 **Phase:** 3  
-**Status:** Definitive specification
+**Status:** Partial - Requires revision to align with register specification
+
+**IMPORTANT NOTE:** This document contains outdated structural specifications that predate the definitive File Set Register (03_Final_File_Set_Register.md). The current authoritative specification uses nested sections within `grounded_knowledge_files` rather than separate top-level blocks. This document is being preserved for historical reference but should be updated to match the register specification. **For the current definitive structure, refer to:**
+- **03_Final_File_Set_Register.md** (lines 192-246) for the authoritative index structure
+- **23_Index_Template.json** for the current template implementation
 
 ---
 
@@ -177,11 +181,21 @@ Catalog every file in the agent build (both Grounded Knowledge Files and Working
 
 ---
 
-## SECTIONS BLOCK
+## ⚠️ DEPRECATED: SECTIONS BLOCK
 
-**NOTE:** This document describes an older index structure. According to the definitive File Set Register (03_Final_File_Set_Register.md), sections are now nested within the `grounded_knowledge_files` array rather than being a separate top-level block. The examples below use the older structure for reference but should be updated to match the register specification.
+**DEPRECATION NOTICE:** The structure described in this section and all subsequent sections (SECTIONS BLOCK, ENTITIES BLOCK, CROSS_REFERENCES BLOCK) represents an **outdated specification** that has been superseded by the definitive File Set Register.
 
-### Purpose
+**Current Specification:** According to 03_Final_File_Set_Register.md (lines 202-246), sections are now nested within the `grounded_knowledge_files` array, not as a separate top-level `sections` block. Entities are also nested within sections with their `key_fields`.
+
+**Action Required:** This section should be completely rewritten to match the register specification. Until then, treat this as **historical documentation only**.
+
+**For current implementation, see:**
+- 03_Final_File_Set_Register.md (lines 192-246)
+- templates/23_Index_Template.json
+
+---
+
+### [OUTDATED] Purpose
 Index every retrievable section across all files with stable anchor IDs. This is the **primary retrieval mechanism** for the agent.
 
 ### Structure
@@ -254,9 +268,11 @@ Index every retrievable section across all files with stable anchor IDs. This is
 
 ---
 
-## ENTITIES BLOCK
+## ⚠️ DEPRECATED: ENTITIES BLOCK
 
-### Purpose
+**DEPRECATION NOTICE:** This section describes an outdated structure. Entities are now nested within sections in the `grounded_knowledge_files` array, not as a separate top-level block. See 03_Final_File_Set_Register.md for current specification.
+
+### [OUTDATED] Purpose
 Index every course entity (assignments, modules, exams, readings, discussions, milestones) with its authoritative location and cross-references.
 
 ### Structure
@@ -369,9 +385,11 @@ Index every course entity (assignments, modules, exams, readings, discussions, m
 
 ---
 
-## CROSS_REFERENCES BLOCK
+## ⚠️ DEPRECATED: CROSS_REFERENCES BLOCK
 
-### Purpose
+**DEPRECATION NOTICE:** This section describes an outdated structure. Cross-references are now handled differently in the current specification. See 03_Final_File_Set_Register.md (lines 240-246) for the current cross_references array format.
+
+### [OUTDATED] Purpose
 Explicitly map relationships between entities and sections for enhanced retrieval.
 
 ### Structure
