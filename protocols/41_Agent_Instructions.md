@@ -1,10 +1,12 @@
 # Course Assistant AI Agent Instructions
 
 **Agent Build Scope:** Single course, single term, single student (Josh)  
-**Document Type:** AI agent instruction set  
+**Document Type:** AI agent instruction template  
 **Date:** 2026-01-25  
 **Phase:** 6  
 **Status:** Production-ready
+
+> ⚠️ **One Course Per Agent:** This system is designed for one course per agent. A single agent should only manage one course. When setting up a new agent, copy this template and customize it for your specific course. Each course needs its own dedicated Agent Instructions file named `{course_id}_Agent_Instructions.md`.
 
 ---
 
