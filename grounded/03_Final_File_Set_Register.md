@@ -364,13 +364,21 @@ Example: `MKTG6051_M03_curated.md`
 
 ### File Type 8: Agent Instructions
 
+**Purpose:** Dedicated instruction set for configuring the AI agent for a single course. Each course requires its own Agent Instructions file. This enforces the **one-course-per-agent** model.
+
 **File Type**: Markdown (.md)
 
-**Naming Rule**: `AI_Course_Assistant_Instructions_{course_run_id}.md`
+**Naming Rule**: `{course_id}_Agent_Instructions.md`
 
-**Example**: `AI_Course_Assistant_Instructions_MGMT6022.md`
+**Regex**: `^[A-Z]{2,10}[0-9]{3,5}_Agent_Instructions\.md$`
 
-**Usage**: Paste into Custom GPT instructions field (not uploaded as file)
+**Example**: `MGMT6022_Agent_Instructions.md`, `MKTG6051_Agent_Instructions.md`
+
+**Location**: Inside the course folder at `course_final_build/{course_id}/`
+
+**Usage**: Paste into Custom GPT instructions field (not uploaded as file). Each Custom GPT agent should be configured with exactly one course's Agent Instructions.
+
+**Important**: Do NOT create multi-course agent instructions. The system is designed for **one course per agent**. A single agent should only manage one course to ensure accuracy and prevent information mixing.
 
 ---
 

@@ -279,6 +279,28 @@ User-provided uploads may keep their original names.
 
 ---
 
+### Agent Instructions File (One Per Course)
+
+**Purpose:** Each course requires its own dedicated Agent Instructions file. This enforces the **one-course-per-agent** model. A single agent should only manage one course.
+
+**Pattern:** `{course_id}_Agent_Instructions.md`
+
+**Regex:** `^[A-Z]{2,10}[0-9]{3,5}_Agent_Instructions\.md$`
+
+**Examples:**
+- `MKTG6051_Agent_Instructions.md`
+- `MABA6321_Agent_Instructions.md`
+- `MGMT6305_Agent_Instructions.md`
+- `MGMT6465_Agent_Instructions.md`
+
+**Location:** Inside the course folder at `course_final_build/{course_id}/`
+
+**Usage:** Paste into Custom GPT instructions field (not uploaded as file). Each Custom GPT agent should be configured with exactly one course's Agent Instructions.
+
+**Important:** Do NOT create multi-course agent instructions. The system is designed for **one course per agent** to ensure accuracy and prevent information mixing across courses.
+
+---
+
 ## ENTITY ID STANDARDS
 
 ### Module ID (`module_id`)
@@ -372,6 +394,7 @@ Required fields:
 | module_id | `^(M[0-9]{2}\|GK)$` |
 | GK filename | `^[A-Z]{2,10}[0-9]{3,5}_GK_(course-core\|course-schedule\|student-profile)\.md$` |
 | index filename | `^[A-Z]{2,10}[0-9]{3,5}_GK_index\.json$` |
+| agent instructions | `^[A-Z]{2,10}[0-9]{3,5}_Agent_Instructions\.md$` |
 | module folder | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}/$` |
 | module zip | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.zip$` |
 | module manifest | `^[A-Z]{2,10}[0-9]{3,5}_M[0-9]{2}\.manifest\.md$` |
@@ -395,6 +418,9 @@ Required fields:
 - `MKTG6051_GK_course-schedule.md`
 - `MKTG6051_GK_student-profile.md`
 - `MKTG6051_GK_index.json`
+
+### Agent Instructions (One Per Course)
+- `MKTG6051_Agent_Instructions.md`
 
 ### Course-Level Materials (GK)
 - `MKTG6051_GK_syllabus.pdf`

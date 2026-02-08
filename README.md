@@ -18,6 +18,8 @@ The Course Assistant Builder helps you create AI agents that can:
 
 Each agent is **single-course, single-term, single-student** focused for maximum accuracy and relevance.
 
+> ⚠️ **Important:** This system is designed for **one course per agent**. A single agent should only manage one course. Each course needs its own dedicated Agent Instruction file. Do NOT create multi-course agents.
+
 ---
 
 ## 📋 Quick Start
@@ -40,7 +42,8 @@ Each agent is **single-course, single-term, single-student** focused for maximum
    ```
 
 4. **Configure Agent** (using protocols/)
-   - Customize `protocols/41_Agent_Instructions.md` for your course
+   - Create `{course_id}_Agent_Instructions.md` from `protocols/41_Agent_Instructions.md` template
+   - Each course requires its own dedicated Agent Instruction file
    - Upload the 3 knowledge files + INDEX.json to custom GPT
 
 5. **Verify Setup** (using setup/)

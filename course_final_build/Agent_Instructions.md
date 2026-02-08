@@ -1,8 +1,21 @@
-# Agent Instructions
-## Course Assistant AI - Production Configuration
+# Agent Instructions [DEPRECATED]
+## Course Assistant AI - Multi-Course Configuration
 
-**Version:** 1.1.0  
+> ⚠️ **DEPRECATED:** This multi-course agent instruction file is deprecated. The system is designed for **one course per agent**. Each course should have its own dedicated Agent Instruction file.
+>
+> **Please use the individual course-specific agent instructions instead:**
+> - `MKTG6051/MKTG6051_Agent_Instructions.md`
+> - `MABA6321/MABA6321_Agent_Instructions.md`
+> - `MGMT6305/MGMT6305_Agent_Instructions.md`
+> - `MGMT6465/MGMT6465_Agent_Instructions.md`
+>
+> **Reason for deprecation:** A single agent managing multiple courses can lead to information mixing, confusion, and reduced accuracy. The one-course-per-agent model ensures focused, accurate assistance for each course.
+
+---
+
+**Version:** 1.1.0 (DEPRECATED)  
 **Last Updated:** 2026-02-08  
+**Status:** DEPRECATED - Do not use for new agents  
 **Scope:** Multi-course configuration for MKTG6051, MABA6321, MGMT6305, MGMT6465
 
 ---
