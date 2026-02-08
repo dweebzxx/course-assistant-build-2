@@ -16,12 +16,13 @@
 | **term_id** | `2026-SP` |
 | **course_run_id** | `MKTG6051-2026-SP` |
 | **doc_type** | `course_schedule` |
-| **last_updated** | `2026-02-05` |
+| **last_updated** | `2026-02-08` |
 | **timezone** | `America/Chicago` |
 | **source_files** | `syllabus.md, assignments/*.md, modules/` |
 
 **Change Log (optional):**
 - 2026-02-05: Initial creation from Canvas export
+- 2026-02-08: Updated with specific due dates and point values from Canvas
 
 ---
 
@@ -71,18 +72,18 @@ Note: Specific module dates not provided in scraped data. Please update with act
 
 | Assignment ID | Title | Type | Module ID | Due Date (Display) | Due Date (ISO) | Due Time | Points |
 |---------------|-------|------|-----------|-------------------|----------------|----------|--------|
-| QUIZ-01 | Quiz - Project Background | quiz | M01 | TBD | null | 11:59 PM | TBD |
-| QUIZ-02 | Quiz - Qualitative Research | quiz | M01 | TBD | null | 11:59 PM | TBD |
-| QUIZ-03 | Quiz Data Cleaning and Descriptive Statistics | quiz | M02 | TBD | null | 11:59 PM | TBD |
-| QUIZ-04 | Quiz - Survey Research | quiz | M02 | TBD | null | 11:59 PM | TBD |
-| QUIZ-05 | Quiz - Linear Regression Analysis | quiz | M03 | TBD | null | 11:59 PM | TBD |
-| A01 | Group Research - Define research question and company | group | M01 | TBD | null | 11:59 PM | TBD |
-| A02 | Group Research - Qualitative Research Plan | group | M01 | TBD | null | 11:59 PM | TBD |
-| A03 | Group Research - Survey Research Plan | group | M02 | TBD | null | 11:59 PM | TBD |
-| A04 | Group Research - Final Project | group | M03 | TBD | null | 11:59 PM | TBD |
-| A05 | Comments on Final Project Constructive Review | individual | M03 | TBD | null | 11:59 PM | TBD |
+| QUIZ-01 | Quiz - Project Background | quiz | M01 | Thursday, Jan 23, 2026 | 2026-01-23 | 11:59 PM | 1 |
+| A01 | Group Research - Define research question and company | group | M01 | Sunday, Feb 1, 2026 | 2026-02-01 | 11:59 PM | 5 |
+| QUIZ-02 | Quiz - Qualitative Research | quiz | M01 | Sunday, Feb 1, 2026 | 2026-02-01 | 11:59 PM | 5 |
+| A02 | Group Research - Qualitative Research Plan | group | M02 | Sunday, Feb 8, 2026 | 2026-02-08 | 11:59 PM | 50 |
+| QUIZ-03 | Quiz - Survey Research | quiz | M02 | Tuesday, Feb 10, 2026 | 2026-02-10 | 11:59 PM | 7 |
+| A03 | Group Research - Survey Research Plan | group | M02 | Sunday, Feb 15, 2026 | 2026-02-15 | 11:59 PM | 50 |
+| QUIZ-04 | Quiz - Data Cleaning & Descriptive Statistics | quiz | M02 | Sunday, Feb 22, 2026 | 2026-02-22 | 11:59 PM | 13 |
+| QUIZ-05 | Quiz - Linear Regression Analysis | quiz | M03 | Sunday, Mar 1, 2026 | 2026-03-01 | 11:59 PM | 8 |
+| A04 | Group Research - Final Project | group | M03 | Saturday, Mar 7, 2026 | 2026-03-07 | 11:59 PM | 60 |
+| A05 | Comments on Final Project (Review) | individual | M03 | Wednesday, Mar 11, 2026 | 2026-03-11 | 11:59 PM | 50 |
 
-Note: Specific due dates not provided in scraped assignment files. Due dates are listed under Assignments and on the Calendar in Canvas. Please update with actual dates.
+**Total Points:** 249 points
 
 **Assignment Types:** `individual`, `quiz`, `discussion`, `exam`, `group`, `presentation`
 
@@ -91,47 +92,55 @@ Note: Specific due dates not provided in scraped assignment files. Due dates are
 ## Weekly Overview
 <!-- anchor: #weekly-overview -->
 
-### Week 1: TBD
+### Week 1: Jan 20-24, 2026
 - **Module:** M01
 - **Topics:** Introduction, Project Background
 - **Due This Week:**
-  - Quiz - Project Background (TBD)
+  - Quiz - Project Background (Thu, Jan 23 @ 11:59 PM) - 1 pt
 
-### Week 2: TBD
+### Week 2: Jan 27 - Feb 1, 2026
 - **Module:** M01
 - **Topics:** Qualitative Research
 - **Due This Week:**
-  - Quiz - Qualitative Research (TBD)
-  - Group Research - Define research question and company (TBD)
+  - Group Research - Define research question and company (Sun, Feb 1 @ 11:59 PM) - 5 pts
+  - Quiz - Qualitative Research (Sun, Feb 1 @ 11:59 PM) - 5 pts
 
-### Week 3: TBD
+### Week 3: Feb 2-8, 2026
+- **Module:** M02
+- **Topics:** Qualitative Research Plan
+- **Due This Week:**
+  - **Group Research - Qualitative Research Plan (Sun, Feb 8 @ 11:59 PM) - 50 pts** ⚠️ DUE TODAY
+
+### Week 4: Feb 9-15, 2026
 - **Module:** M02
 - **Topics:** Survey Research
 - **Due This Week:**
-  - Quiz - Survey Research (TBD)
-  - Group Research - Qualitative Research Plan (TBD)
+  - Quiz - Survey Research (Tue, Feb 10 @ 11:59 PM) - 7 pts
+  - Group Research - Survey Research Plan (Sun, Feb 15 @ 11:59 PM) - 50 pts
 
-### Week 4: TBD
+### Week 5: Feb 16-22, 2026
 - **Module:** M02
 - **Topics:** Data Cleaning and Descriptive Statistics
 - **Due This Week:**
-  - Quiz Data Cleaning and Descriptive Statistics (TBD)
-  - Group Research - Survey Research Plan (TBD)
+  - Quiz - Data Cleaning & Descriptive Statistics (Sun, Feb 22 @ 11:59 PM) - 13 pts
 
-### Week 5: TBD
+### Week 6: Feb 23 - Mar 1, 2026
 - **Module:** M03
 - **Topics:** Linear Regression Analysis
 - **Due This Week:**
-  - Quiz - Linear Regression Analysis (TBD)
+  - Quiz - Linear Regression Analysis (Sun, Mar 1 @ 11:59 PM) - 8 pts
 
-### Week 6: TBD
+### Week 7: Mar 2-8, 2026
 - **Module:** M03
 - **Topics:** Final Project
 - **Due This Week:**
-  - Group Research - Final Project (TBD)
-  - Comments on Final Project Constructive Review (TBD)
+  - Group Research - Final Project (Sat, Mar 7 @ 11:59 PM) - 60 pts
 
-Note: Weekly schedule is approximate. Please update with actual dates from course calendar.
+### Week 8: Mar 9-11, 2026
+- **Module:** M03
+- **Topics:** Final Project Review
+- **Due This Week:**
+  - Comments on Final Project (Review) (Wed, Mar 11 @ 11:59 PM) - 50 pts
 
 ---
 

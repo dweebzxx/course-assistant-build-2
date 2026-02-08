@@ -18,12 +18,13 @@
 | **term_id** | `2026-SP` |
 | **course_run_id** | `MGMT6465-2026-SP` |
 | **doc_type** | `course_core` |
-| **last_updated** | `2026-02-05` |
+| **last_updated** | `2026-02-08` |
 | **timezone** | `America/Chicago` |
 | **source_files** | `syllabus.md, export_summary.json` |
 
 **Change Log (optional):**
 - 2026-02-05: Initial creation from Canvas export
+- 2026-02-08: Confirmed Spring 2026, Section 051 (Saturdays) for Josh E.
 
 ---
 
@@ -34,9 +35,9 @@
 |-------|-------|
 | **Course Title** | Leadership and Personal Development |
 | **Course Number** | MGMT 6465 |
-| **Section** | 050/051 |
+| **Section** | 051 (Saturdays) |
 | **Credits** | 2 |
-| **Term** | Spring 2025 A Term |
+| **Term** | Spring 2026 A Term |
 | **Delivery Mode** | Hybrid (Asynchronous + Live Synchronous on Zoom) |
 | **Meeting Pattern** | See schedule - 3 full days per section |
 | **Location** | Remote via Zoom |

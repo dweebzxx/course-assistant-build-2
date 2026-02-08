@@ -18,12 +18,13 @@
 | **term_id** | `2026-SP` |
 | **course_run_id** | `MGMT6305-2026-SP` |
 | **doc_type** | `course_core` |
-| **last_updated** | `2026-02-05` |
+| **last_updated** | `2026-02-08` |
 | **timezone** | `America/Chicago` |
 | **source_files** | `syllabus.md, export_summary.json` |
 
 **Change Log (optional):**
 - 2026-02-05: Initial creation from Canvas export
+- 2026-02-08: Added instructor information (Paul M. Vaaler) and credits (4)
 
 ---
 
@@ -35,7 +36,7 @@
 | **Course Title** | The International Environment of Business |
 | **Course Number** | MGMT 6305 |
 | **Section** | 090 |
-| **Credits** | TBD |
+| **Credits** | 4 |
 | **Term** | Spring 2026 |
 | **Delivery Mode** | In-person |
 | **Meeting Pattern** | Wednesday evenings (5:45-7:15pm and 7:35-9:05pm) |
@@ -48,12 +49,12 @@
 
 | Field | Value |
 |-------|-------|
-| **Instructor Name** | Not specified in syllabus |
-| **Email** | Not specified |
+| **Instructor Name** | Paul M. Vaaler |
+| **Email** | vaal0001@umn.edu |
 | **Phone** | Not provided |
-| **Office** | Not specified |
-| **Office Hours** | Not specified |
-| **Preferred Contact Method** | Not specified |
+| **Office** | 3-424 CarSMgmt & 412 Mondale |
+| **Office Hours** | Mondays 2:00–4:00 PM (Law) and Wednesdays 3:00–5:00 PM (CSOM) by appointment |
+| **Preferred Contact Method** | Email |
 | **Response Time Expectation** | Not specified |
 
 **Teaching Assistants (if applicable):**

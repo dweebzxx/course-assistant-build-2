@@ -22,10 +22,11 @@
 | **doc_type** | `student_profile` |
 | **last_updated** | `2026-02-05` |
 | **timezone** | `America/Chicago` |
-| **student_name** | `Josh` |
+| **student_name** | `Josh E.` |
 
 **Change Log (optional):**
 - 2026-02-05: Initial creation
+- 2026-02-08: Updated student name to Josh E.
 
 ---
 
@@ -35,6 +36,7 @@
 | Field | Value |
 |-------|-------|
 | **First Name** | Josh |
+| **Last Name Initial** | E. |
 | **Preferred Name** | Josh |
 | **Program** | MBA |
 | **Year** | TBD |
